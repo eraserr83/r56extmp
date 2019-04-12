@@ -1,0 +1,1092 @@
+#####-----> Mod by Sig "GreatExperiment" Altre
+####-----> Reorganized by Pordy <><> <><> <><>
+spriteTypes = {
+
+###------> Generic ideas <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_banana_republic"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_banana_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_revolutionized_industry"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_revolutionized_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_continuous_naval_production"
+		texturefile = "gfx/interface/goals/goal_continuous_naval_production.dds"
+	}
+
+###------> AUS <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_AUS_croat_resistance"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_croat_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_czech_resistance"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_czech_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_czech_resistance_2"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_czech_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_czech_support"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_czech_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_for_kaiser_and_fatherland_idea"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_for_kaiser_and_fatherland_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_growing_movement"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_growing_movement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_romanian_nationalists"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_romanian_nationalists.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_romanian_nationalists_2"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_romanian_nationalists.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_serbian_nationalism"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_serbian_nationalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_serbian_nationalism_2"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_serbian_nationalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_skoda_engineers"
+		texturefile = "gfx/interface/ideas/aus/r56_idea_AUS_skoda_engineers.dds"
+	}
+
+
+###------> BEL <><> <><> <><> <><> <><>
+##--> Ideas using vanilla icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_tblra_aerial_interest"
+		texturefile = "gfx/interface/ideas/generic_air_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_armed_neutrality_idea"
+		texturefile = "gfx/interface/ideas/generic_infantry_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_reserve_mobilization"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+	}
+	spriteType = { #? 
+		name = "GFX_idea_tblra_benelux_research_cooperation"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_tblra_centralized_communist_government"
+		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_congo_uranium"
+		texturefile = "gfx/interface/technologies/atomic_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tdlra_states_army"
+		texturefile = "gfx/interface/ideas/generic_infantry_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tdlra_pillarized_society"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tdlra_pillarized_society2"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+
+##--> Unique generics <><> <><>
+	spriteType = {
+		name = "GFX_idea_tblra_church_support"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_church_support.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_tblra_tank_destroyers_expertise"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_tank_killer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_union_agreements"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_union_agreements.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_british_ship_designs"
+		texturefile = "gfx/interface/ideas/escort_effort_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tdlra_communist_police"
+		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+	}
+
+##--> Unique belgian icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_tblra_charles_regent"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_charles_regent.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BEL_FRC_TD"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_frc_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_french_advisors"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_french_advisors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_katoen_natie"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_katoen_natie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_leopold3"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_leopold3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_leopold3_captive"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_leopold3_captive.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_leopold3_exile"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_leopold3_exile.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_leopold3_power"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_leopold3_power.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_linguistic_military_question"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_Linguistic_military_question.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_pillarized_society"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_Pillarization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_national_union"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_Pillarization_national_union.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_peacetime_national_union"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_Pillarization_national_union_peace.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_tblra_extended_royal_powers"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_royal_defence_belgium.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tblra_v_for_victory"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_v_for_victory.dds"
+	}
+	spriteType = {
+		name = "tblra_van_den_bergen_plan"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_BEL_van_den_bergen_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COG_force_publique_conscription"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_COG_force_publique_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COG_force_publique_conscription2"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_COG_force_publique_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COG_union_miniere"
+		texturefile = "gfx/interface/ideas/bel/r56_idea_COG_union_miniere.dds"
+	}
+
+
+###------> BRA <><> <><> <><> <><> <><>
+##--> Ideas using vanilla icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_BRA_navy_pic"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_defense_ships.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRA_ind_pic"
+		texturefile = "gfx/interface/ideas/generic_goods_red_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_bandeirantes_pic"
+		texturefile = "gfx/interface/ideas/idea_generic_war_preparation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_antropofagia_pic"
+		texturefile = "gfx/interface/ideas/idea_yug_federal_defense_council.dds"
+	}
+
+##--> Unique brazilian icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_BRA_30"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_30.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_campinas"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_campinas.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRA_elet_pic"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_elet_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_estadonovo"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_estadonovo.dds"
+	}
+	SpriteType = { #Rework!
+		name = "GFX_idea_BRA_instabilidade_pic"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_instabilidade_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRA_NU_pic"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_NU_pic.dds"
+	}
+
+
+###------> BUL <><> <><> <><> <><> <><>
+##--> Unique generics <><> <><>
+	spriteType = {
+		name = "GFX_idea_BUL_shared_manufacturing_experience"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_manufacturers_cooperation.dds"
+	}
+##--> Unique bulgarian <><> <><>
+	spriteType = {
+		name = "GFX_idea_BUL_shattered_militarism"
+		texturefile = "gfx/interface/ideas/bul/r56_idea_BUL_shattered_militarism.dds"
+	}
+
+
+###------> CZE <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_edvard_benes"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_edvard_benes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tgm"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_tgm.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_unruly_minorities"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_sdp_pin.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_CZKE_unruly_minorities_2"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_sdp_pin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_fifth_column"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_freikorps_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_fifth_column_2"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_freikorps_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_mobilization_1938"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_mobilization_1938_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_emil_hacha"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_emil_hacha.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - MINISTRY OF NATIONAL DEFENSE <><>
+	spriteType = {
+		name = "GFX_idea_CZKE_rop_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_rop.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_rop2_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_rop.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_officers_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_va_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_generals_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_vsv_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_ncos_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_ncos_idea.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - MILITARY <><>
+	spriteType = {
+		name = "GFX_idea_CZKE_czechoslovak_volunteers_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_obec_legionarska_idea.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - POLITICS <><>
+	spriteType = {
+		name = "GFX_idea_CZKE_sokol_movement_1"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_s_sokol.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_sokol_movement_2"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_s_sokol.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_state_defense_law_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_coat_of_arms_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_press_law_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_coat_of_arms_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_sos"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_sos.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_national_unity_government_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_coat_of_arms_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_content_minorities"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_coat_of_arms_idea.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - POLITICS - CZECH FASCISM <><>
+	spriteType = {
+		name = "GFX_idea_czech_fascist_assault_divisions"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_NOF_assault_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_military_youth_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_NOF_idea.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - POLITICS - CZECH NAZISM <><>
+	spriteType = {
+		name = "GFX_idea_CZKE_reich_support"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_reich_support_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CZKE_svatoplukovy_gardy"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_svatoplukovy_gardy.dds"
+	}
+
+#------> NATIONAL FOCUS TREE EVENTS - POLITICS - COMMUNISM <><>
+	spriteType = {
+		name = "GFX_idea_CZKE_peoples_militia_idea"
+		texturefile = "gfx/interface/ideas/cze/r56_idea_CZKE_peoples_militia.dds"
+	}
+
+
+###------> DEN <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_christian_x"
+		texturefile = "gfx/interface/ideas/den/r56_idea_DEN_christian_x.dds"
+	}
+
+
+###------> DNZ <><> <><> <><> <><> <><>
+spriteType = {
+		name = "GFX_idea_sean_lester"
+		texturefile = "gfx/interface/ideas/dnz/r56_idea_DNZ_sean_lester.dds"
+	}
+spriteType = {
+		name = "GFX_idea_carl_jacob_burckhardt"
+		texturefile = "gfx/interface/ideas/dnz/r56_idea_DNZ_carl_jacob_burckhardt.dds"
+	}
+
+
+###------> ENG <><> <><> <><> <><> <><>	
+	spriteType = {
+		name = "GFX_idea_ENG_alan_turing"
+		texturefile = "gfx/interface/ideas/eng/advisor/r56_idea_ENG_advisor_alan_turing.dds"
+	}
+
+
+###------> EST <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_kaitseliit"
+		texturefile = "gfx/interface/ideas/est/r56_idea_EST_kaitseliit.dds"
+	}
+
+
+###------> FIN <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_fin_milpropaganda"
+		texturefile = "gfx/interface/ideas/fin/r56_idea_FIN_milpropaganda.dds"
+	}
+
+
+###------> FRA <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_generic_air_mechanics"
+		texturefile = "gfx/interface/idas/generic/r56_idea_air_mechanics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_communist_central_management"
+		texturefile = "gfx/interface/idas/generic/r56_idea_communist_central_management.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anti_bombing_measures"
+		texturefile = "gfx/interface/idas/generic/r56_idea_anti_bombing_measures.dds"
+	}
+##--> Unique france ideas <><> <><>
+	spriteType = {
+		name = "GFX_idea_FRA_FREE_army"
+		texturefile = "gfx/interface/idas/fra/r56_idea_FRA_FREE_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EFR_STO_idea"
+		texturefile = "gfx/interface/idas/fra/r56_idea_EFR_STO.dds"
+	}
+	
+
+#---> FRI French Indochina <><> <><> <><>
+	spriteType = {#?
+		name = "GFX_idea_voong_van_dao"
+		texturefile = "gfx/interface/ideas/idea_generic_army_asia_1.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_tuan_ngoc_minh"
+		texturefile = "gfx/interface/ideas/idea_generic_army_asia_2.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_lai_thao"
+		texturefile = "gfx/interface/ideas/idea_generic_army_asia_3.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_voong_huu_trieu"
+		texturefile = "gfx/interface/ideas/idea_generic_army_asia_2.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_hang_dinh_xuan"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_asia_3.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_lai_de"
+		texturefile = "gfx/interface/ideas/idea_generic_air_asia_1.dds"
+	}
+
+
+###------> GER <><> <><> <><> <><> <><>	
+	spriteType = {
+		name = "GFX_idea_fourth_reich"
+		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_4th_reich.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Enigma_Machine0"
+		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_Enigma_Machine0.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_Enigma_Machine1"
+		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_Enigma_Machine1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_Enigma_Machine2"
+		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_Enigma_Machine2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_Enigma_Machine3"
+		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_Enigma_Machine3.dds"
+	}
+
+
+###------> HOL <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_HOL_reliance_on_the_gold_standard"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_reliance_on_the_gold_standard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_motors_production"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_wilhelmina"
+		texturefile = "gfx/interface/ideas/hol/r56_idea_HOL_wilhelmina.dds"
+	}
+
+
+###------> INS <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_INS_economy_idea"
+		texturefile = "gfx/interface/ideas/ins/r56_idea_INS_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_indonesia_flag"
+		texturefile = "gfx/interface/ideas/ins/r56_idea_INS_indonesia_flag.dds"
+	}
+
+
+###------> MEX <><> <><> <><> <><> <><>
+	SpriteType = {
+		name = "GFX_idea_Juan.dds"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Juan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_azcarate.dds"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_azcarate.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato5"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato6"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato7"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sedena"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_SEDENA.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio3"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio4"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio5"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio6"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sexenio7"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_sexenio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_jenkins"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Jenkins.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_chemical"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_chemical.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_miracle"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_miracle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_miracle2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_miracle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_cardenismo"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo3"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo4"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo5"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo6"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_cardenismo7"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Trot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PAN"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN3"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN4"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN5"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN6"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PAN7"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_PRM"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM3"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM4"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM5"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM6"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_PRM7"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_PRM.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DFS"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_DFS.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_payaso"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_payaso.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_railroad.dds"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_railroad.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_curse"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_curse.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_maximato"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Maximato.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_porfirismo"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_porfirato"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato2"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato3"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MEX_porfirato4"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Porfirismo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_newton"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_idea_newton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_UDN_pic"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_UDN_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_inteligencia_artificial_pic"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_inteligencia_artificial_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_okay_investment"
+		texturefile = "gfx/interface/ideas/bra/r56_idea_BRA_generic_okay_investment.dds"
+	}
+	spriteType = {#?
+		name = "GFX_idea_generic_good_investment"
+		texturefile = "gfx/interface/ideas/idea_generic_good_investment.dds"
+	}
+
+
+###------> CAT(alonia) <><> <><> <><> <><> <><>
+	spriteType = { #Auto-Generated
+		name = "GFX_idea_CAT_federica_montseny_mane"
+		texturefile = "gfx/interface/ideas/cat/r56_idea_CAT_federica_montseny_mane.dds"
+	}
+
+
+###------> COL <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_guacamaya"
+		texturefile = "gfx/interface/ideas/col/r56_idea_COL_guacamaya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ararauna"
+		texturefile = "gfx/interface/ideas/col/r56_idea_COL_ararauna.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_titi"
+		texturefile = "gfx/interface/ideas/col/r56_idea_COL_titi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_pdr"
+		texturefile = "gfx/interface/ideas/col/concern_pdr.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_telecom"
+		texturefile = "gfx/interface/ideas/col/concern_telecom.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_art_indumil"
+		texturefile = "gfx/interface/ideas/col/r56_idea_COL_col_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_delfin_rosado"
+		texturefile = "gfx/interface/ideas/col/r56_idea_COL_delfin_rosado.dds"
+	}
+
+
+	spriteType = {#an original focus picture used
+		name = "GFX_CZKE_minority_mobilization_concept"
+		texturefile = "gfx/interface/goals/goal_rhineland.dds"
+	}
+
+
+###------> GRE <><> <><> <><> <><> <><>
+	spriteType = { 
+		name = "GFX_idea_GRE_spartan_spirit"
+		texturefile = "gfx/interface/ideas/gre/r56_idea_spartan_spirit.dds"
+	}
+
+
+###------> HUN <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_mw_tank"
+		texturefile = "gfx/interface/ideas/HUN/r56_idea_HUN_company_manfred_weiss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_haesz"
+		texturefile = "gfx/interface/ideas/HUN/r56_idea_HUN_company_haesz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_raba"
+		texturefile = "gfx/interface/ideas/HUN/r56_idea_HUN_company_raba.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_digep"
+		texturefile = "gfx/interface/ideas/HUN/r56_idea_HUN_company_digep.dds"
+	}
+
+
+###------> ITA <><> <><> <><> <><> <><>
+
+
+###------> ICE <><> <><> <><> <><> <><>
+
+
+###------> KMT <><> <><> <><> <><> <><>
+
+
+###------> INS <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_INS_economy_idea"
+		texturefile = "gfx/interface/ideas/ins/r56_idea_INS_economy.dds"
+	}
+	spriteType = {#generic
+		name = "GFX_idea_indonesia_flag"
+		texturefile = "gfx/interface/ideas/ins/r56_idea_INS_indonesia_flag.dds"
+	}
+
+
+###------> MEX <><> <><> <><> <><> <><>
+	SpriteType = {
+		name = "GFX_idea_MEX_agrarian_army"
+		texturefile = "gfx/interface/ideas/mex/r56_idea_MEX_Union.dds"
+	}
+
+
+###------> NOR <><> <><> <><> <><> <><>
+	spriteType = {#maybe missing?
+		name = "GFX_idea_monarkin_norge"
+		texturefile = "gfx/interface/ideas/idea_monarkin_norge.dds"
+	}
+
+
+###------> POL <><> <><> <><> <><> <><>
+#-> Danzig ideas <><>
+	spriteType = {
+		name = "GFX_idea_danzigerwerft"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_DAN_danzigerwerft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ernst_stieberitz"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_DAN_ernst_stieberitz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Danzig_ist_Deutsch"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_DAN_Danzig_ist_Deutsch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_danzig_rebels"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_DAN_danzig_rebels.dds"
+	}
+
+#-> Ideas, national spirits <><>
+	spriteType = {
+		name = "GFX_idea_DOU_Directorate_Drift"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_DOU_Directorate_Drift.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service0"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Intelligence_Service0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service1"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Intelligence_Service1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service2"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Intelligence_Service2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Intelligence_Service3"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Intelligence_Service3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Sanacja_Government"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Sanacja_Government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_The_Great_Depression"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Rural_Unemployment"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_Rural_Unemployment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Synthetic_Rubber"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_Synthetic_Rubber.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Plan_W"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Plan_W.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Colonels_Regime"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Colonels_Regime.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_divided_nation"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_divided_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_Workers_Brigades"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Workers_Brigades.dds"
+	}
+
+#-> Ruler <><>
+	spriteType = {
+		name = "GFX_idea_Cult_Marshal_Portrait"
+		texturefile = "gfx/interface/ideas/pol/r56_idea_POL_Cult_Marshal_Portrait.dds"
+	}
+
+
+###------> SIA <><> <><> <><> <><> <><>
+	spriteType = {#generic?
+		name = "GFX_idea_rice_reforms"
+		texturefile = "gfx/interface/ideas/sia/r56_idea_SIA_rice_reforms.dds"
+	}
+
+
+###------> SLO <><> <><> <><> <><> <><>
+	spriteType = {
+		name = "GFX_idea_apollo"
+		texturefile = "gfx/interface/ideas/slo/companies/r56_idea_SLO_company_apollo_refinery.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zvolen_railway_factory"
+		texturefile = "gfx/interface/ideas/slo/companies/r56_idea_SLO_company_zvolen_railway_factory.dds"
+	}
+
+
+###------> SOV <><> <><> <><> <><> <><>
+spriteType = {
+		name = "GFX_idea_worker_cluture"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_worker_cluture.dds"
+	}
+spriteType = {
+		name = "GFX_idea_disease_1"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_disease_1.dds"
+	}
+spriteType = {
+		name = "GFX_idea_disease_2"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_disease_2.dds"
+	}
+spriteType = {
+		name = "GFX_idea_disease_3"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_disease_3.dds"
+	}
+spriteType = {
+		name = "GFX_idea_poor_literacy"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_poor_literacy.dds"
+	}
+spriteType = {
+		name = "GFX_idea_poor_railway_time"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_railway_slowdown_time.dds"
+	}
+spriteType = {
+		name = "GFX_idea_poor_railway_no_time"
+		texturefile = "gfx/interface/ideas/SOV/r56_idea_SOV_railway_slowdown_notime.dds"
+	}
+
+
+#------> RUT Carpathian Ruthenia <><> <><>
+	spriteType = {
+		name = "GFX_idea_ukraine"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_ukrainan_flag.dds"
+	}
+
+
+###------> SWE <><> <><> <><> <><> <><>
+#---> Generics <><> <><>
+	spriteType = {
+		name = "GFX_idea_neutrality_idea_sweden"
+		texturefile = "gfx/interface/ideas/neutrality_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_strb_idea"
+		texturefile = "gfx/interface/ideas/liberty_ships_focus.dds"
+	}
+
+#---> Unique swedish icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_en_svensk_tiger"
+		texturefile = "gfx/interface/ideas/swe/r56_idea_SWE_svensk_tiger.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scandinavianism"
+		texturefile = "gfx/interface/ideas/swe/r56_idea_SWE_scandinavianism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOR_haakon"
+		texturefile = "gfx/interface/ideas/swe/r56_idea_SWE_haakon_VII.dds"
+	}
+
+
+###------> SWI <><> <><> <><> <><> <><>
+#---> Unique generics <><> <><>
+	spriteType = {
+		name = "GFX_idea_swiss_banking"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swiss_temp_banking"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_bad_railnetwork"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_generic_bad_railnetwork.dds"
+	}
+
+#---> Unique swiss icons <><> <><>
+	spriteType = {
+		name = "GFX_idea_swiss_conscription"
+		texturefile = "gfx/interface/ideas/swi/r56_idea_SWI_swiss_conscription.dds"
+	}
+
+
+###------> TIB <><> <><> <><> <><> <><>
+#---> Generics <><> <><> 
+	spriteType = {
+		name = "GFX_idea_TIB_recovery_teams"
+		texturefile = "gfx/interface/ideas/idea_tot_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_centralize_power_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_soviet_military_mission_idea"
+		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_chinese_commissars_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_dalai_lama"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_child_dalai_lama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_dalai_lama_phawpon"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_child_dalai_lama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_child_dalai_lama"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_child_dalai_lama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_dalai_lama"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_dalai_lama.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_TIB_mountainous_people"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_mountain.dds"
+	}
+
+#---> Monostories <><> <><> 
+	spriteType = {
+		name = "GFX_idea_TIB_monasteries_furious"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_furious_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_monasteries_unhappy"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_unhappy_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_monasteries_neutral"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_neutral_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_monasteries_happy"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_happy_monasteries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TIB_monasteries_elated"
+		texturefile = "gfx/interface/ideas/tib/r56_idea_TIB_elated_monasteries.dds"
+	}
+}
+#####---------------------------------------------------------------------> End
