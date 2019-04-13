@@ -199,7 +199,7 @@ ideas = {
 				army_defence_factor = -0.25
 				max_planning = -0.5
 				planning_speed = -0.75
-				research_speed_factor = 0.05
+				research_speed_factor = 0.95
 				political_power_factor = -1
 				ai_get_ally_desire_factor = -10000
 				stability_weekly = -0.005
@@ -394,8 +394,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.05
-				research_speed_factor = 0.10
+				conscription = 0.025
 			}
 		}
 
@@ -411,7 +410,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_torpedo_range_factor = 1 # double the range
+				naval_torpedo_screen_penetration_factor = 0.2
 			}
 		}
 		
@@ -504,7 +503,7 @@ ideas = {
 			picture = jap_zaibatsu
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.05
@@ -550,14 +549,14 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
-				production_speed_dockyard_factor = 0.10
-				industrial_capacity_dockyard = 0.2
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -576,13 +575,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.5
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -605,7 +604,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -642,7 +641,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.05
+				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}
@@ -667,7 +666,7 @@ ideas = {
 				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.35
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.10
+				research_speed_factor = -0.10
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -714,7 +713,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.05
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -733,7 +732,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.5
-				research_speed_factor = 0.10
 			}
 		}
 
@@ -828,7 +826,6 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
-				research_speed_factor = 0.10
 			}
 		}
 
@@ -973,6 +970,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = -0.2
 				production_speed_dockyard_factor = 0.2
+				planning_speed = -0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = 0.1
 			}
@@ -990,15 +988,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = jap_supremacy_of_technology
-
-			modifier = {
-				political_power_gain = 0.15
-			}
 			
 			research_bonus = {
-				industry = 0.1
-				infantry_weapons = 0.1
-				armor = 0.1
+				infantry_weapons = 0.05
+				armor = 0.05
 			}
 		}
 
@@ -1016,8 +1009,6 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				research_speed_factor = 0.05
-				political_power_gain = 0.15
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
@@ -1038,7 +1029,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.1
+				special_forces_cap = 0.02
 			}
 		}
 
@@ -1352,7 +1343,43 @@ ideas = {
 			picture = jap_ichi_go
 			
 			targeted_modifier = {
-				tag = event_target:WTT_current_china_leader
+				tag = CHI
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SIK
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.05
 			}
@@ -1454,7 +1481,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.07
 			}
 		}
 
@@ -1525,6 +1552,10 @@ ideas = {
 					}
 					has_completed_focus = JAP_the_unthinkable_option
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			allowed = {
 				original_tag = "JAP"
@@ -1554,6 +1585,10 @@ ideas = {
 					}
 					has_completed_focus = JAP_strengthen_civilian_government
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			allowed = {
@@ -1582,7 +1617,12 @@ ideas = {
 				original_tag = "JAP"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { fascist_demagogue }
 
@@ -1617,6 +1657,10 @@ ideas = {
 			}
 			
 			traits = { prince_of_terror }
+
+			ai_will_do = {
+				factor = 0.3
+			}
 		}
 
 		JAP_chiune_sugihara = {
@@ -1641,7 +1685,7 @@ ideas = {
 			traits = { war_industrialist }
 
 			ai_will_do = {
-				factor = 2
+				factor = 3
 			}
 		}
 	}
@@ -1673,7 +1717,7 @@ ideas = {
 			}
 			
 			available = {
-				always = yes
+				has_completed_focus = JAP_army_expansion
 			}
 			
 			traits = { army_chief_drill_3 }
@@ -1715,7 +1759,7 @@ ideas = {
 			traits = { navy_chief_naval_aviation_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -1731,7 +1775,7 @@ ideas = {
 			traits = { navy_chief_commerce_raiding_1 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -1747,7 +1791,7 @@ ideas = {
 			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 	}
@@ -2050,7 +2094,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer_2 }
@@ -2071,7 +2115,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { fuel_efficient_aircraft_manufacturer }
@@ -2084,7 +2128,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -2098,11 +2142,25 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { naval_aircraft_manufacturer }
 		}
+		JAP_kawanishi = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { flying_ship_manufacturer }
+		}		
 	}
 	
 	
@@ -2115,7 +2173,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 			
 			traits = { industrial_concern }
@@ -2129,7 +2187,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			
 			traits = { electronics_concern }
@@ -2144,8 +2202,8 @@ ideas = {
 			}
 						
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.1
+				industry = 0.10
+				synth_resources = 0.15
 			}
 			
 			traits = { refinery_concern }
@@ -2163,7 +2221,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -2176,7 +2234,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.15
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2195,7 +2253,7 @@ ideas = {
 			}
 				
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { tank_manufacturer }
@@ -2213,7 +2271,7 @@ ideas = {
 			cost = 250
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }
@@ -2226,7 +2284,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -2241,7 +2299,7 @@ ideas = {
 			cost = 250
 						
 			research_bonus = {
-				cat_base_strike = 0.10
+				cat_base_strike = 0.15
 			}
 			
 			traits = { naval_aviation_pioneer }
@@ -2254,7 +2312,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -2269,7 +2327,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_operational_integrity = 0.10
+				cat_operational_integrity = 0.15
 			}
 			
 			traits = { assault_avaition }
@@ -2282,7 +2340,7 @@ ideas = {
 			}	
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -2298,8 +2356,7 @@ ideas = {
 
 			
 			research_bonus = {
-				nuclear = 0.10
-				electronics = 0.10
+				nuclear = 0.15
 			}
 			
 			traits = { nuclear_scientist }
@@ -2315,7 +2372,7 @@ ideas = {
 
 			
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 			
 			traits = { rocket_scientist }
