@@ -59,12 +59,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier.dds"
 	}
 	spriteType = {
-		name = "GFX_SD_tv_carrier44"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier44.dds"
+		name = "GFX_SD_tv_carrier_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_heavy.dds"
 	}
 	spriteType = {
-		name = "GFX_SD_tv_carrierm"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrierm.dds"
+		name = "GFX_SD_tv_carrier_semi"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/topview_carrier_semi.dds"
 	}
 	spriteType = {
 		name = "GFX_SD_tv_heavy"
