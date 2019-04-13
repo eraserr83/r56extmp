@@ -264,7 +264,7 @@ technologies = {
 		equipment_conversion_speed = 0.40
 
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1939
 		
 		folder = {
 			name = industry_folder
@@ -533,8 +533,8 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		equipment_conversion_speed = 0.20			   
-		industry_air_damage_factor = -0.1
+		equipment_conversion_speed = 0.20
+		industry_air_damage_factor = -0.12
 		global_building_slots_factor = 0.2
 		
 		path = {
@@ -608,7 +608,7 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.12
 		global_building_slots_factor = 0.2
 		
 		path = {
@@ -649,7 +649,7 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.12
 		global_building_slots_factor = 0.2
 		
 		path = {
@@ -690,7 +690,7 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.12
 		global_building_slots_factor = 0.2
 		
 		path = {
@@ -733,7 +733,7 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.1
+		industry_air_damage_factor = -0.12
 		global_building_slots_factor = 0.2
 		
 		path = {
@@ -1184,14 +1184,6 @@ technologies = {
 		
 		fuel_gain_factor_from_states = 0.5
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
-
 		start_year = 1937
 		
 		path = {
@@ -1252,14 +1244,6 @@ technologies = {
 		
 		fuel_gain_factor_from_states = 0.5
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
-
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
@@ -1319,14 +1303,6 @@ technologies = {
 
 		fuel_gain_factor_from_states = 0.5
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
-
 		path = {
 			leads_to_tech = modern_oil_processing
 			research_cost_coeff = 1
@@ -1380,14 +1356,6 @@ technologies = {
 	modern_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
 		
 		research_cost = 1.5
 		start_year = 1948
@@ -1478,6 +1446,7 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
+			excavation_tech
 		}
 		
 		folder = {
@@ -1565,6 +1534,7 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
+			excavation_tech
 		}
 		
 		folder = {
@@ -1664,6 +1634,7 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
+			excavation_tech
 		}
 		
 		folder = {
@@ -1751,6 +1722,7 @@ technologies = {
 		categories = {
 			industry
 			construction_tech
+			excavation_tech
 		}
 		
 		folder = {
