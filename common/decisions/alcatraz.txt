@@ -1,0 +1,89 @@
+USA_navy_extension = {
+	USA_navy_extension_destroyers = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		visible = {
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 60
+		complete_effect = {
+			add_ideas = USA_navy_extension_destroyers_i
+		}
+	}
+	
+	USA_navy_extension_submarines = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		visible = {
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 60
+		complete_effect = {
+			add_ideas = USA_navy_extension_submarines_i
+		}
+	}
+	USA_navy_extension_cruisers = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+		}
+		visible = {
+			has_completed_focus = USA_maritime_commission
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 120
+		complete_effect = {
+			add_ideas = USA_navy_extension_cruisers_i
+			
+		}
+	}
+	USA_navy_extension_battleships = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+		}
+		visible = {
+			has_completed_focus = USA_maritime_commission
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 200
+		complete_effect = {
+			add_ideas = USA_navy_extension_battleships_i
+		}
+	}
+	USA_navy_extension_carriers = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+		}
+		visible = {
+			has_completed_focus = USA_maritime_commission
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		cost = 200
+		complete_effect = {
+			add_ideas = USA_navy_extension_carriers_i
+		}
+	}
+}	

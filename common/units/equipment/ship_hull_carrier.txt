@@ -202,7 +202,7 @@ equipments = {
 		}
 		naval_range = 4000
 		reliability = 0.75
-		max_strength = 325
+		max_strength = 400
 		
 
 
@@ -217,7 +217,7 @@ equipments = {
 	ship_hull_carrier_3 = {
 		year = 1944
 		visual_level = 1
-		archetype = ship_hull_carrier_heavy
+		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_2
 		priority = 1000
 		module_slots = {
@@ -277,7 +277,7 @@ equipments = {
 		
 		naval_range = 5000
 		reliability = 0.8
-		max_strength = 350
+		max_strength = 500
 		
 
 
@@ -360,7 +360,7 @@ equipments = {
 		
 		naval_range = 5000
 		reliability = 0.8
-		max_strength = 350
+		max_strength = 600
 		
 
 
@@ -413,7 +413,7 @@ equipments = {
 		}
 		naval_range = 4000
 		
-		max_strength = 325
+		max_strength = 350
 		naval_speed = 23
 
 
@@ -469,7 +469,7 @@ equipments = {
 		}
 		naval_range = 4000
 		
-		max_strength = 125
+		max_strength = 200
 		
 
 		naval_speed = 20
