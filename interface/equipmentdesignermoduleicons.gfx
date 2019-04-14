@@ -92,6 +92,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_EMSI_front_3_custom_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/front.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_EMSI_mid_1_custom_slot"
 		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/mid.dds"
 	}
@@ -113,6 +118,11 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_EMSI_rear_2_custom_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/rear.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_rear_3_custom_slot"
 		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/rear.dds"
 	}
 	

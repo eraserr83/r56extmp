@@ -4,7 +4,7 @@ USA_navy_extension = {
 		allowed = {
 			original_tag = USA
 		}
-		
+
 		available = {
 			has_completed_focus = USA_two_ocean_navy_act
 		}
@@ -20,10 +20,10 @@ USA_navy_extension = {
 			add_ideas = USA_navy_extension_destroyers_i
 		}
 	}
-	
+
 	USA_navy_extension_submarines = {
 		icon = generic_operation
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -44,7 +44,7 @@ USA_navy_extension = {
 	}
 	USA_navy_extension_cruisers = {
 		icon = generic_operation
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -61,12 +61,12 @@ USA_navy_extension = {
 		cost = 60
 		complete_effect = {
 			add_ideas = USA_navy_extension_cruisers_i
-			
+
 		}
 	}
 	USA_navy_extension_battleships = {
 		icon = generic_operation
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -87,7 +87,7 @@ USA_navy_extension = {
 	}
 	USA_navy_extension_carriers = {
 		icon = generic_operation
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -112,7 +112,7 @@ USA_tecnology = {
 
 	USA_tech_1 = {
 		icon = generic_research_bonus
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -127,7 +127,7 @@ USA_tecnology = {
 	}
 	USA_tech_2 = {
 		icon = generic_research_bonus
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -142,7 +142,7 @@ USA_tecnology = {
 	}
 	USA_tech_3 = {
 		icon = generic_research_bonus
-		
+
 		allowed = {
 			original_tag = USA
 		}
@@ -154,6 +154,6 @@ USA_tecnology = {
 		complete_effect = {
 			add_ideas = scientist_haven_idea4
 		}
-	}	
+	}
 
-}	
+}

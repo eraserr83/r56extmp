@@ -174,6 +174,94 @@ hidden_ideas = {
 				industrial_capacity_dockyard = 0.15
 			}
 		}
+		
+		USA_navy_extension_destroyers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.06 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_submarines_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					build_cost_ic = -0.06 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_cruisers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.08 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_battleships_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_carriers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+		}
 	}
 	
 	country = {
