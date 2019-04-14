@@ -5,6 +5,8 @@ NDefines.NGraphics.COUNTRY_FLAG_STRIPE_TEX_MAX_HEIGHT = 8196
 NDefines.NGraphics.COUNTRY_FLAG_LARGE_STRIPE_MAX_WIDTH = 41
 NDefines.NGraphics.COUNTRY_FLAG_LARGE_STRIPE_MAX_HEIGHT = 24000
 
+NDefines.NBuildings.MAX_SHARED_SLOTS = 30
+
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000			--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000			--Max navy experience a country can store
