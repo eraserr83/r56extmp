@@ -17,7 +17,7 @@ hidden_ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 		}
 		scientist_haven_idea3 = {
@@ -37,7 +37,7 @@ hidden_ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 		}
 		
@@ -58,7 +58,7 @@ hidden_ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 				stability_weekly = 0.005
 			}
 		}
@@ -212,7 +212,6 @@ hidden_ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-			global_building_slots_factor = 0.1
 			production_factory_max_efficiency_factor = 0.15
 			production_factory_efficiency_gain_factor = 0.15
 			}

@@ -120,7 +120,7 @@ USA_tecnology = {
 			factor = 1
 		}
 		fire_only_once = yes
-		cost = 35
+		cost = 150
 		complete_effect = {
 			add_ideas = scientist_haven_idea2
 		}
@@ -135,7 +135,7 @@ USA_tecnology = {
 			factor = 1
 		}
 		fire_only_once = yes
-		cost = 75
+		cost = 300
 		complete_effect = {
 			add_ideas = scientist_haven_idea3
 		}
@@ -150,7 +150,7 @@ USA_tecnology = {
 			factor = 1
 		}
 		fire_only_once = yes
-		cost = 150
+		cost = 450
 		complete_effect = {
 			add_ideas = scientist_haven_idea4
 		}
