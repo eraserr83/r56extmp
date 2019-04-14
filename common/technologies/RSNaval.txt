@@ -1,0 +1,117 @@
+technologies = {
+
+	rocket_silo_tech_1 = {
+
+		
+		enable_equipment_modules = { 
+			ship_rocket_silo_1
+		}
+		
+		path = {
+			leads_to_tech = rocket_silo_tech_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -3 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	rocket_silo_tech_2 = {
+
+		
+		enable_equipment_modules = { 
+			ship_rocket_silo_1
+		}
+		
+		path = {
+			leads_to_tech = rocket_silo_tech_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1946
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	
+	rocket_silo_tech_3 = {
+
+		
+		enable_equipment_modules = { 
+			ship_rocket_silo_1
+		}
+		
+		
+		
+		research_cost = 1
+
+		start_year = 1946
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -3 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+}

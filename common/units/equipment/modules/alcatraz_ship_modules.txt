@@ -1,0 +1,97 @@
+equipment_modules = {
+
+
+#############x Rocket SIlos #####################
+
+
+ship_rocket_silo_1 = {
+		category = ship_rocket_silo
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 35
+			hg_attack = 50
+			build_cost_ic = 150
+		}
+		
+		add_average_stats = {
+			hg_armor_piercing = 33
+			lg_armor_piercing = 23
+		}
+		build_cost_resources = {
+			steel = 3
+			aluminium = 2
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_battery
+			convert_cost_ic = 60
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+
+
+
+ship_rocket_silo_2 = {
+		category = ship_rocket_silo
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 40
+			hg_attack = 55
+			build_cost_ic = 250
+		}
+		
+		add_average_stats = {
+			hg_armor_piercing = 35
+			lg_armor_piercing = 25
+		}
+		build_cost_resources = {
+			steel = 3
+			aluminium = 2
+		}
+		
+		can_convert_from = {
+			module = ship_rocket_silo_1
+			convert_cost_ic = 100
+		}
+		
+		critical_parts = { damaged_light_guns }
+	}
+
+
+
+ship_rocket_silo_1 = {
+		category = ship_rocket_silo
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 45
+			hg_attack = 60
+			build_cost_ic = 400
+		}
+		
+		add_average_stats = {
+			hg_armor_piercing = 38
+			lg_armor_piercing = 30
+		}
+		build_cost_resources = {
+			steel = 3
+			aluminium = 2
+		}
+		
+		can_convert_from = {
+			module_category = ship_rocket_silo_1
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = ship_rocket_silo_2
+			convert_cost_ic = 150
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+
+}

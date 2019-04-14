@@ -602,6 +602,25 @@ spriteTypes = {
 		name = "GFX_SM_heavy_hull_fixed_triple_heavy_battery@highlight"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/heavy_hull/heavy_hull_fixed_triple_heavy_battery@highlight.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_SM_light_hull_rocket_silo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/light_hull/light_hull_fixed_rocket_silo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_light_hull_rocket_silo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/light_hull/light_hull_fixed_rocket_silo@highlight.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_light_hull_real_rocket_silo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/light_hull/light_hull_real_rocket_silo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_light_hull_real_rocket_silo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/light_hull/light_hull_real_rocket_silo@highlight.dds"
+	}
+	
 
 	spriteType = {
 		name = "GFX_SM_heavy_hull_front1_triple_heavy_battery"

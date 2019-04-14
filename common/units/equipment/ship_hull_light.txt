@@ -262,6 +262,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					ship_rocket_silo
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -274,6 +275,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					ship_rocket_silo
 				}
 			}
 		}
@@ -323,6 +325,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					ship_rocket_silo
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -335,6 +338,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					ship_rocket_silo
 				}
 			}
 			rear_2_custom_slot = {
@@ -346,6 +350,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					ship_rocket_silo
 				}
 			}
 		}
