@@ -12,3 +12,13 @@
  USA_navy_extension_cruisers_i:0 "The Tech of Cruisers"
  USA_navy_extension_battleships_i:0 "The Tech of Battleships"
  USA_navy_extension_carriers_i:0 "The Tech of Carriers"
+ 
+ intel_wartime_industry:0 "Intel Wartime Naval Industry"
+ 
+ USA_tecnology:0 "Technological Advancement"
+ USA_tech_1:0 "Technological Advancement Pharse 1"
+ USA_tech_2:0 "Technological Advancement Pharse 2"
+ USA_tech_3:0 "Technological Advancement Pharse 3"
+ scientist_haven_idea2:0 "Technological Advancement Pharse 1"
+ scientist_haven_idea3:0 "Technological Advancement Pharse 2"
+ scientist_haven_idea4:0 "Technological Advancement Pharse 3"
