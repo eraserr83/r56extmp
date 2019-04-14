@@ -81,8 +81,8 @@ ideas = {
 				join_faction_tension = -0.25
 				send_volunteers_tension = -0.35
 				guarantee_tension = -0.2
-				mobilization_laws_cost_factor = 1
-				economy_cost_factor = 1
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
 			}
 		}
 		USA_neutrality_act = {
@@ -280,6 +280,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				min_export = -0.1
 				max_command_power = 50	
 			}
 		}
@@ -312,6 +313,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				political_power_factor = 0.25
 				planning_speed = 0.1	
 			}
 		}
