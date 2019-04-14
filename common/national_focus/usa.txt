@@ -57,8 +57,9 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = {  focus = USA_black_chamber focus = USA_arsenal_of_democracy }
 		available = {
-			threat > 0.60
-			}
+			congress_high_support_trigger = yes
+			democratic > 0.95
+		}
 		
 		relative_position_id = USA_black_chamber
 		x = -1
@@ -393,6 +394,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = USA_war_production_board_focus_2
+			
+			modifier = {
+			local_resources_factor = 0.10
+			}
 			
 		}
 	}
@@ -422,7 +428,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			add_idea = USA_war_production_board_focus_2
+			add_idea = USA_war_production_board_focus_3
 			add_resource = {
 				type = aluminium
 				amount = 38
@@ -1747,6 +1753,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			
 		}
 	}
 
@@ -5633,7 +5640,7 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				congress_high_support_trigger = yes
+				congress_medium_support_trigger = yes
 			}
 			else = {
 				congress_low_support_trigger = yes
@@ -5651,6 +5658,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
+			unlock_decision_category_tooltip = USA_navy_extension
 			378 = { 
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -5670,6 +5678,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_category_tooltip = USA_navy_extension
 			if = {
 				limit = {
 					 has_war_support < 0.4 
@@ -5714,6 +5723,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			
 		}
 	}
 	focus = {
@@ -5743,6 +5754,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_maritime_commission
+			add_ideas = USA_navy_extension_i
 		}
 	}
 	
