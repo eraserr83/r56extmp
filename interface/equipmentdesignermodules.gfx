@@ -1092,39 +1092,39 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_heavy_anti_air"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_heavy_anti_air.dds"
+		name = "GFX_SM_carrier_semi_hull_heavy_anti_air"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_heavy_anti_air.dds"
 	}
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_heavy_anti_air@highlight"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_heavy_anti_air@highlight.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_SM_carrierm_hull_heavy_anti_air2"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_heavy_anti_air2.dds"
-	}
-	spriteType = {
-		name = "GFX_SM_carrierm_hull_heavy_anti_air2@highlight"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_heavy_anti_air2@highlight.dds"
+		name = "GFX_SM_carrier_semi_hull_heavy_anti_air@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_heavy_anti_air@highlight.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_light_anti_air"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_light_anti_air.dds"
+		name = "GFX_SM_carrier_semi_hull_heavy_anti_air2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_heavy_anti_air2.dds"
 	}
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_light_anti_air@highlight"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_light_anti_air@highlight.dds"
+		name = "GFX_SM_carrier_semi_hull_heavy_anti_air2@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_heavy_anti_air2@highlight.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_light_anti_air2"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_light_anti_air2.dds"
+		name = "GFX_SM_carrier_semi_hull_light_anti_air"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_light_anti_air.dds"
 	}
 	spriteType = {
-		name = "GFX_SM_carrierm_hull_light_anti_air2@highlight"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrierm_hull_light_anti_air2@highlight.dds"
+		name = "GFX_SM_carrier_semi_hull_light_anti_air@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_light_anti_air@highlight.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_carrier_semi_hull_light_anti_air2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_light_anti_air2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_carrier_semi_hull_light_anti_air2@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/carrierm_hull/carrier_semi_hull_light_anti_air2@highlight.dds"
 	}
 
 	spriteType = {

@@ -1129,6 +1129,9 @@ technologies = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
 		}
+		sub_technologies = {
+			ship_hull_super_heavy_2
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -1141,6 +1144,35 @@ technologies = {
 			modifier = {
 				is_major = no
 				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	ship_hull_super_heavy_2 = {
+
+		enable_equipments = {
+			ship_hull_super_heavy_2
+		}
+
+		enable_equipment_modules = { 
+			ship_armor_shbb
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
 			}
 		}
 		
