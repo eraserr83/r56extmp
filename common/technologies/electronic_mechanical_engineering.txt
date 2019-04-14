@@ -232,6 +232,8 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_3
 		}
+
+		static_anti_air_hit_chance_factor = 0.1
 		
 		path = {
 			leads_to_tech = improved_centimetric_radar 
@@ -273,7 +275,9 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 5
-		}			 
+		}
+		
+		static_anti_air_hit_chance_factor = 0.1				 
 		
 		path = {
 			leads_to_tech = advanced_centimetric_radar 
@@ -327,6 +331,8 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_4
 		}
+		
+		static_anti_air_hit_chance_factor = 0.1
 		research_cost = 2.5
 		start_year = 1943
 		
@@ -388,7 +394,7 @@ technologies = {
 	computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.07
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -447,7 +453,7 @@ technologies = {
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.09
+		research_speed_factor = 0.08
 		
 		path = {
 			leads_to_tech = advanced_computing_machine 
@@ -1118,7 +1124,7 @@ technologies = {
 		}
 		
 		start_year = 1939
-		research_cost = 5
+		research_cost = 7
 		
 		folder = {
 			name = electronics_folder
@@ -1196,7 +1202,7 @@ technologies = {
 	nukes = {
 	
 		start_year = 1945
-		research_cost = 6
+		research_cost = 7
 		
 		folder = {
 			name = electronics_folder
@@ -1224,7 +1230,7 @@ technologies = {
 	nuke_naval = {
 	
 		start_year = 1948
-		research_cost = 5
+		research_cost = 7
 		
 		research_speed_factor = 0.05
 		
@@ -1250,7 +1256,7 @@ technologies = {
 	nukes_2 = {
 	
 		start_year = 1951
-		research_cost = 5
+		research_cost = 7
 		
 		research_speed_factor = 0.08
 		
@@ -1276,7 +1282,7 @@ technologies = {
 	nukes_3 = {
 	
 		start_year = 1955
-		research_cost = 5
+		research_cost = 7
 		
 		research_speed_factor = 0.1
 		
@@ -1305,12 +1311,14 @@ technologies = {
 
 	future_radar = {
 		
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.1
 
 		path = {
 			leads_to_tech = future_radar_2
 			research_cost_coeff = 1
 		}
+
+		static_anti_air_hit_chance_factor = 0.1
 		research_cost = 2.5
 		start_year = 1945
 		
@@ -1331,12 +1339,14 @@ technologies = {
 	
 	future_radar_2 = {
 		
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.1
 
 		path = {
 			leads_to_tech = future_radar_3
 			research_cost_coeff = 1
 		}
+
+		static_anti_air_hit_chance_factor = 0.1
 		
 		research_cost = 2.5
 		start_year = 1949
@@ -1358,7 +1368,7 @@ technologies = {
 	
 	future_radar_3 = {
 		
-		air_interception_detect_factor = 0.05
+		air_interception_detect_factor = 0.1
 		
 		research_cost = 2.5
 		start_year = 1953
@@ -1367,6 +1377,8 @@ technologies = {
 			name = electronics_folder
 			position = { x = -2 y = 28 }
 		}
+
+		static_anti_air_hit_chance_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1383,7 +1395,7 @@ technologies = {
 	future_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = future_encryption 
@@ -1423,7 +1435,7 @@ technologies = {
 	future_computing_machine_2 = {
 
 		# small boost to research speed
-		research_speed_factor = 0.09
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = future_encryption_2
@@ -1507,7 +1519,7 @@ technologies = {
 	future_computing_machine_4 = {
 
 		# small boost to research speed
-		research_speed_factor = 0.1
+		research_speed_factor = 0.05
 		
 		research_cost = 5
 		start_year = 1955
