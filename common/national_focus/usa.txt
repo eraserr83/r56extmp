@@ -431,17 +431,17 @@ focus_tree = {
 			add_idea = USA_war_production_board_focus_3
 			add_resource = {
 				type = aluminium
-				amount = 38
+				amount = 28
 				state = 374
 			}
 			add_resource = {
 				type = aluminium
-				amount = 22
+				amount = 18
 				state = 375
 			}
 			add_resource = {
 				type = aluminium
-				amount = 22
+				amount = 18
 				state = 376
 			}
 			add_resource = {
@@ -451,7 +451,7 @@ focus_tree = {
 			}
 			add_resource = {
 				type = aluminium
-				amount = 24
+				amount = 20
 				state = 385
 			}
 			add_resource = {
@@ -461,17 +461,17 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 36
+				amount = 24
 				state = 379
 			}
 			add_resource = {
 				type = steel
-				amount = 60
+				amount = 42
 				state = 391
 			}
 			add_resource = {
 				type = steel
-				amount = 32
+				amount = 24
 				state = 385
 			}
 			add_resource = {
@@ -2067,9 +2067,6 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
-		available = {
-			has_government = democratic
-		}
 		completion_reward = {
 			add_research_slot = 1
 		}

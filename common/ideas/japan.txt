@@ -532,6 +532,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
+				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -556,7 +557,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
-				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.1
 				consumer_goods_factor = 0.01
 			}
 		}
@@ -576,12 +577,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.1
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.01
 			}
 		}
@@ -605,6 +607,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -667,7 +670,7 @@ ideas = {
 				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.35
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -828,7 +831,7 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
-				research_speed_factor = 0.10
+				research_speed_factor = 0.05
 			}
 		}
 

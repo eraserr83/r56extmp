@@ -127,7 +127,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_cruiser = {
-					build_cost_ic = -0.12 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -142,7 +142,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_heavy = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -157,7 +157,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_carrier = {
-					build_cost_ic = -0.15 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -171,7 +171,7 @@ hidden_ideas = {
 			factor = 1
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 		
@@ -185,7 +185,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_light = {
-					build_cost_ic = -0.06 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -200,7 +200,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_submarine = {
-					build_cost_ic = -0.06 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -215,7 +215,7 @@ hidden_ideas = {
 			}
 			equipment_bonus = {
 				ship_hull_cruiser = {
-					build_cost_ic = -0.08 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -259,7 +259,7 @@ hidden_ideas = {
 			factor = 1
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 	}

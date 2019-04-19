@@ -248,7 +248,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription = 0.04	
 			}
 		}
 		USA_war_department = {	
@@ -346,7 +346,7 @@ ideas = {
 			removal_cost = -1
 			
 			research_bonus = {
-				air_doctrine = 0.1
+				air_doctrine = 0.15
 			}
 
 			modifier = {

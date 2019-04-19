@@ -320,52 +320,52 @@ focus_tree = {
 			
 			add_resource = {
 				type = tungsten
-				amount = 16
+				amount = 12
 				state = 60
 			}
 			add_resource = {
 				type = chromium
-				amount = 16
+				amount = 12
 				state = 60
 			}
 			add_resource = {
 				type = tungsten
-				amount = 16
+				amount = 12
 				state = 54
 			}
 			add_resource = {
 				type = chromium
-				amount = 16
+				amount = 12
 				state = 54
 			}
 			add_resource = {
 				type = tungsten
-				amount = 24
+				amount = 16
 				state = 55
 			}
 			add_resource = {
 				type = chromium
-				amount = 24
+				amount = 16
 				state = 55
 			}
 			add_resource = {
 				type = oil
-				amount = 24
+				amount = 16
 				state = 66
 			}
 			add_resource = {
 				type = oil
-				amount = 24
+				amount = 16
 				state = 67
 			}
 			add_resource = {
 				type = steel
-				amount = 42
+				amount = 32
 				state = 66
 			}
 			add_resource = {
 				type = steel
-				amount = 42
+				amount = 32
 				state = 67
 			}
 		}
