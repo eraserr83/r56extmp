@@ -121,6 +121,8 @@ guiTypes = {
 			@custom_btn_mod_col_6 = 438
 			@custom_btn_mod_row_icon = 0
 			@custom_btn_mod_row_button = 2
+			@custom_btn_mod_row_2_icon = 48
+			@custom_btn_mod_row_2_button = 50
 
 									
 
@@ -213,6 +215,30 @@ guiTypes = {
 				position = { x=@fixed_btn_mod_col_6 y=@custom_btn_mod_row_button }
 				spriteType = "GFX_locked_icon"
 				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_7"
+				position = { x=@custom_btn_mod_col_0 y=@custom_btn_mod_row_2_icon }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_7"
+				position = { x=@custom_btn_mod_col_0 y=@custom_btn_mod_row_2_button }
+				spriteType = "GFX_locked_icon"
+			}
+			
+			iconType = {
+				name = "icn_custom_module_8"
+				position = { x=@custom_btn_mod_col_6 y=@custom_btn_mod_row_2_icon }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_8"
+				position = { x=@custom_btn_mod_col_6 y=@custom_btn_mod_row_2_button }
+				spriteType = "GFX_locked_icon"
 			}
 
 			iconType = {
