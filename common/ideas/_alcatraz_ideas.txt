@@ -1,582 +1,412 @@
-#ideas = {
-#hidden_ideas = {
-#		scientist_haven_idea2 = {
-#
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				NOT = {
-#					has_government = communism
-#				}
-#			}
-#
-#			picture = generic_research_bonus
-#
-#			removal_cost = -1
-#
-#			modifier = {
-#				research_speed_factor = 0.1
-#			}
-#		}
-#		scientist_haven_idea3 = {
-#
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				NOT = {
-#					has_government = communism
-#				}
-#			}
-#
-#			picture = generic_research_bonus
-#
-#			removal_cost = -1
-#
-#			modifier = {
-#				research_speed_factor = 0.1
-#			}
-#		}
-#
-#		scientist_haven_idea4 = {
-#
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				NOT = {
-#					has_government = communism
-#				}
-#			}
-#
-#			picture = generic_research_bonus
-#
-#			removal_cost = -1
-#
-#			modifier = {
-#				research_speed_factor = 0.1
-#				stability_weekly = 0.005
-#			}
-#		}
-#
-#		HUN_Neumann_Janos = {
-#
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				NOT = {
-#					has_government = communism
-#				}
-#			}
-#
-#			picture = generic_research_bonus
-#
-#			removal_cost = -1
-#			research_bonus = {
-#				electronics = 0.05
-#			}
-#			modifier = {
-#				research_speed_factor = 0.1
-#				stability_weekly_factor = 0.005
-#			}
-#		}
-#
-#		USA_navy_extension_destroyers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_two_ocean_navy_act
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_light = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_submarines_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_two_ocean_navy_act
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_submarine = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_cruisers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_cruiser = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_battleships_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_heavy = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_carriers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_carrier = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			modifier = {
-#				industrial_capacity_dockyard = 0.05
-#			}
-#		}
-#
-#		USA_navy_extension_destroyers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_two_ocean_navy_act
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_light = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_submarines_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_two_ocean_navy_act
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_submarine = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_cruisers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_cruiser = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_battleships_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_heavy = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_carriers_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			equipment_bonus = {
-#				ship_hull_carrier = {
-#					build_cost_ic = -0.1 instant = yes
-#				}
-#			}
-#		}
-#
-#		USA_navy_extension_i = {
-#			icon = generic_operation
-#		available = {
-#			has_completed_focus = USA_maritime_commission
-#			}
-#		ai_will_do = {
-#			factor = 1
-#			}
-#			modifier = {
-#				industrial_capacity_dockyard = 0.05
-#			}
-#		}
-#	}
-#
-#	country = {
-#
-#		USA_war_production_board_focus_2 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#			global_building_slots_factor = 0.1
-#			production_factory_max_efficiency_factor = 0.15
-#			production_factory_efficiency_gain_factor = 0.15
-#			}
-#		}
-#
-#		USA_war_production_board_focus_3 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#			global_building_slots_factor = 0.1
-#			production_factory_max_efficiency_factor = 0.15
-#			production_factory_efficiency_gain_factor = 0.15
-#			}
-#		}
-#
-#
-#		HUN_developed = {
-#		picture = generic_war_preparation
-#			allowed = {
-#				always = yes
-#
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#			research_bonus = {
-#				armor = 0.05
-#			}
-#			modifier = {
-#			army_armor_attack_factor = 0.05
-#			army_artillery_attack_factor = 0.05
-#			army_infantry_attack_factor = 0.05
-#			}
-#		}
-#
-#		HUN_war_production_board_focus_1 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#			global_building_slots_factor = 0.1
-#			production_factory_max_efficiency_factor = 0.1
-#			production_factory_efficiency_gain_factor = 0.1
-#			}
-#		}
-#
-#		HUN_war_production_board_focus_3 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#			global_building_slots_factor = 0.1
-#			production_factory_max_efficiency_factor = 0.15
-#			production_factory_efficiency_gain_factor = 0.15
-#			}
-#		}
-#
-#		HUN_war_production_board_focus_4 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#			global_building_slots_factor = 0.1
-#			production_factory_max_efficiency_factor = 0.2
-#			production_factory_efficiency_gain_factor = 0.2
-#			}
-#		}
-#
-#		HUN_war_production_board_focus_2 = {
-#			allowed = {
-#				always = no
-#			}
-#
-#			allowed_civil_war = {
-#				always = yes
-#			}
-#
-#			removal_cost = -1
-#
-#			picture = generic_goods_red_bonus
-#
-#			modifier = {
-#				global_building_slots_factor = 0.25
-#				conversion_cost_civ_to_mil_factor= -0.25
-#				consumer_goods_factor = -0.025
-#				local_resources_factor = 0.10
-#				min_export = -0.05
-#			}
-#		}
-#	}
-#
-#	political_advisor = {
-#
-#		HUN_gazi_istvan = {
-#
-#			picture = generic_political_advisor_europe_1
-#
-#			allowed = {
-#				original_tag = HUN
-#			}
-#
-#			modifier = {
-#			democratic_drift = 0.03
-#			political_power_factor = 0.15
-#			}
-#			ai_will_do = {
-#				factor = 1
-#			}
-#
-#		}
-#
-#		HUN_kathi_bela = {
-#
-#			picture = generic_political_advisor_europe_3
-#
-#			allowed = {
-#				original_tag = HUN
-#			}
-#			equipment_bonus = {
-#			modern_tank_equipment = {
-#				ap_attack = 0.15 build_cost_ic = -0.15 armor_value = 0.05 maximum_speed = 0.2
-#			}
-#			}
-#
-#			modifier = {
-#			fascism_drift = 0.03
-#			political_power_factor = 0.15
-#			}
-#			ai_will_do = {
-#				factor = 1
-#			}
-#		}
-#	}
-#
-#	theorist = {
-#		HUN_vas_patrik = {
-#
-#			picture = generic_war_preparation
-#
-#			allowed = {
-#				original_tag = HUN
-#			}
-#			modifier{
-#			research_speed_factor = 0.05
-#			political_power_factor = 0.25
-#			}
-#			research_bonus = {
-#				electronics = 0.05
-#			}
-#			equipment_bonus = {
-#			fighter = {
-#				 reliability = 0.05 maximum_speed = 0.05
-#			}
-#		}
-#			ai_will_do = {
-#				factor = 1
-#			}
-#
-#			traits = { nuclear_scientist }
-#		}
-#
-#		neumann_janos = {
-#			picture = generic_political_advisor_europe_3
-#			allowed = {
-#				original_tag = USA
-#			}
-#
-#			modifier = {
-#
-#			research_speed_factor = 0.05
-#			stability_weekly_factor = 0.01
-#							}
-#			research_bonus = {
-#				nuclear = 0.10
-#				electronics = 0.10
-#							}
-#
-#			cost = 250
-#			traits = { nuclear_scientist }
-#			}
-#	}
-#
-#	naval_manufacturer = (
-#
-#		intel_wartime_industry = {
-#
-#
-#			allowed = {
-#				original_tag = USA
-#			}
-#
-#			available = {
-#				has_completed_focus = USA_two_ocean_navy_act
-#			}
-#
-#
-#
-#			research_bonus = {
-#				naval_equipment = 0.10
-#			}
-#
-#
-#			modifier = {
-#			naval_speed_factor = 0.05
-#			}
-#			equipment_bonus = {
-#
-#				ship_hull_heavy = {
-#					build_cost_ic = -0.05 instant = yes
-#				}
-#				ship_hull_carrier = {
-#					build_cost_ic = -0.05 instant = yes
-#				}
-#
-#				carrier = {
-#					carrier_size = 0.2
-#				}
-#
-#				capital_ship = {
-#					armor_value = 0.05 hg_attack = 0.1
-#				}
-#
-#			}
-#
-#		}
-#
-#	)
-#
-#	tank_manufacturer = {
-#
-#	designer = yes
-#
-#		tank_of_borsod = {
-#		picture = generic_air_manufacturer_2
-#		cost = 100
-#		removal_cost = 10
-#		allowed = {
-#				always = yes
-#				original_tag = HUN
-#			}
-#		research_bonus = {
-#				armor = 0.10
-#			}
-#		equipment_bonus = {
-#		light_tank_equipment = {
-#				build_cost_ic = -0.05 soft_attack = 0.05 maximum speed = 0.05
-#			}
-#		modern_tank_equipment = {
-#				build_cost_ic = -0.05 piercing = 0.05 maximum speed = 0.05
-#			}
-#		modifier = {
-#		}
-#		ai_will_do = {
-#				factor = 1
-#			}
-#			}
-#		}
-#	}
-#}
+ideas = {
+hidden_ideas = {
+		scientist_haven_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.01
+			}
+		}
+		scientist_haven_idea3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.01
+			}
+		}
+		
+		scientist_haven_idea4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.01
+			}
+		}
+		
+		HUN_Neumann_Janos = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_research_bonus
+			
+			removal_cost = -1
+			research_bonus = {
+				electronics = 0.05
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				stability_weekly_factor = 0.005
+			}
+		}
+		
+		USA_navy_extension_destroyers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_submarines_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_cruisers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_battleships_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_carriers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		USA_navy_extension_destroyers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_submarines_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_two_ocean_navy_act
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_cruisers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_battleships_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_carriers_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		USA_navy_extension_i = {
+			icon = generic_operation
+		available = {
+			has_completed_focus = USA_maritime_commission
+			}
+		ai_will_do = {
+			factor = 1
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+	}
+	
+	country = {
+		
+	
+		HUN_developed = {
+		picture = generic_war_preparation
+			allowed = {
+				always = yes
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			research_bonus = {
+				armor = 0.05
+			}
+			modifier = {
+			army_armor_attack_factor = 0.05
+			army_artillery_attack_factor = 0.05
+			army_infantry_attack_factor = 0.05
+			}
+		}
+
+		HUN_war_production_board_focus_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+			global_building_slots_factor = 0.1
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		HUN_war_production_board_focus_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+			global_building_slots_factor = 0.1
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		
+		HUN_war_production_board_focus_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+			global_building_slots_factor = 0.1
+			production_factory_max_efficiency_factor = 0.2
+			production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+	
+		HUN_war_production_board_focus_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				global_building_slots_factor = 0.25
+				conversion_cost_civ_to_mil_factor= -0.25
+				consumer_goods_factor = -0.025
+				local_resources_factor = 0.10
+				min_export = -0.05
+			}
+		}
+	}
+	
+	political_advisor = {
+
+		HUN_gazi_istvan = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			modifier = {
+			democratic_drift = 0.01
+			political_power_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			
+		}
+		
+	}
+	
+	theorist = {
+		
+		neumann_janos = {
+			picture = generic_political_advisor_europe_3
+			allowed = {
+				original_tag = USA
+			}
+							
+			research_bonus = {
+				nuclear = 0.10
+				electronics = 0.10
+							}
+					
+			cost = 200
+			traits = { nuclear_scientist }
+			}
+	}
