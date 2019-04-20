@@ -4738,12 +4738,13 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
+<<<<<<< HEAD
+				bonus = 1.0
+=======
 				bonus = 0.5
+>>>>>>> parent of 8b916ce... Alkatrész faszságai eltávolítva axis research bonuszok fókuszból javítva
 				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 		}
 		
