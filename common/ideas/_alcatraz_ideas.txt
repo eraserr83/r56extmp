@@ -410,3 +410,4 @@ hidden_ideas = {
 			traits = { nuclear_scientist }
 			}
 	}
+#ezt látod?
