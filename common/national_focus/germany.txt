@@ -229,7 +229,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = nuclear
 			}
@@ -258,7 +258,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus2
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = rocketry
 			}
@@ -287,13 +287,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus3
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = rocketry
 			}
 			add_tech_bonus = {
 				name = secret_bonus3
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = jet_technology
 			}
@@ -635,7 +635,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_synth_oil_research
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = synth_resources
 			}
@@ -660,7 +660,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_plane_models
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = light_air
 				category = medium_air
@@ -750,7 +750,7 @@ focus_tree = {
 				}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 1
+				bonus = 0.25
 				uses = 1
 				category = encryption_tech
 				category = computing_tech
@@ -786,7 +786,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 0.66
+				bonus = 0.25
 				uses = 1
 				category = encryption_tech
 			}
@@ -821,7 +821,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 0.66
+				bonus = 0.25
 				uses = 1
 				category = encryption_tech
 			}
@@ -1447,7 +1447,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = tp_bonus
-				bonus = 1
+				bonus = 0.5
 				ahead_reduction = 1
 				uses = 1
 				technology = transport
@@ -1965,7 +1965,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_blitzkreig_tactics
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1991,7 +1991,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_build_panzer_army
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
@@ -2213,7 +2213,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_above_maginot
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -3114,7 +3114,7 @@ focus_tree = {
  		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_mountaineers
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
@@ -3517,7 +3517,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_modernize_CAS
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = air_doctrine
 				category = cas_bomber
@@ -3550,7 +3550,7 @@ focus_tree = {
 			show_ideas_tooltip = walther_von_brauchitsch	
 			add_tech_bonus = {
 				name = GER_schwerepunkt_tactics
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -4415,7 +4415,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_panzergrenadiers
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_mechanized_equipment
 			}
@@ -4442,7 +4442,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_counter_sloped_armor
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				category = cat_medium_armor
 				category = cat_anti_tank
@@ -4470,7 +4470,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_seige_fortified_towns
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = artillery
 			}
@@ -4497,7 +4497,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_counter_anti_tank
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -4522,7 +4522,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_encirclement_doctrine
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -4570,7 +4570,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_plan_sealion
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = marines
 				technology = marines2
@@ -4596,7 +4596,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_landing_craft
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				technology = transport
 				technology = landing_craft
@@ -4624,7 +4624,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_marines
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = marines2
 				technology = marines3
@@ -4652,7 +4652,7 @@ focus_tree = {
 			show_ideas_tooltip = ritter_von_greim
 			add_tech_bonus = {
 				name = GER_air_doc
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				category = air_doctrine
 			}
@@ -4677,7 +4677,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_above_maginot
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -4703,7 +4703,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_nav_doc
-				bonus = 1
+				bonus = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -4738,7 +4738,11 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
+<<<<<<< HEAD
 				bonus = 1.0
+=======
+				bonus = 0.5
+>>>>>>> parent of 8b916ce... Alkatrész faszságai eltávolítva axis research bonuszok fókuszból javítva
 				uses = 1
 				category = ss_tech
 			}
@@ -4765,7 +4769,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = early_submarine
 				technology = basic_submarine

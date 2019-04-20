@@ -1428,7 +1428,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strike_south_doctrine
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = naval_doctrine	
 			}
@@ -1508,7 +1508,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = landing_craft
 				technology = tank_landing_craft
@@ -2146,7 +2146,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = synth_resources	
 			}
@@ -2719,7 +2719,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_prepare_for_war_with_the_soviet_union
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine	
 			}
@@ -2888,7 +2888,7 @@ focus_tree = {
 			MAN = {
 				add_tech_bonus = {
 					name = JAP_build_up_the_manchurian_army
-					bonus = 1
+					bonus = 0.5
 					uses = 2
 					category = land_doctrine	
 				}
@@ -2945,7 +2945,7 @@ focus_tree = {
 			MAN = {
 				add_tech_bonus = {
 					name = JAP_create_a_manchurian_imperial_air_force
-					bonus = 1
+					bonus = 0.5
 					uses = 1
 					category = tactical_bomber
 					category = cat_strategic_bomber
@@ -2954,7 +2954,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = JAP_create_a_manchurian_imperial_air_force
-					bonus = 1
+					bonus = 0.5
 					uses = 1
 					category = light_fighter
 					category = cat_heavy_fighter
@@ -3378,7 +3378,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_german_rocketry
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = rocketry	
 			}
@@ -4686,7 +4686,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons	
 			}
@@ -4766,7 +4766,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_artillery
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = artillery	
 			}
@@ -4806,7 +4806,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = armor	
 			}
@@ -4966,13 +4966,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = light_fighter		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = cat_heavy_fighter	
 			}
@@ -5129,7 +5129,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = cas_bomber
 				category = tactical_bomber					
@@ -5171,7 +5171,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strategic_bomber_effort
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_strategic_bomber	
 			}
@@ -5247,7 +5247,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_jet_prototypes
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = jet_technology
 			}
@@ -5309,7 +5309,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = shbb_tech	
 			}
@@ -5389,7 +5389,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 1
+				bonus = 0.50
 				uses = 2
 				category = cat_base_strike
 			}
@@ -5434,7 +5434,7 @@ focus_tree = {
 			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = marine_tech	
 			}
@@ -5513,7 +5513,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_escorts
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = dd_tech	
 			}
@@ -5553,7 +5553,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = bb_tech
 			}
@@ -5595,7 +5595,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_the_ultimate_battleship
-				bonus = 3
+				bonus = 0.75
 				uses = 1
 				category = shbb_tech	
 			}
@@ -5635,7 +5635,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
-				bonus = 3
+				bonus = 0.75
 				uses = 1
 				category = cl_tech	
 				category = ca_tech	
