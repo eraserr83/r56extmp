@@ -394,8 +394,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.05
-				research_speed_factor = 0.10
+				conscription = 0.025
 			}
 		}
 
@@ -504,13 +503,13 @@ ideas = {
 			picture = jap_zaibatsu
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				consumer_goods_factor = 0.01
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -532,7 +531,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
-				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -551,14 +549,14 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.25
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
-				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = 0.01
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -577,14 +575,13 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_cost = 0.1
+				political_power_cost = 0.5
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				industrial_capacity_factory = 0.1
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -607,7 +604,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -645,7 +641,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.05
+				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}
@@ -670,7 +666,7 @@ ideas = {
 				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.35
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.05
+				research_speed_factor = -0.10
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -717,7 +713,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_speed_factor = 0.05
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -736,7 +732,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.5
-				research_speed_factor = 0.10
 			}
 		}
 
@@ -831,7 +826,6 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1
-				research_speed_factor = 0.05
 			}
 		}
 
@@ -991,18 +985,13 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = {
-				political_power_gain = 0.15
-			}
-			
 			removal_cost = -1
 
 			picture = jap_supremacy_of_technology
 			
 			research_bonus = {
-				industry = 0.1
-				infantry_weapons = 0.1
-				armor = 0.1
+				infantry_weapons = 0.05
+				armor = 0.05
 			}
 		}
 
@@ -1020,8 +1009,6 @@ ideas = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				research_speed_factor = 0.05
-				political_power_gain = 0.15
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
@@ -1042,7 +1029,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 			
 			modifier = {
-				special_forces_cap = 0.1
+				special_forces_cap = 0.02
 			}
 		}
 
@@ -2369,8 +2356,7 @@ ideas = {
 
 			
 			research_bonus = {
-				nuclear = 0.10
-				electronics = 0.10
+				nuclear = 0.15
 			}
 			
 			traits = { nuclear_scientist }

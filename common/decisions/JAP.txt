@@ -2079,7 +2079,7 @@ prospect_for_resources = {
 			627 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 8
 				}
 				set_state_flag = mindanao_steel_developed
 			}
@@ -2128,7 +2128,7 @@ prospect_for_resources = {
 			625 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 6
 				}
 				set_state_flag = samar_steel_developed
 			}
@@ -2177,7 +2177,7 @@ prospect_for_resources = {
 			725 = {
 				add_resource = {
 					type = tungsten
-					amount = 8
+					amount = 4
 				}
 				set_state_flag = nauru_tungsten_developed
 			}
@@ -2221,7 +2221,7 @@ prospect_for_resources = {
 			671 = {
 				add_resource = {
 					type = aluminium
-					amount = 10
+					amount = 6
 				}
 				set_state_flag = tonkin_aluminium_developed
 			}
@@ -2265,7 +2265,7 @@ prospect_for_resources = {
 			336 = {
 				add_resource = {
 					type = aluminium
-					amount = 16
+					amount = 12
 				}
 				set_state_flag = singapore_aluminium_developed
 			}
@@ -2375,7 +2375,7 @@ prospect_for_resources = {
 			621 = {
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 8
 				}
 				set_state_flag = suiyuan_steel_developed
 			}

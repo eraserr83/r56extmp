@@ -5,7 +5,7 @@ oob = "GEO_1936"
 set_convoys = 10
 set_war_support = 0.1
 set_stability = 0.50 
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -79,8 +79,16 @@ create_country_leader = {
 		
 	}
 }
-
-#couldnt find anything else, the commies simply forced everyone else into exile
+create_country_leader = { #nazi collaborator
+	name = "Shalva Maglakelidze"
+	desc = "Shalva maglakelidze"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
 
 
 

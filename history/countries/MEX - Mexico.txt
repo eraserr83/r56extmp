@@ -1,15 +1,22 @@
 ﻿capital = 277
 
 oob = "MEX_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "MEX_1936_naval_mtg"
+	else = {
+		set_naval_oob = "MEX_1936_naval_legacy"
+	}
+}
 
 # Starting tech - WWI level tech that was spurred by the Revolution and Escobar Rebellion.
 set_technology = {
-	
+
 	# Extended Technologies
 	etax_doctrine = 1
 	camo = 1
 	gw_armored_car = 1
-	
+
 	# infantry
 	infantry_weapons = 1
 	support_weapons = 1
@@ -21,21 +28,38 @@ set_technology = {
 	tech_mountaineers = 1
 	marines  = 1
 	transport = 1
-	
+
 	# planes
 	early_fighter = 1
 	early_bomber = 1
-	
-	# vehicles 
+
+	# vehicles
 	gwtank = 1
-	
-	# ships 
-	early_battleship = 1
-	early_light_cruiser = 1
-	early_destroyer = 1
-	
+
 	# doctrine
 	trench_warfare = 1
+}
+
+#Ships
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		coastal_defense_ships = 1
+	}
 }
 
 add_ideas = {
@@ -66,8 +90,15 @@ set_country_flag = monroe_doctrine
 	complete_national_focus = MEX_EJIDO
 	complete_national_focus = MEX_CTM
 	complete_national_focus = ejercito_de_los_trabajadores
-	
+
 	oob = "MEX_1939"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "MEX_1939_naval_mtg"
+		else = {
+			set_naval_oob = "MEX_1939_naval_legacy"
+		}
+	}
 	set_technology = {
 		#infantry
 		interwar_artillery = 1
@@ -78,31 +109,26 @@ set_country_flag = monroe_doctrine
 		tech_engineers = 1
 		tech_military_police = 1
 		tech_mountaineers = 1
-		
+
 		#other equipment
 		interwar_antiair = 1
-		
+
 		#vehicles
 		gwtank = 1
 		basic_light_tank = 1
-		
+
 		#planes
 		early_fighter = 1
 		early_bomber = 1
 		fighter1 = 1
-		
+
 		#doctrines
 		formation_flying = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
 		battlefleet_concentration = 1
-		
-		# ships
-		early_battleship = 1
-		early_light_cruiser = 1
-		early_destroyer = 1
-	
+
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -130,7 +156,7 @@ set_convoys = 45
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 5
 		}
 		fascism = {
@@ -139,7 +165,7 @@ set_politics = {
 		communism = {
 			popularity = 9
 		}
-		neutrality = { 
+		neutrality = {
 			popularity = 80
 		}
 	}
@@ -202,23 +228,23 @@ create_country_leader = {
 	set_politics = {
 
 		parties = {
-		democratic = { 
+		democratic = {
 			popularity = 1
 		}
 
 		fascism = {
 			popularity = 4
 		}
-		
+
 		communism = {
 			popularity = 1
 		}
-		
-		neutrality = { 
+
+		neutrality = {
 			popularity = 94
 		}
 	}
-	
+
 	ruling_party = neutrality
 		last_election = "1934.7.1"
 		election_frequency = 72
@@ -269,7 +295,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Manuel Avila Camacho"
-	picture = "gfx/leaders/MEX/r56_portrait_MEX_Manuel_Avila.dds"
+	picture = "gfx/leaders/MEX/r56_portrait_MEX_manuel_avila.dds"
 	traits = {  war_hero infantry_officer trait_cautious }
 	skill = 4
 	attack_skill = 3
@@ -328,7 +354,7 @@ create_corps_commander = {
 	logistics_skill = 2
 	id = 1831
 }
-# fransisco Castillo - external relations 
+# fransisco Castillo - external relations
 # little info
 create_corps_commander = {
 	name = "Anacleto Guerrero Guajardo"
@@ -534,4 +560,82 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 	id = 1849
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	create_equipment_variant = {
+		name = "Durango Class"
+		type = destroyer_1
+		upgrades = {
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nicolás Bravo Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 2
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Nicolás Bravo Class"
+		type = ship_hull_light_1
+		name_group = MEX_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Durango Class"			# represents both Guanajuato and Durango classes (gunboats)
+		type = ship_hull_light_1
+		name_group = MEX_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Anahuac Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = MEX_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
 }

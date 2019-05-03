@@ -136,6 +136,7 @@ technologies = {
 		}
 	}
 	
+	
 	early_light_cruiser = {
 
 		enable_equipments = { 

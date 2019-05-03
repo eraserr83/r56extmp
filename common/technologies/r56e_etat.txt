@@ -23,11 +23,6 @@ technologies = {
 			building = steel_mill
 			level = 1
 		}
-
-		enable_building = {
-			building = excavation_site
-			level = 1
-		}
 		
 		path = {
 			leads_to_tech = steel_production_2
@@ -78,22 +73,6 @@ technologies = {
 			modify_building_resources = {
 				building = steel_mill
 				resource = steel
-				amount = 4
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = chromium
-				amount = 2
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = tungsten
 				amount = 2
 			}
 		}
@@ -144,22 +123,6 @@ technologies = {
 			modify_building_resources = {
 				building = steel_mill
 				resource = steel
-				amount = 4
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = chromium
-				amount = 2
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = tungsten
 				amount = 2
 			}
 		}
@@ -210,22 +173,6 @@ technologies = {
 			modify_building_resources = {
 				building = steel_mill
 				resource = steel
-				amount = 4
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = chromium
-				amount = 2
-			}
-		}
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = excavation_site
-				resource = tungsten
 				amount = 2
 			}
 		}
@@ -321,7 +268,7 @@ technologies = {
 			modify_building_resources = {
 				building = aluminum_mill
 				resource = aluminium
-				amount = 4
+				amount = 2
 			}
 		}
 		
@@ -376,7 +323,7 @@ technologies = {
 			modify_building_resources = {
 				building = aluminum_mill
 				resource = aluminium
-				amount = 4
+				amount = 2
 			}
 		}
 		
@@ -1028,6 +975,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			winter_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1060,6 +1008,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			winter_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1092,6 +1041,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			winter_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1119,6 +1069,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			winter_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1152,6 +1103,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			summer_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1184,6 +1136,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			summer_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1216,6 +1169,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			summer_clothing_tech
 		}
 		
 		ai_will_do = {
@@ -1244,6 +1198,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			summer_clothing_tech
 		}
 		
 		ai_will_do = {

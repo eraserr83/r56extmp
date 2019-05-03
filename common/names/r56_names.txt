@@ -121,7 +121,7 @@ ARM = {
 	
 }
 
-AZE = {
+AZR = {
 	male = {
 		names = { Ahmad Aliagha Ali Bahram Elbay Farhad Firudin Hamid Hasan Heydar
 			Huseyin Ibrahim Ismayil Jalil Mahmud Malik Mehdi Mohammad Murad Samad 
@@ -512,6 +512,23 @@ CYP = {
 		Trikoupis Tsakalotos Tsolakoglou  Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
 	 }
 	callsigns = { }
+}
+
+DDR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
 DNZ = {
@@ -1406,7 +1423,7 @@ VIN = {
 VLA = {
 	male = {
 		names = { 
-			Adriaan Albert Anthony Antoon Bart Christiaan Cornelis Dirk Fernand Gerard Godfried Hendrik Henri Jacob Jan  Johan Johannes Karel Laurens Mathias Matthijs Nicolaas Pieter Petrus Philippus Pieter Thomas Theodorus Willem Wim Leopold Boudewijn
+			Adriaan Albert Alfons Antoon August Bart Christiaan Cornelis Dirk Edward Kamiel Octave Urbanus Frans Fernand Gerard Georges Godfried Hendrik Jacob Jan Johan Johannes Karel Laurens Mathias Matthijs Nicolaas Pieter Philippus Walter Willem Wim Boudewijn Jeroom Lucien Clemens Pol Reimond Odiel Isidoor
 		 }
 	}
 	
@@ -1415,7 +1432,7 @@ VLA = {
 	}
 
 	surnames = { 
-	Peeters Janssens Maes Jacobs Mertens Willems Claes Goossens Wouters "De Smet" "Van den Bent" "Van den Briel" "Van den Hof" "Van der Bijl" "Van Helsdingen" "Van Liempd" "Van Setten" "Van Voorst tot Voorst" "Van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman "Van de Put"
+	Peeters Janssens Maes Jacobs Mertens Willems Claes Goossens Wouters "De Smet" "Den Bos" "Van Parijs" "De Croo" "De Wever" "De Winter" "Van Lieferinge" "Van Engeland" "Van Brabant" "Molenaars" "Van Der Meulen" Somers Deschacht Vertongen Tielemans "De Mesmaeker" Verwilgen Pastuur "Van Der Wijden" "Van Der Elst" "Van Moer" "De Koninck" "Van den Briel" "Van den Hof" "Van der Bijl" "Van Kleenputte" "Van Liempd" "Van Setten" Bosch Bruggink Bruinier Buijs Buurman Carstens  Giesen Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Lukkien Maas Rijnders Roelofsen Zavelsberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman "Van de Put"
 	  }
 	callsigns = {"Mannetje" "Vos" "Struikgaai" "Kraai" "Leeuw" "Meeuw" "Papegaai" "Potvis" "Hop" "Guldensporen" "Schild en Vriend" "Ridder" "Nijlpaard"}  
 }
@@ -1440,6 +1457,23 @@ WAL = {
 			
 		}
 	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+}
+
+WGR = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
 
 WLL = {

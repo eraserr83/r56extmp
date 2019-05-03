@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 4
 set_stability = 0.9
 set_war_support = 0.1
 
@@ -238,7 +238,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/DEN/r56_portrait_DEN_Aksel_Larsen.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -302,6 +302,16 @@ create_navy_leader = {
 	attack_skill = 1
 	defense_skill = 2
 	maneuvering_skill = 3
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Aage Helgesen Vedel"
+	portrait_path = "gfx/leaders/DEN/r56_portrait_DEN_Vedel.dds"
+	traits = { lancer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
 	coordination_skill = 2
 }
 ### VARIANTS ###

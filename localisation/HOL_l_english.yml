@@ -8,7 +8,13 @@
  VICTORY_POINTS_10906:0 "Paramaribo"
  
  HOL_fascism:0 "Dietschland"
- HOL_fascism_DEF:0 "The Dietschland" 
+ HOL_fascism_DEF:0 "The Dietschland"
+ 
+ HOL_abandon_the_gold_standard_not_MTG:0 "Abandon the Gold Standard"
+ HOL_finish_the_noordoostpolder_not_MTG:0 "Finish The Noordoostpolder"
+ HOL_the_new_ideal_MTG:0 "The New Ideal"
+ #Bratyn made a typo and I (waffle) had the correct version
+ HOL_meinout_rost_van_tonningen:0 "Meinoud Rost van Tonningen"
  
  #Dietsland
  HOL2_fascism:0 "Dietschland"
@@ -55,12 +61,14 @@
  aviolanda:0 "Aviolanda"
  de_schelde:0 "KM De Schelde"
  HOL_generic_heavy_aircraft_manufacturer:0 "Heavy Aircraft Manufacturer"
+ HOL_DAF_trucks:0 "DAF"
  
  HOL_wilhelmina:0 "Queen Wilhelmina"
  HOL_reliance_on_the_gold_standard:0 "Reliance on the Gold Standard"
  HOL_motors_production:0 "Motors Production"
  HOL_dutch_plane_requirements_list:0 "Dutch Plane Requirements List"
  HOL_red_volunteers:0 "Red Volunteers"
+ HOL_red_volunteers_desc:0 "In order to further the cause of world revolution and proletarian internationalism we must be willing to aid all communist movements around the globe. Setting up a dedicated volunteer force to deploy and fight for the working class in foreign lands would be a good step towards this."
  HOL_security_service:0 "Security Service"
  HOL_nationalizations:0 "Nationalizations"
  HOL_soviet_military_mission:0 "Soviet Military Mission"
@@ -133,7 +141,7 @@
  HOL_benelux_scientific_commission_desc:0 "After having set up economic and defense cooperations, one logical step forward is to coordonate our military research." 
  
  HOL_communist_electoral_success:0 "Communist Electoral Success"
- HOL_communist_electoral_success_desc:0 "The people has called for demise of the corrupt tyranny of the bourgeois elite. Unemployment must end today and hte revolution must triumph to ensure the rise of a bright future in which there will be no more classes true individual freedom."
+ HOL_communist_electoral_success_desc:0 "The people have called for the demise of the corrupt tyranny by the bourgeois elite. Unemployment and poverty must end and the revolution triumph to ensure a bright future in which there will be no more classes - a future of true individual freedom."
  HOL_communism_east_indies:0 "Spread Communism in the East Indies"
  HOL_communism_east_indies_desc:0 "The East Indies have been oppressed by corporatist imperialist forces since the VoC took over the Islands at the beginning of the 17th century. It is time for the Indonesians to understand their exploitation as revealed by Marx and free themselves from coloniaslist rule." 
  HOL_autonomy_for_the_east_indies:0 "Autonomy for the East Indies"
@@ -566,4 +574,10 @@
  HOL_flemish_fascist_revolt_cost_tooltip:0 "It costs 30£command_power to select this."  
  
  HOL_VLA_fascist_rebels:0 "Has active Fascist Separatists"
- HOL_GATHERING_STORM_DESC:0 "The Netherlands is in the middle of a deep crisis at the moment. The country has been hit a bit later than others by the great depression and consequently, it is currently suffering from its worse consequences. The unemployment is at an all time high and the government have not reacted so far, preferring to stick so far to a policy of budget balance and a faith in the gold standard. Hopefully the economic doctrine of the government is currently shifting due to the pressure of the street. To make matters worse, Germany is rearming and the government know that it will be extremely difficult to stay neutral this time if Europe burns once again."
+ 
+ #complete buffer state proposal of MtG focus tree with VLA and WLL
+ HOL_revive_the_buffer_state_proposal_tt3:0 "§Y[HOL.GetName]§!: Has higher £legitimacy §YLegitimacy§! than §Y[VLA.GetName]§!"
+ HOL_revive_the_buffer_state_proposal_tt4:0 "§Y[HOL.GetName]§!: Has higher £legitimacy §YLegitimacy§! than §Y[WLL.GetName]§!"
+ #benelux tooltip
+ HOL_form_the_benelux_vla_tt:0 "Gets event '§YThe Netherlands invites [VLA.GetName] to the Benelux§!'.\n"
+ HOL_form_the_benelux_wll_tt:0 "Gets event '§YThe Netherlands invites [WLL.GetName] to the Benelux§!'.\n" 

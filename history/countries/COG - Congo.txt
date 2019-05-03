@@ -5,7 +5,7 @@ oob = "COG_1936"
 set_convoys = 5
 set_war_support = 0.1
 set_stability = 0.30 
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -102,7 +102,7 @@ set_politics = {
 create_country_leader = {
 	
 	name = "François Tolenga"
-	picture = "Portrait_Africa_Generic_2.dds"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
