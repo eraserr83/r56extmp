@@ -1160,6 +1160,8 @@ prospect_for_resources = {
 				add_resource = {
 					type = oil
 					amount = 16
+					type = steel
+					amount = 32
 				}
 			}
 			60 = {
