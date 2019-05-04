@@ -7,6 +7,8 @@ NDefines.NGraphics.COUNTRY_FLAG_LARGE_STRIPE_MAX_HEIGHT = 24000
 -- Diplomacy
 NDefines.NGame.BASE_SEND_ATTACHE_COST = 10
 NDefines.NGame.BASE_SEND_ATTACHE_CP_COST = 10.0
+-- Buildings
+NDefines.NBuildings.MAX_SHARED_SLOTS = 30
 -- Focuses
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
 -- Country balance
@@ -25,9 +27,9 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
 
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 48
 NDefines.NMilitary.RECON_SKILL_IMPACT = 6
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 8 	--Base cost to unlock a regiment slot,
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4	--Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 6
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.7
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175
