@@ -1,5 +1,5 @@
 name="R56 Extended Multiplayer"
-archive="r56extmp.zip"
+path="mod/r56extmp_beta/r56extmp/"
 tags={
 	"Balance"
 }
