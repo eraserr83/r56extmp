@@ -50,7 +50,7 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {  -- chance
 	0.05  --
 }
 -- Technology
-NDefines.NTechnology.BASE_TECH_COST = 80
+NDefines.NTechnology.BASE_TECH_COST = 75
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 6		-- Base year ahead penalty
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0
 
