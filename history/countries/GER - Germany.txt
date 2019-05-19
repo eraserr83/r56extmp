@@ -3,6 +3,7 @@
 oob = "GER_1936"
 
 set_fuel_ratio = 0.8
+
 # Starting tech
 set_technology = {
 
@@ -663,7 +664,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Hasso von Manteuffel"
-	picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
+		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
 	traits = { armor_officer career_officer trait_cautious }
 	skill = 4
 	id = 25
@@ -835,12 +836,12 @@ if = {
 		parent_version = 0
 		modules = {
         	fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_battery_slot = ship_triple_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			rear_1_custom_slot = ship_triple_heavy_battery_1
+			rear_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_airplane_launcher_1
     	}
 	}
@@ -922,15 +923,15 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -940,15 +941,15 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_light_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -975,7 +976,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -983,8 +984,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	create_equipment_variant = {
@@ -993,7 +994,7 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_medium_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1011,7 +1012,7 @@ if = {
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_2
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1039,7 +1040,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_heavy_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}

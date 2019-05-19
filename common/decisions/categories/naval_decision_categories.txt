@@ -1,0 +1,7 @@
+naval_effort = {
+	icon = generic_operation
+
+	allowed = {
+		ROOT = { has_navy_size > 10 }
+	}
+}

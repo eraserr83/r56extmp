@@ -1298,7 +1298,7 @@ focus_tree = {
 					}
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 6
 				set_state_flag = USA_federal_housing_act
 			}
 			random_owned_controlled_state = {
@@ -1311,7 +1311,7 @@ focus_tree = {
 					is_core_of = ROOT
 					not = { has_state_flag = USA_federal_housing_act }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 6
 				set_state_flag = USA_federal_housing_act
 			}
 			random_owned_controlled_state = {
@@ -1324,7 +1324,7 @@ focus_tree = {
 					is_core_of = ROOT
 					not = { has_state_flag = USA_federal_housing_act }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 6
 				set_state_flag = USA_federal_housing_act
 			}
 			random_owned_controlled_state = {
@@ -1337,7 +1337,7 @@ focus_tree = {
 					is_core_of = ROOT
 					not = { has_state_flag = USA_federal_housing_act }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 6
 				set_state_flag = USA_federal_housing_act
 			}
 			random_owned_controlled_state = {
@@ -1350,7 +1350,7 @@ focus_tree = {
 					is_core_of = ROOT
 					not = { has_state_flag = USA_federal_housing_act }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 6
 				set_state_flag = USA_federal_housing_act
 			}
 		}
@@ -1465,19 +1465,17 @@ focus_tree = {
 					}
 				}
 			}
-			add_ideas = USA_limited_intervention
-#			if = {
-#				limit = {
-#					OR = {
-#						has_idea = undisturbed_isolation
-#						has_idea = isolation
-#					}
-#				}
-#				add_ideas = civilian_economy
-#			}
-#			else = {
-#				add_political_power = 150 #refund if already at civilian economy
-#			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+					}
+				}
+			}
+			else = {
+				add_political_power = 150 #refund if already at civilian economy
+			}
 			USA_congress_medium_opposition = yes
 			if = {
 				limit = {
@@ -1528,6 +1526,7 @@ focus_tree = {
 				}
 				USA_congress_small_opposition = yes
 			}
+			add_ideas = low_economic_mobilisation
 		}
 	}
 	focus = {
@@ -1705,7 +1704,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		available = {
-			has_government = democratic
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -2019,6 +2017,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
+			add_ideas = civilian_economy
 		}
 	}
 	focus = {
@@ -2064,7 +2063,7 @@ focus_tree = {
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
-				add_ideas = civilian_economy
+				add_ideas = low_economic_mobilisation
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
 		}
@@ -3952,8 +3951,175 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_green show_effect_tooltip = yes show_modifiers = yes }
+			create_wargoal = {
+				target = MEX
+				type = puppet_wargoal_focus
+			}
 		}
 	}
+	focus = {
+		id = USA_secure_the_caribbean
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_war_plan_green }
+		relative_position_id = USA_war_plan_green
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			ROOT = { has_defensive_war = yes }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = CUB
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = HAI
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = DOM
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = GUA
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = ELS
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = HON
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = NIC
+				type = puppet_wargoal_focus
+			}			
+			create_wargoal = {
+				target = COS
+				type = puppet_wargoal_focus
+			}			
+			create_wargoal = {
+				target = PAN
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = USA_secure_south_west_americas
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_secure_the_caribbean }
+		relative_position_id = USA_secure_the_caribbean
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			ROOT = { has_defensive_war = yes }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = VEN
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = COL
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = ECU
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = PRU
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = CHL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = USA_secure_south_east_americas
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_secure_south_west_americas }
+		relative_position_id = USA_secure_south_west_americas
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			ROOT = { has_defensive_war = yes }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = BRA
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = ARG
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = BOL
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = URG
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = PAR
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	
+	
 	focus = {
 		id = USA_war_plan_crimson
 		icon = GFX_focus_attack_canada
@@ -3968,11 +4134,9 @@ focus_tree = {
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes

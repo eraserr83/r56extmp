@@ -2041,7 +2041,7 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 					OR = {
-						has_completed_focus = ENG_right_wing_rhetoric
+						has_completed_focus = ENG_organize_the_blackshirts
 						has_government = fascism
 					}
 					
@@ -3226,7 +3226,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				motorized_equipment = 0.15
+				industry = 0.15
 			}
 			
 			traits = { industrial_concern }
