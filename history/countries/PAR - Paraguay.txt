@@ -6,7 +6,7 @@ oob = "PAR_1936"
 set_country_flag = monroe_doctrine
 set_war_support = 0.2
 set_stability = 0.40 
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -114,6 +114,16 @@ create_country_leader = {
 	picture = "GFX_Portrait_paraguay_rafael_franco"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Eusebio Ayala"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture = "r56_portrait_PAR_Eusebio_Ayala.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
 	traits = {
 		#
 	}

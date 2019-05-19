@@ -312,7 +312,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				planning_speed = 0.1	
+				planning_speed = 0.1
+				political_power_gain = 0.3
 			}
 		}
 		USA_maritime_commission = {

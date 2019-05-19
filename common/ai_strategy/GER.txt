@@ -123,13 +123,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = -180 #because doctrine this = 20
+		value = -150 #because doctrine this = 50
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 50
+		value = 20
 	}
 
 	ai_strategy = {
@@ -231,7 +231,7 @@ GER_halt_light_armor_production_in_transitioning = {
 		original_tag = GER
 		has_template_majority_unit = medium_armor
 		OR = {
-			has_equipment = { light_tank_equipment > 800 }
+			has_equipment = { light_tank_equipment > 600 }
 			date > 1939.1.1
 		}		
 	}
@@ -744,25 +744,25 @@ less_naval_focused_nation = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 30
+		value = -3
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 10
+		value = -3
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 50
+		value = -3
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 10
+		value = -3
 	}
 }
 

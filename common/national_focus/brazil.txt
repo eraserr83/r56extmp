@@ -24,7 +24,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 3
 		y = 0
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -46,7 +46,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = bra_a_voz_do_brasil
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -81,7 +81,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		relative_position_id = bra_a_voz_do_brasil
-		cost = 3
+		cost = 5
 		completion_reward = {
 			army_experience = 10
 			add_ideas = bra_consegnac_idea 
@@ -631,7 +631,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = bra_tecnocratic_reform
-		cost = 5
+		cost = 10
 		completion_reward = {
 			if = {
 				limit = {
@@ -724,13 +724,13 @@ focus_tree = {
 		relative_position_id = bra_a_voz_do_brasil
 		x = -7
 		y = 1
-		cost = 3
+		cost = 5
 		
 		completion_reward = {
 
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -743,12 +743,12 @@ focus_tree = {
 		relative_position_id = bra_a_voz_do_brasil
 		x = -5
 		y = 1
-		cost = 3
+		cost = 5
 		
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -761,12 +761,12 @@ focus_tree = {
 		relative_position_id = bra_technical_schools
 		x = 0
 		y = 1
-		cost = 3
+		cost = 5
 		
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = industry
 			}
@@ -779,11 +779,11 @@ focus_tree = {
 		relative_position_id = bra_federal_institutes
 		x = 0
 		y = 1
-		cost = 3
+		cost = 5
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -809,13 +809,13 @@ focus_tree = {
 		relative_position_id = bra_federal_universities
 		x = -1
 		y = 1
-		cost = 7
+		cost = 10
 		
 		completion_reward = {
 			add_ideas = bra_iti_idea
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -833,7 +833,7 @@ focus_tree = {
 			swap_ideas = { remove_idea = bra_federal_universities_idea add_idea = bra_federal_universities_idea_2 }
 				add_tech_bonus = {
 					name = electronics_bonus
-					bonus = 0.25
+					bonus = 0.5
 					uses = 1
 					category = electronics
 				}	
@@ -854,7 +854,7 @@ focus_tree = {
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = electronics
 				category = rocketry
@@ -881,7 +881,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = bra_2_nuclear_bonus
-				bonus = 0.75
+				bonus = 3
 				uses = 1
 				category = nuclear
 			}
@@ -896,7 +896,7 @@ focus = {
 		x = -3
 		y = 1
 		available = { 497  =  { is_owned_by = BRA } }
-		cost = 8
+		cost = 10
 		completion_reward = {
 			497 = { add_extra_state_shared_building_slots = 2 }
 			497 = { add_building_construction = { type = naval_base province = 12853 level = 2 instant_build = yes } }
@@ -936,7 +936,7 @@ focus = {
 		navy_experience = 10
 			add_tech_bonus = {
 				name = BRA_naval_doctrine
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}
@@ -954,13 +954,17 @@ focus = {
 			navy_experience = 10
 			create_navy_leader = {
 				name = "José Isaías de Noronha"
-								picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-				traits = { }
+				picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+				traits = { navy_media_personality }
 				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				maneuvering_skill = 3
+				coordination_skill = 1					
 			}
 			add_tech_bonus = {
 				name = BRA_naval_doctrine
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -973,17 +977,14 @@ focus = {
 		relative_position_id = bra_almirantado
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 		navy_experience = 10
 			add_tech_bonus = {
 				name = sub_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 		}
 	}
@@ -994,24 +995,17 @@ focus = {
 		relative_position_id = bra_submarinos
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 		navy_experience = 25
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 0.5
+				bonus = 1
 				ahead_reduction = 1
 				uses = 1
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
+				category = bb_tech
+				category = bc_tech
+				category = cv_tech
 			}
 		}
 	}
@@ -1022,7 +1016,7 @@ focus = {
 		relative_position_id = bra_cruzadores
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		available = { 498  =  { is_owned_by = BRA } }
 		completion_reward = {
 			498 = { add_extra_state_shared_building_slots = 2 }
@@ -1064,7 +1058,7 @@ focus = {
 			army_experience = 15
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1081,7 +1075,7 @@ focus = {
 		relative_position_id = bra_ana_guerra_civil
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			army_experience = 10
 			every_army_leader = {
@@ -1104,7 +1098,7 @@ focus = {
 			add_ideas = bra_ana_mineira_idea
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.50
+				bonus = 10
 				uses = 1
 				category = land_doctrine
 			}
@@ -1121,13 +1115,13 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1145,13 +1139,13 @@ focus = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1169,7 +1163,7 @@ focus = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.50
+				bonus = 10
 				uses = 1
 				category = land_doctrine
 			}
@@ -1189,7 +1183,7 @@ focus = {
 		add_ideas = bra_ana_paulista_idea
 		add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.50
+				bonus = 10
 				uses = 1
 				category = land_doctrine
 			}
@@ -1206,13 +1200,13 @@ focus = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -1230,13 +1224,13 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
@@ -1254,7 +1248,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.50
+				bonus = 10
 				uses = 1
 				category = land_doctrine
 			}
@@ -1269,7 +1263,7 @@ focus = {
 		relative_position_id = bra_consegnac
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		complete_tooltip = {
 			random_owned_controlled_state = {
 				prioritize = { 495 }
@@ -1321,7 +1315,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = BRA_air_doctrine
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1335,14 +1329,14 @@ focus = {
 		relative_position_id = bra_modernizacao_aerea
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		available = {
 		}
 		completion_reward = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
@@ -1365,12 +1359,12 @@ focus = {
 		relative_position_id = bra_bombardeiro
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 0.75
+				bonus = 3
 				ahead_reduction = 1
 				uses = 1
 				category = cas_bomber
@@ -1384,12 +1378,12 @@ focus = {
 		relative_position_id = bra_caca
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.50
+				bonus = 10
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -1409,7 +1403,7 @@ focus = {
 		relative_position_id = bra_a_voz_do_brasil
 		x = -10
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_ideas = { bra_eficiencia_1 }
 		}
@@ -1546,7 +1540,7 @@ focus = {
 		relative_position_id = bra_sub_priv
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = { remove_idea = bra_eficiencia_1 add_idea = bra_eficiencia_2 }
 			
@@ -1579,7 +1573,7 @@ focus = {
 		relative_position_id = bra_eng_mart
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			swap_ideas = { remove_idea = bra_eficiencia_2 add_idea = bra_eficiencia_3 }
 			
@@ -1646,19 +1640,6 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = bra_elet_1
-		icon = GFX_goal_power_plant
-		prerequisite = { focus = bra_mod_soroc }
-		relative_position_id = bra_mod_soroc
-		x = 0
-		y = 1
-		cost = 3
-		
-		completion_reward = {
-			add_ideas = bra_eficiencia_5
-		}
-	}
 	
 	focus = {
 		id = bra_mod_mad_mamo
@@ -1707,18 +1688,6 @@ focus = {
 					days = 35
 				}
 			}
-		}
-	}
-	focus = {
-		id = bra_elet_2
-		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = bra_elet_1 }
-		relative_position_id = bra_elet_1
-		x = 0
-		y = 1
-		cost = 3
-		completion_reward = {
-			swap_ideas = { remove_idea = bra_eficiencia_5 add_idea = bra_eficiencia_7 }
 		}
 	}
 	focus = {
@@ -1788,7 +1757,7 @@ focus = {
 				}
 				modify_timed_idea = {
 					idea = bra_industrial_elite
-					days = 35
+					days = 70
 				}
 			}
 			else_if = {
@@ -1797,9 +1766,34 @@ focus = {
 				}
 				add_timed_idea = {
 					idea = bra_industrial_elite
-					days = 35
+					days = 70
 				}
 			}
+		}
+	}
+	focus = {
+		id = bra_elet_1
+		icon = GFX_goal_power_plant
+		prerequisite = { focus = bra_mod_soroc }
+		relative_position_id = bra_mod_soroc
+		x = 0
+		y = 1
+		cost = 5
+		
+		completion_reward = {
+			add_ideas = bra_eficiencia_5
+		}
+	}
+	focus = {
+		id = bra_elet_2
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = bra_elet_1 }
+		relative_position_id = bra_elet_1
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = {
+			swap_ideas = { remove_idea = bra_eficiencia_5 add_idea = bra_eficiencia_7 }
 		}
 	}
 	
@@ -1882,7 +1876,7 @@ focus = {
 				}
 				modify_timed_idea = {
 					idea = bra_industrial_elite
-					days = 5
+					days = 35
 				}
 			}
 			else_if = {
@@ -1891,7 +1885,7 @@ focus = {
 				}
 				add_timed_idea = {
 					idea = bra_industrial_elite
-					days = 5
+					days = 35
 				}
 			}	
 		}
@@ -1922,7 +1916,7 @@ focus = {
 				}
 				modify_timed_idea = {
 					idea = bra_industrial_elite
-					days = 5
+					days = 35
 				}
 			}
 			else_if = {
@@ -1931,7 +1925,7 @@ focus = {
 				}
 				add_timed_idea = {
 					idea = bra_industrial_elite
-					days = 5
+					days = 35
 				}
 			}
 		}
@@ -1943,7 +1937,7 @@ focus = {
 		relative_position_id = bra_CTEF_CLT
 		x = -4
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_resource = { type = steel amount = 8 state = 496 }
 			
@@ -1979,7 +1973,7 @@ focus = {
 		available = {
 			has_tech = excavation1
 		}
-		cost = 5
+		cost = 10
 		completion_reward = {
 			add_resource = { type = oil amount = 5 state = 499 }
 			
@@ -2097,7 +2091,7 @@ focus = {
 		relative_position_id = bra_salte
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		completion_reward = {
 		add_ideas = { bra_bb_idea }
 		}
@@ -2131,7 +2125,7 @@ focus = {
 				}
 				modify_timed_idea = {
 					idea = bra_industrial_elite
-					days = 35
+					days = 50
 				}
 			}
 			else_if = {
@@ -2140,7 +2134,7 @@ focus = {
 				}
 				add_timed_idea = {
 					idea = bra_industrial_elite
-					days = 35
+					days = 50
 				}
 			}
 		}
@@ -2182,7 +2176,7 @@ focus = {
 					add_tech_bonus = {
 						name = ETH_oil_rig_bonus
 						ahead_reduction = 1
-						bonus = 0.5
+						bonus = 1
 						uses = 1
 						category = synth_resources
 					}
@@ -2970,7 +2964,7 @@ focus = {
 				limit = {
 					capital_scope = { is_on_continent = south_america }
 				}
-				add_ideas = { nationalism }
+				add_timed_idea = { idea = nationalism days = 365 }
 			}
 			hidden_effect = {
 				MEX = { add_popularity = { ideology = fascism popularity = 0.05 } }

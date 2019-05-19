@@ -10,11 +10,6 @@ if = {
 }
 set_stability = 0.6
 
-add_state_core = 322
-add_state_core = 329
-add_state_core = 330
-
-
 set_global_flag = KMT_mod_enabled
 
 add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 20 producer = GER }
@@ -395,7 +390,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Zhang Xueliang"
-	gfx = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3"
+	gfx = "GFX_portrait_chi_zhang_xueliang"
 	traits = { }
 	skill = 3
 	attack_skill = 3

@@ -11,7 +11,7 @@ if = {
 
 set_research_slots = 5
 set_stability = 0.75
-set_war_support = 1
+set_war_support = 0
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
 set_variable = { var = representatives_support value = 218 }
@@ -21,9 +21,9 @@ set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
 USA_recalc_congress_icon_frames = yes
 USA = {
-	# These events don't yet exist in the game and someone should add 'em in later
-	# country_event = { id = usa.50 days = 2 }
-	# country_event = { id = usa.51 days = 2 }
+	 #These events don't yet exist in the game and someone should add 'em in later
+	 country_event = { id = usa.50 days = 2 }
+	 country_event = { id = usa.51 days = 2 }
 }
 
 # Starting tech
@@ -40,9 +40,11 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	gwtank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
 	cv_CAS1 = 1
 	naval_bomber1 = 1
 	CAS1 = 1
@@ -50,6 +52,7 @@ set_technology = {
 	flying_boat = 1
 	superior_firepower = 1
 	base_strike = 1
+	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
@@ -343,7 +346,7 @@ set_autonomy = {
 create_country_leader = {
 	name = "Franklin Delano Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	picture = "gfx/leaders/USA/r56_portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
 	ideology = liberalism
 	traits = {
@@ -387,13 +390,13 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Omar Bradley"
 	picture = "Portrait_USA_Omar_Bradley.dds"
-	traits = {  trait_engineer trait_cautious harsh_leader meticulous expert_delegator}
+	traits = {  trait_engineer trait_cautious harsh_leader meticulous expert_delegator brilliant_strategist}
 
-	skill = 4
+	skill = 5
 
 	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 6
+	defense_skill = 5
+	planning_skill = 4
 	logistics_skill = 4
 }
 create_field_marshal = {
@@ -401,18 +404,18 @@ create_field_marshal = {
 	picture = "r56_portrait_USA_George_Marshal.dds"
 	traits = {old_guard meticulous organizer politically_connected expert_delegator thorough_planner}
 
-	skill = 3
+	skill = 4
 
 	attack_skill = 1
 	defense_skill = 1
-	planning_skill = 10
-	logistics_skill = 3
+	planning_skill = 3
+	logistics_skill = 8
 }
 
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
 	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious meticulous politically_connected }
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious meticulous armor_officer politically_connected }
 	skill = 5
 	id = 602
 	attack_skill = 3
@@ -464,12 +467,12 @@ create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
 	picture = "Portrait_USA_Douglas_MacArthur.dds"
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected naval_invader}
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
 
 	skill = 4
 
-	attack_skill = 5
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 2
 }
@@ -490,9 +493,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lloyd Fredendall"
 	picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = { old_guard inflexible_strategist decided_planner}
+	traits = { old_guard infantry_officer inflexible_strategist }
 
-	skill = 1
+	skill = 2
 
 	attack_skill = 1
 	defense_skill = 1
@@ -587,7 +590,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Simpson"
 	picture = "Portrait_USA_William_Hood_Simpson.dds"
-	traits = { infantry_officer brilliant_strategist }
+	traits = { infantry_officer }
 
 	skill = 3
 	
@@ -670,7 +673,7 @@ create_corps_commander = {
 }
 create_navy_leader = {
 	name = "Ernest King"
-		picture = "Portrait_USA_Earnest_King.dds"
+	picture = "Portrait_USA_Earnest_King.dds"
 	traits = { navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
 	skill = 5
 	attack_skill = 4
@@ -681,7 +684,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	picture = "Portrait_USA_Chester_W_Nimitz.dds"
 	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
 	skill = 5
 	attack_skill = 3
@@ -692,7 +695,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "William Halsey, Jr."
-		picture = "Portrait_USA_William_Halsey_Jr.dds"
+	picture = "Portrait_USA_William_Halsey_Jr.dds"
 	traits = { bold aviation_enthusiast superior_tactician spotter }
 	skill = 4
 	attack_skill = 5
@@ -703,7 +706,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+	picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
 	traits = { gunnery_expert superior_tactician spotter }
 	skill = 3
 	attack_skill = 2
@@ -714,7 +717,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	picture = "Portrait_USA_Raymond_A_Spruance.dds"
 	traits = { navy_career_officer gentlemanly superior_tactician }
 	skill = 4
 	attack_skill = 4
@@ -725,7 +728,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+	picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
 	traits = { cuts_corners blockade_runner spotter }
 	skill = 2
 	attack_skill = 2
@@ -736,7 +739,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Arleigh Burke"
-		picture = "Portrait_USA_Arleigh_Burke.dds"
+	picture = "Portrait_USA_Arleigh_Burke.dds"
 	traits = { bold fleet_protector old_guard_navy superior_tactician }
 	skill = 4
 	attack_skill = 3
@@ -747,7 +750,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	picture = "Portrait_USA_Charles_M_Cooke.dds"
 	traits = { career_officer }
 	skill = 2
 	attack_skill = 1

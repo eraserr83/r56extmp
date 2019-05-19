@@ -1,6 +1,6 @@
 #####---------------------------------------------------------------------> German Focus Tree for "Road to 56"
 #####---------------------------------------------------------------------> Originally by Toasted_Toaster
-#####---------------------------------------------------------------------> Rewritten, Cleaned, and Overhauled by Greatexperiment. SpicyAlfredo, Thinking_waffle, and Plutozz where here too. I guess.
+#####---------------------------------------------------------------------> Rewritten, Cleaned, and Overhauled by Greatexperiment. SpicyAlfredo, Thinking_waffle, and Plutozz were here too. I guess.
 
 focus_tree = {
 	id = german_focus
@@ -183,7 +183,7 @@ focus_tree = {
 				remove_ideas = political_disagreement_idea 
 			}
 			add_ideas = autark_support_I_idea
-		}			
+		}
 	}
 
 	focus = { 
@@ -229,8 +229,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = nuclear
 			}
 		}
@@ -252,14 +252,14 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1940.1.1
+			date > 1939.1.1
 		}
 		
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus2
-				bonus = 0.5
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = rocketry
 			}
 		}
@@ -281,21 +281,15 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1941.1.1
+			date > 1940.1.1
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus3
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = rocketry
-			}
-			add_tech_bonus = {
-				name = secret_bonus3
-				bonus = 0.5
-				uses = 2
-				category = jet_technology
 			}
 		}
 	}
@@ -317,57 +311,6 @@ focus_tree = {
 	
 		completion_reward = {
 			add_ideas = volksgemeinschaft_idea
-			
-			add_resource = {
-				type = tungsten
-				amount = 16
-				state = 60
-			}
-			add_resource = {
-				type = chromium
-				amount = 16
-				state = 60
-			}
-			add_resource = {
-				type = tungsten
-				amount = 16
-				state = 54
-			}
-			add_resource = {
-				type = chromium
-				amount = 16
-				state = 54
-			}
-			add_resource = {
-				type = tungsten
-				amount = 24
-				state = 55
-			}
-			add_resource = {
-				type = chromium
-				amount = 24
-				state = 55
-			}
-			add_resource = {
-				type = oil
-				amount = 24
-				state = 66
-			}
-			add_resource = {
-				type = oil
-				amount = 24
-				state = 67
-			}
-			add_resource = {
-				type = steel
-				amount = 42
-				state = 66
-			}
-			add_resource = {
-				type = steel
-				amount = 42
-				state = 67
-			}
 		}
 	}
 
@@ -468,7 +411,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}		
+			}
 		}
 	}
 	
@@ -635,8 +578,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_synth_oil_research
-				bonus = 0.5
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = synth_resources
 			}
 		}
@@ -660,7 +603,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_plane_models
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = light_air
 				category = medium_air
@@ -750,7 +693,7 @@ focus_tree = {
 				}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = encryption_tech
 				category = computing_tech
@@ -786,7 +729,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = encryption_tech
 			}
@@ -821,7 +764,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = enigma
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = encryption_tech
 			}
@@ -903,7 +846,7 @@ focus_tree = {
 				limit = { 
 					FRA = { 
 						is_puppet = no 
-					} 
+					}
 				}
 				FRA = {
 					country_event = { 
@@ -912,7 +855,7 @@ focus_tree = {
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
-		}		
+		}
 	}
 	
 	focus = {
@@ -1059,7 +1002,7 @@ focus_tree = {
 				is_historical_focus_on = yes
 				factor = 0
 			}
-		}	
+		}
 		
 		cancel_if_invalid = no
 		
@@ -1159,7 +1102,7 @@ focus_tree = {
 			}
 			has_army_manpower = { 
 				size > 599999 
-			}			
+			}
 		}
 		
 		bypass = {
@@ -1170,11 +1113,11 @@ focus_tree = {
 				NOT = { 
 					CZE = { 
 						owns_state = 69 
-					} 
+					}
 				}
 				GER = { 
 					owns_state = 69 
-				}			
+				}
 			}
 		}
 		
@@ -1183,7 +1126,7 @@ focus_tree = {
 				NOT = { 
 					CZE = { 
 						owns_state = 69 
-					} 
+					}
 				}
 				has_war_with = CZE
 			}
@@ -1229,7 +1172,7 @@ focus_tree = {
 					CZE = { 
 						NOT = { 
 						has_war_with = ENG 
-							} 
+							}
 						}
 					CZE = { 
 						owns_state = 69 
@@ -1316,7 +1259,7 @@ focus_tree = {
 				limit = { 
 					NOT = { 
 						country_exists = CZE 
-					} 
+					}
 				}
 				country_event = { 
 					id = germany.55 
@@ -1379,13 +1322,10 @@ focus_tree = {
 						}
 					}
 				}
-				POL = {
-					AND = {
-						NOT = { 
-							controls_state = 85 
-							controls_state = 10
-						}	
-					}
+				OR = {
+					has_war_with = ENG
+					has_war_with = FRA
+					has_war_with = USA
 				}
 			}
 		}
@@ -1413,7 +1353,7 @@ focus_tree = {
 					}
 				}
 			}
-		}	
+		}
 		
 		will_lead_to_war_with = DEN 
 		will_lead_to_war_with = NOR
@@ -1424,8 +1364,8 @@ focus_tree = {
 				limit = {
 					DEN = {
 						r56_script_target_is_sane = yes	
-					}					
-				} 
+					}
+				}
 				create_wargoal = {
 					type = take_state_focus
 					target = DEN
@@ -1437,7 +1377,7 @@ focus_tree = {
 					NOR = {
 						r56_script_target_is_sane = yes
 					}
-				} 
+				}
 				create_wargoal = {
 					type = take_state_focus
 					target = NOR
@@ -1447,17 +1387,15 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = tp_bonus
-				bonus = 0.5
+				bonus = 1
 				ahead_reduction = 1
 				uses = 1
-				technology = transport
-				technology = landing_craft
-				technology = tank_landing_craft
-			}	
+				category = tp_tech
+			}
 			
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
-			}	
+			}
 		}
 	}
 	focus = {
@@ -1480,7 +1418,7 @@ focus_tree = {
 						controls_state = 143
 						controls_state = 144
 						}
-					}	
+					}
 				ICE = {
 					r56_script_target_is_sane = yes
 						AND = {
@@ -1509,7 +1447,7 @@ focus_tree = {
 			modifier = {
 				factor = 0.25
 				ENG = { owns_state = 337 }
-			}		
+			}
 		}
 		
 		bypass = {
@@ -1539,7 +1477,7 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		
 		available = {
 			r56_script_i_am_sane = yes
@@ -1658,7 +1596,7 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		
 		available = {
 			NOT = { 
@@ -1771,10 +1709,10 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_prepare_france_invasion }
 		
-		x = 16
-		y = 2
+		x = 12
+		y = 3
 		
 		cost = 5
 		
@@ -1821,7 +1759,7 @@ focus_tree = {
 				limit = { 
 					42 = { 
 						is_demilitarized_zone = yes 
-					} 
+					}
 				}
 				custom_effect_tooltip = GER_west_wall_tt
 				42 = {
@@ -1861,7 +1799,7 @@ focus_tree = {
 						}
 					}
 				}
-			}			
+			}
 		}
 	}
 	
@@ -1883,7 +1821,7 @@ focus_tree = {
 		
 		bypass = {
 			FRA = {
-				r56_script_standard_bypass = yes
+				r56_script_statusquo_bypass = yes
 			}
 			GER = { 
 					has_war_with = FRA 
@@ -1898,11 +1836,21 @@ focus_tree = {
 					level = 10
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
 			}
 			51 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1913,10 +1861,10 @@ focus_tree = {
 		id = GER_core_lorraine
 		icon = GFX_goal_generic_more_territorial_claims
 		
-		prerequisite = { focus = GER_prepare_france_invasion}
+		prerequisite = { focus = GER_anschluss}
 		
-		x = 12
-		y = 3
+		x = 16
+		y = 2
 		
 		cost = 5
 		
@@ -1925,13 +1873,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			FRA = {
-				r56_script_standard_bypass = yes
-			}
-			GER = { 
-					has_war_with = FRA 
-					has_offensive_war = yes
-				}
 		}
 		
 		completion_reward = {
@@ -1965,7 +1906,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_blitzkreig_tactics
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -1991,7 +1932,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_build_panzer_army
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
@@ -2003,7 +1944,7 @@ focus_tree = {
 		id = GER_war_with_france
 		icon = GFX_goal_FRA_defence_destruction
 		
-		prerequisite = { focus = GER_blitzkreig_tactics focus = GER_build_panzer_army focus = GER_core_lorraine }
+		prerequisite = { focus = GER_blitzkreig_tactics focus = GER_build_panzer_army focus = GER_west_wall }
 		
 		x = 14
 		y = 4
@@ -2036,7 +1977,7 @@ focus_tree = {
 				factor = 0.25
 				has_war = yes
 			}
-		}	
+		}
 		
 		completion_reward = {
 			add_named_threat = { 
@@ -2049,14 +1990,14 @@ focus_tree = {
  				generator = { 28 }
  			}
 		}
-	}	
+	}
 	
 	focus = {
 		id = GER_around_maginot
 		icon = GFX_goal_plan
 		
 		prerequisite = {focus = GER_war_with_france }
-		mutually_exclusive = { focus = GER_above_maginot }		
+		mutually_exclusive = { focus = GER_above_maginot }
 		
 		x = 13
 		y = 5
@@ -2065,7 +2006,7 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		
 		available = {
 			r56_script_i_am_sane = yes
@@ -2178,7 +2119,7 @@ focus_tree = {
 					type = take_state_focus
 					target = LUX
 					generator = { 8 }
-				}			
+				}
 			}
 			hidden_effect = {
 				news_event = { 
@@ -2213,7 +2154,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_above_maginot
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -2234,7 +2175,7 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		
 		available = {
 			SPR = { 
@@ -2266,7 +2207,7 @@ focus_tree = {
 						SPR = { 
 							NOT = { 
 								has_government = fascism 
-							} 
+							}
 						}
 						NOT = { 
 							country_exists = SPR 
@@ -2405,7 +2346,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					D01 = { controls_state = 26 } 
+					D01 = { controls_state = 26 }
 				}
 				end_puppet = D01
 				remove_from_faction = D01
@@ -2531,6 +2472,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GER_anschluss }
 		prerequisite = { focus = GER_czech_friend focus = GER_demand_sudetenland }
+		mutually_exclusive = { focus = GER_prepare_italian_invasion }
 
 		x = 26
 		y = 2
@@ -2580,7 +2522,7 @@ focus_tree = {
 				factor = 0.25
 				has_war = yes
 			}
-		}	
+		}
 		
 		cancel_if_invalid = no
 		
@@ -2592,7 +2534,7 @@ focus_tree = {
 			}
 			controls_state = 4
 			controls_state = 152
-			has_army_manpower = { size > 599999 } #ca 80 div
+			has_army_manpower = { size > 599999 }#ca 80 div
 		}
 		
 		bypass = {
@@ -2600,7 +2542,7 @@ focus_tree = {
 				YUG = {
 					r56_script_standard_bypass = yes
 				}
-				NOT = { YUG = { owns_state = 102 } }				
+				NOT = { YUG = { owns_state = 102 }}
 			}
 		}
 		
@@ -2610,7 +2552,7 @@ focus_tree = {
 				YUG = { is_puppet_of = GER }
 				NOT = { controls_state = 4 }
 				NOT = { controls_state = 152 }
-				NOT = { YUG = { owns_state = 102 } }
+				NOT = { YUG = { owns_state = 102 }}
 			}
 		}
 		
@@ -2623,7 +2565,7 @@ focus_tree = {
 				add_opinion_modifier = { 
 					target = GER 
 					modifier = GER_demand_slovenia_YUG 
-				} 
+				}
 			}
 			if = {
 				limit = {
@@ -2745,7 +2687,7 @@ focus_tree = {
 						NOT = { tag = GER }
 					}
 					reverse_add_opinion_modifier = { target = HUN modifier = GER_second_vienna_award_other }
-				}				
+				}
 			}
 			if = {
 				limit = {
@@ -2755,7 +2697,7 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					BUL = { country_event = { id = bulgaria.3 days = 1 } 
+					BUL = { country_event = { id = bulgaria.3 days = 1 }
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						set_country_flag = GER_first_ljubljana_award
 					}
@@ -2772,13 +2714,13 @@ focus_tree = {
 						NOT = { tag = GER }
 					}
 					reverse_add_opinion_modifier = { target = BUL modifier = GER_second_vienna_award_other }
-				}				
+				}
 			}
 			if = {
 				limit = {
 					ITA = {
 						OR = {
-							has_completed_focus = ITA_slovenia_dalmatia_claims
+							has_completed_focus = ITA_yugoslavia_war_goal
 							owns_state = 44
 						}
 						is_friend_or_potential_friend_of_GER = yes
@@ -2786,7 +2728,7 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					ITA = { country_event = { id = italy.13 days = 1 } 
+					ITA = { country_event = { id = italy.13 days = 1 }
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 					}
 					set_country_flag = GER_first_ljubljana_award
@@ -2795,13 +2737,13 @@ focus_tree = {
 					ITA = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						if = {
-							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+							limit = { has_completed_focus = ITA_yugoslavia_war_goal }
 							transfer_state = 103
 						}
 						if = {
 							limit = { owns_state = 44 }
 							transfer_state = 105
-						}	
+						}
 					}
 				}
 				every_other_country = {
@@ -2810,7 +2752,7 @@ focus_tree = {
 						NOT = { tag = GER }
 					}
 					reverse_add_opinion_modifier = { target = ITA modifier = GER_second_vienna_award_other }
-				}				
+				}
 			}
 		}
 	}
@@ -2838,7 +2780,7 @@ focus_tree = {
 				factor = 0
 				surrender_progress > 0.1
 			}
-		}	
+		}
 		
 		completion_reward = {
 			country_event = { id = germany.98 }
@@ -2922,7 +2864,7 @@ focus_tree = {
 				country_event = { 
 					id = greece.3 
 					hours = 6 
-				} 
+				}
 			}
 		}
 	}
@@ -2932,7 +2874,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		
 		prerequisite = { focus = GER_second_ljubljana_award }
-		mutually_exclusive = { focus = GER_fate_of_greece } 
+		mutually_exclusive = { focus = GER_fate_of_greece }
 		
 		x = 23
 		y = 6
@@ -3010,7 +2952,7 @@ focus_tree = {
 							owns_state = 185
 							owns_state = 186
 							owns_state = 47
-						} 
+						}
 					}
 					ITA = {
 						NOT = { has_war_with = GRE }
@@ -3077,9 +3019,10 @@ focus_tree = {
 		
 		prerequisite = { focus = GER_anschluss }
 		prerequisite = { focus = GER_czech_friend focus = GER_demand_sudetenland }
+		mutually_exclusive = { focus = GER_alliance_with_italy }
 		
-		x = 25
-		y = 3
+		x = 24
+		y = 2
 		
 		cost = 10
 		
@@ -3095,7 +3038,6 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AUS = { is_in_faction_with = GER }
-				ITA = { is_in_faction_with = GER }
 				NOT = { country_exists = ITA }
 				GER = { has_war_with = ITA}
 				AND = {
@@ -3114,7 +3056,7 @@ focus_tree = {
  		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_mountaineers
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
@@ -3172,8 +3114,8 @@ focus_tree = {
 		
 		prerequisite = { focus = GER_prepare_italian_invasion }
 		
-		x = 25
-		y = 4
+		x = 24
+		y = 3
 		
 		cost = 5
 		
@@ -3198,8 +3140,8 @@ focus_tree = {
 
 		prerequisite = { focus = GER_core_south_tyrol }
 		
-		x = 25
-		y = 5
+		x = 24
+		y = 4
 		
 		cost = 10
 		
@@ -3261,7 +3203,7 @@ focus_tree = {
 				is_historical_focus_on = yes
 				factor = 0
 			}
-		}	
+		}
 		
 		available = { 
 			country_exists = POL
@@ -3366,7 +3308,7 @@ focus_tree = {
 				add_opinion_modifier = { 
 					target = ROOT 
 					modifier = pact_against_us 
-				} 
+				}
 			}
 			add_named_threat = { 
 				threat = 1 
@@ -3414,7 +3356,7 @@ focus_tree = {
 		bypass = {
 			has_completed_focus = GER_poland_friend
 			OR = {
-				POL = { is_in_faction_with = GER }		  
+				POL = { is_in_faction_with = GER }  
 				NOT = { country_exists = POL }
 				GER = { has_war_with = POL}
 			}
@@ -3517,7 +3459,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_modernize_CAS
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 				category = cas_bomber
@@ -3550,7 +3492,7 @@ focus_tree = {
 			show_ideas_tooltip = walther_von_brauchitsch	
 			add_tech_bonus = {
 				name = GER_schwerepunkt_tactics
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -3597,7 +3539,7 @@ focus_tree = {
 				has_war_with = SOV
 				NOT = { country_exists = SOV }
 			}
-		}	
+		}
 		
 		completion_reward = {
 			SOV = {
@@ -3786,7 +3728,7 @@ focus_tree = {
 					country_event = { id = germany.86 }
 					if = {
 						limit = { 
-							NOT = { is_in_faction_with = ROOT } 
+							NOT = { is_in_faction_with = ROOT }
 						}
 						custom_effect_tooltip = needs_approval
 					}
@@ -3801,7 +3743,7 @@ focus_tree = {
 						limit = {
 							is_in_faction_with = ROOT 
 							NOT = { 
-								ROOT = { is_faction_leader = yes } 
+								ROOT = { is_faction_leader = yes }
 							}
 						}
 						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_noleader
@@ -3891,10 +3833,10 @@ focus_tree = {
 								NOT = { controls_state = 77 }
 								has_war_with = BUL					
 							}
-						}					
+						}
 					}
 				}
-				HUN = { exists = no } 
+				HUN = { exists = no }
 				ROM = { exists = no	}
 				HUN = { has_capitulated = yes }
 				ROM = { has_capitulated = yes }
@@ -3943,7 +3885,7 @@ focus_tree = {
 				ROM = { is_in_faction_with = GER }
 				NOT = { country_exists = ROM }
 			}
-		}	
+		}
 		
 		completion_reward = {
 			ROM = {
@@ -4036,7 +3978,7 @@ focus_tree = {
 		id = GER_turkey_friend
 		icon = GFX_goal_generic_propaganda
 		
-		prerequisite = { focus = GER_romania_friend focus = GER_romania_war }
+		prerequisite = { focus = GER_romania_friend focus = GER_romania_war focus = GER_second_vienna_award }
 		mutually_exclusive = { focus = GER_turkey_war }
 		
 		x = 29
@@ -4057,7 +3999,7 @@ focus_tree = {
 				TUR = { is_in_faction_with = GER }
 				NOT = { country_exists = TUR }
 			}
-		}	
+		}
 		
 		completion_reward = {
 			TUR = {
@@ -4102,7 +4044,7 @@ focus_tree = {
 		id = GER_turkey_war
 		icon = GFX_goal_generic_major_war
 		
-		prerequisite = { focus = GER_romania_friend focus = GER_romania_war }
+		prerequisite = { focus = GER_romania_friend focus = GER_romania_war focus = GER_second_vienna_award }
 		mutually_exclusive = { focus = GER_turkey_friend }
 		
 		x = 31
@@ -4166,7 +4108,7 @@ focus_tree = {
 				IRQ = { is_in_faction_with = GER }
 				NOT = { country_exists = IRQ }
 			}
-		}	
+		}
 		
 		completion_reward = {
 			IRQ = {
@@ -4269,7 +4211,7 @@ focus_tree = {
 				PER = { is_in_faction_with = GER }
 				NOT = { country_exists = PER }
 			}
-		}	
+		}
 		
 		completion_reward = {
 			PER = {
@@ -4357,7 +4299,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GER_war_with_poland focus = GER_danzig_or_war }
 		
-		x = 35
+		x = 33
 		y = 6
 		
 		cost = 10
@@ -4384,13 +4326,15 @@ focus_tree = {
 			}
 		}
 		
+		will_lead_to_war_with = SOV
+		
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
 				target = SOV
 				generator = { 219 }
 			}
-		}	
+		}
 	}
 
 	focus = {
@@ -4415,7 +4359,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_panzergrenadiers
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = cat_mechanized_equipment
 			}
@@ -4442,7 +4386,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_counter_sloped_armor
-				bonus = 0.5
+				bonus = 1
 				uses = 3
 				category = cat_medium_armor
 				category = cat_anti_tank
@@ -4470,7 +4414,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_seige_fortified_towns
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = artillery
 			}
@@ -4497,7 +4441,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_counter_anti_tank
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -4522,7 +4466,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_encirclement_doctrine
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = land_doctrine
 			}
@@ -4563,14 +4507,14 @@ focus_tree = {
 		
 		bypass = {
 			ENG = {
-				r56_script_standard_bypass = yes
+				r56_script_statusquo_bypass = yes
 			}
 		}
 		
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_plan_sealion
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = marines
 				technology = marines2
@@ -4596,11 +4540,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_landing_craft
-				bonus = 0.5
+				bonus = 1
 				uses = 2
-				technology = transport
-				technology = landing_craft
-				technology = tank_landing_craft
+				category = tp_tech
 				
 			}
 		}
@@ -4624,10 +4566,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_train_marines
-				bonus = 0.5
+				bonus = 1
 				uses = 1
+				technology = marines
 				technology = marines2
-				technology = marines3
 			}
 		}
 	}
@@ -4652,7 +4594,7 @@ focus_tree = {
 			show_ideas_tooltip = ritter_von_greim
 			add_tech_bonus = {
 				name = GER_air_doc
-				bonus = 0.5
+				bonus = 1
 				uses = 3
 				category = air_doctrine
 			}
@@ -4677,7 +4619,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_above_maginot
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -4703,7 +4645,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_nav_doc
-				bonus = 0.5
+				bonus = 1
 				uses = 3
 				category = naval_doctrine
 			}
@@ -4724,29 +4666,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 0.5
-				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-			}
-		}
-		
 		completion_reward = {
 			navy_experience = 25
 			random_owned_state = {
@@ -4768,13 +4687,17 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_u_boat_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_technology = { cruiser_submarines = 1 }
+			}
+			add_ideas = GER_modular_construction
 		}
 	}
 	
@@ -5018,7 +4941,7 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		
 		cancel_if_invalid = yes
 		
@@ -5103,10 +5026,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_progress_cult_idea
 			add_research_slot = 1
 		}
-	}	
+	}
 
 	##############################################
 	##############DEMOCRACY TREE##################
@@ -5771,12 +5693,16 @@ focus_tree = {
 			add_state_core = 188
 			add_state_core = 28
 			add_state_core = 17
+			add_state_core = 762
+			add_state_core = 788
 			85 = { add_claim_by = GER }
 			86 = { add_claim_by = GER }
 			87 = { add_claim_by = GER }
 			188 = { add_claim_by = GER }
 			28 = { add_claim_by = GER }
 			17 = { add_claim_by = GER }
+			762 = { add_claim_by = GER }
+			788 = { add_claim_by = GER }
 		}
 	}
 	
@@ -5830,8 +5756,8 @@ focus_tree = {
 		completion_reward = {
 			541 = { add_claim_by = GER }
 			546 = { add_claim_by = GER }
-			556 = { add_claim_by = GER }
-			539 = { add_claim_by = GER }
+			773 = { add_claim_by = GER }
+			777 = { add_claim_by = GER }
 		}
 	}
 	

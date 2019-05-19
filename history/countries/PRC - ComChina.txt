@@ -2,11 +2,6 @@
 
 oob = "PRC_1936"
 
-add_state_core = 322
-add_state_core = 326
-add_state_core = 329
-add_state_core = 330
-
 # Starting tech
 set_technology = {
 
@@ -164,6 +159,7 @@ create_country_leader = {
 	ideology = marxism
 	traits = {
 		cornered_fox
+		r56_trait_anti_fascist
 	}
 }
 
@@ -339,4 +335,4 @@ create_corps_commander = {
 	logistics_skill = 2	
 	id = 1074
 }
-set_research_slots = 1
+set_research_slots = 2

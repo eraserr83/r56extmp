@@ -2,6 +2,7 @@
 
 oob = "GER_1936"
 
+set_fuel_ratio = 0.8
 # Starting tech
 set_technology = {
 
@@ -371,7 +372,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm III"
 	desc = "POLITICS_WILHELM_III_DESC"
-	picture = GFX_portrait_ger_wilhelm_iii
+	picture = "r56_portrait_GER_King_Wilhelm.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -662,7 +663,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Hasso von Manteuffel"
-		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
+	picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
 	traits = { armor_officer career_officer trait_cautious }
 	skill = 4
 	id = 25
@@ -675,7 +676,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Albert Kesselring"
 	picture = "Portrait_Germany_Albert_Kesselring.dds"
-	traits = { air_force_ties brilliant_strategist trait_cautious war_hero }
+	traits = { commando air_force_ties brilliant_strategist trait_cautious war_hero }
 	skill = 4
 	id = 32
 	attack_skill = 2
@@ -735,7 +736,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
+	picture = "Portrait_Germany_Erich_Raeder.dds"
 	traits = { naval_lineage battleship_adherent }
 	skill = 4
 	id = 27
@@ -747,7 +748,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Alfred Saalwächter"
-		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
+	picture = "Portrait_Germany_Alfred_Saalwachter.dds"
 	traits = { old_guard_navy bold}
 	skill = 4
 	id = 28
@@ -759,7 +760,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Hermann Boehm"
-		picture = "Portrait_Germany_Hermann_Boehm.dds"
+	picture = "Portrait_Germany_Hermann_Boehm.dds"
 	traits = { craven superior_tactician }
 	skill = 4
 	id = 29
@@ -771,7 +772,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Wilhelm Marschall"
-		picture = "Portrait_Germany_Wilhelm_Marschall.dds"
+	picture = "Portrait_Germany_Wilhelm_Marschall.dds"
 	traits = { old_guard_navy bold}
 	skill = 4
 	id = 30
@@ -783,7 +784,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Günther Lütjens"
-		picture = "Portrait_Germany_Gunter_Lutjens.dds"
+	picture = "Portrait_Germany_Gunter_Lutjens.dds"
 	traits = { gentlemanly navy_career_officer superior_tactician }
 	skill = 3
 	id = 31
@@ -921,7 +922,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -939,7 +940,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -974,7 +975,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
