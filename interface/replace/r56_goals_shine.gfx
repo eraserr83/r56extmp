@@ -392,41 +392,9 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-###------> SAF <><> <><> <><> <><> <><>
-	SpriteType = {
-		name = "GFX_goal_SAF_flag_transvaal_shine"
-		texturefile = "gfx/interface/goals/saf/r56_goal_SAF_flag_transvaal.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/saf/r56_goal_SAF_flag_transvaal.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"#add, multiply, overlay
-			animationtype = "scrolling"#scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/saf/r56_goal_SAF_flag_transvaal.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"#add, multiply, overlay
-			animationtype = "scrolling"#scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}	
 ###------> SAU <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_SAU_foreign_loans_shine"
+		name = "GFX_SAU_foreign_loans"
 		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_foreign_loans.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -456,7 +424,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_SAU_develop_ploesti_oil_fields_shine"
+		name = "GFX_SAU_develop_ploesti_oil_fields"
 		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_develop_ploesti_oil_fields.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -486,7 +454,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_SAU_develop_the_heavy_industry_shine"
+		name = "GFX_SAU_develop_the_heavy_industry"
 		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_develop_the_heavy_industry.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -519,7 +487,7 @@ spriteTypes = {
 
 ###------> SLO <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_goal_SLO_supremacy_shine"
+		name = "GFX_goal_SLO_supremacy"
 		texturefile = "gfx/interface/goals/slo/r56_goal_SLO_supremacy.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -549,7 +517,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_SLO_hlinka_mladez_shine"
+		name = "GFX_goal_SLO_hlinka_mladez"
 		texturefile = "gfx/interface/goals/slo/r56_goal_SLO_hlinka_mladez.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1213,7 +1181,7 @@ spriteTypes = {
 
 ###------> ENG <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_goal_ENG_reassess_continental_commitments_shine"
+		name = "GFX_goal_ENG_reassess_continental_commitments"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_reassess_continental_commitments.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1243,7 +1211,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_imperial_conscription_shine"
+		name = "GFX_goal_ENG_imperial_conscription"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_imperial_conscription.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1273,7 +1241,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_prevent_a_continental_hegemony_shine"
+		name = "GFX_goal_ENG_prevent_a_continental_hegemony"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_prevent_a_continental_hegemony.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1303,7 +1271,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_indian_independence_shine"
+		name = "GFX_goal_ENG_indian_independence"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_indian_independence.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1333,7 +1301,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_collaboration_with_greece_shine"
+		name = "GFX_goal_ENG_collaboration_with_greece"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_collaboration_with_greece.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1363,7 +1331,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_collaboration_with_turkey_shine"
+		name = "GFX_goal_ENG_collaboration_with_turkey"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_collaboration_with_turkey.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1393,7 +1361,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_collaboration_with_spain_shine"
+		name = "GFX_goal_ENG_collaboration_with_spain"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_collaboration_with_spain.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1423,7 +1391,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_take_out_the_regia_marina_shine"
+		name = "GFX_goal_ENG_take_out_the_regia_marina"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_take_out_the_regia_marina.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1453,7 +1421,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_attack_netherland_shine"
+		name = "GFX_goal_ENG_attack_netherland"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_attack_netherland.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1483,7 +1451,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_attack_belgium_shine"
+		name = "GFX_goal_ENG_attack_belgium"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_attack_belgium.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1513,7 +1481,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_attack_iran_shine"
+		name = "GFX_goal_ENG_attack_iran"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_attack_iran.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1543,7 +1511,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_attack_iraq_shine"
+		name = "GFX_goal_ENG_attack_iraq"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_attack_iraq.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1573,7 +1541,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_ENG_issue_gasmasks_shine"
+		name = "GFX_goal_ENG_issue_gasmasks"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_issue_gasmasks.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1603,7 +1571,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_ENG_home_defense_shine"
+		name = "GFX_focus_ENG_home_defense"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_home_defense.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1633,7 +1601,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_eng_organise_the_blackshirts_shine"
+		name = "GFX_focus_eng_organise_the_blackshirts"
 		texturefile = "gfx/interface/goals/eng/r56_goal_ENG_organise_the_blackshirts.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -1666,7 +1634,7 @@ spriteTypes = {
 
 ###------> FRA <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_goal_FRA_nuclear_shine"
+		name = "GFX_goal_FRA_nuclear"
 		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_nuclear.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -2807,7 +2775,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_tblra_gold_extraction_shine"
+		name = "GFX_goal_tblra_gold_extraction"
 		texturefile = "gfx/interface/goals/bel/r56_goal_BEL_gold_extraction.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5108,7 +5076,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_befriend_communist_ALB_shine"
+		name = "GFX_goal_befriend_communist_ALB"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_befriend_communist_ALB.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5140,7 +5108,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_befriend_communist_BUL_shine"
+		name = "GFX_goal_befriend_communist_BUL"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_befriend_communist_BUL.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -5172,7 +5140,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_befriend_communist_YUG_shine"
+		name = "GFX_goal_befriend_communist_YUG"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_befriend_communist_YUG.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -8924,7 +8892,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_GRE_red_victory_shine"
+		name = "GFX_focus_GRE_red_victory"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_red_victory.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -8955,7 +8923,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GRE_red_economy_shine"
+		name = "GFX_focus_GRE_red_economy"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_red_economy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -8986,7 +8954,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GRE_red_greece_shine"
+		name = "GFX_focus_GRE_red_greece"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_red_greece.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -9017,7 +8985,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GRE_aris_velouchiotis_shine"
+		name = "GFX_focus_GRE_aris_velouchiotis"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_aris_velouchiotis.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -9048,7 +9016,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GRE_org_x_shine"
+		name = "GFX_focus_GRE_org_x"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_org_x.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -9079,7 +9047,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GRE_continue_the_fight_shine"
+		name = "GFX_focus_GRE_continue_the_fight"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_red_economy.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -11901,7 +11869,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_Goal_alliance_finland_shine"
+		name = "GFX_Goal_alliance_finland"
 		texturefile = "gfx/interface/goals/ger/r56_goal_GER_alliance_finland.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
@@ -13338,7 +13306,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_hitler_visits_rome_shine"
+		name = "GFX_ITA_hitler_visits_rome"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_duce_and_fuhrer.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13370,7 +13338,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_LUCE_shine"
+		name = "GFX_ITA_LUCE"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_luce.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13402,7 +13370,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_learn_from_the_ethiopian_war_shine"
+		name = "GFX_ITA_learn_from_the_ethiopian_war"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_learn_from_ethiopian_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13434,7 +13402,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_victory_by_any_means_shine"
+		name = "GFX_ITA_victory_by_any_means"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_victory_by_any_means.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13466,7 +13434,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_regio_esercito_shine"
+		name = "GFX_ITA_regio_esercito"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_regio_esercito.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13498,7 +13466,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_regia_marina_shine"
+		name = "GFX_ITA_regia_marina"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_regia_marina.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13530,7 +13498,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_mare_nostrum_shine"
+		name = "GFX_ITA_mare_nostrum"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_mare_nostrum.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13562,7 +13530,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_regia_aeronautica_shine"
+		name = "GFX_ITA_regia_aeronautica"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_regia_aeronautica.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -13595,7 +13563,7 @@ SpriteType = {
 
 
 	SpriteType = {
-		name = "GFX_ITA_proclaim_the_empire_shine"
+		name = "GFX_ITA_proclaim_the_empire"
 		texturefile = "gfx/interface/goals/ita/r56_goal_ITA_proclaim_the_empire.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
