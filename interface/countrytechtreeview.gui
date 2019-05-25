@@ -1792,12 +1792,12 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
 
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 2150 height = 1250 }
-	
-			}
+#			containerWindowType = {
+#				name = "size_filler"
+#				position = { x=0 y=0 }
+#				size = { width = 1700 height = 1200 }
+#	
+#			}
 
 			iconType = {
 				name ="mtgnavaltechtree_bg"
@@ -2736,7 +2736,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "industry_year_right"
-				position = { x=200 y=40
+				position = { x=-100 y=40
 				}
 				size = { width = 80 height = 100% }
 				orientation = upper_right

@@ -2430,9 +2430,12 @@ focus_tree = {
 		}
         
 		available  = {
-			FRA = {	
-				has_war_with = GER
-				surrender_progress > 0.3
+			OR = {
+				FRA = {	
+					has_war_with = GER
+					surrender_progress > 0.3
+				}
+				FRA = { has_capitulated = yes }
 			}
 		}
 		available_if_capitulated = no
