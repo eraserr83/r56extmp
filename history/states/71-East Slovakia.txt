@@ -5,6 +5,10 @@ state={
 	
 	state_category = rural
 	
+	resources={
+		chromium=8
+	}
+	
 	history={
 		owner = CZE
 		buildings = {
