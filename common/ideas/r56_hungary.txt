@@ -10,9 +10,6 @@ ideas = {
 				original_tag = HUN
 				
 			}
-			available = {
-				has_government = democratic
-			}
 			
 			research_bonus = {
 				nuclear = 0.15
@@ -29,9 +26,6 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 				
-			}
-			available = {
-				has_government = democratic
 			}
 			cost = 100
 			

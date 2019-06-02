@@ -252,7 +252,7 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1941.1.1
+			date > 1939.6.1
 		}
 		
 		completion_reward = {
@@ -281,7 +281,7 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1943.1.1
+			date > 1940.1.1
 		}
 
 		completion_reward = {
@@ -6052,7 +6052,7 @@ focus_tree = {
 		cost = 10
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		
 		available = {
@@ -6077,7 +6077,7 @@ focus_tree = {
 		x = 40
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6103,7 +6103,7 @@ focus_tree = {
 		x = 40
 		y = 3
 		
-		cost = 10
+		cost = 2
 		
 		ai_will_do = {
 			factor = 10
@@ -6127,7 +6127,7 @@ focus_tree = {
 		x = 38
 		y = 1
 		
-		cost = 10
+		cost = 6
 		
 		ai_will_do = {
 			factor = 10
@@ -6144,7 +6144,7 @@ focus_tree = {
 			add_state_core = 85
 			add_state_core = 86
 			add_state_core = 87
-			add_manpower = -620000
+			add_manpower = -20000
 			add_stability = -0.05
 			add_ideas = GER_generalplan_ost_I_idea
 		}
@@ -6159,7 +6159,7 @@ focus_tree = {
 		x = 38
 		y = 2
 		
-		cost = 10
+		cost = 6
 		
 		ai_will_do = {
 			factor = 10
@@ -6178,7 +6178,7 @@ focus_tree = {
 			add_state_core = 88
 			add_state_core = 90
 			add_state_core = 98
-			add_manpower = -620000
+			add_manpower = -20000
 			add_stability = -0.05
 			add_ideas = GER_generalplan_ost_II_idea
 		}
@@ -6193,7 +6193,7 @@ focus_tree = {
 		x = 42
 		y = 1
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6210,7 +6210,7 @@ focus_tree = {
 			add_state_core = 11
 			add_state_core = 188
 			add_state_core = 189
-			add_manpower = -130000
+			add_manpower = -10000
 			add_stability = -0.03
 		}
 	}
@@ -6224,7 +6224,7 @@ focus_tree = {
 		x = 42
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6239,7 +6239,7 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 12
 			add_state_core = 190
-			add_manpower = -100000
+			add_manpower = -10000
 			add_stability = -0.03
 		}
 	}
@@ -6253,7 +6253,7 @@ focus_tree = {
 		x = 42
 		y = 3
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6268,7 +6268,7 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 13
 			add_state_core = 191
-			add_manpower = -55000
+			add_manpower = -10000
 			add_stability = -0.03
 		}
 	}
