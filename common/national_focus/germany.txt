@@ -631,7 +631,6 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
-			surrender_progress > 0.05
 		}
 		
 		completion_reward = {
@@ -658,7 +657,6 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
-			surrender_progress > 0.25
 		}
 		
 		completion_reward = {
@@ -3556,9 +3554,7 @@ focus_tree = {
 		id = GER_war_with_poland
 		icon = GFX_goal_generic_major_war
 		
-		prerequisite = { focus = GER_modernize_CAS }
-		prerequisite = { focus = GER_schwerepunkt_tactics }
-		prerequisite = { focus = GER_mol_rib_pact}
+		prerequisite = { focus = GER_modernize_CAS GER_schwerepunkt_tactics focus = GER_mol_rib_pact}
 		
 		mutually_exclusive = { focus = GER_danzig_or_war }
 		
@@ -3603,9 +3599,7 @@ focus_tree = {
 		id = GER_danzig_or_war
 		icon = GFX_goal_generic_demand_territory
 		
-		prerequisite = { focus = GER_modernize_CAS }
-		prerequisite = { focus = GER_schwerepunkt_tactics }
-		prerequisite = { focus = GER_mol_rib_pact }
+		prerequisite = { focus = GER_mol_rib_pact focus = GER_schwerepunkt_tactics focus = GER_modernize_CAS }
 		
 		mutually_exclusive = { focus = GER_war_with_poland }
 		
