@@ -114,17 +114,17 @@ if = {
 	}
 }
 
-set_popularities = {
-		democratic = 9
-		fascism = 4
-		communism  = 9
-		neutrality = 78
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 9
+	fascism = 4
+	communism = 9
+	neutrality = 78
 }
 
 create_country_leader = {
@@ -194,19 +194,16 @@ if = {
 
 1939.1.1 = {
 	set_politics = {
-
-		set_popularities = {
-		democratic = 3
-		fascism = 2
-		communism  = 7
-		neutrality = 88
-		}
-	}
-	
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 3
+		fascism = 2
+		communism = 7
+		neutrality = 88
 	}
 }
 

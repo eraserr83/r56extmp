@@ -20,6 +20,7 @@ set_technology = {
 	etax_doctrine = 1
 	camo = 1
 	gw_armored_car = 1
+	steel_production_1 = 1
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -217,7 +218,6 @@ if = {
 set_convoys = 300
 
 set_politics = {
-	
 	ruling_party = democratic
 	last_election = "1932.5.1"
 	election_frequency = 48
@@ -227,7 +227,6 @@ set_popularities = {
 	democratic = 69
 	fascism = 1
 	communism = 30
-	neutrality = 0
 }
 
 add_ideas = {
@@ -581,6 +580,7 @@ create_corps_commander = {
 #	traits = { }
 #	skill = 2
 #}
+
 
 ### END MOD ### 
 ### Ship Variants ###

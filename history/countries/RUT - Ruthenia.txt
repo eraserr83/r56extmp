@@ -29,16 +29,16 @@ add_ideas = {
 	limited_conscription
 }
 
-set_popularities = {
-		democratic = 54
-		fascism = 15
-		communism  = 31
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 54
+	fascism = 15
+	communism = 31
 }
 
 create_country_leader = {

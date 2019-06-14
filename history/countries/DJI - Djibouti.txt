@@ -21,7 +21,6 @@ set_technology = {
 }
 
 set_politics = {
-	
 	ruling_party = democratic
 	last_election = "1934.10.16"
 	election_frequency = 48

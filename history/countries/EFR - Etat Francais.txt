@@ -119,7 +119,6 @@ set_technology = {
 set_convoys = 300
 
 set_politics = {
-	
 	ruling_party = fascism
 	last_election = "1932.5.1"
 	election_frequency = 48
@@ -129,7 +128,6 @@ set_popularities = {
 	democratic = 30
 	fascism = 60
 	communism = 10
-	neutrality = 0
 }
 
 add_ideas = {

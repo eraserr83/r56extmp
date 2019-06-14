@@ -21,6 +21,7 @@ set_technology = {
 	etax_doctrine = 1
 	camo = 1
 	gw_armored_car = 1
+	steel_production_1 = 1
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -176,8 +177,7 @@ if = {
 	}
 }
 
-set_politics = {
-	
+set_politics = {	
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
@@ -187,7 +187,6 @@ set_popularities = {
 	democratic = 98
 	fascism = 1
 	communism = 1
-	neutrality = 0
 }
 
 create_country_leader = {
@@ -237,26 +236,15 @@ set_stability = 0.75
 
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 98
-			}
-
-			fascism = {
-				popularity = 1
-			}
-			
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
 		ruling_party = democratic
 		last_election = "1935.10.14"
 		election_frequency = 60
 		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 98
+		fascism = 1
+		communism = 1
 	}
 }
 if = {

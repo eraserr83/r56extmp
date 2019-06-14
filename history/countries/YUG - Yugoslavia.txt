@@ -195,37 +195,32 @@ if = {
 	}
 }
 
-set_popularities = {
-		democratic = 15
-		fascism = 10
-		communism  = 15
-			#banned = no #default is no
-		neutrality = 60
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
+set_popularities = {
+	democratic = 15
+	fascism = 10
+	communism = 15
+	neutrality = 60
+}
 
 1939.1.1 = {
-
-	set_popularities = {
-			democratic = 5
-			fascism = 20
-			communism = 5
-			neutrality = 60
-			
-	}
-	
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1938.12.1"
 		election_frequency = 36
 		elections_allowed = yes
 	}
-
+	set_popularities = {
+		democratic = 5
+		fascism = 20
+		communism = 5
+		neutrality = 60
+	}
 }
 
 create_country_leader = {

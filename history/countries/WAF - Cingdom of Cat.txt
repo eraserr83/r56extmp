@@ -135,17 +135,17 @@ set_technology = {
 	}
 }
 
-set_popularities = {
-		democratic = 33
-		fascism = 33
-		communism  = 33
-		neutrality = 1
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 33
+	fascism = 33
+	communism = 33
+	neutrality = 1
 }
 
 create_country_leader = {
@@ -189,20 +189,17 @@ create_country_leader = {
 }
 
 1939.1.1 = {
-
-set_popularities = {
-		democratic = 33
-		fascism = 33
-		communism  = 33
-		neutrality = 1
-		
-}
-
-set_politics = {
+	set_politics = {
 		ruling_party = fascism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 33
+		fascism = 33
+		communism = 33
+		neutrality = 1
 	}
 }
 

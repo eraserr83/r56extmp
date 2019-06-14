@@ -75,17 +75,16 @@ set_technology = {
 	}
 }
 
-set_popularities = {
-		democratic = 5
-		fascism = 80
-		communism  = 15
-			#banned = no #default is no
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 80
+	communism = 15
 }
 
 create_country_leader = {
@@ -122,22 +121,15 @@ create_field_marshal = {
 }
 
 1939.1.1 = {
-
-set_popularities = {
-			democratic = 5
-			
-
-			fascism = 80
-			
-			
-			communism = 15
-				#banned = no #default is no
-			
-}
-	set_politics = {
+	set_politics = {	
 		ruling_party = fascism
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 5
+		fascism = 80
+		communism = 15
 	}
 }

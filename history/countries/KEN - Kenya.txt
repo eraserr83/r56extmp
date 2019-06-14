@@ -21,26 +21,16 @@ set_technology = {
 	early_fighter = 1
 }
 
-set_popularities = {
-		neutrality = 50
-		
 
-		democratic = 0
-		fascism = 0
-		
-		
-		communism  = 50
-		
-}
-	
 set_politics = {
-
-
-	
 	ruling_party = neutrality
 	last_election = "1935.06.10"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	communism = 50
+	neutrality = 50
 }
 create_country_leader = {
 	name = "Eliud Mathu"

@@ -124,18 +124,18 @@ technologies = {
 		}
 		
 		cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		motorized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		amphibious_mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -235,18 +235,18 @@ technologies = {
 		}
 		
 		cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		motorized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		amphibious_mechanized = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -537,6 +537,7 @@ technologies = {
 		paratrooper = {
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -581,6 +582,8 @@ technologies = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -673,6 +676,7 @@ technologies = {
 		marine = {
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		path = {
 			leads_to_tech = marines3
@@ -712,6 +716,8 @@ technologies = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -791,6 +797,7 @@ technologies = {
 		mountaineers = {
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		path = {
 			leads_to_tech = tech_mountaineers3
@@ -821,6 +828,8 @@ technologies = {
 
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -891,7 +900,8 @@ technologies = {
 
 		category_special_forces = {
 			max_organisation = 5
-			defense = 0.05
+			soft_attack = 0.05
+			defense = 0.1
 		}
 
 		special_forces_training_time_factor = 0.1
@@ -1027,6 +1037,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -1060,6 +1071,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -1093,6 +1105,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.20
 			max_organisation = 5
 			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -1276,22 +1289,18 @@ jungle_warfare = {
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -1315,17 +1324,21 @@ jungle_warfare = {
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -1388,22 +1401,18 @@ jungle_warfare = {
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -1427,17 +1436,21 @@ jungle_warfare = {
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -1506,40 +1519,34 @@ jungle_warfare = {
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		jaeger = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		jungletroop = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-
 		desertinfantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-
 		shocktroop = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1547,17 +1554,21 @@ jungle_warfare = {
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -1616,22 +1627,18 @@ jungle_warfare = {
 		bicycle_battalion = {
 			defense = 0.05
 			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -1653,19 +1660,23 @@ jungle_warfare = {
 			breakthrough = 0.03
 		}
 		
-###------> X   <><> <><> <><> <><> <><>
+###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05		  
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -2338,6 +2349,8 @@ jungle_warfare = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2366,6 +2379,8 @@ jungle_warfare = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2393,6 +2408,8 @@ jungle_warfare = {
 
 		paratrooper = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 
 		research_cost = 2.0
@@ -2419,6 +2436,8 @@ jungle_warfare = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2442,6 +2461,8 @@ jungle_warfare = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2465,6 +2486,8 @@ jungle_warfare = {
 
 		marine = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 
 		research_cost = 2.0
@@ -2487,6 +2510,8 @@ jungle_warfare = {
 
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2516,6 +2541,8 @@ jungle_warfare = {
 
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 		
 		path = {
@@ -2544,6 +2571,8 @@ jungle_warfare = {
 
 		mountaineers = {
 			max_organisation = 5
+			soft_attack = 0.05
+			defense = 0.1
 		}
 
 		research_cost = 2.0
@@ -3212,21 +3241,21 @@ jaegers = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -3248,15 +3277,23 @@ jaegers = {
 			breakthrough = 0.03
 		}
 		
-###------> X   <><> <><> <><> <><> <><>
+###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
+		}
+		amphibious_mechanized = {
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -3286,21 +3323,21 @@ jaegers = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -3322,15 +3359,23 @@ jaegers = {
 			breakthrough = 0.03
 		}
 		
-###------> X   <><> <><> <><> <><> <><>
+###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
+		}
+		amphibious_mechanized = {
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		path = {
@@ -3385,21 +3430,21 @@ jaegers = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}	
 		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		marine = {
-			defense = 0.03
-			breakthrough = 0.03
+			defense = 0.07
+			breakthrough = 0.07
 		}
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
@@ -3421,15 +3466,23 @@ jaegers = {
 			breakthrough = 0.03
 		}
 		
-###------> X   <><> <><> <><> <><> <><>
+###------> Jaeger   <><> <><> <><> <><> <><>
 
+		cavalry = {
+			defense = 0.06
+			breakthrough = 0.06
+		}	
 		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
+			defense = 0.06
+			breakthrough = 0.06
+		}
+		amphibious_mechanized = {
+			defense = 0.06
+			breakthrough = 0.06
 		}
 		
 		research_cost = 1.5

@@ -34,13 +34,11 @@ set_technology = {
 }
 
 set_politics = {
-
 }
 set_popularities = {
 	democratic = 30
 	fascism = 34
 	communism = 36
-	neutrality = 0
 }
 
 create_country_leader = {
@@ -86,5 +84,3 @@ create_country_leader = {
 		
 	}
 }
-
-

@@ -72,20 +72,16 @@ set_technology = {
 	}
 }
 
-set_popularities = {
-		democratic = 80
-		fascism = 0
-		communism = 20
-			#banned = no #default is no
-		
-}
+
 set_politics = {
-
-
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	communism = 20
 }
 
 create_country_leader = {

@@ -9,21 +9,15 @@ set_research_slots = 2
 
 oob = "PGR_1936"
 
-set_popularities = {
-		democratic  = 0
-		
-		fascism  = 35
-		
-
-		communism  = 0
-		neutrality  = 65
-		
-	}
-set_politics = { 
+set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	fascism = 35
+	neutrality = 65
 }
 
 create_country_leader = {
@@ -127,27 +121,13 @@ create_country_leader = {
 		dispersed_industry = 1
 	}
 
-	set_popularities = {
-			democratic = 0
-			
-
-			fascism = 100
-			
-
-			communism  = 0
-			
-
-			neutrality = 0
-			
-		}
-	
 	set_politics = {
-
-		
-
 		ruling_party = fascism
 		last_election = "1937.12.14"
 		election_frequency = 48
 		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
 	}
 }

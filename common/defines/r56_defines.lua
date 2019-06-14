@@ -47,7 +47,6 @@ NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.7
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000275
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 24
-NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.1
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01
@@ -112,36 +111,3 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 0
 -- Ai behaviour
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_NAVY_TRAINING = 1 -- ai will use at most this ratio of affordable fuel for naval training
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_AIR_TRAINING = 1
-
--- Navy
-NDefines.NNavy.COMBAT_MAX_GROUPS = 2
-NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.6
-NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 7
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.9
-NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
-NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 50
-NDefines.NNavy.OUT_OF_FUEL_EVASION_FACTOR = -0.75
-NDefines.NNavy.ATTRITION_DAMAGE_STR = 0.01
-NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.16
-NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE = 0.75
-NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.015
-NDefines.NNavy.NAVAL_MINES_ACCIDENT_CRITICAL_HIT_CHANCES = 0.08
-NDefines.NNavy.NAVAL_MINES_ACCIDENT_STRENGTH_LOSS = 50.0
-NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1.0 -- 5.0 -- Spotting speed mult against unit transfers
-NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 4.17 --25.02 -- Unit transfer and naval invasion base chance detection percentage (if this fails no detection is done on that tick)
-NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 0.35 --10.0 -- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING but for naval transfer convoys
-NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 1.20 --20.0 -- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING but for naval transfer convoys
-NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
-		0.25,		-- do not engage
-		0.6,	-- low
-		0.9,	-- medium
-		2.0,	-- high
-		10000,	-- I am death incarnate!
-	}
-NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
-		30, -- do not engage
-		15, -- low
-		3.0, -- medium
-		1.0, -- high
-		0.1, -- I am death incarnate!
-	}

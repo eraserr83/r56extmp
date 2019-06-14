@@ -20,6 +20,7 @@ set_technology = {
 	camo = 1
 	sniper_rifle = 1
 	gw_armored_car = 1
+	steel_production_1 = 1
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -272,16 +273,16 @@ if = {
 
 set_convoys = 50
 
-set_popularities = {
-		democratic = 10 #shared between all parties, should add to 100
-		fascism = 2
-		communism  = 88
-		}
-set_politics = { 
+set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 2
+	communism = 88
 }
 
 create_faction = Comintern
@@ -302,7 +303,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Joseph Stalin"
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	picture = "r56_portrait_SOV_Joseph_Stalin.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
@@ -777,7 +778,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"
-		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
+	picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
 	traits = { ground_pounder ironside }
 	skill = 2
 	attack_skill = 3
@@ -789,7 +790,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Sergey Gorshkov"
 	id = 411
-		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
+	picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
 	traits = { navy_career_officer bold }
 	skill = 3
 	attack_skill = 3
@@ -802,7 +803,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Gordey Levchenko"
 	id = 406
-		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
+	picture = "Portrait_Soviet_Gordey_Levchenko.dds"
 	traits = { green_water_expert }
 	skill = 2
 	attack_skill = 2
@@ -814,7 +815,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Arseniy Golovko"
 	id = 409
-		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
+	picture = "Portrait_Soviet_Arseniy_Golovko.dds"
 	traits = { arctic_water_expert spotter }
 	skill = 4
 	attack_skill = 3
@@ -826,7 +827,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Vladimir Kasatonov"
 	id = 403
-		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
+	picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
 	traits = { seawolf }
 	skill = 2
 	attack_skill = 1

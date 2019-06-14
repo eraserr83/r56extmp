@@ -132,8 +132,7 @@ if = {
 
 }
 
-set_politics = {
-	
+set_politics = {	
 	ruling_party = neutrality
 	last_election = "1932.5.21"
 	election_frequency = 48
@@ -147,31 +146,17 @@ set_popularities = {
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 20
-			}
-
-			fascism = {
-				popularity = 15
-			}
-			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 60
-			}
-		}
-		
+	set_politics = {		
 		ruling_party = neutrality
 		last_election = "1938.2.25"
 		election_frequency = 48
 		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 20
+		fascism = 15
+		communism = 5
+		neutrality = 60
 	}
 }
 

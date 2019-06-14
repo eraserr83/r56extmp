@@ -252,7 +252,7 @@ focus_tree = {
 		}
 		
 		available = {
-			date > 1939.6.1
+			date > 1939.1.1
 		}
 		
 		completion_reward = {
@@ -631,6 +631,7 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
+			surrender_progress > 0.05
 		}
 		
 		completion_reward = {
@@ -657,6 +658,7 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
+			surrender_progress > 0.25
 		}
 		
 		completion_reward = {
@@ -1043,7 +1045,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}					
 				}
 				if = {
 					limit = {
@@ -1051,7 +1056,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						 
 				}
 				if = {
 					limit = {
@@ -1059,7 +1067,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						 
 				}
 				country_event = { 
 					id = generic.1 
@@ -1502,7 +1513,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -1510,7 +1524,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -1518,7 +1535,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence 
+						days = 1035 
+					}						
 				}
 				country_event = { 
 					id = generic.1 
@@ -1619,7 +1639,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -1627,7 +1650,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -1635,7 +1661,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { 
 					id = generic.1 
@@ -2265,7 +2294,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -2273,7 +2305,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -2281,7 +2316,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { 
 					id = generic.1 
@@ -3237,7 +3275,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -3245,7 +3286,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -3253,7 +3297,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { id = generic.1 }
 			}
@@ -3554,7 +3601,9 @@ focus_tree = {
 		id = GER_war_with_poland
 		icon = GFX_goal_generic_major_war
 		
-		prerequisite = { focus = GER_modernize_CAS GER_schwerepunkt_tactics focus = GER_mol_rib_pact}
+		prerequisite = { focus = GER_modernize_CAS }
+		prerequisite = { focus = GER_schwerepunkt_tactics }
+		prerequisite = { focus = GER_mol_rib_pact}
 		
 		mutually_exclusive = { focus = GER_danzig_or_war }
 		
@@ -3599,7 +3648,9 @@ focus_tree = {
 		id = GER_danzig_or_war
 		icon = GFX_goal_generic_demand_territory
 		
-		prerequisite = { focus = GER_mol_rib_pact focus = GER_schwerepunkt_tactics focus = GER_modernize_CAS }
+		prerequisite = { focus = GER_modernize_CAS }
+		prerequisite = { focus = GER_schwerepunkt_tactics }
+		prerequisite = { focus = GER_mol_rib_pact }
 		
 		mutually_exclusive = { focus = GER_war_with_poland }
 		
@@ -3892,7 +3943,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -3900,7 +3954,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -3908,7 +3965,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { id = generic.1 }
 				if = {
@@ -4006,7 +4066,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4014,7 +4077,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4022,7 +4088,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { id = generic.1 }
 				if = {
@@ -4115,7 +4184,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4123,7 +4195,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4131,7 +4206,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { id = generic.1 }
 				if = {
@@ -4218,7 +4296,10 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence 
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4226,7 +4307,10 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					add_ideas = communist_influence
+					add_timed_idea = {
+						idea = communist_influence
+						days = 1035 
+					}						
 				}
 				if = {
 					limit = {
@@ -4234,7 +4318,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					add_ideas = democratic_influence
+					add_timed_idea = {
+						idea = democratic_influence
+						days = 1035 
+					}						
 				}
 				country_event = { id = generic.1 }
 				if = {
@@ -5964,7 +6051,7 @@ focus_tree = {
 		x = 70
 		y = 5
 		
-		cost = 10
+		cost = 5
 		
 		completion_reward = {
 			add_ideas = GER_prioritize_defensive_construction_idea
@@ -5980,7 +6067,7 @@ focus_tree = {
 		x = 67
 		y = 6
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6022,7 +6109,7 @@ focus_tree = {
 		x = 40
 		y = 0
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6043,10 +6130,10 @@ focus_tree = {
 		x = 40
 		y = 1
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		
 		available = {
@@ -6097,7 +6184,7 @@ focus_tree = {
 		x = 40
 		y = 3
 		
-		cost = 2
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6121,7 +6208,7 @@ focus_tree = {
 		x = 38
 		y = 1
 		
-		cost = 6
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6138,7 +6225,7 @@ focus_tree = {
 			add_state_core = 85
 			add_state_core = 86
 			add_state_core = 87
-			add_manpower = -20000
+			add_manpower = -10000
 			add_stability = -0.05
 			add_ideas = GER_generalplan_ost_I_idea
 		}
@@ -6153,7 +6240,7 @@ focus_tree = {
 		x = 38
 		y = 2
 		
-		cost = 6
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6262,7 +6349,7 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 13
 			add_state_core = 191
-			add_manpower = -10000
+			add_manpower = -5000
 			add_stability = -0.03
 		}
 	}
@@ -6276,7 +6363,7 @@ focus_tree = {
 		x = 44
 		y = 1
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10

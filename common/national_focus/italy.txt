@@ -1,4 +1,3 @@
-#Fascist branch based on Hearts of Oak italy tree, and Hegemony, gave all permission to use it.
 focus_tree = {
 	id = italian_focus
 
@@ -412,27 +411,33 @@ focus_tree = {
 			has_government = fascism
 			
 			ITA = {
-				controls_state = 118
-				any_other_country = {
-					is_in_faction_with = ITA
+				OR = {
 					controls_state = 118
+					any_other_country = {
+						is_in_faction_with = ITA
+						controls_state = 118
+					}
 				}
 			}
 			
 			ITA = {
-				controls_state = 116
-				any_other_country = {
-					is_in_faction_with = ITA
+				OR = {
 					controls_state = 116
+					any_other_country = {
+						is_in_faction_with = ITA
+						controls_state = 116
+					}
 				}
 			}
 			
 			ITA = {
-				controls_state = 446
-				any_other_country = {
-					is_in_faction_with = ITA
+				OR = {
 					controls_state = 446
-				} 
+					any_other_country = {
+						is_in_faction_with = ITA
+						controls_state = 446
+					}
+				}
 			}				
         }
 		completion_reward = {
@@ -804,11 +809,39 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = { 	
-			has_tech = improved_equipment_conversion 
+		available = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+						AND = {
+							has_dlc = "Death or Dishonor"
+							NOT = {
+								has_tech = advanced_equipment_conversion
+						}
+					}
+				}
+				add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = improved_equipment_conversion
+				technology = advanced_equipment_conversion
+				}
+			}
+			if = {
+				limit = {
+				 	NOT = {
+				 		has_dlc = "Death or Dishonor"
+					 }
+				}
+				add_tech_bonus = {
+				name = construction_bonus
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+					}
+			}
 			ITA = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2000 producer = ITA }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = ITA }
@@ -2318,11 +2351,17 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
-		bypass = { 
-			has_completed_focus = GER_rally_the_monarchists
-			has_completed_focus = GER_kill_hitler			
+		cancel_if_invalid = yes
+		
+		available = {
+			GER = { has_country_leader = { ruling_only = yes name = "Adolf Hitler" } }
+		}
+		
+		bypass = {
+			NOT = {
+				GER = { has_country_leader = { ruling_only = yes name = "Adolf Hitler" } }
 			}
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -2424,7 +2463,7 @@ focus_tree = {
 		relative_position_id = ITA_trains_on_time 
 		x = 0
 		y = 1
-		cost = 1
+		cost = 2
 		ai_will_do = {
 			factor = 100
 		}

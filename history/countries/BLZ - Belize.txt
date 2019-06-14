@@ -22,7 +22,6 @@ set_technology = {
 set_country_flag = monroe_doctrine
 
 set_politics = {
-
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
@@ -30,7 +29,6 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 40
-	fascism = 0
 	communism = 25
 	neutrality = 35
 }

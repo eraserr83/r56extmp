@@ -153,18 +153,17 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 45
 
-set_popularities = {
-		democratic  = 5
-		fascism  = 6
-		communism  = 9
-		neutrality  = 80
-		
-}
-set_politics = { 
+set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 6
+	communism = 9
+	neutrality = 80
 }
 
 set_stability = 0.6
@@ -218,21 +217,16 @@ create_country_leader = {
 
 1939.1.1 = {
 	set_politics = {
-
-		set_popularities = {
-		democratic  = 1
-		fascism = 4
-		}
-
-		communism  = 1
-		neutrality  = 94
-		}
-	}
-set_politics = { 
 	ruling_party = neutrality
 		last_election = "1934.7.1"
 		election_frequency = 72
 		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 1
+		fascism = 4
+		communism = 1
+		neutrality = 94
 	}
 	create_country_leader = {
 	name = "Lázaro Cárdenas"

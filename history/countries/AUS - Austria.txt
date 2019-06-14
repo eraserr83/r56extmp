@@ -9,6 +9,13 @@ add_ideas = {
 }
 
 set_technology = {
+	etax_doctrine = 1
+	camo = 1
+	gw_armored_car = 1
+	steel_production_1 = 1
+
+
+
 	infantry_weapons = 1
 	tech_recon = 1
 	tech_engineers = 1
@@ -18,7 +25,6 @@ set_technology = {
 }
 
 set_politics = {
-	
 	ruling_party = fascism
 	last_election = "1930.11.9"
 	election_frequency = 48
@@ -26,9 +32,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 20
-	fascism = 60
+	fascism = 55
 	communism = 20
-	neutrality = 0
+	neutrality = 5
 }
 
 set_stability = 0.50
