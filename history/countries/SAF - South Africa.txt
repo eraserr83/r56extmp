@@ -154,22 +154,12 @@ if = { #put in main and remove ossewabrandwag when political reworks will come.
 }
 
 set_convoys = 25
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 75
+set_popularities = {
+		democratic = 75
+		fascism = 20
+		communism  = 5
 		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
@@ -199,22 +189,16 @@ create_country_leader = {
 
 
 1939.1.1 = {
+set_popularities = {
+			democratic = 100
+			fascism = 0
+			communism = 0
+				#banned = no #default is no
+			
+		}
+
 	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 100
-			}
-
-			fascism = {
-				popularity = 0
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
 		
 		ruling_party = democratic
 		last_election = "1938.5.18"

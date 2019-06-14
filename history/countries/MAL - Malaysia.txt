@@ -82,23 +82,13 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 33
-		}
-
-#		fascism = {
-#		}
+set_popularities = {
+		democratic = 33
+		fascism = 0
+		communism  = 33
+		neutrality  = 34
 		
-		communism = {
-			popularity = 33
-		}
-		neutrality = {
-			popularity = 34
-		}
-	}
+	
 }
 
 create_country_leader = {

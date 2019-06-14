@@ -1,11 +1,11 @@
-﻿capital = 296
+﻿capital = 699
 
-oob = "GUN_1936"
+oob = "WSH_1936"
 
 
 set_convoys = 30
-set_stability = 0.7
-set_war_support = 0.2
+set_war_support = 0.3
+set_stability = 0.6
 set_research_slots = 2
 
 set_technology = {
@@ -21,30 +21,25 @@ set_technology = {
 	early_fighter = 1
 }
 
-set_politics = {
 
-	
+
+set_popularities = {
+		neutrality = 70
+		democratic = 6
+		fascism = 4
+		communism  = 20
+		}
+set_politics = { 
 	ruling_party = neutrality
-	last_election = "1935.10.1"
+	last_election = "1935.09.18"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-set_popularities = {
-		neutrality = 70
-		
-		democratic = 20
-
-		fascism = 0
-				
-		communism =10
-		
-	}
-
 create_country_leader = {
-	name = "Alpha Condé"
+	name = "Sidi Mohammed Daddach"
 	desc = ""
-	picture = "gfx/leaders/Africa_e/GUN/Portrait_GUN_N.dds"
+	picture = "gfx/leaders/Africa_e/WSH/Portrait_WSH_N.dds"
 	expire = "1965.1.1"
 	ideology = centrism #neutrality
 	traits = {
@@ -53,9 +48,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Américo Thomaz"
+	name = "Abuli Salim"
 	desc = ""
-	picture = "gfx/leaders/Africa_e/GUN/Portrait_GUN_F.dds"
+	picture = "gfx/leaders/Africa_e/WSH/Portrait_WSH_F.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology #fascism
 	traits = {
@@ -64,9 +59,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mamadou Bâ"
+	name = "Abdelkader Taleb Omar"
 	desc = ""
-	picture = "gfx/leaders/Africa_e/GUN/Portrait_GUN_D.dds"
+	picture = "gfx/leaders/Africa_e/WSH/Portrait_WSH_D.dds"
 	expire = "1965.1.1"
 	ideology = socialism #democratic
 	traits = {
@@ -75,9 +70,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Domingos Simoes"
+	name = "Mohamed Abdelaziz"
 	desc = ""
-	picture = "gfx/leaders/Africa_e/GUN/Portrait_GUN_C.dds"
+	picture = "gfx/leaders/Africa_e/WSH/Portrait_WSH_C.dds"
 	expire = "1965.1.1"
 	ideology = marxism #communism
 	traits = {

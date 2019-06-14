@@ -74,27 +74,24 @@ GUA_banana_republic
 	}
 }
 
+
+set_popularities = {
+		democratic = 30
+		
+
+		fascism = 0
+		
+		
+		communism = 0
+			#banned = no #default is no
+		
+
+		neutrality = 70
+		
+	}
+
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 30
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-
-		neutrality = {
-			popularity = 70
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1931.2.8"
 	election_frequency = 48

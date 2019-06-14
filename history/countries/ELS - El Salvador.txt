@@ -72,27 +72,17 @@ ELS_banana_republic
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes #default is no
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-	}
 	
 	ruling_party = fascism
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
 }
 
 create_country_leader = {

@@ -132,26 +132,13 @@ if = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 80
+set_popularities = {
+		democratic = 80
+		fascism = 2
+		communism  = 2
+		neutrality  = 16
 		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 2
-		}
-		
-		neutrality = {
-			popularity = 16
-		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
@@ -161,7 +148,7 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
 				popularity = 84
 			}

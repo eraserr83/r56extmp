@@ -130,26 +130,18 @@ set_country_flag = SWI_reliance_on_militia
 	set_country_flag = SWI_reliance_on_militia
 }
 
-set_politics = {
+
 	
-	parties = {
-		democratic = {
-			popularity = 64
-		}
+set_popularities = {
+		democratic  = 64
+		neutrality  = 30
 		
-		neutrality = {
-			popularity = 30
-		}
 		
-		fascism = {
-			popularity = 2
-		}
+		fascism  = 2
+		communism  = 4
+}
 		
-		communism = {
-			popularity = 4
-		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
@@ -159,7 +151,7 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 		
-		parties = {
+		set_popularities = {
 			democratic = {
 				popularity = 60
 			}

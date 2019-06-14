@@ -1477,7 +1477,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 120
 			surface_detection = 7
-			sub_detection = 2
+			sub_detection = 3
 		}
 		
 		can_convert_from = {
@@ -1497,7 +1497,7 @@ equipment_modules = {
 		add_stats = {
 			
 			surface_detection = 12
-			sub_detection = 4
+			sub_detection = 6
 			build_cost_ic = 170
 		}
 		can_convert_from = {
@@ -1522,7 +1522,7 @@ equipment_modules = {
 			
 			build_cost_ic = 210
 			surface_detection = 18
-			sub_detection = 8
+			sub_detection = 10
 		}
 		can_convert_from = {
 			module = ship_radar_3

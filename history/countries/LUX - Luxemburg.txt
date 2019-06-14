@@ -75,27 +75,14 @@ set_stability = 0.8
 set_party_name = { ideology = neutrality long_name = LUX_neutrality_party name = LUX_neutrality_party }
 set_party_name = { ideology = fascism long_name = LUX_fascist_party name = LUX_fascist_party }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 78
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 5
-		}
-
-		neutrality = {
-			popularity = 12
+set_popularities = {
+		democratic = 78
+		fascism = 5
+		communism  = 5
+		neutrality  = 12
 
 		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1934.6.3"
 	election_frequency = 36
@@ -106,21 +93,11 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
-		democratic = { 
-			popularity = 65
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 5
-		}
-
-		neutrality = {
-			popularity = 25
+		set_popularities = {
+		democratic = 65
+		fascism = 5
+		communism  = 5
+		neutrality  = 25
 
 		}
 	}

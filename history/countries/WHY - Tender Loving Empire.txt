@@ -33,27 +33,14 @@ set_technology = {
 
 ###------> Politics <><> <><> <><> <><> <><>
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		
-		democratic = { 
-			popularity = 0
+		democratic = 0
+		fascism = 0
+		communism  = 0
+		neutrality  = 99
 		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = {
-			popularity = 99
-		}
-	}
-	
+set_politics = { 
 	ruling_party = neutrality
 	elections_allowed = no
 }

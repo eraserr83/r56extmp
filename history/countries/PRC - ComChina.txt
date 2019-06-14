@@ -90,23 +90,13 @@ set_cosmetic_tag = GCDguerilla
 	remove_ideas = PRC_devastating_long_march_1
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 100
+set_popularities = {
+		democratic = 0
+		fascism = 0
+		communism  = 100
 			#banned = no #default is no
 		}
-	}
-	
+set_politics = { 
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -116,7 +106,7 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
 				popularity = 0
 			}

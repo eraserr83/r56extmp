@@ -36,7 +36,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 12.0 
+		target_width = 30.0 
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
@@ -114,7 +114,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 30.0
 		width_weight = 2.0
 		column_swap_factor = 0.5
 		
@@ -208,7 +208,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 16.0
+		target_width = 30.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 
@@ -311,7 +311,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 30.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -397,7 +397,7 @@ armored_ITA = {
 			}
 		}
 		
-		target_width = 18.0
+		target_width = 30.0
 		width_weight = 3.0
 		column_swap_factor = 0.5
 		
@@ -506,7 +506,7 @@ garrison_ITA = {
 			}
 		}
 		
-		target_width = 10.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -593,7 +593,7 @@ infantry_ITA = {
 			}
 		}
 	
-		target_width = 40.0
+		target_width = 30.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -697,7 +697,7 @@ mountaineers_ITA = {
 			}
 		}
 		
-		target_width = 40.0
+		target_width = 30.0
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -793,7 +793,7 @@ marines_ITA = {
 			}
 		}
 		
-		target_width = 36.0
+		target_width = 30.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		

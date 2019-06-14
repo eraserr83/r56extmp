@@ -29,22 +29,12 @@ add_ideas = {
 	limited_conscription
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 54
+set_popularities = {
+		democratic = 54
+		fascism = 15
+		communism  = 31
 		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 31
-		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60

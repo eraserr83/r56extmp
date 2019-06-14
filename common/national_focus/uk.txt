@@ -1789,7 +1789,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1822,7 +1822,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2483,7 +2483,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_revisit_colonial_policy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -6660,7 +6660,7 @@ focus_tree = {
 			#}
 		}	
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 240
 			every_country = {
 				limit = {
 					OR = {

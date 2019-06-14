@@ -71,30 +71,17 @@ set_cosmetic_tag = COG_BEL
 	}
 }
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 2
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 83
-		}
-	}
 	
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 5
+	communism = 2
+	neutrality = 83
 }
 
 

@@ -65,27 +65,19 @@ create_corps_commander = {
 		}
 	}
 
+	set_popularities = {
+			democratic = 0
+			fascism = 95
+			
+			
+			communism = 0
+			neutrality = 5
+			
+		}
+	
 	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 0
-				banned = yes
-			}
-
-			fascism = {
-				popularity = 95
-			}
-			
-			communism = {
-				popularity = 0
-				banned = yes
-			}
-
-			neutrality = {
-				popularity = 5
-			}
-		}
+		
 		
 		ruling_party = fascism
 		last_election = "1936.1.1"
@@ -137,28 +129,15 @@ create_corps_commander = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
+set_popularities = {
+		democratic = 0
 			banned = yes
-		}
-
-		fascism = {
-			popularity = 35
-		}
-		
-		communism = {
-			popularity = 0
+		fascism = 35
+		communism  = 0
 			banned = yes
+		neutrality  = 65
 		}
-
-		neutrality = {
-			popularity = 65
-		}
-	}
-	
+set_politics = { 
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48

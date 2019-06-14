@@ -83,6 +83,7 @@ ideas = {
 				guarantee_tension = -0.2
 				mobilization_laws_cost_factor = 1
 				economy_cost_factor = 1
+				political_power_gain = 0.25
 			}
 		}
 		USA_neutrality_act = {
@@ -102,6 +103,7 @@ ideas = {
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
+				political_power_gain = 0.25
 			}
 		}
 		# version if player went down limited intervention
@@ -121,10 +123,11 @@ ideas = {
 			modifier = {
 				lend_lease_tension = -1
 				join_faction_tension = -0.25
-				send_volunteers_tension = -0.35
+				send_volunteers_tension = -0.5
 				guarantee_tension = -0.2
 				mobilization_laws_cost_factor = 1
 				economy_cost_factor = 1
+				political_power_gain = 0.25
 			}
 		}
 		USA_lend_lease_act_na = {# version if player went down neutrality act
@@ -142,9 +145,10 @@ ideas = {
 			
 			modifier = {
 				lend_lease_tension = -1
-				join_faction_tension = 0.25
-				send_volunteers_tension = 0.5
-				guarantee_tension = 0.5
+				join_faction_tension = -0.25
+				send_volunteers_tension = -0.5
+				guarantee_tension = -0.5
+				political_power_gain = 0.25
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects
@@ -312,7 +316,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				planning_speed = 0.1	
+				planning_speed = 0.1
+				political_power_gain = 0.5
 			}
 		}
 		USA_maritime_commission = {
@@ -648,7 +653,9 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_infrastructure_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 	
@@ -955,6 +962,30 @@ ideas = {
 			
 			rule = {
 				can_join_opposite_factions = no
+				can_create_factions = yes
+			}
+			modifier = {
+				drift_defence_factor = 0.2
+				ai_badass_factor = 0.03 # cares for 3% of normal threat
+			}
+		}
+		
+		home_of_the_free_w = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			rule = {
+				can_join_opposite_factions = yes
 				can_create_factions = yes
 			}
 			modifier = {

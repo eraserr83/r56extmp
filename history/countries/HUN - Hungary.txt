@@ -136,21 +136,18 @@ if = {
 	}
 }
 
+set_popularities = {
+		democratic = 25
+		
+		fascism = 31
+		
+		neutrality = 44
+		
+		communism = 0
+		
+}
+
 set_politics = {
-	parties = {
-		democratic = { 
-			popularity = 25
-		}
-		fascism = {
-			popularity = 31
-		}
-		neutrality = {
-			popularity = 44
-		}
-		communism = {
-			popularity = 0
-		}
-	}
 	
 	ruling_party = neutrality
 	last_election = "1935.3.31"

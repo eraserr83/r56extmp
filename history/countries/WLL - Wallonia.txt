@@ -92,22 +92,12 @@ set_technology = {
 }
 
 
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 78
+set_popularities = {
+		democratic = 78
+		fascism = 15
+		communism  = 6
 		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 6
-		}
-	}
-	
+set_politics = { 
 	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
@@ -117,7 +107,7 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
 				popularity = 87
 			}

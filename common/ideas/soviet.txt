@@ -290,6 +290,7 @@ ideas = {
 			picture = worker_cluture
 			
 			modifier = {
+				political_power_gain = 0.5
 				stability_factor = 0.025
 				industrial_capacity_factory = 0.025
 			}
@@ -678,7 +679,7 @@ ideas = {
 			
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				political_power_gain = 0.05
+				political_power_gain = 0.35
 			}
 
 			research_bonus = {

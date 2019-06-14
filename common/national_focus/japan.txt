@@ -4110,7 +4110,7 @@ focus_tree = {
 			MAN = { has_focus_tree = generic_focus }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -4159,7 +4159,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4248,7 +4248,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -4290,7 +4290,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -4425,7 +4425,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -4752,26 +4752,26 @@ focus_tree = {
 
 		completion_reward = {
 			528 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			533 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			531 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4786,7 +4786,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4859,7 +4859,6 @@ focus_tree = {
 		id = JAP_supremacy_of_technology
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = JAP_small_arms_modernization }
-		mutually_exclusive = { focus = JAP_supremacy_of_will }
 		x = 0
 		y = 1
 		relative_position_id = JAP_small_arms_modernization
@@ -5039,7 +5038,6 @@ focus_tree = {
 		id = JAP_supremacy_of_will
 		icon = GFX_goal_supremacy_of_will
 		prerequisite = { focus = JAP_army_expansion }
-		mutually_exclusive = { focus = JAP_supremacy_of_technology }
 		x = 0
 		y = 1
 		relative_position_id = JAP_army_expansion
@@ -5128,7 +5126,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -5161,7 +5159,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -5199,7 +5197,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_agility_focus
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
