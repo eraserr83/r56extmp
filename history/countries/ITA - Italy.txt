@@ -497,7 +497,7 @@ create_navy_leader = {
 
 
 
-## VARIANTS ###
+### VARIANTS ###
 # 1936 Start #
 #plane variants
 create_equipment_variant = {
