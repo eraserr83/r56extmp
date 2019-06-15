@@ -40,7 +40,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 
-		build_cost_ic = 28
+		build_cost_ic = 38
 		resources = {
 			steel = 3
 			chromium = 4
@@ -102,7 +102,7 @@ equipments = {
 		ap_attack = 10
 		air_attack = 0
 
-		build_cost_ic = 28
+		build_cost_ic = 38
 
 		resources = {
 			steel = 3
@@ -165,7 +165,7 @@ equipments = {
 		air_attack = 0
 
 
-		build_cost_ic = 28
+		build_cost_ic = 38
 
 		resources = {
 			steel = 3
@@ -227,7 +227,7 @@ equipments = {
 		ap_attack = 100
 		air_attack = 50
 
-		build_cost_ic = 28
+		build_cost_ic = 38
 
 		resources = {
 			steel = 3
@@ -287,7 +287,7 @@ equipments = {
 		ap_attack = 141
 		air_attack = 0
 
-		build_cost_ic = 29
+		build_cost_ic = 42
 		resources = {
 			steel = 4
 			chromium = 5
@@ -325,7 +325,7 @@ equipments = {
 		ap_attack = 151
 		air_attack = 0
 
-		build_cost_ic = 30
+		build_cost_ic = 45
 
 		resources = {
 			steel = 5
@@ -371,7 +371,7 @@ equipments = {
 		ap_attack = 161
 		air_attack = 0
 
-		build_cost_ic = 31
+		build_cost_ic = 48
 
 		resources = {
 			steel = 6
@@ -413,7 +413,7 @@ equipments = {
 		ap_attack = 171
 		air_attack = 0
 
-		build_cost_ic = 32
+		build_cost_ic = 52
 
 		resources = {
 			steel = 6
@@ -453,7 +453,7 @@ equipments = {
 		ap_attack = 181
 		air_attack = 0
 
-		build_cost_ic = 33
+		build_cost_ic = 56
 
 		resources = {
 			steel = 6
@@ -494,7 +494,7 @@ equipments = {
 		ap_attack = 110
 		air_attack = 59
 
-		build_cost_ic = 29
+		build_cost_ic = 42
 
 		resources = {
 			steel = 4
@@ -534,7 +534,7 @@ equipments = {
 		ap_attack = 120
 		air_attack = 69
 
-		build_cost_ic = 30
+		build_cost_ic = 45
 
 		resources = {
 			steel = 5
@@ -577,7 +577,7 @@ equipments = {
 		ap_attack = 130
 		air_attack = 78
 
-		build_cost_ic = 31
+		build_cost_ic = 48
 
 		resources = {
 
@@ -623,7 +623,7 @@ equipments = {
 		ap_attack = 140
 		air_attack = 88
 
-		build_cost_ic = 32
+		build_cost_ic = 52
 
 		resources = {
 			steel = 6
@@ -669,7 +669,7 @@ equipments = {
 		ap_attack = 150
 		air_attack = 98
 
-		build_cost_ic = 33
+		build_cost_ic = 56
 
 		resources = {
 			steel = 6
@@ -708,7 +708,7 @@ equipments = {
 		soft_attack = 100
 		hard_attack = 3.5
 
-		build_cost_ic = 29
+		build_cost_ic = 42
 
 		resources = {
 			steel = 4
@@ -747,7 +747,7 @@ equipments = {
 		soft_attack = 110
 		hard_attack = 4
 
-		build_cost_ic = 30
+		build_cost_ic = 45
 
 		resources = {
 
@@ -789,7 +789,7 @@ equipments = {
 		soft_attack = 120
 		hard_attack = 4.5
 
-		build_cost_ic = 31
+		build_cost_ic = 48
 
 		resources = {
 			steel = 6
@@ -832,7 +832,7 @@ equipments = {
 		soft_attack = 130
 		hard_attack = 5
 
-		build_cost_ic = 32
+		build_cost_ic = 52
 
 		resources = {
 			steel = 6
@@ -877,7 +877,7 @@ equipments = {
 		soft_attack = 150
 		hard_attack = 5.5
 
-		build_cost_ic = 33
+		build_cost_ic = 56
 
 		resources = {
 			steel = 6
@@ -918,7 +918,7 @@ equipments = {
 		hard_attack = 48
 		ap_attack = 175
 
-		build_cost_ic = 29
+		build_cost_ic = 42
 
 		resources = {
 			steel = 4
@@ -957,7 +957,7 @@ equipments = {
 		hard_attack = 54
 		ap_attack = 185
 
-		build_cost_ic = 30
+		build_cost_ic = 45
 
 		resources = {
 			steel = 5
@@ -999,7 +999,7 @@ equipments = {
 		hard_attack = 60
 		ap_attack = 195
 
-		build_cost_ic = 31
+		build_cost_ic = 48
 
 		resources = {
 			steel = 6
@@ -1043,7 +1043,7 @@ equipments = {
 		hard_attack = 66
 		ap_attack = 205
 
-		build_cost_ic = 32
+		build_cost_ic = 52
 
 		resources = {
 			steel = 6
@@ -1089,7 +1089,7 @@ equipments = {
 		hard_attack = 72
 		ap_attack = 215
 
-		build_cost_ic = 33
+		build_cost_ic = 56
 
 		resources = {
 			steel = 6
