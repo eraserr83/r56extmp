@@ -1483,10 +1483,6 @@
 		bypass = {
 		}
 
-		available = {
-			amount_research_slots < 5
-		}
-
 		complete_tooltip = {	
 		}
 
