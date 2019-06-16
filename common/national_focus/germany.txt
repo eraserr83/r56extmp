@@ -1747,6 +1747,17 @@ focus_tree = {
 			factor = 10
 		}
 		
+		bypass = {
+			FRA = {
+				OR = {
+					NOT = { 
+						country_exists = THIS 
+					}
+					has_capitulated = yes
+				}
+			}
+		}
+		
 		completion_reward = {
 			50 = {
 				if = {
@@ -1848,12 +1859,18 @@ focus_tree = {
 		
 		bypass = {
 			FRA = {
-				r56_script_statusquo_bypass = yes
+				OR = {
+					NOT = { 
+						country_exists = THIS 
+					}
+					has_capitulated = yes
+				}
 			}
 			GER = { 
 					has_war_with = FRA 
 					has_offensive_war = yes
 				}
+			
 		}
 		
 		completion_reward = {
@@ -2528,6 +2545,14 @@ focus_tree = {
 			ITA = {
 				r56_script_standard_bypass = yes
 			}
+			ITA = {
+				OR = {
+					NOT = { 
+						country_exists = THIS 
+					}
+					is_in_faction_with = GER
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -3087,6 +3112,14 @@ focus_tree = {
 						}
 					}
 				}
+				ITA = {
+				OR = {
+					NOT = { 
+						country_exists = THIS 
+					}
+					is_in_faction_with = GER
+				}
+			}
 			}
 		}
 		
@@ -4015,6 +4048,14 @@ focus_tree = {
 		bypass = {
 			ROM = {
 				r56_script_standard_bypass = yes
+			}
+			ROM = {
+				OR = {
+					NOT = { 
+						country_exists = THIS 
+					}
+					is_in_faction_with = GER
+				}
 			}
 		}
 		
