@@ -649,7 +649,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		
 		add_stats = {
-			hg_attack = 16
+			hg_attack = 20
 			build_cost_ic = 1800
 		}
 		build_cost_resources = {
@@ -1556,7 +1556,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1580,7 +1580,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1608,7 +1608,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1635,7 +1635,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1662,7 +1662,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.5
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1688,7 +1688,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.05
-			reliability = -0.2
+			reliability = -0.05
 
 		}
 
@@ -1713,7 +1713,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.05
 		}
 		
@@ -1742,7 +1742,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.1
 		}
 		
@@ -1770,7 +1770,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.25
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.15
 		}
 		
@@ -1797,12 +1797,12 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1000
 		}
 	}
 
@@ -1820,17 +1820,17 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1000
 		}
 		
 		can_convert_from = {
 			module = cruiser_ship_engine_1
-			convert_cost_ic = 1500
+			convert_cost_ic = 500
 		}
 	}
 
@@ -1848,17 +1848,21 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.35
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1000
+		}
+		can_convert_from = {
+			module = cruiser_ship_engine_1
+			convert_cost_ic = 800
 		}
 		
 		can_convert_from = {
 			module = cruiser_ship_engine_2
-			convert_cost_ic = 1500
+			convert_cost_ic = 500
 		}
 	}
 	cruiser_ship_engine_4 = {
@@ -1875,17 +1879,27 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1000
+		}
+		
+		can_convert_from = {
+			module = cruiser_ship_engine_1
+			convert_cost_ic = 800
+		}
+		
+		can_convert_from = {
+			module = cruiser_ship_engine_2
+			convert_cost_ic = 600
 		}
 		
 		can_convert_from = {
 			module = cruiser_ship_engine_3
-			convert_cost_ic = 1500
+			convert_cost_ic = 500
 		}
 	}
 	cruiser_ship_engine_5 = {
@@ -1902,17 +1916,32 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1000
+		}
+		
+		can_convert_from = {
+			module = cruiser_ship_engine_1
+			convert_cost_ic = 800
+		}
+		
+		can_convert_from = {
+			module = cruiser_ship_engine_2
+			convert_cost_ic = 700
+		}
+		
+		can_convert_from = {
+			module = cruiser_ship_engine_3
+			convert_cost_ic = 600
 		}
 		
 		can_convert_from = {
 			module = cruiser_ship_engine_4
-			convert_cost_ic = 1500
+			convert_cost_ic = 500
 		}
 	}
 	heavy_ship_engine_1 = {
@@ -1928,12 +1957,12 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = heavy_ship_engine
-			convert_cost_ic = 4800
+			convert_cost_ic = 1600
 		}
 	}
 
@@ -1951,17 +1980,17 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
 			module_category = heavy_ship_engine
-			convert_cost_ic = 5000
+			convert_cost_ic = 2000
 		}
 		
 		can_convert_from = {
 			module = heavy_ship_engine_1
-			convert_cost_ic = 2800
+			convert_cost_ic = 2000
 		}
 	}
 
@@ -1972,25 +2001,30 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 11
+			naval_speed = 12
 			fuel_consumption = 30
 			build_cost_ic = 2600
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 			
 		}
 		
 		can_convert_from = {
 			module_category = heavy_ship_engine
-			convert_cost_ic = 5000
+			convert_cost_ic = 2000
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_1
+			convert_cost_ic = 1800
 		}
 		
 		can_convert_from = {
 			module = heavy_ship_engine_2
-			convert_cost_ic = 2800
+			convert_cost_ic = 1600
 		}
 	}
 	heavy_ship_engine_4 = {
@@ -2000,25 +2034,35 @@ equipment_modules = {
 
 		
 		add_stats = {
-			naval_speed = 12
+			naval_speed = 13
 			fuel_consumption = 35
 			build_cost_ic = 3000
 		}
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 			
 		}
 		
 		can_convert_from = {
 			module_category = heavy_ship_engine
-			convert_cost_ic = 5000
+			convert_cost_ic = 2000
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_1
+			convert_cost_ic = 1800
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_2
+			convert_cost_ic = 1700
 		}
 		
 		can_convert_from = {
 			module = heavy_ship_engine_3
-			convert_cost_ic = 2800
+			convert_cost_ic = 1600
 		}
 	}
 	heavy_ship_engine_5 = {
@@ -2034,19 +2078,34 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.45
-			reliability = -0.2
+			naval_speed = 0.5
+			reliability = -0.05
 			
 		}
 		
 		can_convert_from = {
 			module_category = heavy_ship_engine
-			convert_cost_ic = 5000
+			convert_cost_ic = 2000
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_1
+			convert_cost_ic = 1800
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_2
+			convert_cost_ic = 1700
+		}
+		
+		can_convert_from = {
+			module = heavy_ship_engine_3
+			convert_cost_ic = 1600
 		}
 		
 		can_convert_from = {
 			module = heavy_ship_engine_4
-			convert_cost_ic = 2800
+			convert_cost_ic = 1500
 		}
 	}
 	carrier_ship_engine_1 = {
@@ -2062,7 +2121,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -2085,7 +2144,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.35
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -2113,7 +2172,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -2140,7 +2199,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.5
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -2167,7 +2226,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.5
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -2521,7 +2580,7 @@ equipment_modules = {
 		
 		add_stats = {
 			surface_detection = 7
-			sub_detection = 2.5
+			sub_detection = 3
 			build_cost_ic = 150
 		}
 	}
@@ -2531,7 +2590,7 @@ equipment_modules = {
 		
 		add_stats = {
 			surface_detection = 10
-			sub_detection = 3.5
+			sub_detection = 4
 			build_cost_ic = 170
 		}
 		can_convert_from = {
@@ -2595,7 +2654,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 4
+			sub_detection = 4.5
 			build_cost_ic = 50
 		}
 	}
@@ -2606,7 +2665,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 6.5
+			sub_detection = 7
 			build_cost_ic = 75
 		}
 		can_convert_from = {
@@ -2621,7 +2680,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			sub_detection = 10
+			sub_detection = 10.5
 			build_cost_ic = 75
 		}
 		can_convert_from = {

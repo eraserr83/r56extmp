@@ -1119,7 +1119,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_national_resources_commission }
 		available = {
-			has_war = no
 			num_of_factories > 100
 		}
 		completion_reward = {
@@ -5310,7 +5309,6 @@ focus_tree = {
 			factor = 0
 		}
 		available = {
-			has_war = no
 			has_government = neutrality
 			OR = {
 				custom_trigger_tooltip = {
