@@ -758,6 +758,8 @@ technologies = {
 			default_morale = 0.15
 		}
 		
+		max
+		
 		folder = {
 			name = etax_folder
 			 position = { x = 6 y = 2 }
@@ -813,6 +815,8 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3.0
 		
+		global_building_slots_factor = 0.20
+		
 		enemy_partisan_effect = -0.25
   		foreign_subversive_activites = -0.1
 		
@@ -861,9 +865,9 @@ technologies = {
 		
 		research_cost = 3.0
 		
-		modifier = {
-				attrition = -0.15
-		}
+		supply_consumption_factor= -0.15
+		
+		
 		
 		folder = {
 			name = etax_folder
@@ -990,8 +994,8 @@ technologies = {
 		
 		doctrine = yes
 		research_cost = 3.0
+		 
 		
-		supply_consumption_factor = -0.15
 		
 		folder = {
 			name = etax_folder
@@ -1113,6 +1117,7 @@ technologies = {
 		research_cost = 3.0
 		
 		industrial_capacity_factory = 0.10
+		conscription_factor = -0.05
 		
 		folder = {
 			name = etax_folder

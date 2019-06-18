@@ -26,7 +26,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 1.00
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -63,7 +63,7 @@ equipments = {
 		air_defence = 20
 		air_bombing = 8
 		air_ground_attack = 6
-		naval_strike_attack = 16
+		naval_strike_attack = 20
 		naval_strike_targetting = 12
 
 		build_cost_ic = 39
@@ -96,7 +96,7 @@ equipments = {
 		air_defence = 23
 		air_bombing = 10
 		air_ground_attack = 10
-		naval_strike_attack = 18
+		naval_strike_attack = 25
 		naval_strike_targetting = 12
 
 		build_cost_ic = 41

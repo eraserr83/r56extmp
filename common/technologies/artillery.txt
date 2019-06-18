@@ -673,6 +673,11 @@ technologies = {
 			ship_anti_air_3
 		}
 		
+		enable_building = {
+			building = anti_air_building
+			level = 6
+		}
+		
 		path = {
 			leads_to_tech = antiair3
 			research_cost_coeff = 1
@@ -821,6 +826,11 @@ technologies = {
 		
 		enable_equipment_modules = { 
 			ship_anti_air_4
+		}
+		
+		enable_building = {
+			building = anti_air_building
+			level = 7
 		}
 		
 		path = {
@@ -2116,6 +2126,11 @@ technologies = {
 			anti_air_equipment_x
 		}
 		
+		enable_building = {
+			building = anti_air_building
+			level = 8
+		}
+		
 		static_anti_air_damage_factor = 0.1	
 
 		path = {
@@ -2152,6 +2167,11 @@ technologies = {
 		}
 		mot_anti_air_brigade = {
 			air_attack = 0.1
+		}
+		
+		enable_building = {
+			building = anti_air_building
+			level = 9
 		}
 
 		tech_air_damage_factor = -0.02
@@ -2190,6 +2210,11 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}	
+		
+		enable_building = {
+			building = anti_air_building
+			level = 10
+		}
 
 		tech_air_damage_factor = -0.02	
 

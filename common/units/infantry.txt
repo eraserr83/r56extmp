@@ -229,9 +229,9 @@ sub_units = {
 		training_time = 240
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		breakthrough = 0.4
-		initiative = 0.1
+		initiative = 0.01
 	
 		need = {
 			infantry_equipment = 180
@@ -244,7 +244,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = 0.35
-			defence = 0.2
+			defence = 0.25
 			movement = 0.2
 		}
 		plains = {
@@ -265,9 +265,7 @@ sub_units = {
 		forest = {
 			attack = 0.25
 			defence = 0.25
-		}
-		urban = {
-			attack = 0.1
+			movement = 0.1
 		}
 		fort = {
 			attack = -0.1
@@ -304,11 +302,11 @@ sub_units = {
 		hard_attack = 0.1
 
 		#defensive abilities
-		defense = 0.1
+		defense = 0.2
 		hardness = 0.1
 
 		#Size Definitions
-		max_strength = 22
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.5
 		manpower = 1000
@@ -328,6 +326,15 @@ sub_units = {
 		need = {
 			infantry_equipment = 160
 		}
+		
+		urban = {
+			attack = 0.20
+			defence = 0.20
+		}
+		fort = {
+			attack = 0.10
+			defence = 0.10
+		}			
 	}
 	
 	jaeger = {
