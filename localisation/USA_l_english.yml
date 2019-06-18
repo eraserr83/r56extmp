@@ -1,13 +1,4 @@
 ﻿l_english:
  USA_curtiss_wright:0 "Curtiss-Wright"
  USA_claude_shannon:0 "Claude Shannon"
- 
- 
- #focuses
- USA_secure_the_caribbean:0 "Secure the Caribbean"
- USA_secure_the_caribbean_desc:0 "Our security overrides our principles about democracy. We have to protect ourselves whatever its the cost."
- USA_secure_south_west_americas:0 "Secure the South-west Americas"
- USA_secure_south_west_americas_desc:0 "Our security overrides our principles about democracy. We have to protect ourselves whatever its the cost."
- USA_secure_south_east_americas:0 "Secure the South-east Americas"
- USA_secure_south_east_americas_desc:0 "Our security overrides our principles about democracy. We have to protect ourselves whatever its the cost."
- 
+ USA_waco:0 "WACO"

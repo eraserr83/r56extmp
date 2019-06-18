@@ -108,7 +108,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -151,6 +151,8 @@ technologies = {
 	
 	tech_engineers2 = {
 
+		dig_in_speed_factor = 0.05
+		
 		engineer = {
 			entrenchment  = 2
 			
@@ -199,6 +201,8 @@ technologies = {
 	
 	tech_engineers3 = {
 
+		dig_in_speed_factor = 0.05
+
 		engineer = {
 			entrenchment  = 2
 			river = {
@@ -245,6 +249,8 @@ technologies = {
 ###------> Old Engineers <><> <><> <><> <><> <><>
 	
 	tech_engineers4 = {
+
+		dig_in_speed_factor = 0.05
 
 		engineer = {
 			entrenchment  = 2
@@ -302,7 +308,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -488,7 +494,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -658,7 +664,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -843,7 +849,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1028,7 +1034,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1069,6 +1075,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		
@@ -1113,6 +1120,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1160,6 +1168,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		path = {
@@ -1219,7 +1228,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1464,6 +1473,8 @@ technologies = {
 
 	tech_engineers_a = {
 
+		dig_in_speed_factor = 0.05
+
 		engineer = {
 			entrenchment  = 2
 			urban = {
@@ -1497,6 +1508,8 @@ technologies = {
 	
 	tech_engineers_b = {
 
+		dig_in_speed_factor = 0.05
+
 		engineer = {
 			entrenchment  = 2
 			urban = {
@@ -1529,6 +1542,8 @@ technologies = {
 	}	
 	
 	tech_engineers_c = {
+
+		dig_in_speed_factor = 0.05
 
 		engineer = {
 			entrenchment  = 2
@@ -1908,6 +1923,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		path = {
@@ -1935,9 +1951,9 @@ technologies = {
 	
 	tech_logistics_company_b = {
 
-
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		path = {
@@ -1968,6 +1984,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 
 		research_cost = 1.5

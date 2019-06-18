@@ -105,8 +105,6 @@ technologies = {
 
 	
 	etax_navy_focus = {
-	
-		xor = { etax_air_focus }
 		
 		path = {
 			leads_to_tech = etax_navy_firepower
@@ -182,8 +180,6 @@ technologies = {
 	}
 	
 	etax_air_focus = {
-	
-		xor = { etax_navy_focus }
 		
 		path = {
 			leads_to_tech = etax_air_firepower
@@ -708,9 +704,13 @@ technologies = {
 		
 		category_fighter = {
 				air_agility = 0.15
+				air_agility = 0.10
+				air_defence = 0.10
 			}
 		category_heavy_fighter = {
 				air_agility = 0.15
+				air_attack = 0.10
+				air_defence = 0.10
 			}
 		
 		folder = {
@@ -747,7 +747,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = etax_business_interests 
+			leads_to_tech = etax_glory
 			research_cost_coeff = 1
 		}
 		
@@ -801,7 +801,7 @@ technologies = {
 		xor = { etax_the_means }
 		
 		path = {
-			leads_to_tech = etax_glory
+			leads_to_tech = etax_business_interests
 			research_cost_coeff = 1
 		}
 		
@@ -852,7 +852,7 @@ technologies = {
 
 	etax_unity = {
 	
-		xor = { etax_business_interests }
+		xor = { etax_glory }
 		
 		path = {
 			leads_to_tech = etax_broad_support 
@@ -894,7 +894,7 @@ technologies = {
 	
 	etax_business_interests = {
 	
-		xor = { etax_unity }
+		xor = { etax_desperation }
 		
 		path = {
 			leads_to_tech = etax_cost_plus 
@@ -907,7 +907,7 @@ technologies = {
 		
 		folder = {
 			name = etax_folder
-			position = { x = 8 y = 4 }
+			position = { x = -8 y = 4 }
 		}
 			
 		categories = {
@@ -931,7 +931,7 @@ technologies = {
 
 	etax_glory = {
 	
-		xor = { etax_desperation }
+		xor = { etax_unity }
 		
 		path = {
 			leads_to_tech = etax_purity 
@@ -944,10 +944,13 @@ technologies = {
 		category_army = {
 			breakthrough = 0.15
 		}
+		category_all_armor = {
+			fuel_consumption_factor = 0.15
+		}
 		
 		folder = {
 			name = etax_folder
-			position = { x = -8 y = 4 }
+			position = { x = 8 y = 4 }
 		}
 			
 		categories = {
@@ -978,7 +981,7 @@ technologies = {
 	
 	etax_desperation = {
 	
-		xor = { etax_glory }
+		xor = { etax_business_interests }
 		
 		path = {
 			leads_to_tech = etax_no_qa 
@@ -1024,6 +1027,9 @@ technologies = {
 ###------> Glory Branch <><> <><> <><> <><> <><>
 
 	etax_purity = {
+	
+		training_time_army_factor = 0.50
+		conscription_factor = -0.10
 		
 		path = {
 			leads_to_tech = etax_great_leap 
@@ -1039,7 +1045,7 @@ technologies = {
 		
 		folder = {
 			name = etax_folder
-			position = { x = -8 y = 6 }
+			position = { x = 8 y = 6 }
 		}
 			
 		categories = {
@@ -1078,7 +1084,7 @@ technologies = {
 		
 		folder = {
 			name = etax_folder
-			position = { x = -8 y = 8 }
+			position = { x = 8 y = 8 }
 		}
 			
 		categories = {
@@ -1250,7 +1256,7 @@ technologies = {
 		
 		folder = {
 			name = etax_folder
-			position = { x = 8 y = 6 }
+			position = { x = -8 y = 6 }
 		}
 			
 		categories = {
@@ -1285,7 +1291,7 @@ technologies = {
 		
 		folder = {
 			name = etax_folder
-			position = { x = 8 y = 8 }
+			position = { x = -8 y = 8 }
 		}
 			
 		categories = {

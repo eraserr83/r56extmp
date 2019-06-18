@@ -2093,7 +2093,7 @@ focus_tree = {
 				add_ideas = partial_economic_mobilisation
 			}
 			
-			swap_ideas= {
+			swap_ideas = {
 				remove_idea = home_of_the_free
 				add_idea = home_of_the_free_w
 			}
@@ -3970,6 +3970,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_secure_the_caribbean
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -4034,6 +4035,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_secure_south_west_americas
 		icon = GFX_goal_generic_major_war
@@ -4082,6 +4084,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_secure_south_east_americas
 		icon = GFX_goal_generic_attack_allies
@@ -5458,8 +5461,16 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
-				bonus = 1.5
-				uses = 2
+				bonus = 1.0
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+			add_tech_bonus = {
+				name = USA_fighters
+				bonus = 1.0
+				uses = 1
 				category = light_air
 			}
 		}
@@ -5746,7 +5757,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
-				bonus = 1.0
+				uses = 1
 				category = cat_base_strike
 			}
 		}

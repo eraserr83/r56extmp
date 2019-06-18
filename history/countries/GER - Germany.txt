@@ -189,23 +189,27 @@ create_import = {
 	unlock_national_focus = GER_mol_rib_pact
 	complete_national_focus = GER_begin_depression_recovery
 	complete_national_focus = GER_appoint_economic_positions
+	complete_national_focus = GER_volksgemeinschaft
+	complete_national_focus = GER_deutsche_arbeitsfront
 	complete_national_focus = GER_autobahn
+	complete_national_focus = GER_political_sphere
+	complete_national_focus = GER_denounce_versailles
+	complete_national_focus = GER_purge_political_opponents
 	complete_national_focus = GER_two_side_economics
 	complete_national_focus = GER_support_autarks_I
 	complete_national_focus = GER_steelworks_issues
 	complete_national_focus = GER_support_autarks_II
 	complete_national_focus = GER_privatize_reichsbahn
 	complete_national_focus = GER_finish_reinhardt
-	complete_national_focus = GER_volksgemeinschaft
-	complete_national_focus = GER_political_sphere
-	complete_national_focus = GER_denounce_versailles
-	complete_national_focus = GER_combine_SS_gestapo
-	complete_national_focus = GER_purge_political_opponents
 	complete_national_focus = GER_anti_comitern_pact
+	complete_national_focus = GER_combine_SS_gestapo
+	complete_national_focus = GER_volkswagen
+	complete_national_focus = GER_alliance_with_italy
 	complete_national_focus = GER_prepare_poland_invasion
+	complete_national_focus = GER_west_wall
 	complete_national_focus = GER_schwerepunkt_tactics
 	complete_national_focus = GER_modernize_CAS
-	complete_national_focus = GER_west_wall
+	complete_national_focus = GER_military_industrial_complex
 	complete_national_focus = GER_danzig_or_war
 	
 	set_technology = {
@@ -825,12 +829,12 @@ if = {
 		parent_version = 0
 		modules = {
         	fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_battery_slot = ship_triple_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			rear_1_custom_slot = ship_triple_heavy_battery_1
+			rear_1_custom_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_airplane_launcher_1
     	}
 	}
@@ -912,15 +916,15 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -930,15 +934,15 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_light_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -965,7 +969,7 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -973,8 +977,8 @@ if = {
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	create_equipment_variant = {
@@ -983,7 +987,7 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_medium_battery_2
+			fixed_ship_battery_slot = ship_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1001,7 +1005,7 @@ if = {
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_2
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1029,7 +1033,7 @@ if = {
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_heavy_battery_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -1179,3 +1183,4 @@ create_equipment_variant = {
 	#	obsolete = yes
 	#}
 }
+

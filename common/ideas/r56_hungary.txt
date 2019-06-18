@@ -1,24 +1,5 @@
 ideas = {
 
-	HUN_secret_rearmament = {
-		available = {
-			OR = {
-				has_idea = disarmed_nation 
-				has_idea = volunteer_only 
-			}
-		}
-
-		allowed_civil_war = {
-				
-		}
-			
-		modifier = {
-			political_power_gain = 0.5
-			conscription = 0.01
-			industrial_capacity_factory = 0.05
-		}
-	}
-
 
 	theorist = {
 		HUN_john_von_neumann = {
@@ -28,6 +9,9 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 				
+			}
+			available = {
+				has_government = democratic
 			}
 			
 			research_bonus = {
@@ -45,6 +29,9 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 				
+			}
+			available = {
+				has_government = democratic
 			}
 			cost = 100
 			
