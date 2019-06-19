@@ -100,7 +100,7 @@ spriteTypes = {
 #-> The ends <><>
 	SpriteType = {
 		name = "GFX_etax_the_ends_medium"
-		texturefile = "gfx/interface/technologies/werwolf_guerillas.dds"
+		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
 	}
 	SpriteType = {
 		name = "GFX_etax_desperation_medium"

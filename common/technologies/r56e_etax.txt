@@ -58,8 +58,6 @@ technologies = {
 		
 	}
 	
-
-	
 ###------> Army, Navy, Air <><> <><> <><> <><> <><>
 
 	etax_army_focus = {
@@ -102,7 +100,6 @@ technologies = {
 			}
 		}
 	}
-
 	
 	etax_navy_focus = {
 		
@@ -735,7 +732,277 @@ technologies = {
 		}
 	}
 	
-###------> Means and Ends <><> <><> <><> <><> <><>
+###------> Ends <><> <><> <><> <><> <><>
+
+	etax_the_ends = {
+		
+		path = {
+			leads_to_tech = etax_business_interests
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = etax_desperation 
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 3.0
+		
+		global_building_slots_factor = 0.20
+		
+		folder = {
+			name = etax_folder
+			position = { x = -6 y = 2 }
+		}
+			
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+			cat_grand_battle_plan
+			cat_mass_assault
+			cat_mechanized_equipment
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = USA
+					tag = FRA
+					tag = ENG
+				}
+			}
+		}
+	}
+
+###------> Business Interests Branch <><> <><> <><> <><> <><>
+
+	etax_business_interests = {
+	
+		xor = { etax_desperation }
+		
+		path = {
+			leads_to_tech = etax_cost_plus 
+			research_cost_coeff = 1
+		}
+			
+		research_cost = 3.0
+		
+		line_change_production_efficiency_factor = 0.2
+		
+		folder = {
+			name = etax_folder
+			position = { x = -8 y = 4 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = ENG
+					tag = FRA
+				}
+			}
+		}
+	}
+
+	etax_cost_plus = {
+		
+		path = {
+			leads_to_tech = etax_production_in_depth 
+			research_cost_coeff = 1
+		}
+			
+		research_cost = 3.0
+		
+		industrial_capacity_factory = 0.10
+		
+		folder = {
+			name = etax_folder
+			position = { x = -8 y = 6 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+		}
+	}
+	
+	etax_production_in_depth = {
+		
+		path = {
+			leads_to_tech = etax_practical_projects 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = etax_grand_projects
+			research_cost_coeff = 1
+		}
+			
+		research_cost = 3.0
+		
+		local_resources_factor = 0.15
+		
+		folder = {
+			name = etax_folder
+			position = { x = -8 y = 8 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+		}
+	}
+	
+###------> Desperation Branch <><> <><> <><> <><> <><>
+		
+	etax_desperation = {
+	
+		xor = { etax_business_interests }
+		
+		path = {
+			leads_to_tech = etax_no_qa 
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes
+		research_cost = 3.0
+				
+  		foreign_subversive_activites = -0.2
+		enemy_partisan_effect = -0.25
+		partisan_effect = 0.25
+		
+		folder = {
+			name = etax_folder
+			position = { x = -4 y = 4 }
+		}
+			
+		categories = {
+			land_doctrine
+			cat_mobile_warfare
+			cat_grand_battle_plan
+			cat_mass_assault
+			cat_mechanized_equipment
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = JAP
+					tag = GER
+				}
+			}
+		}
+	}
+
+	etax_no_qa = {
+		
+		path = {
+			leads_to_tech = etax_expendable_labor 
+			research_cost_coeff = 1
+		}
+			
+		research_cost = 3.0
+		
+		industrial_capacity_dockyard = 0.1
+		production_factory_start_efficiency_factor = 0.1
+		
+		folder = {
+			name = etax_folder
+			position = { x = -4 y = 6 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+		}
+	}
+	
+	etax_expendable_labor = {
+		
+		path = {
+			leads_to_tech = etax_practical_projects 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = etax_grand_projects
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 3.0
+		
+		conscription_factor = -0.05
+		production_speed_buildings_factor = 0.15
+		
+		folder = {
+			name = etax_folder
+			position = { x = -4 y = 8 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+		}
+	}
+	
+###------> Means branch <><> <><> <><> <><> <><>
 
 	etax_the_means = {
 		
@@ -794,141 +1061,7 @@ technologies = {
 		}
 	}
 	
-	etax_the_ends = {
-		
-		path = {
-			leads_to_tech = etax_business_interests
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = etax_desperation 
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3.0
-		
-		global_building_slots_factor = 0.20
-		
-		enemy_partisan_effect = -0.25
-  		foreign_subversive_activites = -0.1
-		
-		folder = {
-			name = etax_folder
-			position = { x = -6 y = 2 }
-		}
-			
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-			cat_grand_battle_plan
-			cat_mass_assault
-			cat_mechanized_equipment
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = USA
-					tag = FRA
-					tag = ENG
-				}
-			}
-		}
-	}
-	
-###------> Means Branch <><> <><> <><> <><> <><>
-
-	etax_unity = {
-	
-		xor = { etax_glory }
-		
-		path = {
-			leads_to_tech = etax_broad_support 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 3.0
-		
-		category_army = {
-			fuel_consumption_factor = -0.15
-		}
-		supply_consumption_factor= -0.15
-		
-		
-		
-		folder = {
-			name = etax_folder
-			position = { x = 4 y = 4 }
-		}
-			
-		categories = {
-			industry
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = USA
-				}
-			}
-			
-		}
-	}
-	
-	etax_business_interests = {
-	
-		xor = { etax_desperation }
-		
-		path = {
-			leads_to_tech = etax_cost_plus 
-			research_cost_coeff = 1
-		}
-			
-		research_cost = 3.0
-		
-		global_building_slots_factor = 0.20
-		
-		folder = {
-			name = etax_folder
-			position = { x = -8 y = 4 }
-		}
-			
-		categories = {
-			industry
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = ENG
-					tag = FRA
-				}
-			}
-		}
-	}
-	
-###------> Ends Branch <><> <><> <><> <><> <><>
+###------> Glory Branch <><> <><> <><> <><> <><>
 
 	etax_glory = {
 	
@@ -980,53 +1113,6 @@ technologies = {
 			}
 		}
 	}
-	
-	etax_desperation = {
-	
-		xor = { etax_business_interests }
-		
-		path = {
-			leads_to_tech = etax_no_qa 
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes
-		research_cost = 3.0
-		 
-		
-		
-		folder = {
-			name = etax_folder
-			position = { x = -4 y = 4 }
-		}
-			
-		categories = {
-			land_doctrine
-			cat_mobile_warfare
-			cat_grand_battle_plan
-			cat_mass_assault
-			cat_mechanized_equipment
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = JAP
-					tag = GER
-				}
-			}
-		}
-	}
-	
-###------> Glory Branch <><> <><> <><> <><> <><>
 
 	etax_purity = {
 	
@@ -1104,76 +1190,52 @@ technologies = {
 		}
 	}
 
-###------> Desperation Branch <><> <><> <><> <><> <><>
-
-	etax_no_qa = {
-		
-		path = {
-			leads_to_tech = etax_expendable_labor 
-			research_cost_coeff = 1
-		}
-			
-		research_cost = 3.0
-		
-		industrial_capacity_factory = 0.10
-		conscription_factor = -0.05
-		
-		folder = {
-			name = etax_folder
-			position = { x = -4 y = 6 }
-		}
-			
-		categories = {
-			industry
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-		}
-	}
-	
-	etax_expendable_labor = {
-		
-		path = {
-			leads_to_tech = etax_practical_projects 
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = etax_grand_projects
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3.0
-		
-		production_speed_buildings_factor = 0.15
-		
-		folder = {
-			name = etax_folder
-			position = { x = -4 y = 8 }
-		}
-			
-		categories = {
-			industry
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-		}
-	}
-
 ###------> Unity Branch <><> <><> <><> <><> <><>
+
+	etax_unity = {
+	
+		xor = { etax_glory }
+		
+		path = {
+			leads_to_tech = etax_broad_support 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.0
+		
+		category_army = {
+			fuel_consumption_factor = -0.15
+		}
+		supply_consumption_factor= -0.15
+		
+		
+		
+		folder = {
+			name = etax_folder
+			position = { x = 4 y = 4 }
+		}
+			
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+				add = 20
+				has_war = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					tag = USA
+				}
+			}
+			
+		}
+	}
 
 	etax_broad_support = {
 		
@@ -1234,73 +1296,6 @@ technologies = {
 			
 		categories = {
 			electronics
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-		}
-	}
-
-###------> Business Interests Branch <><> <><> <><> <><> <><>
-
-	etax_cost_plus = {
-		
-		path = {
-			leads_to_tech = etax_production_in_depth 
-			research_cost_coeff = 1
-		}
-			
-		research_cost = 3.0
-		
-		line_change_production_efficiency_factor = 0.2
-		
-		folder = {
-			name = etax_folder
-			position = { x = -8 y = 6 }
-		}
-			
-		categories = {
-			industry
-		}
-
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				add = 20
-				has_war = yes
-			}
-		}
-	}
-	
-	etax_production_in_depth = {
-		
-		path = {
-			leads_to_tech = etax_practical_projects 
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = etax_grand_projects
-			research_cost_coeff = 1
-		}
-			
-		research_cost = 3.0
-		
-		local_resources_factor = 0.15
-		
-		folder = {
-			name = etax_folder
-			position = { x = -8 y = 8 }
-		}
-			
-		categories = {
-			industry
 		}
 
 		ai_will_do = {

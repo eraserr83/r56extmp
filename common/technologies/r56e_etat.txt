@@ -21,7 +21,7 @@ technologies = {
 
 		enable_building = {
 			building = steel_mill
-			level = 1
+			level = 2
 		}
 		
 		path = {
@@ -76,6 +76,10 @@ technologies = {
 				amount = 2
 			}
 		}
+		enable_building = {
+			building = steel_mill
+			level = 4
+		}
 
 		path = {
 			leads_to_tech = steel_production_3
@@ -125,6 +129,10 @@ technologies = {
 				resource = steel
 				amount = 2
 			}
+		}
+		enable_building = {
+			building = steel_mill
+			level = 6
 		}
 		
 		path = {
@@ -176,6 +184,10 @@ technologies = {
 				amount = 2
 			}
 		}
+		enable_building = {
+			building = steel_mill
+			level = 8
+		}
 		
 		research_cost = 1.5
 		start_year = 1955
@@ -220,13 +232,14 @@ technologies = {
 
 		enable_building = {
 			building = aluminum_mill
-			level = 1
+			level = 2
 		}
 		
 		path = {
 			leads_to_tech = aluminum_production_2 
 			research_cost_coeff = 1
 		}
+		
 		
 		research_cost = 1.5
 		start_year = 1939
@@ -268,8 +281,12 @@ technologies = {
 			modify_building_resources = {
 				building = aluminum_mill
 				resource = aluminium
-				amount = 2
+				amount = 4
 			}
+		}
+		enable_building = {
+			building = aluminum_mill
+			level = 4
 		}
 		
 		path = {
@@ -323,8 +340,12 @@ technologies = {
 			modify_building_resources = {
 				building = aluminum_mill
 				resource = aluminium
-				amount = 2
+				amount = 4
 			}
+		}
+		enable_building = {
+			building = aluminum_mill
+			level = 6
 		}
 		
 		path = {
