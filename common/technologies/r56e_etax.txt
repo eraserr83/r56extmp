@@ -704,7 +704,7 @@ technologies = {
 		
 		category_fighter = {
 				air_agility = 0.15
-				air_agility = 0.10
+				air_attack = 0.10
 				air_defence = 0.10
 			}
 		category_heavy_fighter = {
@@ -738,8 +738,6 @@ technologies = {
 ###------> Means and Ends <><> <><> <><> <><> <><>
 
 	etax_the_means = {
-	
-		xor = { etax_the_ends }
 		
 		path = {
 			leads_to_tech = etax_unity
@@ -757,8 +755,6 @@ technologies = {
 		category_all_infantry = {
 			default_morale = 0.15
 		}
-		
-		max
 		
 		folder = {
 			name = etax_folder
@@ -799,8 +795,6 @@ technologies = {
 	}
 	
 	etax_the_ends = {
-	
-		xor = { etax_the_means }
 		
 		path = {
 			leads_to_tech = etax_business_interests
@@ -865,6 +859,9 @@ technologies = {
 		
 		research_cost = 3.0
 		
+		category_army = {
+			fuel_consumption_factor = -0.15
+		}
 		supply_consumption_factor= -0.15
 		
 		
@@ -949,7 +946,8 @@ technologies = {
 			breakthrough = 0.15
 		}
 		category_all_armor = {
-			fuel_consumption_factor = 0.15
+			fuel_consumption_factor = 0.30
+			supply_consumption_factor= 0.15
 		}
 		
 		folder = {
@@ -1085,6 +1083,7 @@ technologies = {
 		research_cost = 3.0
 		
 		research_speed_factor = 0.05
+		consumer_goods_factor = 0.03
 		
 		folder = {
 			name = etax_folder
@@ -1186,6 +1185,7 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3.0
 		
+		attrition = -0.15
 		land_reinforce_rate = 0.15
 		
 		folder = {
@@ -1224,7 +1224,7 @@ technologies = {
 		}
 		
 		research_cost = 3.0
-		
+		conscription_factor = -0.05
 		research_speed_factor = 0.05
 		
 		folder = {

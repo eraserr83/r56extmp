@@ -22,17 +22,18 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 30
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04, 0.06,	0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.39, 0.48, 0.57, 0.66, 0.75, 0.78, 0.81, 0.84, 0.87, 0.9}
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
-NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000 -- Max army experience a country can store
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000 -- Max navy experience a country can store
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000  -- Max air experience a country can store
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
+NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1500 -- Max army experience a country can store
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1500 -- Max navy experience a country can store
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1500  -- Max air experience a country can store
+
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 48
 NDefines.NMilitary.RECON_SKILL_IMPACT = 6
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 1 -- Base cost to unlock a regiment slot,
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1 -- Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 1
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 2 -- Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4 -- Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 5					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
 NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 5	
@@ -49,10 +50,9 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000275
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 24
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0
-NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.01
+NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.7
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 3, 4}
-NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_MAX_FORT = 4
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 192
 NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = { -- Chances to gain a personality trait for new generals
 	0.80, --50% for first trait
@@ -61,8 +61,8 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = { -- Chances
 }
 
 -- Technology
-NDefines.NTechnology.BASE_TECH_COST = 70
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4 -- Base year ahead penalty
+NDefines.NTechnology.BASE_TECH_COST = 65
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 6 -- Base year ahead penalty
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0
 
 -- Air Combat
@@ -110,3 +110,5 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 0
 -- Ai behaviour
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_NAVY_TRAINING = 1 -- ai will use at most this ratio of affordable fuel for naval training
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_AIR_TRAINING = 1
+
+NDefines.NNAVY.MANPOWER_LOSS_RATIO_ON_STR_LOSS = 0.5
