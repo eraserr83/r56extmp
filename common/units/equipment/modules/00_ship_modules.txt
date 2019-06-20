@@ -236,10 +236,13 @@ equipment_modules = {
 			module_category = ship_heavy_battery
 			convert_cost_ic = 1200
 		}
-		
+		can_convert_from = {
+			module = ship_heavy_battery_1
+			convert_cost_ic = 200
+		}
 		can_convert_from = {
 			module = ship_heavy_battery_2
-			convert_cost_ic = 150
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -270,7 +273,14 @@ equipment_modules = {
 			module_category = ship_heavy_battery
 			convert_cost_ic = 1800
 		}
-		
+		can_convert_from = {
+			module = ship_heavy_battery_1
+			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_heavy_battery_2
+			convert_cost_ic = 300
+		}
 		can_convert_from = {
 			module = ship_heavy_battery_3
 			convert_cost_ic = 200
@@ -571,8 +581,16 @@ equipment_modules = {
 			}
 		}
 		can_convert_from = {
+			module = ship_light_medium_battery_1
+			convert_cost_ic = 200
+		}
+		can_convert_from = {
+			module = ship_light_medium_battery_2
+			convert_cost_ic = 150
+		}
+		can_convert_from = {
 			module = ship_light_medium_battery_3
-			convert_cost_ic = 400
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -629,7 +647,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_secondaries
-			convert_cost_ic = 120
+			convert_cost_ic = 60
 		}
 		critical_parts = { damaged_secondaries }
 	}
@@ -654,7 +672,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_secondaries
-			convert_cost_ic = 150
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_secondaries }
 	}
@@ -709,12 +727,12 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = ship_anti_air
-			convert_cost_ic = 90
+			convert_cost_ic = 60
 		}
 
 		can_convert_from = {
 			module = ship_anti_air_1
-			convert_cost_ic = 60
+			convert_cost_ic = 30
 		}
 	}
 	ship_anti_air_3 = {
@@ -739,8 +757,13 @@ equipment_modules = {
 		}
 
 		can_convert_from = {
-			module = ship_anti_air_2
+			module = ship_anti_air_1
 			convert_cost_ic = 60
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_2
+			convert_cost_ic = 30
 		}
 	}
 	ship_anti_air_4 = {
@@ -766,8 +789,18 @@ equipment_modules = {
 		}
 
 		can_convert_from = {
+			module = ship_anti_air_1
+			convert_cost_ic = 90
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_2
+			convert_cost_ic = 60
+		}
+
+		can_convert_from = {
 			module = ship_anti_air_3
-			convert_cost_ic = 50
+			convert_cost_ic = 30
 		}
 	}
 
@@ -813,7 +846,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module = ship_fire_control_system_0
-			convert_cost_ic = 40
+			convert_cost_ic = 30
 		}
 	}
 	ship_fire_control_system_2 = {
@@ -832,12 +865,12 @@ equipment_modules = {
 			reliability = -0.075
 		}
 		can_convert_from = {
-			module = ship_fire_control_system_1
+			module_category = ship_fire_control_system
 			convert_cost_ic = 60
 		}
 		can_convert_from = {
-			module_category = ship_fire_control_system
-			convert_cost_ic = 100
+			module = ship_fire_control_system_1
+			convert_cost_ic = 30
 		}
 	}
 	ship_fire_control_system_3 = {
@@ -856,12 +889,12 @@ equipment_modules = {
 			reliability = -0.1
 		}
 		can_convert_from = {
-			module = ship_fire_control_system_2
-			convert_cost_ic = 75
+			module = ship_fire_control_system_1
+			convert_cost_ic = 90
 		}
 		can_convert_from = {
-			module_category = ship_fire_control_system
-			convert_cost_ic = 100
+			module = ship_fire_control_system_2
+			convert_cost_ic = 60
 		}
 	}
 
@@ -913,14 +946,17 @@ equipment_modules = {
 			sub_detection = 5
 			build_cost_ic = 140
 		}
+		
+		can_convert_from = {
+			module = ship_radar_1
+			convert_cost_ic = 60
+		}
+		
 		can_convert_from = {
 			module = ship_radar_2
 			convert_cost_ic = 30
 		}
-		can_convert_from = {
-			module_category = ship_radar
-			convert_cost_ic = 60
-		}
+		
 	}
 	ship_radar_4 = {
 		category = ship_radar
@@ -937,13 +973,20 @@ equipment_modules = {
 			surface_detection = 18
 			sub_detection = 10
 		}
+		
+		can_convert_from = {
+			module = ship_radar_1
+			convert_cost_ic = 90
+		}
+		
+		can_convert_from = {
+			module = ship_radar_2
+			convert_cost_ic = 60
+		}
+		
 		can_convert_from = {
 			module = ship_radar_3
 			convert_cost_ic = 30
-		}
-		can_convert_from = {
-			module_category = ship_radar
-			convert_cost_ic = 90
 		}
 	}
 
@@ -974,7 +1017,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = light_ship_engine
-			convert_cost_ic = 250
+			convert_cost_ic = 1
 		}
 
 	}
@@ -997,13 +1040,8 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = light_ship_engine
-			convert_cost_ic = 250
-		}
-		
-		can_convert_from = {
 			module = light_ship_engine_1
-			convert_cost_ic = 230
+			convert_cost_ic = 30
 		}
 	}
 
@@ -1012,7 +1050,6 @@ equipment_modules = {
 		parent = light_ship_engine_2
 		sfx = sfx_ui_sd_module_engine
 
-		
 		add_stats = {
 			naval_speed = 5
 			fuel_consumption = 10
@@ -1025,13 +1062,13 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = light_ship_engine
-			convert_cost_ic = 250
+			module = light_ship_engine_1
+			convert_cost_ic = 60
 		}
 		
 		can_convert_from = {
 			module = light_ship_engine_2
-			convert_cost_ic = 230
+			convert_cost_ic = 30
 		}
 	}
 	light_ship_engine_4 = {
@@ -1050,15 +1087,20 @@ equipment_modules = {
 			naval_speed = 0.47
 			reliability = -0.2
 		}
+				
+		can_convert_from = {
+			module = light_ship_engine_1
+			convert_cost_ic = 80
+		}
 		
 		can_convert_from = {
-			module_category = light_ship_engine
-			convert_cost_ic = 250
+			module = light_ship_engine_2
+			convert_cost_ic = 50
 		}
 		
 		can_convert_from = {
 			module = light_ship_engine_3
-			convert_cost_ic = 230
+			convert_cost_ic = 20
 		}
 	}
 	sub_ship_engine_1 = {
@@ -1077,11 +1119,10 @@ equipment_modules = {
 			reliability = -0.2
 
 		}
-
-		
+	
 		can_convert_from = {
 			module_category = sub_ship_engine
-			convert_cost_ic = 250
+			convert_cost_ic = 1
 		}
 	}
 
@@ -1104,13 +1145,8 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = sub_ship_engine
-			convert_cost_ic = 250
-		}
-		
-		can_convert_from = {
 			module = sub_ship_engine_1
-			convert_cost_ic = 230
+			convert_cost_ic = 30
 		}
 	}
 
@@ -1133,13 +1169,13 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = sub_ship_engine
-			convert_cost_ic = 250
+			module = sub_ship_engine_1
+			convert_cost_ic = 60
 		}
 		
 		can_convert_from = {
 			module = sub_ship_engine_2
-			convert_cost_ic = 230
+			convert_cost_ic = 30
 		}
 	}
 	sub_ship_engine_4 = {
@@ -1161,13 +1197,18 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = sub_ship_engine
-			convert_cost_ic = 250
+			module = sub_ship_engine_1
+			convert_cost_ic = 80
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_2
+			convert_cost_ic = 50
 		}
 		
 		can_convert_from = {
 			module = sub_ship_engine_3
-			convert_cost_ic = 230
+			convert_cost_ic = 20
 		}
 	}
 	cruiser_ship_engine_1 = {
@@ -1188,7 +1229,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = cruiser_ship_engine
-			convert_cost_ic = 2500
+			convert_cost_ic = 1
 		}
 	}
 
