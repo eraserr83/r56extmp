@@ -65,6 +65,12 @@ equipments = {
 		group_by = archetype
 
 		interface_category = interface_category_land
+		
+		upgrades = {
+			MRART_reliability_upgrade
+			MRART_SA_upgrade
+			MRART_BR_upgrade
+		}
 
 		#Misc Abilities
 		reliability = 0.8

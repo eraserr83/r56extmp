@@ -110,5 +110,3 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 0
 -- Ai behaviour
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_NAVY_TRAINING = 1 -- ai will use at most this ratio of affordable fuel for naval training
 NDefines.NAI.MAX_FUEL_CONSUMPTION_RATIO_FOR_AIR_TRAINING = 1
-
-NDefines.NNAVY.MANPOWER_LOSS_RATIO_ON_STR_LOSS = 0.5

@@ -62,7 +62,7 @@ leader_traits = {
 		modifier = {
 			max_dig_in = 3
 			
-			planning_speed = -0.05 
+			planning_speed = -0.05
 		}
 		
 		non_shared_modifier = {
@@ -95,7 +95,6 @@ leader_traits = {
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
-	
 	
 	inflexible_strategist = { 
 		type = land
@@ -143,7 +142,7 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
 		}
-		attack_skill_factor = 1
+  		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
 	
@@ -219,7 +218,7 @@ leader_traits = {
 		
 			army_morale_factor = -0.08
 			
-			attrition = -0.02	
+			attrition = -0.02
 		}
 		
 		attack_skill_factor = 1
@@ -267,7 +266,7 @@ leader_traits = {
 		}
 		
 		trait_xp_factor = {
-			cavalry_leader = 1     #+100%
+			cavalry_leader = 0.5     #+100%
 		}
 		
 		attack_skill_factor = 1
@@ -302,16 +301,16 @@ leader_traits = {
 		gain_xp = {
 			always = no # not gainable
 		}
-		cost = 1000
+  		cost = 1000
 		
 		field_marshal_modifier = {
 			supply_consumption_factor = -0.15
 		}
-		enable_ability = extra_suplies
-		ai_will_do = {
-			base = 1000 #EAI
+  		enable_ability = extra_suplies
+  		ai_will_do = {
+			factor = 1
 		}
-		gui_row = 0
+  		gui_row = 0
 		trait_type = assignable_trait
 		parent = organizer
 	}
@@ -331,13 +330,13 @@ leader_traits = {
 		
 		attack_skill = 1
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
+		
 		trait_type = assignable_trait
 		mutually_exclusive = defensive_doctrine
 		gui_row = 5
-
 	}
 
 	defensive_doctrine = { 
@@ -354,8 +353,10 @@ leader_traits = {
 			max_dig_in_factor = 0.25
 		}
 		
+		defense_skill = 1
+		
 		ai_will_do = {
-			base = 1000 #EAI
+			factor = 1
 			
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -379,8 +380,8 @@ leader_traits = {
 			planning_speed = 0.10
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		gui_row = 1
 		parent = organizer
@@ -399,8 +400,8 @@ leader_traits = {
 			max_planning = 0.1
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		gui_row = 2
 		parent = organizer
@@ -427,8 +428,8 @@ leader_traits = {
 		}
 		custom_effect_tooltip = INCREASED_COUNTERATTACK_CHANCE
 
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		gui_row = 3
 		trait_type = assignable_trait
@@ -444,6 +445,7 @@ leader_traits = {
 		}
 		prerequisites = {
 			has_trait = brilliant_strategist
+		}
 		
 		field_marshal_modifier = {
 			army_attack_factor = 0.05
@@ -453,8 +455,8 @@ leader_traits = {
 		modifier = {
 		}
 		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		gui_row = 4
 		trait_type = assignable_trait
@@ -472,8 +474,8 @@ leader_traits = {
 			land_reinforce_rate = 0.02
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		trait_type = assignable_trait
 
@@ -487,11 +489,11 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			army_morale_factor = 0.10
+			army_morale_factor = 0.08
 		}
 		
-		ai_will_do = { #EAI
-			base = 1
+		ai_will_do = {
+			factor = 1
 
 			modifier = {
 				add = -2000
@@ -519,8 +521,8 @@ leader_traits = {
 			max_army_group_size = 2
 		}
 		
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -552,7 +554,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 0
@@ -578,7 +580,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 3
@@ -599,7 +601,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 6
@@ -618,7 +620,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		logistics_skill_factor = 2
 		
@@ -640,7 +642,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 13
@@ -654,11 +656,11 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			winter_attrition_factor = -0.5
+			winter_attrition_factor = -0.25
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		trait_type = basic_terrain_trait
@@ -678,7 +680,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1000
+			factor = 1
 
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -715,7 +717,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		parent = winter_specialist
@@ -744,7 +746,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 4
@@ -766,7 +768,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		attack_skill_factor = 2
@@ -815,7 +817,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 0
@@ -836,7 +838,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 1
@@ -857,7 +859,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 3
@@ -878,7 +880,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 2
@@ -899,7 +901,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 6
@@ -920,7 +922,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 5
@@ -941,7 +943,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		trait_type = basic_terrain_trait
 		gui_row = 4
@@ -960,7 +962,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 1
 		}
 		
 		gui_row = 8
@@ -983,8 +985,8 @@ leader_traits = {
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1009,8 +1011,8 @@ leader_traits = {
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 		
-		ai_will_do = { #EAI
-			base = 1
+		ai_will_do = {
+			factor = 1
 
 			modifier = { # get logistics wizard asap
 				add = -1000
@@ -1046,8 +1048,8 @@ leader_traits = {
 			cavalry_defence_factor = 0.05
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1075,8 +1077,8 @@ leader_traits = {
 		}
 		enable_ability = siege_artillery
 		
-		ai_will_do = { #EAI
-			base = 100
+		ai_will_do = {
+			factor = 100
 
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -1108,8 +1110,8 @@ leader_traits = {
 			equipment_capture = 0.05
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1129,8 +1131,8 @@ leader_traits = {
 			army_infantry_attack_factor = 0.05
 		}
 		
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -1158,8 +1160,8 @@ leader_traits = {
 			recon_factor_while_entrenched = 0.25
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		mutually_exclusive = infantry_expert
@@ -1181,8 +1183,8 @@ leader_traits = {
 		
 		enable_ability = faster_naval_invasion_planning
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1200,8 +1202,8 @@ leader_traits = {
 			shore_bombardment_bonus = 0.25
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1219,8 +1221,8 @@ leader_traits = {
 		modifier = {
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		enable_ability = probing_attack
@@ -1243,8 +1245,8 @@ leader_traits = {
 		
 		enable_ability = glider_planes
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1265,8 +1267,8 @@ leader_traits = {
 			air_superiority_bonus_in_combat = -0.5
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1310,8 +1312,8 @@ leader_traits = {
 		
 		override_effect_tooltip = expert_improviser_movement_bonus_on_land
 			
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 
 			modifier = { # get logistics wizard asap
 				add = -2000
@@ -1346,8 +1348,8 @@ leader_traits = {
 			dig_in_speed_factor = 0.25
 		}
 		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1523,8 +1525,8 @@ leader_traits = {
 			naval_torpedo_reveal_chance_factor = -0.20
 		}
 
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 
 		trait_type = assignable_trait
@@ -1540,8 +1542,8 @@ leader_traits = {
 			naval_torpedo_hit_chance_factor = 0.1
 		}
 
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 
 		trait_type = assignable_trait
@@ -1556,8 +1558,8 @@ leader_traits = {
 			naval_torpedo_screen_penetration_factor = 0.25
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1589,8 +1591,8 @@ leader_traits = {
 				navy_visibility = -0.1
 			}
 		}	
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1605,8 +1607,8 @@ leader_traits = {
 			naval_torpedo_cooldown_factor = -0.25
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1625,8 +1627,8 @@ leader_traits = {
 			navy_submarine_attack_factor = 0.1
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1651,8 +1653,8 @@ leader_traits = {
 				naval_speed_factor = 0.1
 			}
 		}	
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1668,8 +1670,8 @@ leader_traits = {
 			 spotting_chance = 0.2
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1702,8 +1704,8 @@ leader_traits = {
 			navy_visibility = -0.2
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000 
+		ai_will_do = {
+			factor = 1 
 		}
 		
 		trait_type = assignable_trait
@@ -1722,8 +1724,8 @@ leader_traits = {
 			naval_mines_effect_reduction = 0.25
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1740,8 +1742,8 @@ leader_traits = {
 			mines_planting_by_fleets_factor = 0.25
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1759,8 +1761,8 @@ leader_traits = {
 			naval_retreat_chance = 0.25
 		}
 		
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1777,8 +1779,8 @@ leader_traits = {
 			navy_capital_ship_attack_factor = 0.15
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1793,8 +1795,8 @@ leader_traits = {
 			shore_bombardment_bonus = 0.25 
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1809,8 +1811,8 @@ leader_traits = {
 			critical_receive_chance = -0.25
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1825,8 +1827,8 @@ leader_traits = {
 			naval_critical_score_chance_factor = 0.1
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1842,8 +1844,8 @@ leader_traits = {
 			 naval_critical_effect_factor = -0.5
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1859,8 +1861,8 @@ leader_traits = {
 			 sortie_efficiency = 0.1
 		}
 				
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1876,8 +1878,8 @@ leader_traits = {
 			fighter_sortie_efficiency = 0.2
 		}
 				
-		ai_will_do = { #EAI
-			base = 1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1896,8 +1898,8 @@ leader_traits = {
 				air_mission_efficiency = 0.1
 			}
 		}	
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
@@ -1916,8 +1918,8 @@ leader_traits = {
 				air_mission_efficiency = 0.1
 			}
 		}		
-		ai_will_do = { #EAI
-			base = -1000
+		ai_will_do = {
+			factor = 1
 		}
 		
 		trait_type = assignable_trait
