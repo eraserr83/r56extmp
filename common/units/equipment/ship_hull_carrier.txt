@@ -288,6 +288,89 @@ equipments = {
 		}
 		manpower = 2000
 	}
+	ship_hull_carrier_4 = {
+		year = 1948
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = ship_hull_carrier_3
+		module_slots = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_anti_air
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_anti_air
+					ship_deck_space
+					ship_carrier_armor
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_anti_air
+					ship_carrier_armor
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_anti_air
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_secondaries
+					ship_anti_air
+				}
+			}
+		}
+		default_modules = {
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+		}
+		
+		naval_range = 6000
+		reliability = 0.92
+		max_strength = 600
+		
+
+
+		build_cost_ic = 3750
+		resources = {
+			steel = 5
+			chromium = 3
+		}
+		manpower = 2200
+	}
+
 	ship_hull_carrier_conversion_bb = {
 		year = 1922
 		visual_level = 0
@@ -632,6 +715,53 @@ equipments = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_3
 			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_deck_space
+		}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 0
+		carrier_size = 25
+		
+		anti_air_attack = 10
+		
+		armor_value = 13
+
+		
+		surface_detection = 30
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 6000
+		
+		max_strength = 400
+		
+
+
+		build_cost_ic = 6000
+		resources = {
+			#oil = 2
+			steel = 5
+			chromium = 2
+		}		
+		manpower = 6000
+	}
+
+	carrier_5 = {
+		year = 1948
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = carrier_3
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_3
+			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
 		}
 		lg_armor_piercing = 0
