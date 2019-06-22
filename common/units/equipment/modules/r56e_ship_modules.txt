@@ -43,7 +43,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_triple_heavy_battery
-			convert_cost_ic = 600
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}

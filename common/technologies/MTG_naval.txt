@@ -526,11 +526,11 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1940
+		start_year = 1944
 		
 		folder = {
 			name = mtgnavalfolder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -1572,7 +1572,7 @@ early_ship_hull_carrier = {
 		}
 		research_cost = 1.5
 
-		start_year = 1944
+		start_year = 1948
 		
 		folder = {
 			name = mtgnavalfolder
