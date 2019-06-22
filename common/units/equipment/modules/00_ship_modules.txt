@@ -847,7 +847,6 @@ equipment_modules = {
 			lg_attack = 0.1
 			hg_attack = 0.1
 			anti_air_attack = 0.1
-			reliability = -0.05
 		}
 
 		can_convert_from = {
@@ -868,7 +867,7 @@ equipment_modules = {
 			lg_attack = 0.15
 			hg_attack = 0.15
 			anti_air_attack = 0.15
-			reliability = -0.075
+			reliability = -0.025
 		}
 		can_convert_from = {
 			module_category = ship_fire_control_system
@@ -892,7 +891,7 @@ equipment_modules = {
 			lg_attack = 0.2
 			hg_attack = 0.2
 			anti_air_attack = 0.2
-			reliability = -0.1
+			reliability = -0.05
 		}
 		can_convert_from = {
 			module = ship_fire_control_system_1
@@ -1018,7 +1017,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.21
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1042,7 +1041,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.32
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1064,7 +1063,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.42
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1091,7 +1090,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.47
-			reliability = -0.2
+			reliability = -0.05
 		}
 				
 		can_convert_from = {
@@ -1122,7 +1121,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.05
-			reliability = -0.2
+			reliability = -0.05
 
 		}
 	
@@ -1146,7 +1145,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.1
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.05
 		}
 		
@@ -1170,7 +1169,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.15
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.1
 		}
 		
@@ -1198,7 +1197,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 			sub_visibility = -0.15
 		}
 		
@@ -1230,7 +1229,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1253,7 +1252,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1276,7 +1275,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.35
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1303,7 +1302,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1334,7 +1333,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1357,7 +1356,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1380,7 +1379,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 			
 		}
 		
@@ -1408,7 +1407,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 			
 		}
 		
@@ -1440,7 +1439,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.2
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1463,7 +1462,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.3
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1486,7 +1485,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.4
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
@@ -1513,7 +1512,7 @@ equipment_modules = {
 		
 		multiply_stats = {
 			naval_speed = 0.45
-			reliability = -0.2
+			reliability = -0.05
 		}
 		
 		can_convert_from = {
