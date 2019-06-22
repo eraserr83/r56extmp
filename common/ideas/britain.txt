@@ -384,6 +384,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
+				political_power_gain = 0.5
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -1423,6 +1424,7 @@ ideas = {
 			}
 			
 			modifier = {
+				political_power_gain = 0.25
 				acclimatization_hot_climate_gain_factor = 0.1
 			}
 

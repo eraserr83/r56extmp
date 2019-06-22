@@ -1310,8 +1310,6 @@ technologies = {
 
 	etax_practical_projects = {
 		
-		xor = { etax_grand_projects }
-		
 		path = {
 			leads_to_tech = etax_great_works 
 			research_cost_coeff = 1
@@ -1358,8 +1356,7 @@ technologies = {
 	}
 	
 	etax_grand_projects = {
-		
-		xor = { etax_practical_projects }
+	
 		
 		path = {
 			leads_to_tech = etax_super_soldiers

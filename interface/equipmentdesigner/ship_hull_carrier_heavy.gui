@@ -435,7 +435,7 @@ guiTypes = {
 				}
 				
 				containerWindowType = {
-					name = "ship_anti_air"
+					name = "ship_anti_air2"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
@@ -447,7 +447,7 @@ guiTypes = {
 				}
 				
 				containerWindowType = {
-					name = "ship_anti_air"
+					name = "ship_anti_air3"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
@@ -459,7 +459,7 @@ guiTypes = {
 				}
 				
 				containerWindowType = {
-					name = "ship_anti_air"
+					name = "ship_anti_air4"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					

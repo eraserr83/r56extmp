@@ -8,7 +8,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 4
 			anti_air_attack = 5
-			build_cost_ic = 300
+			build_cost_ic = 330
 		}
 		build_cost_resources = {
 			steel = 1
@@ -18,8 +18,24 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_light_battery
-			convert_cost_ic = 230
+			module = ship_light_battery_1
+			convert_cost_ic = 150
+		}
+		can_convert_from = {
+			module = ship_light_battery_2
+			convert_cost_ic = 120
+		}
+		can_convert_from = {
+			module = ship_light_battery_3
+			convert_cost_ic = 90
+		}
+		can_convert_from = {
+			module = ship_light_battery_4
+			convert_cost_ic = 60
+		}
+		can_convert_from = {
+			module = dp_light_battery
+			convert_cost_ic = 30
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -31,19 +47,20 @@ equipment_modules = {
 		
 		add_stats = {
 			
-			hg_attack = 12
-			build_cost_ic = 1200
+			hg_attack = 16.5
+			build_cost_ic = 1800
+			naval_speed = -0.07
 		}
 		
 		add_average_stats = {
-			hg_armor_piercing = 31
+			hg_armor_piercing = 33
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 2
 		}
 		can_convert_from = {
 			module_category = ship_triple_heavy_battery
-			convert_cost_ic = 600
+			convert_cost_ic = 1
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -53,8 +70,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		
-		add_stats = {
-			
+		add_stats = {			
 			hg_attack = 30
 			build_cost_ic = 2000
 		}
