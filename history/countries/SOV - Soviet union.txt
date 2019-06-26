@@ -836,6 +836,8 @@ create_navy_leader = {
 	coordination_skill = 2
 }
 
+}
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -1020,7 +1022,7 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1037,7 +1039,7 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1053,7 +1055,7 @@ if = {
 		name_group = SOV_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1070,7 +1072,7 @@ if = {
 		name_group = SOV_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_battery_slot = ship_fixed_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1208,4 +1210,3 @@ if = {
 			}
 		}
 	}
-}
