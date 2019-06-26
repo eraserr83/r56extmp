@@ -1754,7 +1754,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.2
+			naval_speed = -0.02
 		}
 	}
 
@@ -1783,7 +1783,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 
@@ -1803,7 +1803,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 
@@ -1823,7 +1823,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 
@@ -1843,7 +1843,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 
@@ -1901,7 +1901,7 @@ equipment_modules = {
 			build_cost_ic = 150
 		}
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 	ship_airplane_launcher_2 = {
@@ -1918,7 +1918,7 @@ equipment_modules = {
 			convert_cost_ic = 80
 		}
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.01
 		}
 	}
 

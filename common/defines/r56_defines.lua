@@ -28,16 +28,16 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1500 -- Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1500 -- Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1500  -- Max air experience a country can store
-NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.33
-NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 25.0		   -- When the transport plane was shot down, we drop unit with almost NONE equipment
-NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 40.0		   -- When the transport plane was shot down, we drop unit with almost NONE manpower
-NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 60.0
-NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.25
+NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.25
+NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 80.0		   -- When the transport plane was shot down, we drop unit with almost NONE equipment
+NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 90.0		   -- When the transport plane was shot down, we drop unit with almost NONE manpower
+NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 90.0
+NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.15
 
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 48
-NDefines.NMilitary.RECON_SKILL_IMPACT = 6
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 2 -- Base cost to unlock a regiment slot,
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4 -- Base cost to change a regiment column.
+NDefines.NMilitary.RECON_SKILL_IMPACT = 8
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 4 -- Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1 -- Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 5					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
@@ -50,16 +50,14 @@ NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.001
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 3
 
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.7
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000275
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 24
 NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 0.98
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.02
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.02
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.05
-NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.25
-NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.7
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.2
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.35
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 3, 4}
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 192
 NDefines.NMilitary.NUKE_DELAY_HOURS = 168
@@ -103,7 +101,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { -- command power cost per plane to
 		0.0, -- INTERCEPTION
 		0.0, -- STRATEGIC_BOMBER
 		0.0, -- NAVAL_BOMBER
-		0.0, -- DROP_NUKE
+		50.0, -- DROP_NUKE
 		0.0, -- PARADROP
 		0.0, -- NAVAL_KAMIKAZE
 		0.0, -- PORT_STRIKE

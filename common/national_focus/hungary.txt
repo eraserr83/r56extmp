@@ -1245,7 +1245,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = HUN_strengthen_fascists
 			add_popularity = { ideology = fascism popularity = 0.05 }
-			set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
 			hidden_effect = {
 				create_country_leader = {
 					name = "Miklós Horthy"
@@ -3090,7 +3089,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 24
+					amount = 8
 				}
 			}
 		}
@@ -3115,7 +3114,7 @@ focus_tree = {
 				set_state_flag = HUN_expand_the_manfred_weiss_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 24
+					amount = 12
 				}
 			}
 		}
@@ -3155,7 +3154,7 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = aluminium
-					amount = 20
+					amount = 16
 				}
 			}
 		}
