@@ -965,7 +965,7 @@ guiTypes = {
 						position = { x=128 y=-14 }
 					}
 					iconType = {
-						name = "highlight"
+						name = "highlight2"
 						spriteType = "GFX_SM_heavy_hull_rear1_secondaries@highlight"
 						position = { x=128 y=6 }
 					}

@@ -800,12 +800,12 @@ country_event = {
 		name = france.61.a
 		ai_chance = { factor = 50 }
 		add_tech_bonus = {
-			bonus = 0.5
+			bonus = 1
 			uses = 2
 			category = industry
 		}
 		add_tech_bonus = {
-			bonus = 0.5
+			bonus = 1
 			uses = 3
 			category = electronics
 		}
@@ -816,7 +816,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_tech_bonus = {
 			name = FRA_economic_agreement
-			bonus = 0.5
+			bonus = 1
 			uses = 2
 			category = land_doctrine
 		}

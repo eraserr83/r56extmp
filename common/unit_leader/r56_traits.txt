@@ -191,6 +191,7 @@ leader_traits = {
 		modifier = {
 			promote_cost_factor = 50 #can't promote while retraining
 		}
+	}
 	jumping_general = { 
 		type = land
 		trait_type = personality_trait
@@ -216,9 +217,7 @@ leader_traits = {
 		}
 		attack_skill_factor = 1
 		defense_skill_factor = 1
-
-		
-	}	
+	}
 
 
 }

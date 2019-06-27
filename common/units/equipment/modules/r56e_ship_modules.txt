@@ -385,7 +385,35 @@ equipment_modules = {
 # # # ##  #  #  #  #  # # # #     ###  ####  #   #  ##  ###    #   
 #   # #   #  #  #  #  # #   #     #  # #  #  #   #  #   #  #   #   
 #   # ### ###  ###  ##  #   #     ###  #  #  #   #  ### #  #   #  	
-
+	ship_fixed_medium_battery_1 = {
+		category = ship_fixed_medium_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = capital_ship
+		add_stats = {
+			hg_attack = 18.0
+			build_cost_ic = 1500
+			surface_visibility = 3.5
+		}
+		multiply_stats = {
+			naval_speed = -0.075
+			max_strength = 0.8
+		}
+		add_average_stats = {
+			hg_armor_piercing = 11
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+		can_convert_from = {
+			module_category = ship_fixed_light_battery
+			convert_cost_ic = 800
+		}
+		can_convert_from = {
+			module_category = ship_fixed_medium_battery
+			convert_cost_ic = 400
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
 	ship_fixed_medium_battery_2 = {
 		category = ship_fixed_medium_battery
 		sfx = sfx_ui_sd_module_turret
@@ -412,6 +440,10 @@ equipment_modules = {
 		can_convert_from = {
 			module = ship_medium_battery_1
 			convert_cost_ic = 400
+		}
+		can_convert_from = {
+			module = ship_fixed_medium_battery_1
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}

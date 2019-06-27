@@ -2221,10 +2221,13 @@ technologies = {
 	}
 	
 	rubber_plant_b = {
-		
-		enable_building = {
-			building = rubber_refinery
-			level = 2
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = rubber_refinery
+				resource = rubber
+				amount = 2
+			}
 		}
 		
 		path = {
@@ -2310,13 +2313,10 @@ technologies = {
 	}
 	
 	rubber_plant_d = {
-
-		on_research_complete = {
-			modify_building_resources = {
-				building = rubber_refinery
-				resource = rubber
-				amount = 2
-			}
+		
+		enable_building = {
+			building = rubber_refinery
+			level = 2
 		}
 		
 		research_cost = 1.6

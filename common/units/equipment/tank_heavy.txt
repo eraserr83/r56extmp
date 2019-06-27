@@ -40,10 +40,10 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 
-		build_cost_ic = 25
+		build_cost_ic = 30
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -99,10 +99,10 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 111
 
-		build_cost_ic = 27
+		build_cost_ic = 32
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 	}
@@ -139,10 +139,10 @@ equipments = {
 		hard_attack = 40
 		ap_attack = 131
 
-		build_cost_ic = 30
+		build_cost_ic = 35
 		resources = {
 
-			steel = 4
+			steel = 8
 			chromium = 3
 		}
 	}
@@ -186,10 +186,10 @@ equipments = {
 		ap_attack = 8
 		air_attack = 0
 
-		build_cost_ic = 25
+		build_cost_ic = 27.5
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -238,10 +238,10 @@ equipments = {
 		soft_attack = 74
 		hard_attack = 2
 
-		build_cost_ic = 27
+		build_cost_ic = 29.5
 		resources = {
 
-			steel = 4
+			steel = 8
 			chromium = 3
 		}
 	}
@@ -276,10 +276,10 @@ equipments = {
 		soft_attack = 80
 		hard_attack = 2.5
 
-		build_cost_ic = 30
+		build_cost_ic = 32.5
 		resources = {
 
-			steel = 5
+			steel = 10
 			chromium = 3
 		}
 	}
@@ -323,10 +323,10 @@ equipments = {
 		ap_attack = 96
 		air_attack = 0
 
-		build_cost_ic = 25
+		build_cost_ic = 27.5
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -375,10 +375,10 @@ equipments = {
 		ap_attack = 140
 		air_attack = 0
 
-		build_cost_ic = 27
+		build_cost_ic = 29.5
 		resources = {
 
-			steel = 4
+			steel = 8
 			chromium = 3
 		}
 	}
@@ -415,10 +415,10 @@ equipments = {
 		ap_attack = 160
 		air_attack = 0
 
-		build_cost_ic = 30
+		build_cost_ic = 32.5
 		resources = {
 
-			steel = 4
+			steel = 8
 			chromium = 4
 		}
 	}
@@ -465,7 +465,7 @@ equipments = {
 		build_cost_ic = 25
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -519,7 +519,7 @@ equipments = {
 		build_cost_ic = 27
 		resources = {
 
-			steel = 3
+			steel = 6
 			chromium = 3
 		}
 	}
@@ -560,7 +560,7 @@ equipments = {
 		build_cost_ic = 30
 		resources = {
 
-			steel = 4
+			steel = 8
 			chromium = 3
 		}
 	}

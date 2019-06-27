@@ -27,7 +27,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -107,10 +107,10 @@ focus_tree = {
 					}
 					is_on_continent = europe
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = FRA_metropolitan_civilian_factory_1
@@ -326,7 +326,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_tools_modernisation }
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -346,7 +346,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_tools_modernisation }
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1014,7 +1014,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_economic_reforms }
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -1193,7 +1193,7 @@ focus_tree = {
 		}
 		x = 9
 		y = 0
-		cost = 10
+		cost = 5
 		bypass = {
 			OR = {
 				has_idea = low_economic_mobilisation
@@ -3264,6 +3264,7 @@ focus_tree = {
 				custom_effect_tooltip = FRA_further_armament_program_tooltip
 			}
 			add_ideas = FRA_armament_program
+			add_war_support = 0.15
 		}
 	}
 	

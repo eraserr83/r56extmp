@@ -295,7 +295,7 @@ technologies = {
 		}
 			
 		categories = {			
-			land_doctrine			
+			land_doctrine
 			cat_mobile_warfare
 			cat_superior_firepower
 		}
@@ -332,6 +332,8 @@ technologies = {
 			
 		categories = {			
 			land_doctrine
+			cat_mobile_warfare
+			cat_superior_firepower
 			cat_grand_battle_plan
 			cat_mass_assault
 		}
@@ -374,6 +376,8 @@ technologies = {
 		
 		categories = {			
 			land_doctrine
+			cat_mobile_warfare
+			cat_superior_firepower
 			cat_grand_battle_plan
 			cat_mass_assault
 		}
@@ -757,11 +761,7 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
-			cat_mobile_warfare
-			cat_grand_battle_plan
-			cat_mass_assault
-			cat_mechanized_equipment
+			industry
 		}
 
 		ai_will_do = {
@@ -907,11 +907,7 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
-			cat_mobile_warfare
-			cat_grand_battle_plan
-			cat_mass_assault
-			cat_mechanized_equipment
+			industry
 		}
 
 		ai_will_do = {
@@ -1077,8 +1073,8 @@ technologies = {
 			breakthrough = 0.15
 		}
 		category_all_armor = {
-			fuel_consumption_factor = 0.30
-			supply_consumption_factor= 0.15
+			fuel_consumption_factor = 0.15
+			supply_consumption_factor= 0.10
 		}
 		
 		folder = {
@@ -1214,7 +1210,11 @@ technologies = {
 		}
 			
 		categories = {
-			industry
+			land_doctrine
+			cat_mobile_warfare
+			cat_grand_battle_plan
+			cat_mass_assault
+			cat_mechanized_equipment
 		}
 
 		ai_will_do = {
