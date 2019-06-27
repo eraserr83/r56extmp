@@ -43,7 +43,7 @@ equipments = {
 		build_cost_ic = 30
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -102,7 +102,7 @@ equipments = {
 		build_cost_ic = 32
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 	}
@@ -142,7 +142,7 @@ equipments = {
 		build_cost_ic = 35
 		resources = {
 
-			steel = 8
+			steel = 4
 			chromium = 3
 		}
 	}
@@ -189,7 +189,7 @@ equipments = {
 		build_cost_ic = 27.5
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -241,7 +241,7 @@ equipments = {
 		build_cost_ic = 29.5
 		resources = {
 
-			steel = 8
+			steel = 4
 			chromium = 3
 		}
 	}
@@ -279,7 +279,7 @@ equipments = {
 		build_cost_ic = 32.5
 		resources = {
 
-			steel = 10
+			steel = 5
 			chromium = 3
 		}
 	}
@@ -378,7 +378,7 @@ equipments = {
 		build_cost_ic = 29.5
 		resources = {
 
-			steel = 8
+			steel = 4
 			chromium = 3
 		}
 	}
@@ -418,7 +418,7 @@ equipments = {
 		build_cost_ic = 32.5
 		resources = {
 
-			steel = 8
+			steel = 4
 			chromium = 4
 		}
 	}
@@ -465,7 +465,7 @@ equipments = {
 		build_cost_ic = 25
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -519,7 +519,7 @@ equipments = {
 		build_cost_ic = 27
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 	}
@@ -560,7 +560,7 @@ equipments = {
 		build_cost_ic = 30
 		resources = {
 
-			steel = 8
+			steel = 4
 			chromium = 3
 		}
 	}
