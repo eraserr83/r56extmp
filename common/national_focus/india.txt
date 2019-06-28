@@ -3624,7 +3624,6 @@ focus_tree = {
 		available = {
 			OR = {
 				AND = {
-					compare_autonomy_progress_ratio > 0.4
 					compare_autonomy_state > autonomy_puppet
 					is_subject_of = ENG
 				}
@@ -3729,7 +3728,6 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.4
 			compare_autonomy_state > autonomy_puppet
 			is_subject_of = ENG
 		}
@@ -3828,7 +3826,6 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.4
 			compare_autonomy_state > autonomy_puppet
 			is_subject_of = ENG
 		}
