@@ -974,7 +974,6 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3.0
 		
-		conscription_factor = -0.05
 		production_speed_buildings_factor = 0.15
 		
 		folder = {
@@ -1111,7 +1110,6 @@ technologies = {
 	etax_purity = {
 	
 		training_time_army_factor = 0.50
-		conscription_factor = -0.10
 		
 		path = {
 			leads_to_tech = etax_great_leap 
@@ -1163,7 +1161,6 @@ technologies = {
 		research_cost = 3.0
 		
 		research_speed_factor = 0.05
-		consumer_goods_factor = 0.03
 		
 		folder = {
 			name = etax_folder
@@ -1284,7 +1281,6 @@ technologies = {
 		}
 		
 		research_cost = 3.0
-		conscription_factor = -0.05
 		research_speed_factor = 0.05
 		
 		folder = {
