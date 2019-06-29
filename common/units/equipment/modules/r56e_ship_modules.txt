@@ -14,7 +14,7 @@ equipment_modules = {
 			steel = 1
 		}
 		add_average_stats = {
-			lg_armor_piercing = 2.5
+			lg_armor_piercing = 3
 		}
 		
 		can_convert_from = {
@@ -106,7 +106,7 @@ equipment_modules = {
 			build_cost_ic = 1350
 		}
 		multiply_stats = {
-			naval_speed = -0.075
+			naval_speed = -0.05
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -137,7 +137,7 @@ equipment_modules = {
 			build_cost_ic = 2500
 		}
 		multiply_stats = {
-			naval_speed = -0.225
+			naval_speed = -0.10
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -168,7 +168,7 @@ equipment_modules = {
 			build_cost_ic = 2750
 		}
 		multiply_stats = {
-			naval_speed = -0.225
+			naval_speed = -0.12
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -199,7 +199,7 @@ equipment_modules = {
 			build_cost_ic = 1550
 		}
 		multiply_stats = {
-			naval_speed = -0.1
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -230,7 +230,7 @@ equipment_modules = {
 			build_cost_ic = 3000
 		}
 		multiply_stats = {
-			naval_speed = -0.3
+			naval_speed = -0.15
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -261,7 +261,7 @@ equipment_modules = {
 			build_cost_ic = 3300
 		}
 		multiply_stats = {
-			naval_speed = -0.3
+			naval_speed = -0.18
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -295,7 +295,7 @@ equipment_modules = {
 			
 		}
 		multiply_stats = {
-			naval_speed = -0.125
+			naval_speed = -0.07
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -327,7 +327,7 @@ equipment_modules = {
 			build_cost_ic = 3500
 		}
 		multiply_stats = {
-			naval_speed = -0.35
+			naval_speed = -0.18
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -359,7 +359,7 @@ equipment_modules = {
 			build_cost_ic = 3600
 		}
 		multiply_stats = {
-			naval_speed = -0.35
+			naval_speed = -0.20
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -395,7 +395,7 @@ equipment_modules = {
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
-			naval_speed = -0.075
+			naval_speed = -0.10
 			max_strength = 0.8
 		}
 		add_average_stats = {
@@ -424,7 +424,7 @@ equipment_modules = {
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
-			naval_speed = -0.15
+			naval_speed = -0.12
 			max_strength = 0.8
 		}
 		add_average_stats = {
@@ -457,7 +457,7 @@ equipment_modules = {
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
-			naval_speed = -0.225
+			naval_speed = -0.15
 			max_strength = 0.8
 		}
 		add_average_stats = {
@@ -486,7 +486,7 @@ equipment_modules = {
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
-			naval_speed = -0.3
+			naval_speed = -0.18
 			max_strength = 0.8
 		}
 		add_average_stats = {
@@ -516,7 +516,7 @@ equipment_modules = {
 			build_cost_ic = 450
 		}
 		multiply_stats = {
-			naval_speed = -0.075
+			naval_speed = -0.08
 		}
 		add_average_stats = {
 			lg_armor_piercing = 5.5
@@ -539,7 +539,7 @@ equipment_modules = {
 			build_cost_ic = 550
 		}
 		multiply_stats = {
-			naval_speed = -0.15
+			naval_speed = -0.10
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.0
@@ -569,7 +569,7 @@ equipment_modules = {
 			build_cost_ic = 600
 		}
 		multiply_stats = {
-			naval_speed = -0.225
+			naval_speed = -0.12
 		}
 		add_average_stats = {
 			lg_armor_piercing = 8.0
@@ -632,6 +632,10 @@ equipment_modules = {
 			lg_attack = 5.5
 			anti_air_attack = 4.5
 			build_cost_ic = 290
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
 		}
 		
 		add_average_stats = {

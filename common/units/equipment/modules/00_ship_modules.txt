@@ -167,7 +167,7 @@ equipment_modules = {
 			build_cost_ic = 1275
 		}
 		multiply_stats = {
-			naval_speed = -0.05
+			naval_speed = -0.03
 		}
 		add_average_stats = {
 			hg_armor_piercing = 31
@@ -193,7 +193,7 @@ equipment_modules = {
 			build_cost_ic = 1350
 		}
 		multiply_stats = {
-			naval_speed = -0.08
+			naval_speed = -0.04
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -224,7 +224,7 @@ equipment_modules = {
 			build_cost_ic = 1450
 		}
 		multiply_stats = {
-			naval_speed = -0.09
+			naval_speed = -0.05
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -260,7 +260,7 @@ equipment_modules = {
 			
 		}
 		multiply_stats = {
-			naval_speed = -0.10
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43
@@ -614,7 +614,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.01
 		}
 
 		add_average_stats = {
@@ -638,7 +638,7 @@ equipment_modules = {
 			build_cost_ic = 240
 		}
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.01
 		}
 		
 		add_average_stats = {
@@ -663,7 +663,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.03
+			naval_speed = -0.02
 		}
 		
 		add_average_stats = {
@@ -1731,7 +1731,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_planting = 1
-			build_cost_ic = 3000
+			build_cost_ic = 90
 		}
 	}
 
