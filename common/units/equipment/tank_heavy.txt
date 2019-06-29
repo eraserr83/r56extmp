@@ -40,7 +40,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 
-		build_cost_ic = 30
+		build_cost_ic = 25
 		resources = {
 
 			steel = 3
@@ -99,7 +99,7 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 111
 
-		build_cost_ic = 32
+		build_cost_ic = 27
 		resources = {
 
 			steel = 3
@@ -139,7 +139,7 @@ equipments = {
 		hard_attack = 40
 		ap_attack = 131
 
-		build_cost_ic = 35
+		build_cost_ic = 30
 		resources = {
 
 			steel = 4
@@ -175,18 +175,18 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 4
+		defense = 12
 		breakthrough = 2
 		hardness = 0.8
 		armor_value = 45
 
 		#Offensive Abilities
 		soft_attack = 55
-		hard_attack = 1
-		ap_attack = 8
+		hard_attack = 12
+		ap_attack = 17.5
 		air_attack = 0
 
-		build_cost_ic = 27.5
+		build_cost_ic = 25
 		resources = {
 
 			steel = 3
@@ -230,15 +230,16 @@ equipments = {
 		maximum_speed = 6
 
 		#Defensive Abilities
-		defense = 6
+		defense = 16
 		breakthrough = 3
 		armor_value = 68
 
 		#Offensive Abilities
 		soft_attack = 74
-		hard_attack = 2
+		hard_attack = 15
+		ap_attack = 55
 
-		build_cost_ic = 29.5
+		build_cost_ic = 27
 		resources = {
 
 			steel = 4
@@ -268,15 +269,16 @@ equipments = {
 		maximum_speed = 6
 
 		#Defensive Abilities
-		defense = 7
+		defense = 18
 		breakthrough = 3.5
 		armor_value = 90
 
 		#Offensive Abilities
 		soft_attack = 80
-		hard_attack = 2.5
+		hard_attack = 20
+		ap_attack = 65
 
-		build_cost_ic = 32.5
+		build_cost_ic = 30
 		resources = {
 
 			steel = 5
@@ -318,15 +320,15 @@ equipments = {
 		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 6
+		soft_attack = 7
 		hard_attack = 25
 		ap_attack = 96
 		air_attack = 0
 
-		build_cost_ic = 27.5
+		build_cost_ic = 25
 		resources = {
 
-			steel = 6
+			steel = 3
 			chromium = 3
 		}
 		fuel_consumption = 4.4
@@ -365,17 +367,17 @@ equipments = {
 		maximum_speed = 6
 
 		#Defensive Abilities
-		defense = 6
+		defense = 19
 		breakthrough = 1.5
 		armor_value = 110
 
 		#Offensive Abilities
-		soft_attack = 8
+		soft_attack = 14
 		hard_attack = 42
 		ap_attack = 140
 		air_attack = 0
 
-		build_cost_ic = 29.5
+		build_cost_ic = 27
 		resources = {
 
 			steel = 4
@@ -405,17 +407,17 @@ equipments = {
 		maximum_speed = 6
 
 		#Defensive Abilities
-		defense = 7
+		defense = 18
 		breakthrough = 1.8
 		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 10
+		soft_attack = 17
 		hard_attack = 60
 		ap_attack = 160
 		air_attack = 0
 
-		build_cost_ic = 32.5
+		build_cost_ic = 30
 		resources = {
 
 			steel = 4

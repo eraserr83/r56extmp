@@ -867,3 +867,39 @@ equipment_modules = {
 		dismantle_cost_ic = 6200
 		
 	}
+	
+	ship_mine_layer_2 = {
+		category = ship_mine_layer
+		gui_category = ship_mine_warfare
+		gfx = ship_mine_layer
+		
+		add_stats = {
+			mines_planting = 2
+			build_cost_ic = 120
+		}
+		multiply_stats = {
+			naval_speed = -0.02			
+		}
+		can_convert_from = {
+			module_category = ship_mine_layer
+			convert_cost_ic = 30
+		}
+	}
+
+	ship_mine_sweeper_2 = {
+		category = ship_mine_warfare
+		gfx = ship_mine_sweeper
+		
+		add_stats = {
+			mines_sweeping = 2
+			build_cost_ic = 60
+		}
+
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		can_convert_from = {
+			module = ship_mine_sweeper_1
+			convert_cost_ic = 30
+		}
+	}

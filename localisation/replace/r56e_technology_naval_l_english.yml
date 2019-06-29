@@ -10,4 +10,9 @@ dp2_secondary_battery_desc: "Advanced Dual-Purpose secondary armament"
 advanced_sonar:0 "Advanced Sonar"
 advanced_sonar_desc:0 "Next generation sonar, using the most recent technology available."
 
+ship_mine_layer_2:0 "Advanced Minelaying Rails"
+ ship_mine_layer_2_desc:0 "Modifications for a surface ship to carry and deploy naval mines."
+ ship_mine_sweeper_2:0 "Advanced Minesweeping Gear"
+ ship_mine_sweeper_2_desc:0 "Gear to deploy the various sweeping equipments."
+
 #####---------------------------------------------------------------------End
