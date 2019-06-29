@@ -1246,10 +1246,20 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_heavy_battery
 					ship_mine_layer
 					ship_anti_air
 					ship_airplane_launcher
 					ship_torpedo
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_mine_layer
+					ship_anti_air
+					ship_airplane_launcher
+					ship_depth_charge
 				}
 			}
 		}

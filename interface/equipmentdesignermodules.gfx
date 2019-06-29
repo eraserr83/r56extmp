@@ -774,6 +774,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SM_super_heavy_hull_front3_secondaries"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/super_heavy_hull/super_heavy_hull_front3_secondaries.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_super_heavy_hull_front3_secondaries@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/super_heavy_hull/super_heavy_hull_front3_secondaries@highlight.dds"
+	}
+
+	spriteType = {
 		name = "GFX_SM_super_heavy_hull_mid1_anti_air"
 		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/super_heavy_hull/super_heavy_hull_mid1_anti_air.dds"
 	}
