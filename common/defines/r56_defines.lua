@@ -41,7 +41,7 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1 -- Base cost to change 
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 5					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
-NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 5	
+NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 1	
 NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 20
 NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 NDefines.NMilitary.BASE_COMBAT_WIDTH = 120
