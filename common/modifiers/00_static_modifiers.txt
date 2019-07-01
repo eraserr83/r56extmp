@@ -47,7 +47,7 @@
 
 		command_power_gain_mult = -0.95
 		
-		conscription_factor = -0.25
+		conscription_factor = -0.05
 		
 		surrender_limit = -0.25
 	}
@@ -94,7 +94,8 @@ weather_snow = { # on Region
 	air_mission_efficiency = -0.2
 	naval_retreat_speed = 0.05
 	positioning = -0.1
-	army_speed_factor = -0.25	 	   
+	army_speed_factor = -0.25
+	army_attack_factor = -0.25
 }
 weather_blizzard = { # on Region 
 	air_detection = -0.3
@@ -109,7 +110,8 @@ weather_blizzard = { # on Region
 	air_mission_efficiency = -0.7
 	naval_retreat_speed = 0.15
 	positioning = -0.2
-	army_speed_factor = -0.5  	
+	army_speed_factor = -0.5
+	army_attack_factor = -0.5
 }
 weather_sandstorm = { # on Region 
 	air_detection = -0.9
@@ -119,6 +121,7 @@ weather_sandstorm = { # on Region
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.9
 	army_speed_factor = -0.9
+	army_attack_factor = -0.9
 	attrition = 0.7
 }
 
@@ -135,16 +138,17 @@ weather_mud = { # on Province
 	army_attack_factor = -0.5
 }
 weather_extreme_cold = { # on Province
-	winter_attrition = 1.5
+	winter_attrition = 10
 	dig_in_speed_factor = -0.8
-	local_org_regain = -0.05
-	army_attack_factor = -0.2	
-	attrition = 0.2
+	local_org_regain = -0.25
+	army_attack_factor = -0.8	
+	attrition = 2.0
 }
 weather_very_cold = { # on Province
-	winter_attrition = 0.5
-	dig_in_speed_factor = -0.3
-	army_attack_factor = -0.1
+	winter_attrition = 5.5
+	dig_in_speed_factor = -0.5
+	army_attack_factor = -0.33	
+	attrition = 1.0
 }
 weather_very_hot = { # on Province
 	heat_attrition = 0.5
@@ -157,12 +161,14 @@ weather_extreme_hot = { # on Province
 	army_attack_factor = -0.1
 }
 weather_ground_snow_medium = { # on Province
+	winter_attrition = 1
 	army_speed_factor = -0.25
 	army_attack_factor = -0.1
 }
 weather_ground_snow_high = { # on Province
+	winter_attrition = 3
 	army_speed_factor = -0.5
-	local_org_regain = -0.05
+	local_org_regain = -0.25
 	army_attack_factor = -0.3
 	naval_retreat_speed = 0.1
 }
