@@ -155,19 +155,6 @@ technologies = {
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = USA
-					tag = ITA
-					tag = JAP
-					tag = FRA
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-					tag = SOV
-				}
 			}
 			modifier = {
 				factor = 0
@@ -211,20 +198,6 @@ technologies = {
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = ITA
-					tag = JAP
-					tag = USA
-					tag = FRA
-				}
 			}
 		}
 	}
@@ -263,19 +236,6 @@ technologies = {
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = GER
-					tag = USA
-					tag = SOV
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = ITA
-					tag = ENG
-					tag = FRA
-				}
 			}
 		}
 	}
@@ -340,24 +300,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = ITA
-					tag = FRA
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = USA
-				}
 			}
 		}
 	}
@@ -384,7 +329,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
@@ -428,14 +372,6 @@ technologies = {
 			modifier = {
 				add = 20
 				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = ITA
-					tag = FRA
-				}
 			}
 		}
 	}
@@ -505,22 +441,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = ITA
-					tag = FRA
-				}
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = USA
-					tag = JAP
-				}
 			}
 		}
 	}
@@ -591,20 +514,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = ENG
-					tag = SOV
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-				}
 			}
 		}
 	}
@@ -638,7 +550,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
@@ -675,20 +586,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = {
-					tag = GER
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					tag = ENG
-					tag = SOV
-				}
 			}
 		}
 	}
@@ -728,7 +628,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
@@ -766,19 +665,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = USA
-					tag = FRA
-					tag = ENG
-				}
 			}
 		}
 	}
@@ -809,13 +698,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
-				factor = 0
-				OR = {
-					tag = ENG
-					tag = FRA
-				}
+				add = 20
+				has_war = yes
 			}
 		}
 	}
@@ -912,18 +797,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = JAP
-					tag = GER
-				}
 			}
 		}
 	}
@@ -987,7 +863,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
@@ -1031,25 +906,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-			}
-			
-			modifier = {
-				factor = 10
-				is_major = no
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = SOV
-					tag = JAP
-				}
 			}
 		}
 	}
@@ -1091,18 +950,9 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = SOV
-					tag = ITA
-				}
 			}
 		}
 	}
@@ -1138,7 +988,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
@@ -1216,19 +1065,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = USA
-				}
-			}
-			
 		}
 	}
 
@@ -1332,22 +1172,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = SOV
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-			}
-			
 		}
 	}
 	
@@ -1395,21 +1223,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-					tag = ITA
-					tag = FRA
-				}
-			}
-			
 		}
 	}
 	
@@ -1471,19 +1288,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					tag = GER
-				}
-			}
-			
 		}
 	}
 
@@ -1509,17 +1317,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
-			
-			modifier = {
-				factor = 0
-				tag = JAP
-			}
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			
 		}
 	}
 	
@@ -1543,21 +1344,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
-			modifier = {
-				factor = 0
-				tag = USA
-			}
-			
 			modifier = {
 				add = 20
 				has_war = yes
 			}
-			modifier = {
-				factor = 0
-				tag = USA
-			}
-			
 		}
 	}
 	
@@ -1591,16 +1381,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = { 
-					tag = GER
-					tag = ENG
-				}
 			}
-
 		}
 	}
 	
@@ -1630,18 +1414,13 @@ technologies = {
 			cat_trade_interdiction
 			cat_base_strike
 		}
+
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 20
 				has_war = yes
-				OR = { 
-					tag = USA
-					tag = JAP
-				}
 			}
-			
 		}
 	}
 	
