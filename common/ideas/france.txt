@@ -595,7 +595,6 @@ ideas = {
 			picture = can_wartime_prices_and_trade_board
 			
 			modifier = {
-				political_power_gain = 0.25
 				min_export = -0.05
 				global_building_slots_factor = 0.1
 			}
@@ -659,7 +658,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_gain = 0.5
 				production_factory_start_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}

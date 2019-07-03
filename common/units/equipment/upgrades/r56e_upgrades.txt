@@ -248,4 +248,10 @@ upgrades = {
 		cost = land
 		reliability = 0.05
 	}
+	#CONV
+	SHIP_camouflage_ugrade = {
+		max_level = 5
+		cost = naval
+		surface_visibility = -0.1
+	}
 }

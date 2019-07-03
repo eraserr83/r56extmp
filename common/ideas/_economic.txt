@@ -78,17 +78,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.15
-				stability_factor = 0.05   
+				consumer_goods_factor = 0.35
+				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				
-				research_speed_factor = 0.05
-				
-				MONTHLY_POPULATION = 0.15
-				
-				consumer_goods_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
 			}
 			
 			default = yes
@@ -131,9 +127,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_arms_factory_factor = -0.1
 				consumer_goods_factor = 0.3
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				fuel_gain_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
@@ -188,12 +185,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.05
-			
-				production_speed_arms_factory_factor = 0.1
-				conversion_cost_civ_to_mil_factor = -0.1
-				
 				consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				fuel_gain_factor = -0.1
 			}
 			
 			cancel_if_invalid = no
@@ -259,14 +255,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.15
-			
+				consumer_goods_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor = -0.2
-				
-				conscription_factor = -0.05
-				
-				consumer_goods_factor = 0.20		
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
 			}
 			
 			cancel_if_invalid = no
@@ -385,14 +377,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.25
-			
+				consumer_goods_factor = 0.10
+				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor = -0.3
-				
-				conscription_factor = -0.1
-				
-				consumer_goods_factor = 0.1		   
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
 			}
 			
 			cancel_if_invalid = no
