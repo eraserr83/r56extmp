@@ -132,7 +132,7 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		ap_attack = 0.05
+		ap_attack = 0.10
 		reliability = -0.05
 	}
 	
@@ -140,7 +140,7 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		hard_attack = 0.10
+		hard_attack = 0.15
 		reliability = -0.05
 	}
 	
@@ -148,8 +148,8 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		defense = 0.10
-		breakthrough = 0.10
+		defense = 0.15
+		breakthrough = 0.15
 	}
 	
 	#AA EQ
