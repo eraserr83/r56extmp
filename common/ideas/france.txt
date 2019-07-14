@@ -364,6 +364,7 @@ ideas = {
 			picture = can_wartime_prices_and_trade_board
 			
 			modifier = {
+				political_power_gain = 0.25
 				min_export = -0.10
 				global_building_slots_factor = 0.10
 			}
@@ -658,6 +659,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				political_power_gain = 0.5
 				production_factory_start_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
@@ -1892,8 +1894,9 @@ ideas = {
 		citroen = { #MOD
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = EFR
+				original_tag = FRA
+				original_tag = FRI
+				original_tag = EFR
 				}
 			}		
 			research_bonus = {
@@ -1905,7 +1908,10 @@ ideas = {
 		
 		peugeot = { #MOD
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRI
+				}
 			}	
 			research_bonus = {
 				armor = 0.15
@@ -1999,8 +2005,9 @@ ideas = {
 		mas = {		
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = EFR
+				original_tag = FRA
+				original_tag = EFR
+				original_tag = FRI
 				}
 			}	
 			research_bonus = {
@@ -2011,7 +2018,10 @@ ideas = {
 		
 		hotchkiss = { #MOD
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRI
+				}
 			}		
 			research_bonus = {
 				support_tech = 0.10
@@ -2022,10 +2032,11 @@ ideas = {
 		schneider = {	
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = EFR
+				original_tag = FRA
+				original_tag = EFR
+				original_tag = FRI
 				}
-			}		
+			}	
 			research_bonus = {
 				artillery = 0.15
 			}
@@ -2115,8 +2126,9 @@ ideas = {
 		morane_saulnier = {
 			allowed = {
 				OR = {
-					original_tag = FRA
-					original_tag = EFR
+				original_tag = FRA
+				original_tag = EFR
+				original_tag = FRI
 				}
 			}
 			research_bonus = {
@@ -2226,7 +2238,10 @@ ideas = {
 		
 		oran = { #MOD	
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+				original_tag = FRI
+				}
 			}	
 			research_bonus = {
 				naval_equipment = 0.15

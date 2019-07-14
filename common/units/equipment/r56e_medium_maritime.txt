@@ -11,7 +11,7 @@ equipments = {
 		sprite = medium_plane
 		air_map_icon_frame = 6
 
-		manpower = 40
+		manpower = 5
 		fuel_consumption = 0.32
 
 		interface_category = interface_category_air
