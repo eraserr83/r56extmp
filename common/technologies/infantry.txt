@@ -306,6 +306,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -350,6 +351,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -2283,6 +2285,7 @@ jungle_warfare = {
 		
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -2311,6 +2314,7 @@ jungle_warfare = {
 		
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -2334,6 +2338,7 @@ jungle_warfare = {
 		
 		categories = {
 			infantry_weapons
+			anti_tank_infantry_weapons
 		}
 		
 		ai_will_do = {

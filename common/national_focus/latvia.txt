@@ -253,9 +253,8 @@ focus_tree = {
 		id = LAT_VEF_technological_breakthrough
 		icon = GFX_focus_research2
 		relative_position_id = LAT_VEF_radar_experiments
-		prerequisite = { focus = LAT_VEF_radar_experiments }
-		prerequisite = { focus = LAT_modernized_signal_corps }
-		prerequisite = { focus = LAT_VEF_design_bombing_sights }
+		prerequisite = { focus = LAT_VEF_radar_experiments focus = LAT_VEF_design_bombing_sights}
+		prerequisite = { focus = LAT_modernized_signal_corps  }
 		x = 2
 		y = 1
 		cost = 10
@@ -1082,6 +1081,7 @@ focus_tree = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
+			has_decision = LAT_discuss_with_attache
 			check_variable = { var_LAT_count_attache_1 > 1 }
 		}
 
@@ -1110,6 +1110,7 @@ focus_tree = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
+			has_decision = LAT_discuss_with_attache
 			check_variable = { var_LAT_count_attache_1 > 1 }
 		}
 
