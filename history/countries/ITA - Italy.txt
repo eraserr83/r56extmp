@@ -128,6 +128,7 @@ if = {
 		#laws
 		partial_economic_mobilisation
 		extensive_conscription
+	}
 	
 	unlock_national_focus = ITA_victoryinETH
 	unlock_national_focus = ITA_Hitler_visits_Rome
@@ -794,7 +795,8 @@ if = {
 			mid_2_custom_slot = ship_airplane_launcher_1
 			rear_1_custom_slot = ship_light_medium_battery_2
 		}
-	}### Light Cruiser Variants	
+	}
+	### Light Cruiser Variants	
 	create_equipment_variant = {
 		name = "Duca degli Abruzzi Class"
 		type = ship_hull_cruiser_2
@@ -863,6 +865,7 @@ if = {
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
 		}
+	}
 	create_equipment_variant = {
 			name = "Littorio Class"
 			type = ship_hull_heavy_2
