@@ -1952,6 +1952,15 @@ jungle_warfare = {
 			leads_to_tech = mechanised_infantry3
 			research_cost_coeff = 1
 		}
+		
+		mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		amphibious_mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
 
 		research_cost = 2
 		start_year = 1942
@@ -1989,8 +1998,12 @@ jungle_warfare = {
 		}
 
 		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		amphibious_mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 		research_cost = 3
@@ -2029,12 +2042,12 @@ jungle_warfare = {
 		}
 
 		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		amphibious_mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 		research_cost = 3
@@ -2066,8 +2079,12 @@ jungle_warfare = {
 		}
 
 		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		amphibious_mechanized = {
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 		research_cost = 3

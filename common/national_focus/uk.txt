@@ -647,7 +647,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 		}
 	}
 	
@@ -1679,6 +1679,23 @@ focus_tree = {
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
 			}
 			add_ideas = ENG_expand_the_repair_yards
+		}
+	}
+
+	focus = {
+		id = uk_extra_tech_slot2
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = ENG_expand_the_repair_yards focus = ENG_a_s_warfare }
+		x = 1
+		y = 1
+		relative_position_id = ENG_a_s_warfare
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 

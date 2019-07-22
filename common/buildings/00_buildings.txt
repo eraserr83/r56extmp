@@ -59,7 +59,7 @@ buildings = {
 		only_costal = yes
 		is_port = yes
 		icon_frame = 6
-		max_level = 12
+		max_level = 10
 		value = 1
 	}
 
@@ -108,13 +108,12 @@ buildings = {
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 2500
-		per_level_extra_cost = 500
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
 		max_level = 5 # This is the max unlock level
-		damage_factor = 0.05
+		damage_factor = 0.1
 		value = 1
 		infrastructure_construction_effect = yes
 	}

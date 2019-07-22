@@ -7,10 +7,6 @@ NDefines.NGraphics.COUNTRY_FLAG_LARGE_STRIPE_MAX_HEIGHT = 24000
 -- Focuses
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
 
---diplomacy
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 20.0
-
 -- Country balance
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
@@ -18,7 +14,6 @@ NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
 NDefines.NCountry.LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR = 0.20
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 30
-NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 5
 
 -- Military
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
@@ -31,9 +26,8 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1500 -- Max army experience a country c
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1500 -- Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1500  -- Max air experience a country can store
 NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.25
-NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 80.0		   -- When the transport plane was shot down, we drop unit with almost NONE equipment
-NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 90.0		   -- When the transport plane was shot down, we drop unit with almost NONE manpower
-NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 90.0
+NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 20.0		   -- When the transport plane was shot down, we drop unit with almost NONE equipment
+NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 10.0		   -- When the transport plane was shot down, we drop unit with almost NONE manpower
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.15
 
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 48
@@ -43,13 +37,12 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1 -- Base cost to change 
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 5					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
-NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 1	
-NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 20
-NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
+NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 1
+NDefines.NMilitary.NAVAL_EQUIPMENT_BASE_COST = 5
+NDefines.NMilitary.NAVAL_EQUIPMENT_RAMP_COST = 1
 NDefines.NMilitary.BASE_COMBAT_WIDTH = 120
 NDefines.NMilitary.ADDITIONAL_COMBAT_WIDTH = 60
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0001
-NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 0.1
 
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 24
@@ -77,26 +70,18 @@ NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0
 -- Air Combat
 NDefines.NAir.AIR_WING_XP_LEVELS = {20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 390, 480, 570, 660, 750, 780, 810, 840, 870, 900}
 NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 300.0
-NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 4.5
-NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.03
-NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 200
-NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 200 -- Max stats
-NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 200
-NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 200
+NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 1500 -- Max stats
+NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 1500
+NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 1500
+NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 1500
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1500 -- Used to balance the damage done while bombing.
 NDefines.NAir.COMBAT_STAT_IMPORTANCE_SPEED = 1.5
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3.0
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.15
-NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.03
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.15
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.192
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.072
-NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_CHANCE = 2.0 -- Chance to hit a plane in airbase when it is bombed.
-NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 2.0
 NDefines.NAir.DETECT_CHANCE_FROM_NIGHT = -0.9
 NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_SHIP_CHANCE = 0.025
 NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_SHIP_DAMAGE_FACTOR = 50
-NDefines.NAir.AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0.7
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
 		0.0, -- CAS

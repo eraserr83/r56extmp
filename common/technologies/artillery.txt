@@ -622,7 +622,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		
-		tech_air_damage_factor = -0.02			
+		tech_air_damage_factor = -0.01			
 
 		
 		path = {
@@ -673,11 +673,6 @@ technologies = {
 			ship_anti_air_3
 		}
 		
-		enable_building = {
-			building = anti_air_building
-			level = 6
-		}
-		
 		path = {
 			leads_to_tech = antiair3
 			research_cost_coeff = 1
@@ -726,7 +721,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		path = {
 			leads_to_tech = antiair4
@@ -776,7 +771,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 		
 		path = {
 			leads_to_tech = antiair5
@@ -826,11 +821,6 @@ technologies = {
 		
 		enable_equipment_modules = { 
 			ship_anti_air_4
-		}
-		
-		enable_building = {
-			building = anti_air_building
-			level = 7
 		}
 		
 		path = {
@@ -2061,7 +2051,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 		
 		
 		research_cost = 1.1
@@ -2095,7 +2085,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		path = {
 			leads_to_tech = antiair_c
@@ -2124,11 +2114,6 @@ technologies = {
 
 		enable_equipments = {
 			anti_air_equipment_x
-		}
-		
-		enable_building = {
-			building = anti_air_building
-			level = 8
 		}
 		
 		static_anti_air_damage_factor = 0.1	
@@ -2169,7 +2154,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 		
 		path = {
 			leads_to_tech = antiair_e
@@ -2206,7 +2191,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02	
+		tech_air_damage_factor = -0.01	
 
 		research_cost = 1.1
 

@@ -229,7 +229,7 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		hardness = 0.05
+		hardness = 0.15
 		reliability = -0.05
 	}
 	

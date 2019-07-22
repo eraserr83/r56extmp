@@ -4952,7 +4952,7 @@ focus_tree = {
 		x = 54
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -4972,7 +4972,7 @@ focus_tree = {
 		x = 56
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -5013,7 +5013,7 @@ focus_tree = {
 		x = 56
 		y = 3
 		
-		cost = 10
+		cost = 5
 		
 		completion_reward = {
 			add_ideas = GER_foreign_volunteers_idea
@@ -5092,7 +5092,7 @@ focus_tree = {
 		x = 56
 		y = 5
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -6272,7 +6272,7 @@ focus = {
 			add_state_core = 88
 			add_state_core = 90
 			add_state_core = 98
-			add_manpower = -620000
+			add_manpower = -20000
 			add_stability = -0.05
 			add_ideas = GER_generalplan_ost_II_idea
 		}
@@ -6304,7 +6304,7 @@ focus = {
 			add_state_core = 11
 			add_state_core = 188
 			add_state_core = 189
-			add_manpower = -130000
+			add_manpower = -30000
 			add_stability = -0.03
 		}
 	}
@@ -6333,7 +6333,7 @@ focus = {
 		completion_reward = {
 			add_state_core = 12
 			add_state_core = 190
-			add_manpower = -100000
+			add_manpower = -10000
 			add_stability = -0.03
 		}
 	}
@@ -6362,13 +6362,13 @@ focus = {
 		completion_reward = {
 			add_state_core = 13
 			add_state_core = 191
-			add_manpower = -55000
+			add_manpower = -5000
 			add_stability = -0.03
 		}
 	}
 	
 	focus = {
-		id = GER_germanize_switzerland
+		id = GER_germanize_denmark
 		icon = GFX_goal_generic_more_territorial_claims
 		
 		prerequisite = { focus = GER_lebensraum }
@@ -6383,13 +6383,13 @@ focus = {
 		}
 		
 		available = {
-			GER = { controls_state = 3}
-			GER = { controls_state = 151}
+			GER = { controls_state = 37}
+			GER = { controls_state = 99 }
 		}
 		
 		completion_reward = {
-			GER = { add_state_core = 3 }
-			GER = { add_state_core = 151 }
+			GER = { add_state_core = 37}
+			GER = { add_state_core = 99 }
 		}
 	}
 	

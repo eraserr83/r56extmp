@@ -995,7 +995,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_industrial_effort }
 		available = {
-			has_war = no
 					283 = {
 						is_owned_by = CHI
 					}
@@ -1646,7 +1645,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_industrial_effort }
 		available = {
-			has_war = no
 					591 = {
 						is_owned_by = CHI
 					}
@@ -3954,7 +3952,7 @@ focus_tree = {
 			hidden_effect = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Chiang Kai-shek"
+					name = "Chiang Kai-Shek"
 					desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 					picture = "Portrait_China_Chiang_Kai_Shek.dds"
 					expire = "1965.1.1"
@@ -4588,7 +4586,6 @@ focus_tree = {
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
 		prerequisite = { focus = KMT_privilege_to_proletarians }
 		available = {
-			has_war = no
 			NOT = {
 				has_war_with = PRC
 			}
