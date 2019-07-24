@@ -2293,6 +2293,15 @@ leader_traits = {
 			cv_fighter_equipment = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
+			
+			jet_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+			
+			cv_jet_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+			
 		}
 		
 		ai_will_do = {
@@ -2318,6 +2327,11 @@ leader_traits = {
 			med_maritime_equipment = {
 				reliability = 0.2
 			}
+			
+			jet_tac_bomber_equipment = {
+				reliability = 0.2
+			}
+			
 		}
 		
 		ai_will_do = {
@@ -2332,13 +2346,17 @@ leader_traits = {
 			strat_bomber_equipment = {
 				air_bombing = 0.1
 			}
+
+			jet_strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
 			
 			strat_maritime_equipment = {
 				reliability = 0.1
 			}
 			
 			flying_boat_equipment = {
-				reliability = 0.2
+				reliability = 0.1
 			}
 		}
 		

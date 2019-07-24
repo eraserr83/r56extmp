@@ -88,8 +88,8 @@ technologies = {
 			land_doctrine			
 			cat_mobile_warfare
 			cat_mass_assault
+			cat_grand_battle_plan
 			cat_superior_firepower
-			cat_mechanized_equipment
 		}
 
 		ai_will_do = {
@@ -227,9 +227,11 @@ technologies = {
 			position = { x = -2 y = 4 }
 		}
 			
-		categories = {			
+		categories = {
 			land_doctrine			
 			cat_mobile_warfare
+			cat_mass_assault
+			cat_grand_battle_plan
 			cat_superior_firepower
 		}
 
@@ -258,9 +260,11 @@ technologies = {
 		
 		max_planning = 0.05
 			
-		categories = {			
-			land_doctrine
+		categories = {
+			land_doctrine			
 			cat_mobile_warfare
+			cat_mass_assault
+			cat_grand_battle_plan
 			cat_superior_firepower
 		}
 
@@ -294,12 +298,12 @@ technologies = {
 			position = { x = 2 y = 4 }
 		}
 			
-		categories = {			
-			land_doctrine
+		categories = {
+			land_doctrine			
 			cat_mobile_warfare
-			cat_superior_firepower
-			cat_grand_battle_plan
 			cat_mass_assault
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -322,13 +326,13 @@ technologies = {
 		}
 
 		max_dig_in = 7
-		
-		categories = {			
-			land_doctrine
+					
+		categories = {
+			land_doctrine			
 			cat_mobile_warfare
-			cat_superior_firepower
-			cat_grand_battle_plan
 			cat_mass_assault
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -821,8 +825,7 @@ technologies = {
 			
 		research_cost = 3.0
 		
-		industrial_capacity_dockyard = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.20
 		
 		folder = {
 			name = etax_folder
@@ -905,11 +908,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -949,11 +952,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -967,7 +970,7 @@ technologies = {
 
 	etax_purity = {
 	
-		training_time_army_factor = 0.25
+		training_time_army_factor = 0.15
 		
 		path = {
 			leads_to_tech = etax_great_leap 
@@ -987,11 +990,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -1054,7 +1057,7 @@ technologies = {
 		category_army = {
 			fuel_consumption_factor = -0.10
 		}
-		supply_consumption_factor= -0.15
+		supply_consumption_factor= -0.10
 		
 		
 		
@@ -1064,11 +1067,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -1099,11 +1102,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -1222,11 +1225,11 @@ technologies = {
 		}
 			
 		categories = {
-			land_doctrine
+			land_doctrine			
 			cat_mobile_warfare
-			cat_grand_battle_plan
 			cat_mass_assault
-			cat_mechanized_equipment
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
 
 		ai_will_do = {
@@ -1301,10 +1304,6 @@ technologies = {
 			reliability_factor = 0.15
 		}
 		
-		category_special_forces = {
-			reliability_factor = 0.15
-		}
-		
 		category_nav_bomber = {
 			reliability_factor = 0.15
 		}
@@ -1348,7 +1347,7 @@ technologies = {
 		}
 			
 		categories = {
-			industry
+			nuclear
 		}
 
 		ai_will_do = {
@@ -1375,8 +1374,13 @@ technologies = {
 		}
 			
 		categories = {
-			industry
+			land_doctrine			
+			cat_mobile_warfare
+			cat_mass_assault
+			cat_grand_battle_plan
+			cat_superior_firepower
 		}
+		
 
 		ai_will_do = {
 			factor = 5
@@ -1431,7 +1435,7 @@ technologies = {
 		research_cost = 3.0
 		
 		modifier = {
-			naval_strike_targetting_factor = 0.15
+			naval_strike_targetting_factor = 0.1
 		}
 		
 		navy_capital_ship_attack_factor = 0.1

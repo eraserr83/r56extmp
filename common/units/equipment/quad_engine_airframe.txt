@@ -100,8 +100,8 @@ equipments = {
 		maximum_speed = 400
 		air_agility = 5
 		air_attack = 50
-		air_defence = 30
-		air_bombing = 40
+		air_defence = 25
+		air_bombing = 30
 
 		can_convert_from = {
 			strat_maritime_equipment_1
@@ -128,8 +128,8 @@ equipments = {
 		maximum_speed = 450
 		air_agility = 7
 		air_attack = 100
-		air_defence = 40
-		air_bombing = 60
+		air_defence = 35
+		air_bombing = 45
 
 		build_cost_ic = 62
 		resources = {
@@ -156,8 +156,8 @@ equipments = {
 		maximum_speed = 500
 		air_agility = 10
 		air_attack = 150
-		air_defence = 55
-		air_bombing = 80
+		air_defence = 50
+		air_bombing = 60
 
 		build_cost_ic = 64
 		resources = {
@@ -181,8 +181,8 @@ equipments = {
 		maximum_speed = 920
 		air_agility = 14
 		air_attack = 100
-		air_defence = 60
-		air_bombing = 100
+		air_defence = 54
+		air_bombing = 64
 		is_convertable = yes
 	}
 
@@ -202,10 +202,10 @@ equipments = {
 
 		air_range = 8500
 		maximum_speed = 1000
-		air_agility = 16
+		air_agility = 15
 		air_attack = 150
 		air_defence = 65
-		air_bombing = 120
+		air_bombing = 75
 
 		build_cost_ic = 70
 		resources = {

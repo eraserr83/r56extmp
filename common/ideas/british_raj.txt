@@ -32,6 +32,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = 0.02
+				political_power_gain = 0.25
 			}
 		}
 	}
@@ -373,7 +374,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.30
+				conscription_factor = -0.69
 			}
 		}
 
@@ -392,7 +393,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.15
+				conscription_factor = -0.40
 			}
 		}
 
@@ -411,7 +412,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.05
+				conscription_factor = -0.25				
+				political_power_gain = 0.50
 			}
 		}
 

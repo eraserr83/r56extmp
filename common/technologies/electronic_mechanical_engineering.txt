@@ -1314,7 +1314,7 @@ technologies = {
 
 	future_radar = {
 		
-		air_interception_detect_factor = 0.5
+		air_interception_detect_factor = 0.05
 
 		path = {
 			leads_to_tech = future_radar_2
@@ -1347,7 +1347,7 @@ technologies = {
 	
 	future_radar_2 = {
 		
-		air_interception_detect_factor = 0.5
+		air_interception_detect_factor = 0.05
 				
 		enable_building = {
 			building = radar_station
@@ -1381,7 +1381,7 @@ technologies = {
 	
 	future_radar_3 = {
 		
-		air_interception_detect_factor = 0.5
+		air_interception_detect_factor = 0.05
 		
 		research_cost = 2.5
 		start_year = 1953
@@ -1436,7 +1436,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
-		
+		 
 		categories = {
 			electronics
 			encryption_tech
@@ -1819,6 +1819,8 @@ technologies = {
 
 		enemy_partisan_effect = -0.03
  		foreign_subversive_activites = -0.01
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf2 
@@ -1847,6 +1849,8 @@ technologies = {
 
 		enemy_partisan_effect = -0.05
  		foreign_subversive_activites = -0.02
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf3 
@@ -1875,6 +1879,8 @@ technologies = {
 
 		enemy_partisan_effect = -0.07
  		foreign_subversive_activites = -0.03
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf4 
@@ -1903,6 +1909,8 @@ technologies = {
  
 		enemy_partisan_effect = -0.09
  		foreign_subversive_activites = -0.04
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf5
@@ -1931,6 +1939,8 @@ technologies = {
  
 		enemy_partisan_effect = -0.11
  		foreign_subversive_activites = -0.05
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
 		path = {
 			leads_to_tech = rdf6 
@@ -1959,6 +1969,8 @@ technologies = {
  
 		enemy_partisan_effect = -0.13
  		foreign_subversive_activites = -0.06
+		encryption_factor = 0.05
+		decryption_factor = 0.05
 		
      	research_cost = 1.6
 		start_year = 1953
