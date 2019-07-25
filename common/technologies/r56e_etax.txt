@@ -325,7 +325,7 @@ technologies = {
 			position = { x = 2 y = 8 }
 		}
 
-		max_dig_in = 7
+		max_dig_in = 10
 					
 		categories = {
 			land_doctrine			
@@ -510,7 +510,7 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3.0
 		
-		air_superiority_efficiency = 0.1
+		air_superiority_efficiency = 0.15
 		
 		folder = {
 			name = etax_folder
@@ -543,10 +543,9 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3.0
 			
-		tac_bomber = {
-			air_bombing = 0.15
-		}
-		air_strategic_bomber_bombing_factor = 0.15
+		air_strategic_bomber_bombing_factor = 0.2
+		
+		
 		
 		folder = {
 			name = etax_folder

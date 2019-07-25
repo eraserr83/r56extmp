@@ -218,7 +218,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 8
@@ -616,9 +616,7 @@ focus_tree = {
 		id = GER_total_war
 		icon = GFX_goal_generic_military_sphere
 		
-		prerequisite = { focus = GER_volkswagen }
 		prerequisite = { focus = GER_finish_reinhardt }
-		prerequisite = { focus = GER_nationalize_aviation_industry }
 		
 		x = 8
 		y = 5
@@ -2550,7 +2548,7 @@ focus_tree = {
 		x = 22
 		y = 2
 		
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10

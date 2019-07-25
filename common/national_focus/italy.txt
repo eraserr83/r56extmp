@@ -2696,24 +2696,26 @@ focus_tree = {
 			factor = 10
 		}
         available = {
-		ITA = {
-				controls_state = 45
-				any_other_country = {
-					is_in_faction_with = ITA
-					controls_state = 45
+			ITA = {
+				OR = {
+					controls_state = 107
+					any_other_country = {
+						is_in_faction_with = ITA
+						controls_state = 45
+					}
 				}
 			}
-		ITA = {
-			controls_state = 47
-			any_other_country = {
-				is_in_faction_with = ITA
-				controls_state = 47
+			ITA = {
+				OR = {
+					controls_state = 47
+					any_other_country = {
+						is_in_faction_with = ITA
+						controls_state = 47
+					}
+				}
 			}
 		}
-		has_political_power > 200
-		}
 		completion_reward = {
-			add_political_power = -200
 			swap_ideas = { 
 				remove_idea = parola_di_ordine_vincere
 				add_idea = parola_di_ordine_vincere_2

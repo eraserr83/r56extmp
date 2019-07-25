@@ -1791,6 +1791,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 73
 			add_state_core = 76
 			add_state_core = 83
 			add_state_core = 84
