@@ -616,7 +616,9 @@ focus_tree = {
 		id = GER_total_war
 		icon = GFX_goal_generic_military_sphere
 		
+		prerequisite = { focus = GER_volkswagen }
 		prerequisite = { focus = GER_finish_reinhardt }
+		prerequisite = { focus = GER_nationalize_aviation_industry }
 		
 		x = 8
 		y = 5
@@ -629,7 +631,6 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
-			surrender_progress > 0.05
 		}
 		
 		completion_reward = {
@@ -6237,8 +6238,10 @@ focus = {
 			add_state_core = 86
 			add_state_core = 87
 			add_manpower = -620000
-			add_stability = -0.05
-			add_ideas = GER_generalplan_ost_I_idea
+			add_timed_idea = {
+				idea = GER_generalplan_ost_I_idea 
+				days = 140
+			}
 		}
 	}
 	
@@ -6271,8 +6274,10 @@ focus = {
 			add_state_core = 90
 			add_state_core = 98
 			add_manpower = -20000
-			add_stability = -0.05
-			add_ideas = GER_generalplan_ost_II_idea
+			add_timed_idea = {
+				idea = GER_generalplan_ost_II_idea 
+				days = 140
+			}
 		}
 	}
 	
