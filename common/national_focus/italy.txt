@@ -1074,8 +1074,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			GER = { add_to_tech_sharing_group = axis_research }
-			add_to_tech_sharing_group = axis_research
+			add_to_tech_sharing_group = german_research
+			GER = { add_to_tech_sharing_group = german_research }
 		}
 	}
 	

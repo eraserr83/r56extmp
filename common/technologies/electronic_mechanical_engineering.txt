@@ -112,7 +112,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
 		
 		folder = {
 			name = electronics_folder
@@ -837,6 +837,10 @@ technologies = {
 			ship_fire_control_system_2
 		}
 		
+		dependencies = {
+            basic_fire_control_system = 1
+        }
+		
 		research_cost = 1
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -880,6 +884,10 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
+		
+		dependencies = {
+            improved_fire_control_system = 1
+        }
 		
 		research_cost = 1
 		
@@ -1998,8 +2006,7 @@ technologies = {
 		
 		rocket_artillery = {
 			soft_attack = 0.05
-		}
-		
+		}		
 		rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}
@@ -2040,12 +2047,11 @@ technologies = {
 		
 		enable_equipments = {
 			guided_missile_equipment_4
-		} 
+		}
 		
 		rocket_artillery = {
 			soft_attack = 0.05
-		}
-		
+		}		
 		rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}

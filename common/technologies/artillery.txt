@@ -622,7 +622,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		
-		tech_air_damage_factor = -0.01			
+		tech_air_damage_factor = -0.02			
 
 		
 		path = {
@@ -771,7 +771,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.01
+		tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = antiair5

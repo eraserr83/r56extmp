@@ -988,7 +988,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1939
+		start_year = 1936
 		folder = {
 			name = etat_folder
 			position = { x = -2 y = 2 }
@@ -1021,7 +1021,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1939
 		folder = {
 			name = etat_folder
 			position = { x = -2 y = 4 }
@@ -1054,7 +1054,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1945
+		start_year = 1941
 		folder = {
 			name = etat_folder
 			position = { x = -2 y = 6 }
@@ -1082,7 +1082,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1951
+		start_year = 1944
 		folder = {
 			name = etat_folder
 			position = { x = -2 y = 10 }
@@ -1116,7 +1116,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1939
+		start_year = 1936
 		folder = {
 			name = etat_folder
 			position = { x = 2 y = 2 }
@@ -1149,7 +1149,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1939
 		folder = {
 			name = etat_folder
 			position = { x = 2 y = 4 }
@@ -1182,7 +1182,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1945
+		start_year = 1941
 		folder = {
 			name = etat_folder
 			position = { x = 2 y = 6 }
@@ -1211,7 +1211,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1951
+		start_year = 1944
 		folder = {
 			name = etat_folder
 			position = { x = 2 y = 10 }
@@ -1277,7 +1277,7 @@ technologies = {
 		}	
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1940
 		folder = {
 			name = etat_folder
 			position = { x = 0 y = 4 }
@@ -1305,7 +1305,7 @@ technologies = {
 		}	
 
 		research_cost = 1
-		start_year = 1948
+		start_year = 1944
 		folder = {
 			name = etat_folder
 			position = { x = 0 y = 8 }
@@ -1328,7 +1328,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1955
+		start_year = 1948
 		folder = {
 			name = etat_folder
 			position = { x = 0 y = 12 }

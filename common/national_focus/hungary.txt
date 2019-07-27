@@ -1631,6 +1631,8 @@ focus_tree = {
 				add_idea = HUN_interventionism_2
 				remove_idea = HUN_interventionism
 			}
+		add_to_tech_sharing_group = german_research
+		GER = { add_to_tech_sharing_group = german_research }
 		}
 	}
 
