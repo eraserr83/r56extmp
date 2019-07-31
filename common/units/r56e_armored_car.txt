@@ -19,27 +19,22 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 2
+		combat_width = 1
 
 		need = {
 			armored_car_equipment = 80
 		}
-		manpower = 750
-		max_organisation = 40
+		manpower = 500
+		max_organisation = 60
 		max_strength = 8
-		default_morale = 0.3
-		training_time = 80
+		default_morale = 0.4
+		training_time = 140
 		weight = 0.8
 		recon = 3
 		supply_consumption = 0.22
 
-		forest = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
 		hills = {
-			attack = 0.10
+			attack = 0.25
 			defence = 0.05
 			movement = 0.15
 		}
@@ -48,42 +43,15 @@ sub_units = {
 			defence = 0.15
 			movement = 0.25
 		}
-		mountain = 	{
-			attack = -0.55
-			defence = -0.1 
-		}
 		urban = {
-			attack = -0.05 
-			defence = 0.0 
+			attack = 0.2 
+			defence = 0.1 
 			movement = 0.2
 		}
 		desert = {
 			attack = 0.30
 			defence = 0.15
 			movement = 0.25
-		}
-		jungle = {
-			attack = -0.5
-			defence = 0.0
-			movement = -0.1
-		}
-		marsh = {
-			attack = -0.5
-			defence = -0.15 
-			movement = -0.1
-		}
-		amphibious = { 
-			attack = 0.05
-			defence = 0.05
-			movement = 0.1
-		}
-		river = { 
-			attack = 0.2
-			defence = 0.1
-			movement = 0.1
-		}
-		fort = {
-			attack = 0.1
 		}
 	}
 }

@@ -20,7 +20,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 16
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -54,7 +54,7 @@ equipments = {
 		visual_level = 0
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 12
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -111,7 +111,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 15
+		maximum_speed = 18
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -158,7 +158,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 18
+		maximum_speed = 21
 		reliability = 0.9
 
 		#Defensive Abilities

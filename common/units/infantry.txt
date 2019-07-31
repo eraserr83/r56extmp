@@ -163,6 +163,7 @@ sub_units = {
 		breakthrough = 0.4
 		initiative = 0.01
 		reliability_factor = 0.02
+		equipment_capture_factor = 0.02
 	
 		need = {
 			infantry_equipment = 160
@@ -231,7 +232,8 @@ sub_units = {
 		supply_consumption = 0.2
 		breakthrough = 0.4
 		initiative = 0.01
-		reliability_factor = 0.02	
+		reliability_factor = 0.02
+		equipment_capture_factor = 0.02
 	
 		need = {
 			infantry_equipment = 160
@@ -267,9 +269,6 @@ sub_units = {
 			defence = 0.25
 			movement = 0.1
 		}
-		fort = {
-			attack = -0.1
-		}
 	}
 
 	paratrooper = {
@@ -298,11 +297,11 @@ sub_units = {
 		combat_width = 2
 
 		#offensive abilities
-		soft_attack = 0.2
-		hard_attack = 0.2
+		soft_attack = 0.25
+		hard_attack = 0.25
 
 		#defensive abilities
-		defense = 0.2
+		defense = 0.25
 
 		#Size Definitions
 		max_strength = 25
@@ -319,155 +318,15 @@ sub_units = {
 		initiative = 0.01
 		defense = 0.1 
 		reliability_factor = 0.02
-		equipment_capture_factor = 0.01
+		equipment_capture_factor = 0.02
 
 		can_be_parachuted = yes
 	
 		need = {
 			infantry_equipment = 160
 		}
-		
-		urban = {
-			attack = 0.20
-			defence = 0.20
-		}
-		fort = {
-			attack = 0.10
-			defence = 0.10
-		}			
 	}
-	
-	jaeger = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-		
-		
-		priority = 3000
-		ai_priority = 2
-		active = no
 
-		type = {
-			infantry
-		}
-		
-		group = infantry
-		
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-		}
-		
-		combat_width = 2
-
-		#offensive abilities
-		soft_attack = 0.1
-		hard_attack = 0.1
-
-		#defensive abilities
-		defense = 0.1
-		hardness = 0.1
-
-		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 240
-		suppression = 1
-		weight = 0.4
-		supply_consumption = 0.15
-		breakthrough = 0.4
-		initiative = 0.1
-		reliability_factor = 0.1
-	
-		need = {
-			infantry_equipment = 150
-		}
-
-		marsh = {
-			attack = 0.1
-			movement = 0.1
-		}
-		forest = {
-			attack = 0.25
-			defence = 0.25
-			movement = 0.20
-		}
-		hills = {
-			attack = 0.1
-			defence = 0.1
-			movement = 0.1
-		}
-	}
-	
-	jungletroop = {
-		sprite = infantry
-		map_icon_category = infantry
-		special_forces = yes
-		
-		
-		priority = 3000
-		ai_priority = 2
-		active = no
-
-		type = {
-			infantry
-		}
-		
-		group = infantry
-		
-		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-		}
-		
-		combat_width = 2
-
-		#offensive abilities
-		soft_attack = 0.1
-		hard_attack = 0.1
-
-		#defensive abilities
-		defense = 0.1
-		hardness = 0.1
-
-		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
-		manpower = 1000
-
-		#Misc Abilities
-		training_time = 240
-		suppression = 1
-		weight = 0.4
-		supply_consumption = 0.12
-		breakthrough = 0.4
-		initiative = 0.1
-		reliability_factor = 0.1
-	
-		need = {
-			infantry_equipment = 180
-		}
-
-		jungle = {
-			attack = 0.25
-			defence = 0.25
-			movement = 0.2
-		}
-		river = {
-			movement = 0.1
-		}
-	}
 	
 	shocktroop = {
 		sprite = infantry
@@ -496,17 +355,15 @@ sub_units = {
 		combat_width = 2
 		
 		#offensive abilities
-		soft_attack = 0.2
-		hard_attack = 0.5
+		soft_attack = 0.3
 
 		#defensive abilities
 		defense = 0.1
-		hardness = 0.1
 
 		#Size Definitions
 		max_strength = 25
 		max_organisation = 70
-		default_morale = 0.4
+		default_morale = 0.7
 		manpower = 1000
 
 		#Misc Abilities
@@ -514,9 +371,10 @@ sub_units = {
 		suppression = 1
 		weight = 0.4
 		supply_consumption = 0.21
-		breakthrough = 1.5
-		initiative = 0.25
-		reliability_factor = 0.15
+		breakthrough = 1
+		initiative = 0.01
+		reliability_factor = 0.02
+		equipment_capture_factor = 0.02
 	
 		need = {
 			infantry_equipment = 200
@@ -559,12 +417,11 @@ sub_units = {
 		combat_width = 2
 
 		#offensive abilities
-		soft_attack = 0.1
-		hard_attack = 0.1
+		soft_attack = 0.2
+		hard_attack = 0.2
 
 		#defensive abilities
-		defense = 0.1
-		hardness = 0.1
+		defense = 0.2
 
 		#Size Definitions
 		max_strength = 20
@@ -578,13 +435,13 @@ sub_units = {
 		weight = 0.4
 		supply_consumption = 0.18
 		breakthrough = 0.4
-		initiative = 0.2
-		reliability_factor = 0.2
+		initiative = 0.01
+		reliability_factor = 0.02
+		equipment_capture_factor = 0.02
 	
 		need = {
 			infantry_equipment = 170
 		}
-
 		desert = {
 			attack = 0.25
 			defence = 0.25
@@ -741,8 +598,4 @@ sub_units = {
 
 		hardness = 0.2
 	}
-	
-	
-	
-	
 }
