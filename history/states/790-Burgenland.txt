@@ -1,0 +1,28 @@
+state={
+	id=790
+	name="STATE_790"
+	manpower = 291800
+	
+	state_category = rural
+	
+	history={
+		owner = AUS
+		victory_points = {
+			3700 1 
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = AUS
+
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
+	}
+
+	provinces={
+		3700 9661 11630 
+	}
+}

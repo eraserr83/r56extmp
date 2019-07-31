@@ -1,0 +1,22 @@
+state={
+	id=791
+	name="STATE_791"
+	manpower = 245400
+	
+	state_category = rural
+	
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			6672 1 
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		665 6672 
+	}
+}

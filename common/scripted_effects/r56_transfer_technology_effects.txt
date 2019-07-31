@@ -1377,7 +1377,7 @@ transfer_technology = {
 		if = {
 			limit = {
 				PREV = {
-					has_tech = main_battle_tank
+					has_tech = main_battle_tank_a
 				}
 			}
 			set_technology = {

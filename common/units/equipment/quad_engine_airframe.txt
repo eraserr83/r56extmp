@@ -228,7 +228,7 @@ equipments = {
 		sprite = heavy_plane
 		air_map_icon_frame = 12
 
-		upgrades = { #EAI
+		upgrades = {
 			plane_range_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade

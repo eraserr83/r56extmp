@@ -3183,6 +3183,15 @@ country_event = {
 	option = {# great
 		name = DOD_hungary.91.a
 	  	transfer_state = 45
+	  	45 = { add_core_of = HUN }
+	  	transfer_state = 764
+	  	764 = { add_core_of = HUN }
+	  	transfer_state = 791
+	  	791 = { add_core_of = HUN }
+	  	transfer_state = 789
+	  	789 = { add_core_of = HUN }
+	  	transfer_state = 109
+	  	109 = { add_core_of = HUN }
 	}
 }
 
@@ -3307,7 +3316,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = YUG
-				generator = { 45 }
+				generator = { 45 764 109 789 791 }
 			}
 		}
 		hidden_effect = {
@@ -3498,7 +3507,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = YUG
-				generator = { 45 }
+				generator = { 45 764 109 789 791 }
 			}
 		}
 		news_event = { id = news.308 days = 1 }		
@@ -3576,6 +3585,15 @@ country_event = {
 			ITA = { transfer_state = 103 }
 		}
 		HUN = { transfer_state = 45 }
+		45 = { add_core_of = HUN }
+		HUN = { transfer_state = 764 }
+		764 = { add_core_of = HUN }
+		HUN = { transfer_state = 791 }
+		791 = { add_core_of = HUN }
+		HUN = { transfer_state = 789 }
+		789 = { add_core_of = HUN }
+		HUN = { transfer_state = 109 }
+		109 = { add_core_of = HUN }
 	}
 	option = {# defiance
 		name = DOD_hungary.96.b
@@ -3647,8 +3665,9 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
-					generator = { 45 }
+					generator = { 45 764 109 789 791 }
 				}
+				45 = { add_core_of = HUN }
 			}
 		}
 		hidden_effect = {

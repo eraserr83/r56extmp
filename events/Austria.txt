@@ -2183,7 +2183,7 @@
 
 		trigger = {
 			tag = AUS
-			has_tech = main_battle_tank
+			has_tech = main_battle_tank_a
 			has_idea = AUS_german_armour_tech
 		}
 
@@ -2803,7 +2803,7 @@
 
 		trigger = {
 			tag = AUS
-			has_tech = main_battle_tank
+			has_tech = main_battle_tank_a
 			has_idea = AUS_british_armour_tech
 		}
 
@@ -3475,7 +3475,7 @@
 
 		trigger = {
 			tag = AUS
-			has_tech = main_battle_tank
+			has_tech = main_battle_tank_a
 			has_idea = AUS_soviet_armour_tech
 		}
 

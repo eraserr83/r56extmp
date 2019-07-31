@@ -1345,11 +1345,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			has_army_experience > 100
 		}
 
 		completion_reward = {
-		army_experience = -100
 			remove_ideas = italian_leadership
 		}
 	}

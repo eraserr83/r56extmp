@@ -860,9 +860,27 @@ JAP_southern_expansion = {
 				NOT = { has_war_with = FRA }
 				NOT = { is_in_faction_with = FRA }
 				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
+					286 = { 
+						OR = {
+							is_fully_controlled_by = FRA
+							is_fully_controlled_by = FRI
+							is_fully_controlled_by = EFR
+							}
+						}
+					670 = { 
+						OR = {
+							is_fully_controlled_by = FRA
+							is_fully_controlled_by = FRI
+							is_fully_controlled_by = EFR
+							}
+						}
+					671 = { 
+						OR = {
+							is_fully_controlled_by = FRA
+							is_fully_controlled_by = FRI
+							is_fully_controlled_by = EFR
+							}
+						}
 				}
 			}
 		}

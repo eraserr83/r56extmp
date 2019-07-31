@@ -2549,7 +2549,7 @@ focus_tree = {
 		x = 22
 		y = 2
 		
-		cost = 5
+		cost = 10
 		
 		ai_will_do = {
 			factor = 10
@@ -2832,11 +2832,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NOT = { country_exists = YUG }
-				any_country = {
-					is_in_faction_with = ROOT
-					YUG = {
-						is_puppet_of = PREV
-					}
+				YUG = {
+					is_puppet = yes
 				}
 			}
 		}
@@ -3087,13 +3084,13 @@ focus_tree = {
 					}
 				}
 				ITA = {
-				OR = {
-					NOT = { 
-						country_exists = THIS 
+					OR = {
+						NOT = {
+							country_exists = THIS 
+						}
+						is_in_faction_with = GER
 					}
-					is_in_faction_with = GER
 				}
-			}
 			}
 		}
 		
@@ -6114,7 +6111,7 @@ focus_tree = {
 #############GERMANIZATION TREE###############
 ##############################################
 
-focus = {
+	focus = {
 		id = GER_lebensraum
 		icon = GFX_goal_generic_dangerous_deal
 		
@@ -6237,7 +6234,7 @@ focus = {
 			add_state_core = 85
 			add_state_core = 86
 			add_state_core = 87
-			add_manpower = -620000
+			add_manpower = -20000
 			add_timed_idea = {
 				idea = GER_generalplan_ost_I_idea 
 				days = 140

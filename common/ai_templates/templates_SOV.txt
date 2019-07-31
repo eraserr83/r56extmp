@@ -22,7 +22,7 @@ armored_SOV = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank
+			has_tech = main_battle_tank_a
 		}
 	}
 	
@@ -206,7 +206,7 @@ armored_SOV = {
 				factor = 3
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					has_tech = main_battle_tank_a
 				}
 			}
 		}
@@ -300,7 +300,7 @@ armored_SOV = {
 				factor = 3
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank
+					has_tech = main_battle_tank_a
 				}
 			}
 		}

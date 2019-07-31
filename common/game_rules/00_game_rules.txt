@@ -195,6 +195,26 @@ FRA_ai_behavior = {
 	}
 }
 
+GER_ai_behavior = {
+	name = "GER_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = FASCIST_HISTORICAL
+		text = "RULE_OPTION_FASCIST_HISTORICAL"
+		desc = "RULE_OPTION_FASCIST_HISTORICAL_GER_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+
 HUN_ai_behavior = {
 	name = "HUN_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -261,6 +281,26 @@ RAJ_ai_behavior = {
 		name = FASCIST
 		text = "RULE_OPTION_FASCIST"
 		desc = "RULE_FASCIST_RAJ_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+
+ITA_ai_behavior = {
+	name = "ITA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = FASCIST_HISTORICAL
+		text = "RULE_OPTION_FASCIST_HISTORICAL"
+		desc = "RULE_OPTION_FASCIST_HISTORICAL_ITA_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -653,7 +693,7 @@ eng_fragmentation_status = {
 		name = ENG_FRAGMENTED_IRE_UNITED
 		text = "RULE_OPTION_ENG_FRAGMENTED_IRE_UNITED"
 		desc = "RULE_OPTION_ENG_FRAGMENTED_IRE_UNITED_DESC"
-	}	
+	}
 }
 yug_fragmentation_status = {
 	name = "YUG_FRAGMENTATION_STATUS"
@@ -670,10 +710,15 @@ yug_fragmentation_status = {
 		desc = "RULE_OPTION_YUG_FRAGMENTED_DESC"
 	}
 	option = {
+		name = YUG_FRAGMENTED_SERBIA
+		text = "RULE_OPTION_YUG_FRAGMENTED_SERBIA"
+		desc = "RULE_OPTION_YUG_FRAGMENTED_SERBIA_DESC"
+	}
+	option = {
 		name = YUG_FRAGMENTED_CROATIA
 		text = "RULE_OPTION_YUG_FRAGMENTED_CROATIA"
 		desc = "RULE_OPTION_YUG_FRAGMENTED_CROATIA_DESC"
-	}	
+	}
 }
 sov_fragmentation_status = {
 	name = "SOV_FRAGMENTATION_STATUS"
@@ -722,7 +767,7 @@ bel_fragmentation_status = {
 		name = BEL_FRAGMENTED_GREATER_FLANDERS
 		text = "RULE_OPTION_BEL_FRAGMENTED_GREATER_FLANDERS"
 		desc = "RULE_OPTION_BEL_FRAGMENTED_GREATER_FLANDERS_DESC"
-	}	
+	}
 }
 cze_fragmentation_status = {
 	name = "CZE_FRAGMENTATION_STATUS"
@@ -765,7 +810,7 @@ spr_fragmentation_status = {
 		name = SPR_15TH_CENTURY_ARAGON
 		text = "RULE_OPTION_SPR_15TH_CENTURY_ARAGON"
 		desc = "RULE_OPTION_SPR_15TH_CENTURY_ARAGON_DESC"
-	}	
+	}
 }
 fra_fragmentation_status = {
 	name = "FRA_FRAGMENTATION_STATUS"
@@ -827,7 +872,7 @@ pol_fragmentation_status = {
 		name = POL_COMMONWEALTH
 		text = "RULE_OPTION_POL_COMMONWEALTH"
 		desc = "RULE_OPTION_POL_COMMONWEALTH_DESC"
-	}	
+	}
 }
 ger_fragmentation_status = {
 	name = "GER_FRAGMENTATION_STATUS"
@@ -846,7 +891,7 @@ ger_fragmentation_status = {
 		name = GER_DECENTRALIZED
 		text = "RULE_OPTION_GER_DECENTRALIZED"
 		desc = "RULE_OPTION_GER_DECENTRALIZED_DESC"
-	}	
+	}
 	option = {
 		name = GER_EAST_VS_WEST
 		text = "RULE_OPTION_GER_EAST_VS_WEST"
@@ -861,7 +906,7 @@ ger_fragmentation_status = {
 		name = GER_EAST_VS_WEST_VS_BAVARIA
 		text = "RULE_OPTION_GER_EAST_VS_WEST_VS_BAVARIA"
 		desc = "RULE_OPTION_GER_EAST_VS_WEST_DESC"
-	}		
+	}
 }
 kur_liberation_status = {
 	name = "KUR_LIBERATION_STATUS"
@@ -1062,8 +1107,8 @@ allow_volunteers = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_VOLUNTEERS_BLOCKED_DESC"
-	}			
-	
+	}
+
 }
 
 allow_guarantees = {
@@ -1089,7 +1134,7 @@ allow_guarantees = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_GUARANTEES_BLOCKED_DESC"
-	}	
+	}
 }
 
 allow_revoke_guarantees = {
@@ -1178,7 +1223,7 @@ allow_coups = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
-	}	
+	}
 }
 
 allow_party_boosting = {

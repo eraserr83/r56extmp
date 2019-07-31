@@ -1,0 +1,31 @@
+state={
+	id=789
+	name="STATE_789"
+	manpower = 1034200‬
+
+	state_category = large_town
+
+	history={
+		owner = YUG
+		victory_points = {
+			11564 3
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 1
+			industrial_complex = 3
+			11564 = {
+				naval_base = 3
+			}
+			591 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = YUG
+		#add_claim_by = ITA #added by focus
+		add_core_of = CRO
+	}
+	provinces={
+		591 3601 6611 11564 11901 
+	}
+}

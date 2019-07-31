@@ -28,8 +28,8 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 12
-		naval_strike_targetting = 3
+		naval_strike_attack = 20
+		naval_strike_targetting = 6
 
 		#Space taken in convoy
 		lend_lease_cost = 12
@@ -63,8 +63,8 @@ equipments = {
 		air_agility = 5
 		air_attack = 50
 		air_defence = 32
-		air_bombing = 15
-		naval_strike_attack = 14
+		air_bombing = 14
+		naval_strike_attack = 20
 		naval_strike_targetting = 3
 
 		build_cost_ic = 58
@@ -126,7 +126,7 @@ equipments = {
 		air_attack = 150
 		air_defence = 67
 		air_bombing = 24
-		naval_strike_attack = 18
+		naval_strike_attack = 25
 		naval_strike_targetting = 3
 
 		build_cost_ic = 66
