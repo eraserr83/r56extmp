@@ -596,7 +596,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_SM_heavy_hull_fixed_triple_heavy_battery"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/heavy_hull/heavy_hull_fixed_triple_heavy_battery.dds"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/heavy_hull/heavy_hull_fixed_triple_heavy_battery.tga"
 	}
 	spriteType = {
 		name = "GFX_SM_heavy_hull_fixed_triple_heavy_battery@highlight"
@@ -605,7 +605,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_SM_heavy_hull_front1_triple_heavy_battery"
-		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/heavy_hull/heavy_hull_front1_triple_heavy_battery.dds"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/heavy_hull/heavy_hull_front1_triple_heavy_battery.tga"
 	}
 	spriteType = {
 		name = "GFX_SM_heavy_hull_front1_triple_heavy_battery@highlight"
