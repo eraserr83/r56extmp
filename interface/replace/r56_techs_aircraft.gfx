@@ -228,15 +228,15 @@ spriteTypes = {
 
 #-> Carrier-based jet fighters <><>
 	SpriteType = {
-		name = "GFX_jet_cv_fighter1_medium"
+		name = "GFX_cv_jet_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_jet_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_cv_fighter2_medium"
+		name = "GFX_cv_jet_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_jet_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_cv_fighter_a_medium"
+		name = "GFX_cv_jet_fighter_a_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_fighter/r56_tech_jet_fighter_01.dds"
 	}
 
