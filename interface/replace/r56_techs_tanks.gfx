@@ -1608,6 +1608,10 @@ spriteTypes = {
 		name = "GFX_GER_advanced_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_GER_main_tank_03.dds"
 	}
+	SpriteType = {
+		name = "GFX_GER_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_GER_main_tank_04.dds"
+	}
 
 #-> Medium tank destroyers <><>
 	SpriteType = {
@@ -1663,6 +1667,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_advanced_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/tanks/heavy_tank/r56_tech_GER_heavy_tank_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tanks/heavy_tank/r56_tech_GER_heavy_tank_04.dds"
 	}
 
 #-> Heavy tank destroyers <><>
