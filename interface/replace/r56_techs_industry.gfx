@@ -94,6 +94,7 @@ spriteTypes = {
 		name = "GFX_excavation_d_medium"
 		texturefile = "gfx/interface/technologies/industry/r56_tech_excavation_04.dds"
 	}
+	
 #-> Rubber plant <><>
 	SpriteType = {
 		name = "GFX_rubber_plant_a_medium"
@@ -114,5 +115,21 @@ spriteTypes = {
 		name = "GFX_rubber_plant_d_medium"
 		texturefile = "gfx/interface/technologies/industry/r56_tech_rubber_plant_04.dds"
 	}
+	
+#-> Naval Production <><>
+	SpriteType = {
+		name = "GFX_naval_production1_medium"
+		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_01.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_naval_production2_medium"
+		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_02.tga"
+	}
+	
+#	SpriteType = {
+#		name = "GFX_naval_production3_medium"
+#		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_03.dds"
+#	}
 	
 }

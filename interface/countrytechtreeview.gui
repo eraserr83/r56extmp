@@ -2357,7 +2357,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cas"
-				position = { x = 83 y = 245 }
+				position = { x = 100 y = 210 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2371,7 +2371,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cv_cas"
-				position = { x = 300 y = 245 }
+				position = { x = 305 y = 210 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2386,7 +2386,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_nav"
-				position = { x = 950 y = 245 }
+				position = { x = 950 y = 210 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}

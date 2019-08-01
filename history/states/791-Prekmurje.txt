@@ -17,6 +17,6 @@ state={
 		add_core_of = SLV
 	}
 	provinces={
-		665 6672 
+		6672 
 	}
 }

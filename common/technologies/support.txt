@@ -1213,7 +1213,10 @@ technologies = {
 ###------> X <><> <><> <><> <><> <><>
 
 	tech_signal_company = {
-
+		
+		category_all_armor = {
+			default_morale = 0.025
+		}
 		enable_subunits = {
 			signal_company
 		}
@@ -1255,6 +1258,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 		
 		path = {
@@ -1298,6 +1306,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 		
 		path = {
@@ -1343,6 +1356,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 		
 		path = {
@@ -1390,6 +1408,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 		
 		path = {
@@ -1419,6 +1442,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 		
 		path = {
@@ -1448,6 +1476,11 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			default_morale = 0.1
+		}
+
+		category_all_armor = {
+			default_morale = 0.025
 		}
 
 		research_cost = 1.5

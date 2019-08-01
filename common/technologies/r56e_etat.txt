@@ -184,10 +184,6 @@ technologies = {
 				amount = 2
 			}
 		}
-		enable_building = {
-			building = steel_mill
-			level = 4
-		}
 		
 		research_cost = 1
 		start_year = 1945
@@ -232,7 +228,7 @@ technologies = {
 
 		enable_building = {
 			building = aluminum_mill
-			level = 2
+			level = 1
 		}
 		
 		path = {
@@ -286,7 +282,7 @@ technologies = {
 		}
 		enable_building = {
 			building = aluminum_mill
-			level = 4
+			level = 2
 		}
 		
 		path = {
@@ -345,7 +341,7 @@ technologies = {
 		}
 		enable_building = {
 			building = aluminum_mill
-			level = 6
+			level = 3
 		}
 		
 		path = {

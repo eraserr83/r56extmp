@@ -3250,11 +3250,9 @@ focus = {
 	}
 
 	available = {
-	available = {
 		NOT = {
 			has_completed_focus = BUL_innovation_warfare
 		}
-	}
 	}
 
 	completion_reward = {

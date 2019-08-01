@@ -47,6 +47,10 @@ technologies = {
 			leads_to_tech = advanced_machine_tools 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = naval_production1
+			research_cost_coeff = 1
+		}
 		
 		path = {
 			leads_to_tech = improved_equipment_conversion
@@ -143,6 +147,61 @@ technologies = {
 		}
 	}
 	
+	naval_production1 = {
+
+		industrial_capacity_dockyard = 0.1
+
+		desc = "naval_production_special_desc"
+
+		research_cost = 1.6
+		start_year = 1937
+
+		path = {
+			leads_to_tech = naval_production2
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		categories = {
+			industry
+			naval_equipment
+			construction_tech
+		}
+	}
+
+	naval_production2 = {
+
+		industrial_capacity_dockyard = 0.1
+
+		desc = "naval_production_special_desc"
+
+		research_cost = 1.6
+		start_year = 1941
+
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		categories = {
+			industry
+			naval_equipment
+			construction_tech
+		}
+	}
+
 ###------> Old Manufacturing <><> <><> <><> <><> <><>
 	
 	flexible_line = {
