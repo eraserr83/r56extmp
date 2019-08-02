@@ -481,7 +481,6 @@ focus_tree = {
 			controls_state = 4
 			controls_state = 152
 			controls_state = 153
-			controls_state = 790
 		}
 		
 		cancel_if_invalid = yes
@@ -510,16 +509,6 @@ focus_tree = {
 					}
 				}
 				153 = {
-					if = {
-						limit = { is_controlled_by = AUS }
-						add_building_construction = {
-							type = infrastructure
-							level = 10
-							instant_build = yes
-						}
-					}
-				}
-				790 = {
 					if = {
 						limit = { is_controlled_by = AUS }
 						add_building_construction = {
@@ -3989,11 +3978,16 @@ focus_tree = {
 		cancel_if_invalid = yes
 		
 		available = {
+			NOT = {
+				is_guaranteed_by = ITA
+				has_country_flag = protected_by_the_stresa_front_flag
+			}
 			ITA = {
 				NOT = {
 					has_government = communism
 					has_government = democratic
 					is_in_faction = yes
+					is_in_faction_with = AUS
 					has_war_with = AUS
 				}
 			}
