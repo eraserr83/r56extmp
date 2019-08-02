@@ -29,8 +29,9 @@ technologies = {
 		enable_equipments = {
 			support_equipment_1
 		}
-		
-		
+		enable_subunits = {
+			div_hq
+		}
 		path = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
@@ -44,7 +45,7 @@ technologies = {
 		path = {
 			leads_to_tech = tech_field_hospital
 			research_cost_coeff = 1
-		}					
+		}
 
 		path = {
 			leads_to_tech = tech_logistics_company
@@ -354,6 +355,12 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
+			recon = 2
+		}
 		
 		path = {
 			leads_to_tech = tech_recon3
@@ -394,6 +401,12 @@ technologies = {
 	tech_recon3 = {
 
 		recon = {
+			recon = 2
+		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
 			recon = 2
 		}
 		path = {
@@ -440,6 +453,12 @@ technologies = {
 	tech_recon4 = {
 
 		recon = {
+			recon = 2
+		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
 			recon = 2
 		}
 		
@@ -1023,6 +1042,9 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+		}
+		enable_subunits = {
+			logistics_company_mot
 		}
 		
 		path = {
@@ -1612,6 +1634,12 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
+			recon = 2
+		}
 		
 		path = {
 			leads_to_tech = tech_recon_b
@@ -1641,6 +1669,12 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
+			recon = 2
+		}
 		
 		path = {
 			leads_to_tech = tech_recon_c
@@ -1668,6 +1702,12 @@ technologies = {
 	tech_recon_c = {
 
 		recon = {
+			recon = 2
+		}
+		recon_mot = {
+			recon = 2
+		}
+		recon_ac = {
 			recon = 2
 		}
 

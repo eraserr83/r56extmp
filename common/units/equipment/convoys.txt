@@ -22,20 +22,20 @@ equipments = {
 		surface_detection = 10
 		sub_detection = 1
 
-		fuel_consumption = 1
+		fuel_consumption = 0
 
 		# Combat abilities
 		lg_armor_piercing = 1
 		armor_value = 0
 		reliability = 0.8
-		surface_visibility = 14
+		surface_visibility = 10
 
 		torpedo_attack = 0
 		lg_attack = 0.25
 		naval_speed = 12
 		max_strength = 60
 		max_organisation = 30
-		anti_air_attack = 0.1
+		anti_air_attack = 0.06
 
 
         #Space taken in convoy

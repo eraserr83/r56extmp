@@ -43,6 +43,10 @@ NDefines.NMilitary.BASE_COMBAT_WIDTH = 120
 NDefines.NMilitary.ADDITIONAL_COMBAT_WIDTH = 60
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.001
 
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5			-- Max width of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 4		-- Max height of regiments in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 4		-- Max height of support in division designer.
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 24
 NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 0.98

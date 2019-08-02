@@ -1699,6 +1699,10 @@ jungle_warfare = {
 			motorized
 		}
 
+		enable_subunits = {
+			recon_mot
+		}
+
 		enable_equipments = {
 			motorized_equipment_1
 		}
