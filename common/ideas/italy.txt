@@ -411,6 +411,7 @@ ideas = {
 			picture = generic_agrarian_society
 			
 			modifier = {
+				political_power_gain = 0.25
 				MONTHLY_POPULATION = 0.2
 				war_support_factor = 0.05
 			}
@@ -533,6 +534,7 @@ ideas = {
 			picture = italy_expand_ond_membership
 			
 			modifier = {
+				political_power_gain = 0.5
 				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				line_change_production_efficiency_factor = 0.1

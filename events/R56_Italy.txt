@@ -220,6 +220,8 @@ country_event = {
 	desc = r56_italy.12.d
 	picture = GFX_report_event_stresa_front
 	
+	is_triggered_only = yes
+	
 	trigger = {
 		tag = ENG
 		ITA = {

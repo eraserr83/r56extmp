@@ -534,11 +534,6 @@ country_event = {
 
 	option = {
 		name = italymod.23.a
-		add_timed_idea = {
-			idea = ITA_war_over
-			days = 365
-		}
-		hidden_effect = {
 				news_event = { id = newsmod.5 days = 1 }
 		}
 	}
@@ -565,7 +560,6 @@ country_event = {
 	option = {
 		name = italymod.24.b
 		ai_chance = { factor = 50 }
-		add_ideas = ITA_democratic_influence
 		ENG = {
 			country_event = { id = italymod.26 days = 1 }
 		}
@@ -646,7 +640,6 @@ country_event = {
 			ruling_party = communism
 			elections_allowed = no
 		}
-		add_timed_idea = { idea = ITA_political_turmoil days = 100 }
 	}
 }
 
@@ -692,12 +685,10 @@ country_event = {
 	option = {
 		name = italymod.29.a
 		ai_chance = { factor = 50 }
-		add_ideas = ITA_papacy_expelled
 	}
 	option = {
 		name = italymod.29.b
 		ai_chance = { factor = 50 }
-		add_ideas = ITA_papacy_remains
 	}
 }
 
@@ -1077,8 +1068,6 @@ country_event = {
 	
 	option = {
 		name = italymod.47.a
-		
-		add_ideas = german_dive_bombing
 		
         ITA = {
 			add_equipment_to_stockpile = { 
