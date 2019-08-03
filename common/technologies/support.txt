@@ -1099,6 +1099,10 @@ technologies = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
+		}
 		
 		
 		path = {
@@ -1143,6 +1147,10 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
+		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
 		}
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1191,6 +1199,10 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
+		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
 		}
 		
 		path = {
@@ -1998,6 +2010,10 @@ technologies = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
+		}
 		
 		path = {
 			leads_to_tech = tech_logistics_company_b
@@ -2027,6 +2043,10 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
+		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
 		}
 		
 		path = {
@@ -2058,6 +2078,10 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
+		}
+		logistics_company_mot = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.01
 		}
 
 		research_cost = 1.5

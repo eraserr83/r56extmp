@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = ITA_regia_aeronautica_2
 		icon = GFX_goal_italy_fiat_cr_32
-		cost = 10.00
+		cost = 5.00
 		x = 9
 		y = 0
 			completion_reward = {
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = ITA_cavagnari_plan
 		icon = GFX_goal_italy_cavagnari
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_regia_marina_2
 		}
@@ -219,7 +219,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_guerilla
 		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_auxiliary_cruisers
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = ITA_appoint_campioni
 		icon = GFX_goal_italy_campioni
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_regia_marina_2
 		}
@@ -254,7 +254,7 @@ focus_tree = {
 	focus = {
 		id = ITA_la_decima
 		icon = GFX_goal_italy_decimal
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_naval_war_of_attrition
 			focus = ITA_improve_the_fleet_projection
@@ -299,7 +299,7 @@ focus_tree = {
 	focus = {
 		id = ITA_develop_southern_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			
 			focus = ITA_cavagnari_plan
@@ -385,7 +385,7 @@ focus_tree = {
 	focus = {
 		id = ITA_fanti_dell_aria
 		icon = GFX_focus_generic_paratrooper
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_ba_65
 		}
@@ -450,7 +450,7 @@ focus_tree = {
 	focus = {
 		id = ITA_increase_aircraft_production
 		icon = GFX_goal_italy_increase_aircraft_production
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_g_50
 		}
@@ -481,7 +481,7 @@ focus_tree = {
 	focus = {
 		id = ITA_further_pilots_training
 		icon = GFX_goal_italy_further_pilots_training
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_g_50
 		}
@@ -538,7 +538,7 @@ focus_tree = {
 	focus = {
 		id = ITA_modernize_ethiopian_roads
 		icon = GFX_goal_italy_modernize_ethiopian_roads
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_colonial_investments
 		}
@@ -565,7 +565,7 @@ focus_tree = {
 	focus = {
 		id = ITA_cementerie_d_etiopia
 		icon = GFX_goal_generic_construction
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_modernize_ethiopian_roads
 		}
@@ -729,7 +729,7 @@ focus_tree = {
 	focus = {
 		id = ITA_tripoli_explosives_factory
 		icon = GFX_goal_italy_tripoli_explosives_factory
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = ITA_finish_the_litoranea_libica
 		}
@@ -749,10 +749,10 @@ focus_tree = {
 											include_locked = yes
 										}
 								}
-							add_extra_state_shared_building_slots = 1
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
-									level = 1
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_libyan_manufactures
 		icon = GFX_goal_italy_expand_libyan_manufactures
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_finish_the_litoranea_libica
 		}
@@ -1242,7 +1242,7 @@ focus_tree = {
 	focus = {
 		id = ITA_increase_north_south_links
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_bring_industry_to_the_mezzogiorno
 			focus = ITA_prepare_the_economy_for_war
@@ -1429,7 +1429,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_the_elite_forces
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
+		cost = 7.00
 		prerequisite = {
 			focus = ITA_general_equipment_modernization
 		}
@@ -1443,7 +1443,7 @@ focus_tree = {
 	focus = {
 		id = ITA_alpini
 		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = ITA_expand_the_elite_forces
 		}
@@ -1507,7 +1507,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_new_arditi
 		icon = GFX_goal_generic_special_forces
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = ITA_expand_the_elite_forces
 		}
@@ -2235,7 +2235,7 @@ focus_tree = {
 	focus = {
 		id = ITA_nationalize_the_banking_sector
 		icon = GFX_goal_italy_nationalize_the_banks
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_the_stab_in_the_back
 			focus = ITA_revive_the_stresa_front
@@ -2265,7 +2265,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_ond_membership
 		icon = GFX_goal_italy_ond
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_nationalize_the_banking_sector
 		}
@@ -2310,7 +2310,7 @@ focus_tree = {
 	focus = {
 		id = ITA_ultimatum_to_albania
 		icon = GFX_goal_commie_kill_zog
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_move_toward_autarky
 			focus = ITA_increase_wheat_production
@@ -2749,7 +2749,7 @@ focus_tree = {
 	focus = {
 		id = ITA_giannini_sarnow_protocols
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_cooperation_with_germany
 		}
@@ -2766,7 +2766,7 @@ focus_tree = {
 	focus = {
 		id = ITA_german_military_assistance
 		icon = GFX_goal_further_military_cooperation_with_germany
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = ITA_cooperation_with_germany
 		}
@@ -2789,6 +2789,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ITA_scientific_cooperation_with_germany
+			add_research_slot = 1
 		}
 		x = 65
 		y = 6
