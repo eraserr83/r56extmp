@@ -1755,6 +1755,9 @@ focus = {
 		y = 2
 		cost = 10
 
+		bypass = {
+			ROOT = { has_completed_focus = TUR_armed_neutrality }
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -1922,6 +1925,7 @@ focus = {
 		id = TUR_internationalism
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = TUR_diplomatic_effort }
+		mutually_exclusive = { focus = TUR_armed_neutrality }
 
 		x = 30
 		y = 1
@@ -1933,6 +1937,26 @@ focus = {
 
 		completion_reward = {
 			add_ideas = TUR_internationalism_focus
+			#Some sort of Relations boost modifier
+		}
+	}
+
+	focus = {
+		id = TUR_armed_neutrality
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = TUR_diplomatic_effort }
+		mutually_exclusive = { focus = TUR_internationalism }
+
+		x = 32
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 120
+		}
+
+		completion_reward = {
+			add_ideas = TUR_armed_neutrality_idea
 			#Some sort of Relations boost modifier
 		}
 	}
