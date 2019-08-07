@@ -3973,7 +3973,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_plan_green }
 		relative_position_id = USA_war_plan_green
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 0
@@ -4038,7 +4038,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_secure_the_caribbean }
 		relative_position_id = USA_secure_the_caribbean
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 0
@@ -4087,7 +4087,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_secure_south_west_americas }
 		relative_position_id = USA_secure_south_west_americas
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 0
