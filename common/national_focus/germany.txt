@@ -4272,7 +4272,7 @@ focus_tree = {
 	focus = {
 		id = GER_soviet_invasion
 		icon = GFX_focus_ger_great_red_menace
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = GER_war_with_poland
 			focus = GER_danzig_or_war
@@ -4872,7 +4872,7 @@ focus_tree = {
 	focus = {
 		id = GER_combine_SS_gestapo
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_denounce_versailles
 		}
@@ -4889,7 +4889,7 @@ focus_tree = {
 	focus = {
 		id = GER_purge_political_opponents
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_denounce_versailles
 		}
@@ -4926,7 +4926,7 @@ focus_tree = {
 	focus = {
 		id = GER_foreign_volunteers
 		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_combine_SS_gestapo
 		}

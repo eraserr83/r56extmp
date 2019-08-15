@@ -3,15 +3,19 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_medium_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_main_tank_03.dds"
+		texturefile = "gfx/interface/technologies/tank/medium_tank/r56_tech_medium_tank_03.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_medium_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_GER_main_tank_04.dds"
+		texturefile = "gfx/interface/technologies/tank/medium_tank/r56_tech_GER_main_tank_04.dds"
 	}
 	SpriteType = {
 		name = "GFX_GER_heavy_tank_1945_medium"
-		texturefile = "gfx/interface/technologies/tanks/heavy_tank/r56_tech_GER_heavy_tank_04.dds"
+		texturefile = "gfx/interface/technologies/tank/heavy_tank/r56_tech_GER_heavy_tank_04.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tank/heavy_tank/r56_tech_heavy_tank_03.dds"
 	}
 #-> Naval Production <><>
 	SpriteType = {
