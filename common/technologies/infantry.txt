@@ -630,6 +630,10 @@ technologies = {
 			marine
 		}
 		
+		dependencies = {
+			motorised_infantry = 1
+		}
+		
 		on_research_complete = {
 			limit = {
 				NOT = {

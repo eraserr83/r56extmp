@@ -397,9 +397,7 @@ focus_tree = {
 							name = special_bonus
 							bonus = 1.0
 							uses = 2
-							technology = paratroopers
-							technology = paratroopers2
-							technology = paratroopers3
+							category = r56_paratroops_infantry_tech
 						}
 				}
 
@@ -1449,18 +1447,13 @@ focus_tree = {
 		}
 		x = 31
 		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							bonus = 1.0
-							uses = 2
-							technology = tech_mountaineers
-							technology = tech_mountaineers2
-							technology = tech_mountaineers3
-							technology = mountaineers_a
-							technology = mountaineers_b
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = r56_mountain_infantry_tech
+			}
+		}
 	}
 	focus = {
 		id = ITA_winter_training_in_finland
@@ -1499,10 +1492,9 @@ focus_tree = {
 		}
 		x = 32
 		y = 4
-			completion_reward = {
-					add_ideas = ITA_reorganize_the_unpa
-				}
-
+		completion_reward = {
+			add_ideas = ITA_reorganize_the_unpa
+		}
 	}
 	focus = {
 		id = ITA_the_new_arditi
@@ -1514,15 +1506,11 @@ focus_tree = {
 		x = 33
 		y = 3
 			completion_reward = {
-					add_tech_bonus = {
-							bonus = 1.0
-							uses = 2
-							technology = shocktroops
-							technology = shocktroops2
-							technology = shocktroops3
-							technology = shocktroops4
-							technology = shocktroops5
-						}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 2
+					category = r56_shock_infantry_tech
+				}
 				}
 
 	}
@@ -2368,6 +2356,10 @@ focus_tree = {
 							can_create_factions = yes
 						}
 					create_faction = "Rome Protocols"
+					news_event = {
+					    id = r56_italy.9
+					    days = 3
+					}
 					AUS = {
 							country_event = {
 									id = r56_italy.15

@@ -995,6 +995,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_industrial_effort }
 		available = {
+			has_war = no
 					283 = {
 						is_owned_by = CHI
 					}
@@ -1118,6 +1119,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_national_resources_commission }
 		available = {
+			has_war = no
 			num_of_factories > 100
 		}
 		completion_reward = {
@@ -1645,6 +1647,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_industrial_effort }
 		available = {
+			has_war = no
 					591 = {
 						is_owned_by = CHI
 					}
@@ -1753,6 +1756,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_national_resources_commission }
 		available = {
+			has_war = no
 			num_of_factories > 100
 		}
 		completion_reward = {
@@ -1852,6 +1856,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = KMT_national_resources_commission }
 		available = {
+			has_war = no
 			num_of_factories > 100
 		}
 		completion_reward = {
@@ -3244,6 +3249,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = KMT_industrial_effort }
 		available = {
+			has_war = no
 					714 = {
 						is_owned_by = CHI
 					}
@@ -4586,6 +4592,7 @@ focus_tree = {
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
 		prerequisite = { focus = KMT_privilege_to_proletarians }
 		available = {
+			has_war = no
 			NOT = {
 				has_war_with = PRC
 			}
@@ -5306,6 +5313,7 @@ focus_tree = {
 			factor = 0
 		}
 		available = {
+			has_war = no
 			has_government = neutrality
 			OR = {
 				custom_trigger_tooltip = {

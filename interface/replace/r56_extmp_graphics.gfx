@@ -1,0 +1,32 @@
+#####-----> Organized by Abbus <><> <><> <><>
+
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_main_tank_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_medium_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tanks/main_tank/r56_tech_GER_main_tank_04.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_heavy_tank_1945_medium"
+		texturefile = "gfx/interface/technologies/tanks/heavy_tank/r56_tech_GER_heavy_tank_04.dds"
+	}
+#-> Naval Production <><>
+	SpriteType = {
+		name = "GFX_naval_production1_medium"
+		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_01.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_naval_production2_medium"
+		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_02.tga"
+	}
+	
+#	SpriteType = {
+#		name = "GFX_naval_production3_medium"
+#		texturefile = "gfx/interface/technologies/industry/r56_tech_naval_production_03.dds"
+#	}
+	
+}
