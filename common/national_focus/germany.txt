@@ -1706,6 +1706,21 @@ focus_tree = {
 								}
 							add_state_core = 153
 						}
+					if = {
+							limit = {
+									790 = {
+											owner = {
+													NOT = {
+															tag = AUS
+														}
+													NOT = {
+															is_in_faction_with = ROOT
+														}
+												}
+										}
+								}
+							add_state_core = 790
+						}
 				}
 
 	}
