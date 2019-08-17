@@ -10,10 +10,9 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 6
+			industrial_complex = 3
 			dockyard = 4
 			air_base = 10
-			fuel_silo = 1
 			788 = {
 				naval_base = 10
 
@@ -24,7 +23,10 @@ state={
 			788 10
 		}
 		victory_points = {
-			10412 15
+			3823 20
+		}
+		victory_points = {
+			7588 1
 		}
 		1939.1.1 = {
 			buildings = {

@@ -13,7 +13,7 @@ buildings = {
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 0.25 #k
+		max_fuel_building = 0.75 #k
 	}
 
 	arms_factory = {
@@ -115,7 +115,6 @@ buildings = {
 		max_level = 5 # This is the max unlock level
 		damage_factor = 0.1
 		value = 1
-		infrastructure_construction_effect = yes
 	}
 
 	synthetic_refinery = {
@@ -157,7 +156,6 @@ buildings = {
 		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
 		value = 4
-		infrastructure_construction_effect = yes
 	}
 
 	rocket_site = {

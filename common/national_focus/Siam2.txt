@@ -7,10 +7,13 @@ focus_tree = {
 			tag = SIA
 		}
 	}
+
+	continuous_focus_position = { x = 400 y = 1000 }
+
 	default = no
 
 #    focus = {
-    #        id = BUL
+    #        id = SIA_
     #        icon = GFX
     #        prerequisite = { focus = }
     #        mutually_exclusive = { focus =  }
@@ -1646,7 +1649,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_choosing_a_side
-		icon = GFX_goal_thailand_alliance_fascism
+		icon = GFX_goal_SIA_choosing_a_side
 		cost = 10
 		prerequisite = {
 			focus = SIA_increase_the_military_budget
