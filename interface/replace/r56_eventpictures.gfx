@@ -157,7 +157,22 @@ spriteTypes = {
 		name = "GFX_report_event_leopoldist_propaganda"
 		texturefile = "gfx/event_pictures/report_event_leopoldist_propaganda.dds"
 	}
-
+	spriteType = {
+		name = "GFX_news_event_flemish_lion"
+		texturefile = "gfx/event_pictures/news_event_flemish_lion.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_flemish_lion"
+		texturefile = "gfx/event_pictures/report_event_flemish_lion.dds"
+	}	
+	spriteType = {
+		name = "GFX_news_event_congres_wallon"
+		texturefile = "gfx/event_pictures/news_event_congres_wallon.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_congres_wallon"
+		texturefile = "gfx/event_pictures/report_event_congres_wallon.dds"
+	}
 ###------> BRA <><> <><> <><> <><> <><>
 
 	spriteType = {
@@ -733,6 +748,16 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_vilnius.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_paris_universal_exhibition"
+		texturefile = "gfx/event_pictures/news_event_paris_universal_exhibition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_france_leon_jouhaux"
+		texturefile = "gfx/event_pictures/report_event_france_leon_jouhaux.dds"
+	}
+
 ###------> GRE <><> <><> <><> <><> <><>
 
 spriteType = {
@@ -768,6 +793,10 @@ spriteType = {
 spriteType = {
 	name = "GFX_report_GRE_civil_war"
 	texturefile = "gfx/event_pictures/gre_civil_war.tga"
+}
+spriteType = {
+	name = "GFX_report_GRE_metaxas"
+	texturefile = "gfx/event_pictures/report_event_GRE_metaxas.dds"
 }
 
 ###------> ICE <><> <><> <><> <><> <><>
@@ -882,6 +911,25 @@ spriteType = {
 	SpriteType = {
 		name = "GFX_report_event_introspecial"
 		texturefile = "gfx/event_pictures/MEX_special.dds"
+	}
+
+###------> NOR <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_report_event_medieval_norwegian_flag"
+		texturefile = "gfx/event_pictures/report_event_medieval_norwegian_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_haakon_in_minerva_car"
+		texturefile = "gfx/event_pictures/report_event_haakon_in_minerva_car.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_haakon_in_minerva_car"
+		texturefile = "gfx/event_pictures/news_event_haakon_in_minerva_car.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_troenderbataljonen_at_skafferhullet_1940"
+		texturefile = "gfx/event_pictures/news_event_troenderbataljonen_at_skafferhullet_1940.dds"
 	}
 
 ###------> SAU <><> <><> <><> <><> <><>
