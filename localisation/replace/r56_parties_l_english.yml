@@ -129,6 +129,32 @@
  FRI_fascism_party:0 "Cuong De's Faction"
  FRI_democratic_party:0 "VNQDD"
 
+ #GRE
+ GRE_democratic_party:0 "Demertzi"
+ GRE_democratic_party_long:0 "Kyvernisi Demertzi"
+ GRE_democratic_metaxas:0 "Metaxá"
+ GRE_neutrality_party:0 "House Of Glücksburg"
+ GRE_neutrality_party_long:0 "House Of Glücksburg"
+ GRE_democratic_metaxas_long:0 "Kyvernisi Metaxá"
+ GRE_neutrality_party_metaxa:0 "Metaxá"
+ GRE_neutrality_party_metaxa_long:0 "Kathestós Metaxá"
+ GRE_neutrality_party_metaxa:0 "Metaxá"
+ GRE_neutrality_party_metaxa_long:0 "Kathestós Metaxá"
+ GRE_communism_party:0 "KKE"
+ GRE_communism_party_long:0 "Kommounistikó Kómma Elládas"
+ GRE_laikon_komma:0 "Laïkòn Kómma"
+ GRE_laikon_komma_long:0 "Laïkòn Kómma"
+ GRE_fascism_party:0 "EESKE"
+ GRE_fascism_party_long:0 "Ethniko-Socialistiko Komma Elládos"
+ GRE_neutrality_party_koryzi:0 "Koryzi"
+ GRE_neutrality_party_koryzi_long:0 "Kathestós Koryzi"
+ GRE_democratic_party_liberal:0 "Kómma Fileleftheron"
+ GRE_democratic_party_liberal_long:0 "Kómma Fileleftheron"
+
+ #GUA
+ GUA_ubico_fascist_long:0 "Régimen de Jorge Ubico"
+ GUA_ubico_fascist:0 "Régimen de Jorge Ubico"
+
  #GXC
  GXC_neutrality_party:0 "New Guangxi Clique"
 
@@ -175,6 +201,17 @@
  #NFC
  FengClique_party:0 "New Fengtian Clique"
 
+  #NIC
+  NIC_democratic_party:0 "PL"
+  NIC_democratic_party_long:0 "Partido Liberal"
+  NIC_democratic_party_1936:0 "PLN"
+  NIC_democratic_party_long_1936:0 "Partido Liberal Nacionalista"
+  NIC_neutrality_party_1937:0 "PLN/PCN (Somoza Regime)"
+  NIC_neutrality_party_1937_long:0 "Somoza Regime"
+  NIC_communism_party:0 "PSN"
+  NIC_communism_party_long:0 "Partido Socialista Nicaragüense"
+  NIC_fascism_party:0 "Nationalists"
+
  #PAR
  PAR_communism_party:0 "PRF"
  PAR_communism_party_long:0 "Partido Revolucionario Febrerista"
@@ -187,6 +224,39 @@
  PER_communism_party:0 "Tudeh Party"
  PER_communism_party_long:0 "Hezb-e Tudeh Iran"
  PER_neutrality_party:0 "Pahlavi Dynasty"
+
+ #POL
+ POL_Castle_party:0 "Zamek"
+ POL_Castle_party_long:0 "Zamek"
+ POL_OZN_party:0 "OZN"
+ POL_OZN_party_long:0 "Camp of National Unity"
+ POL_POS_party:0 "POS"
+ POL_POS_party_long:0 "Common Organization of the Society"
+ POL_neutrality_party_long:0 "Nonpartisan Bloc for Cooperation with the Government"
+ POL_ND_party:0 "SN"
+ POL_ND_party_long:0 "Stronnictwo Narodowe"
+ POL_PPS_party:0 "PPS"
+ POL_PPS_party_long:0 "Polska Partia Socjalistyczna"
+ POL_PPSradicals_party:0 "PPS & KPP"
+ POL_PPSradicals_party_long:0 "Zjednoczony Front PPS i KPP"
+ POL_communism_party:0 "KPP"
+ POL_communism_party_long:0 "Komunistyczna Partia Polski"
+ POL_democratic_party:0 "SL"
+ POL_democratic_party_long:0 "Stronnictwo Ludowe"
+ POL_PSL_party:0 "PSL"
+ POL_PSL_long:0 "Polskie Stronnictwo Ludowe"
+ POL_NOW_party:0 "NOW"
+ POL_NOW_long:0 "Narodowa Organizacja Wojskowa"
+ POLWRN_democratic_party:0 "PPS-WRN"
+ POLWRN_democratic_party_long:0 "Polska Partia Socjalistyczna – Wolność, Równość, Niepodległość"
+ POL_KN_party:0 "KN"
+ POL_KN_party_long:0 "Konfederacja Narodu"
+ POL_ZPP_party:0 "ZPP"
+ POL_ZPP_party_long:0 "Związek Patriotów Polskich"
+ POL_ZWZ_party:0 "ZWZ"
+ POL_ZWZ_party_long:0 "Związek Walki Zbrojnej"
+ POL_GL_party:0 "GL"
+ POL_GL_party_long:0 "Gwardia Ludowa"
 
  #PGR
  PGR_neutrality_party:0 "Xin Beiyang"
