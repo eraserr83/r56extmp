@@ -20,8 +20,8 @@ add_ideas = {
 add_ideas = {
 	GRE_depression_1
 	GRE_shadow_of_1921
-	GRE_divided_nation
 	GRE_government_crisis
+	GRE_divided_nation
 	GRE_naval_industry_rivalary
 }
 
@@ -73,13 +73,10 @@ if = {
 set_convoys = 35
 
 1939.1.1 = {
-
-
-    set_party_name = {
-		ideology = neutrality
-		long_name = GRE_neutrality_party_metaxa_long
-		name = GRE_neutrality_party_metaxa
-    }
+  set_politics = {
+	  ruling_party = Neutrality
+	  elections_allowed = NO
+  }
 	create_country_leader = {
         name = "Ioannis Metaxas"
         desc = "POLITICS_IOANNIS_METAXAS_DESC"
@@ -194,16 +191,16 @@ set_convoys = 35
 
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = yes # none after offset 1
+	ruling_party = democratic
+	last_election = "1935.11.3"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	fascism = 23
-	communism = 2
-	neutrality = 65
+	democratic = 55
+	fascism = 5
+	communism = 17
+	neutrality = 23
 }
 
 set_stability = 0.40
@@ -211,14 +208,13 @@ set_stability = 0.40
 
 
 create_country_leader = {
-	name = "Konstantinos Demertzis"
-	desc = "POLITICS_KONSTANTINOS_DEMERTZIS_DESC"
-	picture = "r56_portrait_GRE_Konstantinos_Demertzis.dds"
+	name = "George II"
+	desc = "POLITICS_GEORGE_II_DESC"
+	picture = "gfx/leaders/GRE/r56_portrait_GRE_George_II.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
-	}
+  }
 }
 
 create_country_leader = {
@@ -233,13 +229,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Panagis Tsaldaris"
-	desc = "POLITICS_PANAGIS_TSALDARIS_DESC"
-	picture = "r56_portrait_GRE_Panagis_Tsaldaris.tga"
+	name = "Konstantinos Demertzis"
+	desc = "POLITICS_KONSTANTINOS_DEMERTZIS_DESC"
+	picture = "r56_portrait_GRE_Konstantinos_Demertzis.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		conservative_grandee
 	}
 }
 
@@ -269,7 +265,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Stefanos Sarafis"
 	picture = "r56_portrait_GRE_Stefanos_Sarafis.dds"
-	traits = { unpopular skirmisher decided_planner }
+	traits = { unpopular skirmisher decided_planner JAP_communist_sympathizer }
 	skill = 1
 	id = 75001
 	attack_skill = 1
@@ -365,7 +361,7 @@ create_corps_commander = {
 
 create_corps_commander = {
     name = "Konstantinos Davakis"
-    picture = "r56_portrait_GRE_Konstantinos_Davakis.dds"
+    picture = "r56_portrait_GRE_Konstantinos_Davakis.tga"
     traits = { decided_planner cavalry_officer hill_fighter trickster }
     skill = 1
 		id = 75008
@@ -373,6 +369,18 @@ create_corps_commander = {
     defense_skill = 1
     planning_skill = 1
     logistics_skill = 1
+}
+
+create_corps_commander = {
+    name = "Georgios Stanotas"
+    picture = "r56_portrait_GRE_georgios_stanotas.tga"
+    traits = { cavalry_expert ranger }
+    skill = 2
+		id = 75011
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_navy_leader = {
@@ -440,7 +448,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Katsonis Class"				
+		name = "Katsonis Class"
 		type = ship_hull_submarine_1
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
@@ -463,7 +471,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Glafkos Class"				
+		name = "Glafkos Class"
 		type = ship_hull_submarine_2
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
@@ -475,7 +483,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Aetos Class"					
+		name = "Aetos Class"
 		type = ship_hull_light_1
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
@@ -492,7 +500,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Hydra Class"	
+		name = "Hydra Class"
 		type = ship_hull_light_1
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
@@ -508,7 +516,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Averof Class"				
+		name = "Averof Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = GRE_CA_HISTORICAL
 		parent_version = 0
@@ -527,7 +535,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Elli Class"				
+		name = "Elli Class"
 		type = ship_hull_cruiser_1
 		name_group = GRE_CL_HISTORICAL
 		parent_version = 0
@@ -580,7 +588,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Kilkis Class"	
+		name = "Kilkis Class"
 		type = ship_hull_pre_dreadnought
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
@@ -609,7 +617,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Destroyers #
 	create_equipment_variant = {
-			name = "Vasilefs Georgios I Class"	
+			name = "Vasilefs Georgios I Class"
 			type = ship_hull_light_2
 			name_group = GRE_DD_HISTORICAL
 			parent_version = 0
