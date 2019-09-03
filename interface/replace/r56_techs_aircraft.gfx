@@ -230,15 +230,15 @@ SpriteTypes = {
 
 #-> Carrier-based jet fighters <><>
 	SpriteType = {
-		name = "GFX_cv_jet_fighter1_medium"
+		name = "GFX_jet_cv_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_cv_fighter/r56_tech_jet_cv_fighter_01.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_jet_fighter2_medium"
+		name = "GFX_jet_cv_fighter2_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_cv_fighter/r56_tech_jet_cv_fighter_02.dds"
 	}
 	SpriteType = {
-		name = "GFX_cv_jet_fighter_a_medium"
+		name = "GFX_jet_cv_fighter_a_medium"
 		texturefile = "gfx/interface/technologies/aircraft/jet_cv_fighter/r56_tech_jet_cv_fighter_03.dds"
 	}
 
@@ -8460,6 +8460,10 @@ SpriteTypes = {
 
 #-> Carrier-based light fighters <><>
 	SpriteType = {
+		name = "GFX_ITA_cv_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_ITA_fighter_00.dds"
+	}	
+	SpriteType = {
 		name = "GFX_ITA_cv_fighter1_medium"
 		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_ITA_fighter_01.dds"
 	}
@@ -8469,7 +8473,7 @@ SpriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ITA_cv_fighter3_medium"
-		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_ITA_cv_fighter_03.dds"
+		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_ITA_cv_fighter_03.dds"
 	}
 
 #-> Torpedo bombers <><>
@@ -11043,7 +11047,7 @@ SpriteTypes = {
 #-> Carrier-based light fighters <><>
 	SpriteType = {
 		name = "GFX_MON_cv_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_SOV_fighter_00.dds"
+		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_00.dds"
 	}
 		SpriteType = {
 		name = "GFX_MON_cv_fighter1_medium"
@@ -11268,7 +11272,7 @@ SpriteTypes = {
 #-> Carrier-based light fighters <><>
 	SpriteType = {
 		name = "GFX_TAN_cv_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/aircraft/cv_fighter/r56_tech_SOV_fighter_00.dds"
+		texturefile = "gfx/interface/technologies/aircraft/fighter/r56_tech_SOV_fighter_00.dds"
 	}
 		SpriteType = {
 		name = "GFX_TAN_cv_fighter1_medium"

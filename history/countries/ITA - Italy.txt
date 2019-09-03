@@ -28,6 +28,7 @@ set_technology = {
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	support_weapons = 1
 	tech_recon = 1
 	tech_support = 1
 	tech_engineers = 1
@@ -81,7 +82,7 @@ if = {
 		basic_medium_battery = 1
 		basic_light_battery = 1
 		improved_secondary_battery = 1
-		basic_heavy_armor_scheme = 1	
+		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
@@ -278,7 +279,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		Duce 
+		Duce
 	}
 }
 
@@ -289,7 +290,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		
 	}
 }
 
@@ -300,7 +300,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
 	}
 }
 
@@ -437,7 +436,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Italo Gariboldi"
 	picture = "r56_portrait_ITA_Italo_Gariboldi.dds"
-	traits = { politically_connected infantry_officer } 
+	traits = { politically_connected infantry_officer }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -448,7 +447,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Attilio Terruzzi"
 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Attilio_Teruzzi.dds"
-	traits = { politically_connected military_governor } 
+	traits = { politically_connected military_governor }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 2
@@ -553,7 +552,7 @@ create_equipment_variant = {
 		type = fighter_equipment_0
 		upgrades = {
 			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
+			plane_range_upgrade = 0
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 1
 		}

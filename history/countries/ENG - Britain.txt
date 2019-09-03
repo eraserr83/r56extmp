@@ -29,6 +29,7 @@ set_technology = {
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	support_weapons = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -171,7 +172,6 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
 	#adding ministers
 	add_ideas = {
 		ENG_ernest_bevin
@@ -179,7 +179,7 @@ if = {
 		rsaf_enfield
 		archibald_wavell
 		charles_portal
-		english_electric		
+		english_electric
 
 		#laws
 		partial_economic_mobilisation
@@ -187,8 +187,6 @@ if = {
 
 		ENG_george_vi
 	}
-
-	
 create_country_leader = {
 	name = "Neville Chamberlain"
 	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
@@ -213,7 +211,6 @@ create_country_leader = {
 	complete_national_focus = uk_commonwealth_focus
 
 	give_guarantee = POL
-	
 	set_oob = "ENG_1939"
 	if = {
 		limit = {
@@ -230,7 +227,6 @@ create_country_leader = {
 		# Extended Technologies
 		etax_doctrine = 1
 		camo = 1
-		
 		fighter1 = 1
 		fighter2 = 1
 		heavy_fighter1 = 1
@@ -250,7 +246,6 @@ create_country_leader = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		
 
 		#doctrines
 		#Air
@@ -291,7 +286,7 @@ create_country_leader = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	if = {
+		if = {
 		limit = {
 			not = { has_dlc = "Man the Guns"}
 		}
@@ -368,7 +363,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
 	}
 }
 
@@ -391,7 +385,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = liberalism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -425,7 +419,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = leninism
 #	traits = {
-#		
+#
 #	}
 #}
 
@@ -446,7 +440,7 @@ create_field_marshal = {
 	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
-	skill = 4 
+	skill = 4
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
@@ -679,7 +673,6 @@ create_corps_commander = {
 	traits = {  armor_officer career_officer war_hero }
 
 	skill = 3
-	
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3

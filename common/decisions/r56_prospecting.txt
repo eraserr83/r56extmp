@@ -1,3 +1,5 @@
+### All the decisions have a non WTT dependent and a WTT version.
+
 economy_decisions = {
 ##Armenia
 	open_kajaran_mine = { #230 #copper and molybdene
@@ -5,7 +7,9 @@ economy_decisions = {
 		icon = steel #change if copper is added
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
 		}
 		highlight_states = {
 			state = 230
@@ -16,7 +20,7 @@ economy_decisions = {
 			controls_state = 230
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -40,13 +44,21 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 210
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
 		}
 		remove_effect = { 
 			230 = { set_state_flag = open_kajaran_mine_developed } 
@@ -64,7 +76,9 @@ economy_decisions = {
 		icon = aluminium
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 
 		highlight_states = {
@@ -77,7 +91,7 @@ economy_decisions = {
 			controls_state = 230
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -102,13 +116,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 180
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
 		}
 		remove_effect = { 
 			230 = { set_state_flag = northern_armenia_aluminium_developed } 
@@ -120,13 +146,15 @@ economy_decisions = {
 			}
 		}
 	}
-##Bolivia
+	##Bolivia
 	develop_south_bolivian_oil_field = { #302
 		
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 		highlight_states = {
 			state = 302
@@ -137,7 +165,7 @@ economy_decisions = {
 			controls_state = 302
 			num_of_civilian_factories_available_for_projects > 1			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -161,13 +189,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 30
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
 		}
 		remove_effect = { 
 			302 = { set_state_flag = bolivian_oil_developed } 
@@ -180,12 +220,82 @@ economy_decisions = {
 		}	
 	}
 ##Britain and Arab controlled lands
+	develop_kelham_hills_oil_field = { #129, known since 20's, exploited during the war, oil was also extracted in Caunton
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+		highlight_states = {
+			state = 129
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 129
+			controls_state = 129
+			num_of_civilian_factories_available_for_projects > 0						
+		}
+
+		visible = {
+			owns_state = 129
+			controls_state = 129
+			129 = {
+				NOT = {
+					has_state_flag = kelham_hills_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			129 = { set_state_flag = kelham_hills_oil_developed } 
+			129 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
 	develop_sherwood_forest_oil_field = { #129, real secret oil reserve of WWII
 		
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 		highlight_states = {
 			state = 129
@@ -194,9 +304,10 @@ economy_decisions = {
 			has_tech = excavation3
 			owns_state = 129
 			controls_state = 129
-			num_of_civilian_factories_available_for_projects > 1			
+			num_of_civilian_factories_available_for_projects > 1
+			129 = { has_state_flag = kelham_hills_oil_developed } 		
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -220,20 +331,32 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
-				days = 60
+				idea = generic_resource_extraction_effort
+				days = 30
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
 		}
 		remove_effect = { 
 			129 = { set_state_flag = sherwood_forest_oil_developed } 
 			129 = {
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 1
 				}
 			}
 		}	
@@ -243,7 +366,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 		highlight_states = {
 			state = 765
@@ -254,7 +379,7 @@ economy_decisions = {
 			controls_state = 765
 			num_of_civilian_factories_available_for_projects > 3			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}
 		}
 
@@ -278,13 +403,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
 		}
 		remove_effect = { 
 			765 = { set_state_flag = barhain_oil_developed } 
@@ -301,7 +438,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 		highlight_states = {
 			state = 765
@@ -312,7 +451,7 @@ economy_decisions = {
 			controls_state = 765
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -338,13 +477,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			765 = { set_state_flag = qatar_oil_developed } 
@@ -362,7 +513,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
 		}
 		highlight_states = {
 			state = 656
@@ -377,7 +530,7 @@ economy_decisions = {
 			}
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -401,13 +554,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 80
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			656 = { set_state_flag = kuwait_oil_developed } 
@@ -425,7 +590,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
 		}
 		highlight_states = {
 			state = 285
@@ -436,7 +603,7 @@ economy_decisions = {
 			controls_state = 285
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -460,13 +627,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			285 = { set_state_flag = glen_davis_shale_oil_works } 
@@ -483,7 +662,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
 		}
 		highlight_states = {
 			state = 518
@@ -494,7 +675,7 @@ economy_decisions = {
 			controls_state = 518
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}
 		}
 
@@ -518,13 +699,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			518 = { set_state_flag = tasmanian_shale_oil } 
@@ -541,7 +734,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
 		}
 		highlight_states = {
 			state = 517
@@ -552,7 +747,7 @@ economy_decisions = {
 			controls_state = 517
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -576,13 +771,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			517 = { set_state_flag = lakes_entrance_oil_field } 
@@ -599,7 +806,9 @@ economy_decisions = {
 		icon = oil
 
 		allowed = {
-			
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
 		}
 		highlight_states = {
 			state = 31
@@ -610,7 +819,7 @@ economy_decisions = {
 			controls_state = 31
 			num_of_civilian_factories_available_for_projects > 2			
 			NOT = {
-				has_idea = bra_industrial_elite
+				has_idea = generic_resource_extraction_effort
 			}			
 		}
 
@@ -634,13 +843,25 @@ economy_decisions = {
 
 		complete_effect = {
 			add_timed_idea = {
-				idea = bra_industrial_elite
+				idea = generic_resource_extraction_effort
 				days = 40
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			31 = { set_state_flag = pyrenean_oil_developed } 
@@ -652,4 +873,2933 @@ economy_decisions = {
 			}
 		}	
 	}
+	##Morocco
+	develop_petitjean_oil_field = { #461 Petitjean/(auj. Sidi Kacem) exploited by the SOCIÉTÉ CHÉRIFIENNE DES PÉTROLES
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+		highlight_states = {
+			state = 461
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 461
+			controls_state = 461
+			num_of_civilian_factories_available_for_projects > 1			
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			owns_state = 461
+			controls_state = 461
+			461 = {
+				NOT = {
+					has_state_flag = petitjean_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 180
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
+		}
+		remove_effect = { 
+			461 = { set_state_flag = petitjean_oil_developed } 
+			461 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
+	develop_tramutola_oil_field = { #117 Tramutola oil field in the Val D'agri, discovered in 37
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+		highlight_states = {
+			state = 117
+		}
+		available = {
+			has_tech = excavation1
+			owns_state = 117
+			controls_state = 117
+			num_of_civilian_factories_available_for_projects > 0			
+			
+		}
+
+		visible = {
+			owns_state = 117
+			controls_state = 117
+			117 = {
+				NOT = {
+					has_state_flag = tramutola_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 70
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 20
+			}
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			117 = { set_state_flag = tramutola_oil_developed } 
+			117 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}	
+	r56_develop_north_sakhalin_oil_deposits = { #655
+		icon = oil
+
+		highlight_states = {
+			state = 655
+		}
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 655
+				AND = {
+					original_tag = JAP
+					OR = {
+						has_completed_focus = JAP_non_aggression_pact_with_the_soviet_union
+						has_completed_focus = JAP_people_owned_mines
+					}
+					
+					NOT = {
+						OR = {
+							has_global_flag = JAP_kalkin_gol
+							has_global_flag = JAP_test_soviet
+							has_wargoal_against = SOV
+							has_war_with = SOV
+							SOV = {
+								has_wargoal_against = JAP
+							}
+						}
+					}
+					655 = {
+						is_fully_controlled_by = SOV
+					}
+				}
+				
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation3
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			OR = {
+				controls_state = 655
+				AND = {
+					original_tag = JAP
+					OR = {
+						has_completed_focus = JAP_non_aggression_pact_with_the_soviet_union
+						has_completed_focus = JAP_people_owned_mines
+					}
+				}				
+			}
+			
+			537 = { NOT = { has_state_flag = sakhalin_oil_developed } }
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		remove_effect = {
+			537 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				set_state_flag = sakhalin_oil_developed
+			}
+		}
+	}
+	develop_fushum_oil_deposits = { #716
+		icon = oil
+
+		highlight_states = {
+			state = 716
+		}
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						is_puppet_of = JAP
+					}
+				}
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation3
+		}
+
+		visible = {
+			OR = {
+				controls_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						controls_state = 716
+					}
+				}				
+			}
+			716 = { NOT = { has_state_flag = fushum_oil_developed } }
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 40
+			}
+
+			716 = {
+				set_state_flag = drilling_in_progress
+			}
+						
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		remove_effect = {
+			716 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				clr_state_flag = drilling_in_progress
+				set_state_flag = fushum_oil_developed
+			}
+		}
+	}
+	develop_fusin_oil_deposits = { #716
+		icon = oil
+
+		highlight_states = {
+			state = 716
+		}
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						is_puppet_of = JAP
+					}
+				}
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation4
+			716 = {
+				has_state_flag = fushum_oil_developed
+			}			
+		}
+
+		visible = {
+			OR = {
+				controls_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						controls_state = 716
+					}
+				}				
+			}
+			716 = { NOT = { has_state_flag = fusin_oil_developed } }
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 40
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		remove_effect = {
+			716 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+				clr_state_flag = drilling_in_progress
+				set_state_flag = fusin_oil_developed
+			}
+		}
+	}	
+	mine_galicia_tungsten = { #171, galicia
+		
+		icon = tungsten
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+		highlight_states = {
+			state = 171
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 171
+			controls_state = 171
+			num_of_civilian_factories_available_for_projects > 3			
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}						
+		}
+
+		visible = {
+			owns_state = 171
+			controls_state = 171
+			171 = {
+				NOT = {
+					has_state_flag = develop_galician_tungsten
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+
+		}
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 120
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1939.06.01
+			}			
+		}
+		remove_effect = { 
+			171 = { set_state_flag = develop_galician_tungsten } 
+			171 = {
+				add_resource = {
+					type = tungsten
+					amount = 30
+				}
+			}
+		}	
+	}
+	exploit_yumen_oil_field = { 
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+		highlight_states = {
+			state = 756
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 756
+			controls_state = 756
+			num_of_civilian_factories_available_for_projects > 0						
+		}
+
+		visible = {
+			owns_state = 756
+			controls_state = 756
+			756 = {
+				NOT = {
+					has_state_flag = yumen_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 20
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			756 = { set_state_flag = yumen_oil_developed } 
+			756 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}
+		}	
+	}
+	expand_yumen_oil_field = { #756 only oil producing region in China at the start of WW2, exploitation started in 1939
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}			
+		}
+		highlight_states = {
+			state = 756
+		}
+		available = {
+			has_tech = excavation_b
+			owns_state = 756
+			controls_state = 756
+			num_of_civilian_factories_available_for_projects > 1
+					
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			owns_state = 756
+			controls_state = 756 
+			756 = {
+				has_state_flag = yumen_oil_developed 
+				NOT = {
+					has_state_flag = yumen_oil_expanded
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 120
+
+		modifier = {
+		}
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 30
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
+		}
+		remove_effect = { 
+			756 = { set_state_flag = yumen_oil_expanded } 
+			756 = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+		}	
+	}	
+	r56_develop_shandong_aluminium_deposits = { #597
+		
+		icon = aluminium
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		highlight_states = {
+			state = 597
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 597
+			controls_state = 597
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}				
+		}
+
+		visible = {
+			owns_state = 597
+			controls_state = 597
+			597 = {
+				NOT = {
+					has_state_flag = shandong_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			597 = { set_state_flag = shandong_aluminium_developed } 
+			597 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+	r56_develop_suiyuan_steel_deposits = { #621
+		
+		icon = steel
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+		highlight_states = {
+			state = 621
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 621
+			controls_state = 621
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			owns_state = 621
+			controls_state = 621
+			621 = {
+				NOT = {
+					has_state_flag = suiyuan_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 50
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			621 = { set_state_flag = suiyuan_steel_developed } 
+			621 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}	
+	}
+	r56_develop_cornwall_tungsten_deposits_1 = { #123
+		
+		icon = tungsten
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 123
+			controls_state = 123
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		highlight_states = {
+			state = 123
+		}
+
+		visible = {
+			owns_state = 123
+			controls_state = 123
+			123 = {
+				NOT = {
+					has_state_flag = cornwall_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 30
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			123 = { set_state_flag = cornwall_tungsten_developed }
+			123 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		}
+	}
+	r56_develop_cornwall_tungsten_deposits_2 = { #123
+		
+		icon = tungsten
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 123
+			controls_state = 123
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		highlight_states = {
+			state = 123
+		}
+
+		visible = {
+			owns_state = 123
+			controls_state = 123
+			123 = {
+				NOT = {
+					has_state_flag = cornwall_tungsten_developed_2
+				}
+				has_state_flag = cornwall_tungsten_developed
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 50
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			123 = { set_state_flag = cornwall_tungsten_developed_2 }
+			123 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+		}
+	}
+
+	develop_paraiba_tungsten_deposits = { #498
+		
+		icon = tungsten
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 498
+			controls_state = 498
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		highlight_states = {
+			state = 498
+		}
+
+		visible = {
+			owns_state = 498
+			controls_state = 498
+			123 = {
+				NOT = {
+					has_state_flag = paraiba_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 50
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			498 = { set_state_flag = paraiba_tungsten_developed }
+			498 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}
+	develop_rio_grande_do_norte_tungsten_deposits = { #498
+		
+		icon = tungsten
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 498
+			controls_state = 498
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		highlight_states = {
+			state = 498
+		}
+
+		visible = {
+			owns_state = 498
+			controls_state = 498
+			498 = {
+				NOT = {
+					has_state_flag = rio_grande_do_norte_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			498 = { set_state_flag = rio_grande_do_norte_tungsten_developed }
+			498 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}
+	develop_karamay_oil_field = { #618
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation_c
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 618
+			controls_state = 618
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}						
+		}
+
+		highlight_states = {
+			state = 618
+		}
+
+		visible = {
+			owns_state = 618
+			controls_state = 618
+			618 = {
+				NOT = {
+					has_state_flag = karamay_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 140
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			618 = { set_state_flag = karamay_oil_field_developed }
+			618 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+		}
+	}
+	develop_jilin_oil_field = { #715
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation_c
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 715
+			controls_state = 715
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}						
+		}
+
+		highlight_states = {
+			state = 715
+		}
+
+		visible = {
+			owns_state = 715
+			controls_state = 715
+			715 = {
+				NOT = {
+					has_state_flag = jilin_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			715 = { set_state_flag = jilin_oil_field_developed }
+			715 = {
+				add_resource = {
+					type = oil
+					amount = 15
+				}
+			}
+		}
+	}
+	develop_dushanzi_oil_field = { #617
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 617
+			controls_state = 617
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}						
+		}
+
+		highlight_states = {
+			state = 617
+		}
+
+		visible = {
+			owns_state = 617
+			controls_state = 617
+			617 = {
+				NOT = {
+					has_state_flag = dushanzi_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 120
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 80
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			617 = { set_state_flag = dushanzi_oil_field_developed }
+			617 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+ 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }				
+			}
+		}
+	}
+	develop_dushanzi_oil_field_with_soviet_help = { #617
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				has_dlc = "Waking the Tiger"
+			}
+		}
+
+		available = {
+			has_tech = construction1
+			num_of_civilian_factories_available_for_projects > 0
+			owns_state = 617
+			controls_state = 617
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				exists = yes
+			}
+			SOV = {
+				has_opinion = {
+					target = ROOT
+					value > 24
+				}
+				has_tech = excavation1			
+			}
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}									
+		}
+
+		highlight_states = {
+			state = 617
+		}
+
+		visible = {
+			owns_state = 617
+			controls_state = 617
+			617 = {
+				NOT = {
+					has_state_flag = dushanzi_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 60
+		days_remove = 90
+
+		target_trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 15
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					has_government = ROOT
+				}
+				original_tag = SOV				
+				has_civil_war = no	
+			}
+		}
+
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = generic_resource_extraction_effort
+				days = 12
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		remove_effect = {
+			617 = { set_state_flag = dushanzi_oil_field_developed }
+			617 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+ 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }				
+			}
+		}
+	}					
+}
+prospect_for_resources = {
+	open_kajaran_mine_wtt = { #230 #copper and molybdene
+		
+		icon = steel #change if copper is added
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 230
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 230
+			controls_state = 230
+			num_of_civilian_factories_available_for_projects > 2			
+		}
+
+		visible = {
+			owns_state = 230
+			controls_state = 230
+			230 = {
+				NOT = {
+					has_state_flag = open_kajaran_mine_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 0
+			}			
+		}
+		remove_effect = { 
+			230 = { set_state_flag = open_kajaran_mine_developed } 
+			230 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}	
+	}
+	extract_northern_armenia_deposits_wtt = { #230
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			state = 230
+		}
+
+		available = {
+			has_tech = excavation4
+			owns_state = 230
+			controls_state = 230
+			num_of_civilian_factories_available_for_projects > 2					
+		}
+
+		visible = {
+			owns_state = 230
+			controls_state = 230
+			230 = {
+				NOT = {
+					has_state_flag = northern_armenia_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				aluminium < 5
+			}			
+			modifier = {
+				add = 4
+				aluminium < 1
+			}			
+		}
+		remove_effect = { 
+			230 = { set_state_flag = northern_armenia_aluminium_developed } 
+			230 = {
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+			}
+		}
+	}
+	##Bolivia
+	develop_south_bolivian_oil_field_wtt = { #302
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 302
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 302
+			controls_state = 302
+			num_of_civilian_factories_available_for_projects > 1			
+			
+		}
+
+		visible = {
+			owns_state = 302
+			controls_state = 302
+			302 = {
+				NOT = {
+					has_state_flag = bolivian_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			302 = { set_state_flag = bolivian_oil_developed } 
+			302 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
+##Britain and Arab controlled lands
+	develop_kelham_hills_oil_field_wtt = { #129, known since 20's, exploited during the war, oil was also extracted in Caunton
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 129
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 129
+			controls_state = 129
+			num_of_civilian_factories_available_for_projects > 0						
+		}
+
+		visible = {
+			owns_state = 129
+			controls_state = 129
+			129 = {
+				NOT = {
+					has_state_flag = kelham_hills_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			129 = { set_state_flag = kelham_hills_oil_developed } 
+			129 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
+	develop_sherwood_forest_oil_field_wtt = { #129, real secret oil reserve of WWII
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 129
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 129
+			controls_state = 129
+			num_of_civilian_factories_available_for_projects > 1
+			129 = { has_state_flag = kelham_hill_oil_developed } 					
+		}
+
+		visible = {
+			owns_state = 129
+			controls_state = 129
+			129 = {
+				NOT = {
+					has_state_flag = sherwood_forest_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			129 = { set_state_flag = sherwood_forest_oil_developed } 
+			129 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}	
+	exploit_bahrain_oil_fields_wtt = { #765
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 765
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 765
+			controls_state = 765
+			num_of_civilian_factories_available_for_projects > 3			
+		}
+
+		visible = {
+			owns_state = 765
+			controls_state = 765
+			765 = {
+				NOT = {
+					has_state_flag = barhain_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			765 = { set_state_flag = barhain_oil_developed } 
+			765 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}	
+	}
+	expand_qatar_oil_fields_wtt = { #765
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 765
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 765
+			controls_state = 765
+			num_of_civilian_factories_available_for_projects > 2		
+		}
+
+		visible = {
+			owns_state = 765
+			controls_state = 765
+			765 = {
+				has_state_flag = barhain_oil_developed
+				NOT = {
+					has_state_flag = qatar_oil_developed
+					
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			765 = { set_state_flag = qatar_oil_developed } 
+			765 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+		}	
+	}
+
+	exploit_kuwait_oil_fields_wtt = { #656
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 656
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 656
+			controls_state = 656 
+			656 = {
+				infrastructure > 4
+				naval_base > 3
+			}
+			num_of_civilian_factories_available_for_projects > 3			
+		}
+
+		visible = {
+			owns_state = 656
+			controls_state = 656
+			656 = {
+				NOT = {
+					has_state_flag = kuwait_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			656 = { set_state_flag = kuwait_oil_developed } 
+			656 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}	
+	}
+##Aussie
+	glen_davis_shale_oil_works_wtt = { #285, new south wales
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 285
+		}
+		available = {
+			has_tech = excavation2
+			owns_state = 285
+			controls_state = 285
+			num_of_civilian_factories_available_for_projects > 1		
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			owns_state = 285
+			controls_state = 285
+			285 = {
+				NOT = {
+					has_state_flag = glen_davis_shale_oil_works
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			285 = { set_state_flag = glen_davis_shale_oil_works } 
+			285 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}	
+	}
+	restart_tasmanian_shale_extraction_wtt = { #518 tasmania
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 518
+		}
+		available = {
+			has_tech = excavation5
+			owns_state = 518
+			controls_state = 518
+			num_of_civilian_factories_available_for_projects > 2			
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}
+		}
+
+		visible = {
+			owns_state = 518
+			controls_state = 518
+			518 = {
+				NOT = {
+					has_state_flag = tasmanian_shale_oil
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			518 = { set_state_flag = tasmanian_shale_oil } 
+			518 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
+	expand_lakes_entrance_oil_field_wtt = { #517 Victoria
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 517
+		}
+		available = {
+			has_tech = excavation4
+			owns_state = 517
+			controls_state = 517
+			num_of_civilian_factories_available_for_projects > 1		
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
+		}
+
+		visible = {
+			owns_state = 517
+			controls_state = 517
+			517 = {
+				NOT = {
+					has_state_flag = lakes_entrance_oil_field
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			517 = { set_state_flag = lakes_entrance_oil_field } 
+			517 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}	
+	exploit_pyrenean_oil_field_wtt = { #31
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 31
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 31
+			controls_state = 31
+			num_of_civilian_factories_available_for_projects > 1						
+		}
+
+		visible = {
+			owns_state = 31
+			controls_state = 31
+			31 = {
+				NOT = {
+					has_state_flag = pyrenean_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			31 = { set_state_flag = pyrenean_oil_developed } 
+			31 = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}	
+	}
+
+	develop_petitjean_oil_field_wtt = { #461 Petitjean/Sidi Kacem
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 461
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 461
+			controls_state = 461
+			num_of_civilian_factories_available_for_projects > 1			
+			
+		}
+
+		visible = {
+			owns_state = 461
+			controls_state = 461
+			461 = {
+				NOT = {
+					has_state_flag = petitjean_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 70
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			461 = { set_state_flag = petitjean_oil_developed } 
+			461 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}
+	develop_tramutola_oil_field_wtt = { #117 Tramutola oil field in the Val D'agri, discovered in 37
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 117
+		}
+		available = {
+			has_tech = excavation1
+			owns_state = 117
+			controls_state = 117
+			num_of_civilian_factories_available_for_projects > 0			
+			
+		}
+
+		visible = {
+			owns_state = 117
+			controls_state = 117
+			117 = {
+				NOT = {
+					has_state_flag = tramutola_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 70
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			117 = { set_state_flag = tramutola_oil_developed } 
+			117 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+			}
+		}	
+	}	
+	develop_north_sakhalin_oil_deposits = { #655
+		icon = oil
+
+		highlight_states = {
+			state = 655
+		}
+
+		allowed = {
+			#Everyone
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 655
+				AND = {
+					original_tag = JAP
+					OR = {
+						has_completed_focus = JAP_non_aggression_pact_with_the_soviet_union
+						has_completed_focus = JAP_people_owned_mines
+					}
+					
+					NOT = {
+						OR = {
+							has_global_flag = JAP_kalkin_gol
+							has_global_flag = JAP_test_soviet
+							has_wargoal_against = SOV
+							has_war_with = SOV
+							SOV = {
+								has_wargoal_against = JAP
+							}
+						}
+					}
+					655 = {
+						is_fully_controlled_by = SOV
+					}
+				}
+				
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation3
+		}
+
+		visible = {
+			OR = {
+				controls_state = 655
+				AND = {
+					original_tag = JAP
+					OR = {
+						has_completed_focus = JAP_non_aggression_pact_with_the_soviet_union
+						has_completed_focus = JAP_people_owned_mines
+					}
+				}				
+			}
+			537 = { NOT = { has_state_flag = sakhalin_oil_developed } }
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		remove_effect = {
+			655 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				set_state_flag = sakhalin_oil_developed
+			}
+		}
+	}
+	develop_fushum_oil_deposits_wtt = { #716
+		icon = oil
+
+		highlight_states = {
+			state = 716
+		}
+
+		allowed = {
+			#Everyone
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						is_puppet_of = JAP
+					}
+				}
+			}
+			NOT = {
+				716 = {
+					has_state_flag = drilling_in_progress
+				}
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation3
+		}
+
+		visible = {
+			OR = {
+				controls_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						controls_state = 716
+					}
+				}				
+			}
+			716 = { NOT = { has_state_flag = fushum_oil_developed } }
+		}
+
+
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		complete_effect = {
+			716 = {
+				set_state_flag = drilling_in_progress
+			}		
+		}
+
+		remove_effect = {
+			716 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				clr_state_flag = drilling_in_progress
+				set_state_flag = fushum_oil_developed
+			}
+		}
+	}
+	develop_fusin_oil_deposits_wtt = { #716
+		icon = oil
+
+		highlight_states = {
+			state = 716
+		}
+
+		allowed = {
+			#Everyone
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						is_puppet_of = JAP
+					}
+				}
+			}
+
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = excavation4
+			716 = {
+				has_state_flag = drilling_in_progress
+				NOT = {
+					has_state_flag = fushum_oil_developed
+				}
+			}
+
+		}
+
+		visible = {
+			OR = {
+				controls_state = 716
+				AND = {
+					original_tag = JAP
+					MAN = {
+						controls_state = 716
+					}
+				}				
+			}
+			716 = { NOT = { has_state_flag = fusin_oil_developed } }
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+
+		complete_effect = {
+			716 = {
+				set_state_flag = drilling_in_progress
+			}		
+		}
+
+		remove_effect = {
+			716 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				clr_state_flag = drilling_in_progress
+				set_state_flag = fusin_oil_developed
+			}
+		}
+	}	
+	mine_galicia_tungsten_wtt = { #171, galicia
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 171
+		}
+		available = {
+			has_tech = excavation3
+			owns_state = 171
+			controls_state = 171
+			num_of_civilian_factories_available_for_projects > 4			
+		}
+
+		visible = {
+			owns_state = 171
+			controls_state = 171
+			171 = {
+				NOT = {
+					has_state_flag = develop_galician_tungsten
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1939.06.01
+			}			
+		}
+		remove_effect = { 
+			171 = { set_state_flag = develop_galician_tungsten } 
+			171 = {
+				add_resource = {
+					type = tungsten
+					amount = 30
+				}
+			}
+		}	
+	}
+	exploit_yumen_oil_field_wtt = { #129, known since 20's, exploited during the war, oil was also extracted in Caunton
+		
+		icon = oil
+
+		allowed = {
+
+		}
+		highlight_states = {
+			state = 129
+		}
+		available = {
+			has_tech = excavation2
+			has_tech = construction3
+			owns_state = 756
+			controls_state = 756
+			num_of_civilian_factories_available_for_projects > 1						
+		}
+
+		visible = {
+			owns_state = 756
+			controls_state = 756
+			756 = {
+				NOT = {
+					has_state_flag = yumen_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
+		}
+		remove_effect = { 
+			756 = { set_state_flag = yumen_oil_developed } 
+			756 = {
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}
+		}	
+	}
+	expand_yumen_oil_field_wtt = { #756 only oil producing region in China at the start of WW2, exploitation started in 1939, actual dev much later
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+		highlight_states = {
+			state = 756
+		}
+		available = {
+			has_tech = excavation_b
+			owns_state = 756
+			controls_state = 756
+			num_of_civilian_factories_available_for_projects > 4
+			756 = { has_state_flag = yumen_oil_developed } 		
+		}
+
+		visible = {
+			owns_state = 756
+			controls_state = 756
+			756 = {
+				has_state_flag = yumen_oil_developed 
+				NOT = {
+					has_state_flag = yumen_oil_expanded
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		complete_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				oil < 5
+			}			
+			modifier = {
+				add = 4
+				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1944.01.01
+			}			
+		}
+		remove_effect = { 
+			756 = { set_state_flag = yumen_oil_expanded } 
+			756 = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+		}	
+	}
+	develop_paraiba_tungsten_deposits_wtt = { #498
+		
+		icon = tungsten
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 498
+			controls_state = 498			
+		}
+
+		highlight_states = {
+			state = 498
+		}
+
+		visible = {
+			owns_state = 498
+			controls_state = 498
+			123 = {
+				NOT = {
+					has_state_flag = paraiba_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			498 = { set_state_flag = paraiba_tungsten_developed }
+			498 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}
+	develop_rio_grande_do_norte_tungsten_deposits_wtt = { #498
+		
+		icon = tungsten
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 498
+			controls_state = 498			
+		}
+
+		highlight_states = {
+			state = 498
+		}
+
+		visible = {
+			owns_state = 498
+			controls_state = 498
+			498 = {
+				NOT = {
+					has_state_flag = rio_grande_do_norte_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			498 = { set_state_flag = rio_grande_do_norte_tungsten_developed }
+			498 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}	
+	develop_karamay_oil_field_wtt = { #618
+		
+		icon = oil
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation_c
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 618
+			controls_state = 618			
+		}
+
+		highlight_states = {
+			state = 618
+		}
+
+		visible = {
+			owns_state = 618
+			controls_state = 618
+			618 = {
+				NOT = {
+					has_state_flag = karamay_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 140
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			618 = { set_state_flag = karamay_oil_field_developed }
+			618 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+		}
+	}
+	develop_jilin_oil_field_wtt = { #715
+		
+		icon = oil
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation_c
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 715
+			controls_state = 715			
+		}
+
+		highlight_states = {
+			state = 715
+		}
+
+		visible = {
+			owns_state = 715
+			controls_state = 715
+			715 = {
+				NOT = {
+					has_state_flag = jilin_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			715 = { set_state_flag = jilin_oil_field_developed }
+			715 = {
+				add_resource = {
+					type = oil
+					amount = 15
+				}
+			}
+		}
+	}
+	develop_dushanzi_oil_field_wtt = { #617
+		
+		icon = oil
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation2
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 617
+			controls_state = 617			
+		}
+
+		highlight_states = {
+			state = 617
+		}
+
+		visible = {
+			owns_state = 617
+			controls_state = 617
+			617 = {
+				NOT = {
+					has_state_flag = dushanzi_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			617 = { set_state_flag = dushanzi_oil_field_developed }
+			617 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+ 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }				
+			}
+		}
+	}
+	develop_dushanzi_oil_field_with_soviet_help_wtt = { #617
+		
+		icon = oil
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = construction1
+			num_of_civilian_factories_available_for_projects > 0
+			owns_state = 617
+			controls_state = 617
+			FROM = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				exists = yes
+			}
+			SOV = {
+				has_opinion = {
+					target = ROOT
+					value > 24
+				}
+				has_tech = excavation1			
+			}					
+		}
+
+		highlight_states = {
+			state = 617
+		}
+
+		visible = {
+			owns_state = 617
+			controls_state = 617
+			617 = {
+				NOT = {
+					has_state_flag = dushanzi_oil_field_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 60
+		days_remove = 90
+
+		target_trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 15
+				}
+				OR = {
+					is_neighbor_of = ROOT
+					has_government = ROOT
+				}
+				original_tag = SOV				
+				has_civil_war = no	
+			}
+		}
+
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		remove_effect = {
+			617 = { set_state_flag = dushanzi_oil_field_developed }
+			617 = {
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+ 				add_building_construction = { type = infrastructure level = 1 instant_build = yes }				
+			}
+		}
+	}										
 }
