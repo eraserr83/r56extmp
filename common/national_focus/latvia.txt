@@ -186,6 +186,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				
 			}
 		}
 	}
@@ -452,6 +453,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				
 			}
 		#	random_owned_controlled_state = {  #changed to one state because Riga region was overcrowded
 		#		prioritize = { 12 }
@@ -622,6 +624,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				
 			}
 			custom_effect_tooltip = available_materiel_manufacturer
 			show_ideas_tooltip = LAT_ford_vairogs
@@ -700,6 +703,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+	
 			}
 			#add idea reducing support equipment cost
 		}
@@ -748,6 +752,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+	
 			}
 		}
 	}
@@ -954,6 +959,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+	
 
 			}
 			custom_effect_tooltip = available_materiel_manufacturer
@@ -1622,7 +1628,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_a_rejection_of_ulmanis
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_goal_LAT_reject_ulmanis
 		x = 44
 		y = 0
 		cost = 5
@@ -1827,7 +1833,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 3
 		}
 
 		bypass = {
@@ -2501,6 +2507,7 @@ focus = {
 			level = 1
 			instant_build = yes
 		}
+		
 	}
 	random_owned_controlled_state = {
 		prioritize = { 12 }
@@ -2510,6 +2517,7 @@ focus = {
 			level = 1
 			instant_build = yes
 		}
+		
 	}
  }
 }
