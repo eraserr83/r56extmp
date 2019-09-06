@@ -2,6 +2,24 @@ ideas = {
 
 	country = {
 
+		FRA_payment_for_bombers = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			picture = generic_fighter_production_diverted
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
 		FRA_militarist_society = {
 			
 			allowed = {
@@ -116,32 +134,6 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				global_building_slots_factor = 0.15
-			}
-		}
-
-		FRA_the_three_levers = {
-			
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-			
-			allowed_civil_war = {
-				always = no
-			}
-			
-			picture = generic_constitutional_guarantees
-
-			modifier = {
-				political_power_factor = 0.2
-				political_advisor_cost_factor = -0.25
-				trade_laws_cost_factor = -0.25
-				mobilization_laws_cost_factor = -0.25
-				economy_cost_factor = -0.25
-				high_command_cost_factor = -0.25
-				air_chief_cost_factor = -0.25
-				army_chief_cost_factor = -0.25
-				navy_chief_cost_factor = -0.25
 			}
 		}
 
