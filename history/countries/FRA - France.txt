@@ -108,7 +108,6 @@ if = {
 
 	#adding ministers
 	add_ideas = {
-		charles_tillon
 		francois_darlan
 		philippe_fequant
 		famh
@@ -118,7 +117,6 @@ if = {
 		#laws
 		partial_economic_mobilisation
 	}
-	
 	remove_ideas = FRA_disjointed_government
 	add_ideas ={
 		FRA_reforms_failed
@@ -126,8 +124,6 @@ if = {
 	}
 
 	complete_national_focus = FRA_tools_modernisation
-												   
-											   
 	complete_national_focus = FRA_status_quo
 	complete_national_focus = FRA_social_reforms
 	complete_national_focus = FRA_support_daladier
@@ -136,8 +132,6 @@ if = {
 	complete_national_focus = FRA_defense_national_funds
 	complete_national_focus = FRA_partial_mobilization
 	complete_national_focus = FRA_naval_contruction_program
-										  
-												 
 	complete_national_focus = FRA_giraud_plan
 
 	give_guarantee = POL
@@ -523,7 +517,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 3	
+	logistics_skill = 3
 	id = 812
 }
 
@@ -535,7 +529,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 3
-	logistics_skill = 4	
+	logistics_skill = 4
 	id = 813
 }
 
@@ -543,7 +537,7 @@ create_corps_commander = {
 #	name = "Paul Legentilhomme"
 #	picture = "r56_portrait_FRA_Paul_Legentilhomme.dds"
 #	traits = {  }
-#	skill = 3	
+#	skill = 3
 #}
 
 create_corps_commander = {
@@ -554,7 +548,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 4
-	logistics_skill = 2	
+	logistics_skill = 2
 	id = 814
 }
 
@@ -565,7 +559,7 @@ create_corps_commander = {
 #	skill = 3
 #}
 
-create_corps_commander = { #IRL retired in 1942				  
+create_corps_commander = { #IRL retired in 1942
 	name = "René Olry"
 	picture = "r56_portrait_FRA_Rene_Olry.dds"
 	traits = { trait_mountaineer }
@@ -573,7 +567,7 @@ create_corps_commander = { #IRL retired in 1942
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 1
-	logistics_skill = 2	
+	logistics_skill = 2
 	id = 815
 }
 
@@ -584,9 +578,9 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 3
-	logistics_skill = 1	
+	logistics_skill = 1
 	skill = 3
-	id = 816		 
+	id = 816
 }
 
 create_corps_commander = {
@@ -597,7 +591,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 1	
+	logistics_skill = 1
 	id = 817
 }
 
@@ -608,7 +602,7 @@ create_corps_commander = {
 #	skill = 2
 #}
 
-### END MOD ### 
+### END MOD ###
 ### Ship Variants ###
 # 1936 Start #
 if = {
@@ -736,7 +730,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Minerve Class"					
+		name = "Minerve Class"
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -782,7 +776,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Le Fantasque Class"				
+		name = "Le Fantasque Class"
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -798,7 +792,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Mogador Class"				
+		name = "Mogador Class"
 		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -1021,7 +1015,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-			name = "Aurore Class"				
+			name = "Aurore Class"
 			type = ship_hull_submarine_2
 			name_group = FRA_SS_HISTORICAL
 			parent_version = 0
