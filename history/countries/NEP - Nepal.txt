@@ -9,7 +9,7 @@ set_technology = {
 	etax_doctrine = 1
 	camo = 1
 	TIB_mountainous_people_tech = 1
-	motorised_infantry = 1
+	
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }

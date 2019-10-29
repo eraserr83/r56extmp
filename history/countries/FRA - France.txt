@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.15
 
@@ -34,7 +34,7 @@ set_technology = {
 	camo = 1
 	gw_armored_car = 1
 	steel_production_1 = 1
-	
+
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	support_weapons = 1
@@ -117,6 +117,7 @@ if = {
 		#laws
 		partial_economic_mobilisation
 	}
+
 	remove_ideas = FRA_disjointed_government
 	add_ideas ={
 		FRA_reforms_failed
@@ -150,7 +151,7 @@ if = {
 		# Extended Technologies
 		etax_doctrine = 1
 		camo = 1
-		
+
 		fighter1 = 1
 		fighter2 = 1
 		heavy_fighter1 = 1
@@ -166,7 +167,7 @@ if = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		
+
 
 		#doctrines
 		#Air
@@ -174,7 +175,7 @@ if = {
 		fighter_baiting = 1
 		low_echelon_support = 1
 		dispersed_fighting = 1
-		
+
 			grand_battle_plan = 1
 
 		trench_warfare = 1
@@ -240,13 +241,20 @@ set_politics = {
 	elections_allowed = yes
 }
 
+set_party_name = { 
+    ideology = democratic 
+    long_name = "Alliance Démocratique - Radicaux Indépendants - Parti Radical - Parti Républicain Socialiste - Fédération Républicaine " 
+    name = "AD - RI - RRRS - PRS - FR"
+}
+
 set_popularities = {
 	democratic = 84
 	fascism = 1
 	communism = 15
 }
 
-add_to_tech_sharing_group = french_research								   
+add_to_tech_sharing_group = french_research
+
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
@@ -264,7 +272,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+
 	}
 }
 
@@ -318,11 +326,11 @@ create_country_leader = {
 	expire = "1936.1.24"
 	ideology = conservatism
 	traits = {
-		appeaser #Sellout Ethiopa 
+		appeaser #Sellout Ethiopa
 	}
 }
 
-create_country_leader = { 
+create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
@@ -338,18 +346,18 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+
 	}
 }
 
-create_country_leader = { 
+create_country_leader = {
 	name = "Philippe Pétain"
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+
 	}
 }
 
@@ -360,7 +368,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		
+
 	}
 }
 #850 see britain and Raj for Marshall weavell
@@ -400,6 +408,17 @@ create_field_marshal = {
 	id = 802
 }
 
+create_field_marshal = {
+	name = "Victor-Henri Schweisguth"
+	portrait_path  = "gfx/leaders/FRA/r56_portrait_FRA_Victor_Henri_Schweisguth.dds"
+	traits = { defensive_doctrine politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Henri Giraud"
 	picture = "portrait_france_henri_giraud.dds"
@@ -416,7 +435,7 @@ create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_Charles_Huntziger.dds"
 	traits = { old_guard infantry_officer }
-	
+
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
@@ -595,7 +614,7 @@ create_corps_commander = {
 	id = 817
 }
 
-#create_corps_commander = { #Add to FFL after liberation of north africa 
+#create_corps_commander = { #Add to FFL after liberation of north africa
 #	name = "Jean Touzet du Vigier"
 #	picture = "r56_portrait_FRA_Jean_Touzet_du_Vigier.dds"
 #	traits = { }
@@ -814,14 +833,14 @@ if = {
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 		obsolete = yes
 	}
@@ -838,25 +857,25 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = empty
 			mid_1_custom_slot = ship_anti_air_1
-			mid_2_custom_slot = ship_mine_layer_1
+			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	create_equipment_variant = {
-		name = "La Galissonnière Class"			
+		name = "La Galissonnière Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_anti_air_1
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	# Heavy Cruisers #
@@ -866,93 +885,93 @@ if = {
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Algérie Class"				
+		name = "Algérie Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = ship_medium_battery_1
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Courbet Class"		
+		name = "Courbet Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_secondaries_1
-			rear_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bretagne Class"				
+		name = "Bretagne Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
 		}
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Dunkerque Class"		
+		name = "Dunkerque Class"
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bc_2
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = ship_secondaries_2
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = ship_anti_air_1
-			rear_1_custom_slot = ship_secondaries_2
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	# Carriers #

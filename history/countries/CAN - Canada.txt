@@ -38,6 +38,7 @@ set_technology = {
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
+	fuel_silos = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -213,7 +214,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tim Buck"
 	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "gfx/leaders/CAN/r56_portrait_CAN_tim_buck.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

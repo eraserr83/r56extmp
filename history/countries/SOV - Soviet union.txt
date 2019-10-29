@@ -171,15 +171,13 @@ if = {
 	}
 	#Germany soviet treaty end
 
-	complete_national_focus = SOV_finish_five_year_plan
+	complete_national_focus = SOV_finish_the_five_year_plan
 	complete_national_focus = SOV_move_industry_to_urals
 	complete_national_focus = SOV_defense_of_moscow
-	complete_national_focus = SOV_production_effort
 	unlock_national_focus = SOV_stalin_constitution
-	unlock_national_focus = SOV_socialist_realism
 	complete_national_focus = SOV_nkvd_primacy
 	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus = SOV_improve_railway
+	complete_national_focus = SOV_improve_western_railnetworks
 	complete_national_focus = SOV_transpolar_flights
 	complete_national_focus = SOV_ocean_going_navy
 	complete_national_focus = SOV_peoples_commissariat
@@ -325,7 +323,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alexander Fyodorovich Kerensky"
 	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-	picture = "Portrait_Soviet_Generic_1.dds"
+	picture = "gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds"
 	expire = "1953.3.1"
 	ideology = socialism
 	traits = {
@@ -756,7 +754,6 @@ create_corps_commander = {
 	traits = { career_officer old_guard trait_cautious politically_connected }
 	skill = 1 
 
-	
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -774,6 +771,8 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 1
 }
+
+
 
 create_corps_commander = {
 	name = "Vasily Chuikov"
@@ -847,6 +846,7 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 2
 }
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -1031,7 +1031,7 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1048,7 +1048,7 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1064,7 +1064,7 @@ if = {
 		name_group = SOV_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_fixed_medium_battery_1
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1081,7 +1081,7 @@ if = {
 		name_group = SOV_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_fixed_heavy_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1219,3 +1219,4 @@ if = {
 			}
 		}
 	}
+}
