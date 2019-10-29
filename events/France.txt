@@ -33,7 +33,15 @@ country_event = {
 			expire = "1965.1.1"
 				ideology = socialism
 		}
+		set_party_name = { 
+		    ideology = democratic 
+		    long_name = "Section Française De L'Internationale Ouvrière" 
+		    name = "SFIO"
+		}
 		set_country_flag = legislative_election
+		hidden_effect = {
+			news_event = { hours = 18 id = france.152 }
+		}
 	}
 }
 
@@ -89,6 +97,11 @@ country_event = {
 				stout_defender
 			}
 		}
+		set_party_name = { 
+		    ideology = democratic 
+		    long_name = "Parti Radical" 
+		    name = "Parti Radical"
+		}
 		set_country_flag = blum_resigned
 	}
 }
@@ -127,14 +140,19 @@ country_event = {
 	
 	fire_only_once = yes
 	
+	mean_time_to_happen = {
+		days = 5
+	}
+
 	trigger = {
         tag = FRA
 		has_government = democratic
 		has_start_date < 1936.01.02
-		OR = {
-			has_completed_focus = FRA_matignon_agreements_amendement
-			has_completed_focus = FRA_communist_rhetoric
+		date > 1938.08.05
+		NOT = {
+			has_completed_focus = FRA_popular_front_united
 		}
+		
 	}
 	
 	option = {
@@ -1482,7 +1500,95 @@ country_event = {
 	}
 }
 
+# Franchet D'Esperey's death
+country_event = {
+	id = france.151
+	title = france.151.t
+	desc = france.151.d
+	picture = GFX_report_event_france_franchet_d_esperey_funerals
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		date > 1942.07.07
+		has_country_leader = {
+		    name = "Louis Franchet d'Espèrey"
+		    ruling_only = yes
+		}
+	}
+
+	option = {
+		name = france.151.a
+		retire_country_leader = yes
+        create_country_leader = {
+        	name = "Henri Giraud"
+        	desc = "POLITICS_HENRI_GIRAUD_DESC"
+        	picture = "gfx/leaders/FRA/portrait_france_henri_giraud.dds"
+        	expire = "1965.1.1"
+        	ideology = fascism_ideology
+        	traits = {
+        		army_connections
+            }
+        }
+	}
+
+	option = {
+		name = france.151.b
+		retire_country_leader = yes
+        create_country_leader = {
+        	name = "François Mitterand"
+        	desc = "POLITICS_FRANCOIS_MITTERAND_DESC"
+        	picture = "gfx/leaders/FRA/r56_portrait_FRA_Francois_Mitterand.dds"
+        	expire = "1965.1.1"
+        	ideology = fascism_ideology
+        	traits = {
+        		POL_charismatic_leader
+        		dislikes_germany
+            }
+        }
+	}
+}
+
+news_event = {
+	id = france.152
+	title = france.152.t
+	desc = france.152.d
 	
+	picture = GFX_news_event_france_popular_front
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {			
+		name = france.152.a
+		trigger = {
+			tag = FRA
+		}
+	}
+	
+	option = {
+		name = france.152.b
+		trigger = {
+			NOT = {
+				tag = FRA
+				has_government = fascism
+			}
+		}
+	}
+
+	option = {
+		name = france.152.c
+		trigger = {
+			NOT = {
+				tag = FRA
+			}
+			has_government = fascism
+		}
+	}
+}
+
 	#### END MOD #### -------------------------------------------------------------------------------------------
 # Japan demands Indochina
 country_event = {
