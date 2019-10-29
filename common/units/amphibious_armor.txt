@@ -28,7 +28,7 @@ sub_units = {
 			amphibious_tank_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 10
+		max_organisation = 5
 		default_morale = 0.3
 		training_time = 180
 		max_strength = 2

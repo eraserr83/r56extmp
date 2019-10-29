@@ -60,9 +60,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			max_dig_in = 3
-			
-			planning_speed = -0.05
+			max_dig_in = 1
 		}
 		
 		non_shared_modifier = {
@@ -75,20 +73,6 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		modifier = {
-			army_attack_factor = 0.03
-		
-			army_speed_factor = 0.01
-			
-			land_reinforce_rate = 0.01
-			
-			terrain_penalty_reduction = 0.05
-		}
-		
-		non_shared_modifier = {
-			experience_gain_factor = 0.05
-		}
-		
 		attack_skill = 1
 		planning_skill = 1
 		
@@ -96,15 +80,10 @@ leader_traits = {
 		planning_skill_factor = 1
 	}
 	
+	
 	inflexible_strategist = { 
 		type = land
 		trait_type = personality_trait
-		
-		modifier = {
-			army_defence_factor = 0.03
-			
-			army_speed_factor = -0.01
-		}
 		
 		defense_skill = 1
 		logistics_skill = 1
@@ -130,19 +109,15 @@ leader_traits = {
 		type = all
 		trait_type = personality_trait
 		
-		modifier = {
-			army_morale_factor = 0.04
-		}
-		
 		non_shared_modifier = {
 			promote_cost_factor = -0.5
-			reassignment_duration_factor = 0.25  
+			reassignment_duration_factor = 0.5   # +50% cost to replace leader
 		}
 		
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
 		}
-  		attack_skill_factor = 1
+		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
 	
@@ -152,8 +127,6 @@ leader_traits = {
 		
 		non_shared_modifier = {
 			promote_cost_factor = -0.25
-			
-			experience_gain_factor = 0.1
 		}
 		
 		planning_skill_factor = 1
@@ -165,9 +138,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			dig_in_speed_factor = 0.05
-		
-			planning_speed = -0.15
+			planning_speed = -0.20
 			wounded_chance_factor = -0.5
 		}
 		
@@ -180,9 +151,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			army_speed_factor = 0.01
-		
-			planning_speed = 0.15
+			planning_speed = 0.20
 			wounded_chance_factor = 0.5  # +50% chance to get wounded
 		}
 		
@@ -195,12 +164,8 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		modifier = {
-			army_morale_factor = 0.04
-		}
-		
 		non_shared_modifier = {
-			reassignment_duration_factor = 1   
+			reassignment_duration_factor = 1   # +100% cost to replace leader
 		}
 		
 		attack_skill_factor = 1
@@ -214,11 +179,7 @@ leader_traits = {
 		attack_skill = 1
 
 		modifier = {
-			army_org_factor = 0.02
-		
-			army_morale_factor = -0.08
-			
-			attrition = -0.02
+			army_morale_factor = -0.10
 		}
 		
 		attack_skill_factor = 1
@@ -243,14 +204,10 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		modifier = {
-			army_infantry_attack_factor = 0.03
-			army_infantry_defence_factor = 0.03
+		trait_xp_factor = {
+			infantry_leader = 1     #+100%
 		}
 		
-		trait_xp_factor = {
-			infantry_leader = 0.5     #+100%
-		}
 		
 		defense_skill_factor = 1
 		planning_skill_factor = 1
@@ -260,13 +217,8 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		modifier = {
-			cavalry_attack_factor = 0.03
-			cavalry_defence_factor = 0.03
-		}
-		
 		trait_xp_factor = {
-			cavalry_leader = 0.5     #+100%
+			cavalry_leader = 1     #+100%
 		}
 		
 		attack_skill_factor = 1
@@ -277,15 +229,8 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		modifier = {
-			army_armor_attack_factor = 0.03
-			army_armor_defence_factor = 0.03
-			
-			army_armor_speed_factor = 0.01
-		}
-		
 		trait_xp_factor = {
-			panzer_leader = 0.5     #+100%
+			panzer_leader = 1     #+100%
 		}
 		
 		attack_skill_factor = 1
@@ -301,16 +246,16 @@ leader_traits = {
 		gain_xp = {
 			always = no # not gainable
 		}
-  		cost = 1000
+		cost = 1000
 		
 		field_marshal_modifier = {
 			supply_consumption_factor = -0.15
 		}
-  		enable_ability = extra_suplies
-  		ai_will_do = {
+		enable_ability = extra_suplies
+		ai_will_do = {
 			factor = 1
 		}
-  		gui_row = 0
+		gui_row = 0
 		trait_type = assignable_trait
 		parent = organizer
 	}
@@ -322,10 +267,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			army_attack_factor = 0.05
-			army_speed_factor = 0.01
-		
-			org_loss_when_moving = -0.50
+			org_loss_when_moving = -0.30
 		}
 		
 		attack_skill = 1
@@ -333,10 +275,10 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		
 		trait_type = assignable_trait
 		mutually_exclusive = defensive_doctrine
 		gui_row = 5
+
 	}
 
 	defensive_doctrine = { 
@@ -346,24 +288,11 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			army_defence_factor = 0.05
-		
-			dig_in_speed_factor = 0.1
-		
-			max_dig_in_factor = 0.25
+			max_dig_in_factor = 0.30
 		}
-		
-		defense_skill = 1
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 		trait_type = assignable_trait
 		mutually_exclusive = offensive_doctrine
@@ -377,7 +306,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			planning_speed = 0.10
+			planning_speed = 0.25
 		}
 		
 		ai_will_do = {
@@ -422,9 +351,7 @@ leader_traits = {
 
 		cost = 1000
 		field_marshal_modifier = {
-			army_defence_factor = 0.05
-			
-			no_supply_grace = 24
+			defence = 0.10
 		}
 		custom_effect_tooltip = INCREASED_COUNTERATTACK_CHANCE
 
@@ -446,13 +373,9 @@ leader_traits = {
 		prerequisites = {
 			has_trait = brilliant_strategist
 		}
-		
-		field_marshal_modifier = {
-			army_attack_factor = 0.05
-		}
-		
 		cost = 1000
-		modifier = {
+		field_marshal_modifier = {
+			breakthrough_factor = 0.10
 		}
 		custom_effect_tooltip = INCREASED_ASSAULT_AND_SHOCK_CHANCE
 		ai_will_do = {
@@ -489,22 +412,11 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			army_morale_factor = 0.08
+			army_morale_factor = 0.10
 		}
 		
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				add = -2000
-				NOT = { has_trait = infantry_expert }
-			}
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 		trait_type = assignable_trait
 		gui_row = 8
@@ -523,13 +435,6 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
-
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 		trait_type = assignable_trait
 		parent = skilled_staffer
@@ -574,9 +479,9 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			cavalry_attack_factor = 0.05
-			motorized_attack_factor = 0.05
-			mechanized_attack_factor = 0.05
+			cavalry_attack_factor = 0.10
+			motorized_attack_factor = 0.10
+			mechanized_attack_factor = 0.10
 		}
 		
 		ai_will_do = {
@@ -597,7 +502,7 @@ leader_traits = {
 		
 		cost = 1000
 		modifier = {
-			army_infantry_defence_factor = 0.05
+			army_infantry_defence_factor = 0.10
 		}
 		
 		ai_will_do = {
@@ -656,7 +561,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			winter_attrition_factor = -0.25
+			winter_attrition_factor = -0.5
 		}
 		
 		ai_will_do = {
@@ -674,20 +579,13 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			terrain_penalty_reduction = 0.25
+			terrain_penalty_reduction = 0.30
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
 		}
 		
 		ai_will_do = {
 			factor = 1
-
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 		
 		trait_type = assignable_terrain_trait
@@ -713,7 +611,7 @@ leader_traits = {
 		}
 
 		modifier = {
-			acclimatization_cold_climate_gain_factor = 0.15
+			acclimatization_cold_climate_gain_factor = 0.40
 		}
 		
 		ai_will_do = {
@@ -738,7 +636,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			river = {
-				attack = 0.1
+				attack = 0.05
 			}
 			fort = {
                 attack = 0.1
@@ -763,8 +661,8 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			army_armor_speed_factor = 0.03
-			army_armor_attack_factor = 0.05 
+			army_armor_speed_factor = 0.05 
+			army_armor_attack_factor = 0.1 
 		}
 		
 		ai_will_do = {
@@ -787,13 +685,8 @@ leader_traits = {
 			}
 		}
 		cost = 700
-		
 		modifier = {
-			special_forces_attack_factor = 0.05
-			special_forces_defence_factor = 0.05
-		
-			out_of_supply_factor = -0.5
-			no_supply_grace = 48
+			out_of_supply_factor = -0.25
 		}
 		
 		ai_will_do = {
@@ -957,8 +850,8 @@ leader_traits = {
 		}
 		cost = 100
 		modifier = {
-			amphibious_invasion = 0.15 
-			invasion_preparation = -0.25
+			amphibious_invasion = 0.3 # 30% faster invasions
+			invasion_preparation = -0.3
 		}
 		
 		ai_will_do = {
@@ -980,7 +873,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			army_armor_defence_factor = 0.05
+			army_armor_defence_factor = 0.10 
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -1005,25 +898,14 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			motorized_defence_factor = 0.05
-			mechanized_defence_factor = 0.05
+			motorized_defence_factor = 0.15
+			mechanized_defence_factor = 0.15
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
 		
 		ai_will_do = {
 			factor = 1
-
-			modifier = { # get logistics wizard asap
-				add = -1000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
-			modifier = {
-				add = -1000
-				NOT = { has_trait = infantry_expert has_trait = infantry_expert }
-			}
 		}
 		
 		trait_type = assignable_trait
@@ -1044,8 +926,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cavalry_attack_factor = 0.05
-			cavalry_defence_factor = 0.05
+			#cavalry_attack_factor = 0.10
+			cavalry_defence_factor = 0.10
 		}
 		
 		ai_will_do = {
@@ -1072,25 +954,13 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.2
+				attack = 0.15
 			}
 		}
 		enable_ability = siege_artillery
 		
 		ai_will_do = {
-			factor = 100
-
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
-			modifier = {
-				add = -2000
-				has_trait = infantry_leader
-				NOT = { has_trait = infantry_expert has_trait = infantry_expert }
-			}
+			factor = 1
 		}
 		
 		gui_row = 4
@@ -1107,7 +977,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			equipment_capture = 0.05
+			equipment_capture = 0.03
 		}
 		
 		ai_will_do = {
@@ -1128,18 +998,11 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			army_infantry_attack_factor = 0.05
+			army_infantry_attack_factor = 0.10
 		}
 		
 		ai_will_do = {
 			factor = 1
-
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 
 		mutually_exclusive = ambusher
@@ -1314,13 +1177,6 @@ leader_traits = {
 			
 		ai_will_do = {
 			factor = 1
-
-			modifier = { # get logistics wizard asap
-				add = -2000
-				is_field_marshal = yes
-				has_trait = organizer
-				NOT = { has_trait = logistics_wizard }
-			}
 		}
 		
 		enable_ability = makeshift_bridges
@@ -1342,10 +1198,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.05
-		
-			dig_in_speed_factor = 0.25
+			dig_in_speed_factor = 0.5
 		}
 		
 		ai_will_do = {
@@ -1526,7 +1379,7 @@ leader_traits = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		trait_type = assignable_trait
@@ -1543,7 +1396,7 @@ leader_traits = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 
 		trait_type = assignable_trait
@@ -1559,7 +1412,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1592,7 +1445,7 @@ leader_traits = {
 			}
 		}	
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1608,7 +1461,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1628,7 +1481,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1654,7 +1507,7 @@ leader_traits = {
 			}
 		}	
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1671,7 +1524,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1705,7 +1558,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1 
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1725,7 +1578,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1743,7 +1596,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1762,7 +1615,7 @@ leader_traits = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1780,7 +1633,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1796,7 +1649,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1812,7 +1665,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1828,7 +1681,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1845,7 +1698,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1862,7 +1715,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1879,7 +1732,7 @@ leader_traits = {
 		}
 				
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1899,7 +1752,7 @@ leader_traits = {
 			}
 		}	
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
@@ -1919,7 +1772,7 @@ leader_traits = {
 			}
 		}		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		trait_type = assignable_trait
