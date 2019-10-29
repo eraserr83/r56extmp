@@ -800,6 +800,7 @@ form_baltic_federation_category = {
 		allowed = {
 			OR = {
 				original_tag = EST
+				original_tag = LIT
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -856,6 +857,7 @@ form_baltic_federation_category = {
 				11 = { add_core_of = ROOT }
 				189 = { add_core_of = ROOT }
 				188 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.60 hours = 6 }
@@ -1314,6 +1316,7 @@ form_roman_empire_category = {
 			controls_state = 77
 			# Some Albanian states
 			controls_state = 44
+			controls_state = 791
 			# Yugoslavia
 			custom_trigger_tooltip = {
 				tooltip = form_country_yugoslavia_required_states_tt
@@ -1535,6 +1538,7 @@ form_roman_empire_category = {
 			77 = { add_core_of = ROOT }
 			# Some Albanian states
 			44 = { add_core_of = ROOT }
+			791 = { add_core_of = ROOT }
 			# Yugoslavia
 			custom_effect_tooltip = form_country_yugoslavia_coring_states_tt
 			hidden_effect = {
@@ -1979,6 +1983,7 @@ form_byzantine_empire_category = {
 		available = {
 			is_subject = no
 			controls_state = 44
+			controls_state = 791
 			controls_state = 82
 			controls_state = 81
 			controls_state = 46
@@ -2143,11 +2148,13 @@ form_byzantine_empire_category = {
 				has_idea = generic_recent_economic_unification		
 			}			
 			controls_state = 44
+			controls_state = 791
 		}
 
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_albania_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2157,6 +2164,7 @@ form_byzantine_empire_category = {
 		remove_effect  = {
 			# Albania
 			44 = { add_core_of = ROOT }
+			791 = { add_core_of = ROOT }
 				
 			set_global_flag = byz_albania_integrated
 			
@@ -2197,6 +2205,7 @@ form_byzantine_empire_category = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_wallachia_integrated }
 			has_global_flag = byz_bulgaria_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2251,6 +2260,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_bulgaria_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2312,6 +2322,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_yugoslavia_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 75
@@ -2386,6 +2397,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_turkey_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2466,6 +2478,7 @@ form_byzantine_empire_category = {
 			NOT = { has_global_flag = triumph_for_italy }
 			has_global_flag = byz_bulgaria_integrated
 			has_global_flag = byz_yugoslavia_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2535,6 +2548,7 @@ form_byzantine_empire_category = {
 			original_tag = GRE
 			NOT = { has_global_flag = triumph_for_middle_east }
 			has_global_flag = byz_turkey_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2604,6 +2618,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = triumph_for_egypt_and_tunis }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2852,6 +2867,11 @@ form_majapahit_empire_category = {
 				tooltip = form_majapahit_malaya_required_states_tt
 				controls_state = 336
 				controls_state = 333
+				controls_state = 790
+				controls_state = 792
+				controls_state = 793
+				controls_state = 794
+				controls_state = 795
 			}
 		}
 
@@ -2883,6 +2903,11 @@ form_majapahit_empire_category = {
 			hidden_effect = {
 				336 = { add_core_of = ROOT }
 				333 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				795 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.68 hours = 6 }
