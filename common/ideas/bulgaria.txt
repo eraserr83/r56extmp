@@ -527,7 +527,7 @@ country = {
 
       removal_cost = -1
 
-      picture = r56_idea_gold_reserves
+      picture = HOL_reliance_on_the_gold_standard
 
       modifier = {
         consumer_goods_factor = -0.05
@@ -1763,6 +1763,13 @@ country = {
 			}
 
 			traits = { mass_assault_expert }
+      ai_will_do = {
+        factor = 0
+        modifier = {
+          has_tech = mass_assault
+          add = 1
+        }
+      }      
 	}
 #		BUL_georgi_petsov = {
 #

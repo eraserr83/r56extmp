@@ -1,58 +1,53 @@
+
+
 ideas = {
 	political_advisor = {
-		UZB_ruzi_nazar = {#ex red army involved in turkestan legion
 
-			picture = generic_political_advisor_india_2
+		TNG_generic_industry = {
 
-			available = {
-			}
-			
+			picture = generic_political_advisor_asia_2
+
 			allowed = {
-				original_tag = UZB
-			}
-			
-			traits = { silent_workhorse }
-		}
-		UZB_generic_captain_of_industry = {
-
-			picture = generic_political_advisor_arab_2
-
-			available = {
-			}
-			
-			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			traits = { captain_of_industry }
-		}	
-		UZB_generic_financial_expert = {
-
-			picture = generic_political_advisor_arab_3
-
-			available = {
-			}
-			
-			allowed = {
-				original_tag = UZB
-			}
-			
-			traits = { financial_expert }
 		}
 
+		TNG_generic_propaganda = {
+
+			picture = generic_political_advisor_asia_2
+				
+			allowed = {
+				original_tag = TNG
+			}
+			
+			traits = { propaganda_expert }
+		}
+
+		TNG_generic_charmer = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = TNG
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
 	}
 	army_chief = {
 		
-		UZB_veli_kayum = {
+		TNG_generic_offense = {
 			
-			picture = generic_air_south_america_2
+			picture = generic_army_asia_1
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			available = {
-				has_government = fascism
+			
 			}
 			
 			traits = { army_chief_offensive_3}
@@ -62,12 +57,12 @@ ideas = {
 			}
 		}
 
-		UZB_generic_organization = {
+		TNG_generic_organization = {
 			
 			picture = generic_army_asia_7
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -79,12 +74,12 @@ ideas = {
 			}
 		}
 
-		UZB_generic_defense = {
+		TNG_generic_defense = {
 			
 			picture = generic_army_asia_6
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -99,12 +94,12 @@ ideas = {
 
 	air_chief = {
 
-		UZB_aif_safety = {
+		TNG_aif_safety = {
 			
 			picture = generic_air_asia_1
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -116,12 +111,12 @@ ideas = {
 			}
 		}
 
-		UZB_air_reform = {
+		TNG_air_reform = {
 			
-			picture = generic_air_asia_2
+			picture = generic_air_asia_1
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -136,12 +131,12 @@ ideas = {
 
 	navy_chief = {
 
-		UZB_generic_naval_aviation = {
+		TNG_generic_naval_aviation = {
 			
 			picture = generic_navy_asia_1
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -153,12 +148,12 @@ ideas = {
 			}
 		}
 
-		UZB_generic_decisive_battle = {
+		TNG_generic_decisive_battle = {
 			
 			picture = generic_navy_asia_2
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 
@@ -173,12 +168,12 @@ ideas = {
 
 
 	theorist = {
-		UZB_military_theorist = {
+		TNG_alibi_dzhangildin = {
 			
 			picture = generic_army_asia_4
 
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			research_bonus = {
@@ -188,12 +183,12 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		UZB_air_thorist = {
+		TNG_air_thorist = {
 			
 			picture = generic_air_asia_2
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			research_bonus = {
@@ -208,12 +203,12 @@ ideas = {
 
 	high_command = {
 
-		UZB_generic_cavalry = {
+		TNG_generic_cavalry = {
 
-			picture = generic_air_south_america_2
+			picture = generic_army_asia_5
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			traits = { army_cavalry_3 }
@@ -223,12 +218,12 @@ ideas = {
 			}
 		}
 		
-		UZB_huseyin_ikram_han = { #ex red army involved in turkestan legion
+		TNG_generic_morale = {
 
-			picture = generic_air_south_america_1
+			picture = generic_navy_asia_3
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			traits = { army_chief_morale_2 }
@@ -238,12 +233,12 @@ ideas = {
 			}
 		}
 
-		UZB_gulam_alim = {#ex red army involved in turkestan legion
+		TNG_generic_commando = {
 
-			picture = generic_army_south_america_5
+			picture = generic_army_asia_1
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			traits = { army_commando_2 }
@@ -253,12 +248,12 @@ ideas = {
 			}
 		}
 
-		UZB_baymirza_hayit = { #ex red army involved in turkestan legion
+		TNG_generic_infantry = {
 
 			picture = generic_army_asia_7
 			
 			allowed = {
-				original_tag = UZB
+				original_tag = TNG
 			}
 			
 			traits = { army_infantry_2 }

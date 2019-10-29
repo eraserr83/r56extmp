@@ -3037,6 +3037,7 @@ ideas = {
 			modifier = {
 			}
 		}
+		
 		hawker = {
 			
 			allowed = {
@@ -3440,6 +3441,13 @@ ideas = {
 			}
 			
 			traits = { grand_battle_plan_expert }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = trench_warfare
+					add = 1
+				}
+			}			
 		}
 		
 		harold_alexander = {
@@ -3470,6 +3478,13 @@ ideas = {
 			}
 			
 			traits = { grand_fleet_proponent }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = fleet_in_being
+					add = 1
+				}
+			}			
 		}
 		
 		tom_phillips = {
@@ -3515,6 +3530,13 @@ ideas = {
 			}
 			
 			traits = { victory_through_airpower }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = air_superiority
+					add = 1
+				}
+			}			
 		}
 		
 		james_chadwick = {

@@ -410,7 +410,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				naval_torpedo_screen_penetration_factor = 0.1
+				naval_torpedo_screen_penetration_factor = 0.2
 			}
 		}
 		
@@ -550,12 +550,14 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_gain = 0.25
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -574,7 +576,7 @@ ideas = {
 			picture = jap_zaibatsu_ally
 			
 			modifier = {
-				political_power_gain = 0.25
+				political_power_cost = 0.5
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
@@ -1010,7 +1012,9 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = 0.5
-				army_defence_factor = 0.05
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				army_defence_factor = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
 		}
@@ -2010,7 +2014,7 @@ ideas = {
 			
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 
 			available = {
@@ -2030,7 +2034,7 @@ ideas = {
 		yokosuka_naval_arsenal = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 			
 			research_bonus = {
@@ -2047,7 +2051,7 @@ ideas = {
 		maizuru_naval_arsenal = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 				
 			research_bonus = {
@@ -2064,7 +2068,7 @@ ideas = {
 		sasebo_naval_arsenal = {
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 			
 			research_bonus = {
@@ -2086,7 +2090,7 @@ ideas = {
 		mitsubishi = {
 						
 			allowed = {
-				tag = JAP		
+				original_tag = JAP	
 			}
 			
 			available = {
@@ -2107,7 +2111,7 @@ ideas = {
 		aichi = {
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 
 			available = {
@@ -2124,7 +2128,7 @@ ideas = {
 		nakajima = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 			
 			research_bonus = {
@@ -2138,7 +2142,7 @@ ideas = {
 		yokosuka = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2152,7 +2156,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2166,7 +2170,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2192,7 +2196,7 @@ ideas = {
 		kawasaki = {
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 			
 			research_bonus = {
@@ -2206,7 +2210,7 @@ ideas = {
 		sumitomo = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2221,7 +2225,7 @@ ideas = {
 			picture = generic_industrial_concern_2
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2240,7 +2244,7 @@ ideas = {
 		tokyo_arsenal = {
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 			
 			research_bonus = {
@@ -2253,7 +2257,7 @@ ideas = {
 		nissan = {
 						
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 						
 			research_bonus = {
@@ -2272,7 +2276,7 @@ ideas = {
 		osaka_army_arsenal = {
 			
 			allowed = {
-				tag = JAP
+				original_tag = JAP
 			}
 				
 			research_bonus = {
@@ -2298,6 +2302,13 @@ ideas = {
 			}
 			
 			traits = { grand_battle_plan_expert }
+			ai_will_do = {
+				factor = 0			
+				modifier = {
+					has_tech = trench_warfare
+					add = 1
+				}
+			}			
 		}
 		
 		hisaichi_terauchi = {
@@ -2326,6 +2337,13 @@ ideas = {
 			}
 			
 			traits = { naval_aviation_pioneer }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = base_strike
+					add = 1
+				}
+			}			
 		}
 		
 		minoru_genda = {
@@ -2354,6 +2372,13 @@ ideas = {
 			}
 			
 			traits = { assault_avaition }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = force_rotation
+					add = 1
+				}
+			}			
 		}
 		
 		hino_kumazo = {

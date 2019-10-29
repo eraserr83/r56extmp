@@ -304,7 +304,7 @@ ideas = {
 			}
 		}
 		USA_the_pentagon = {
-			picture = generic_army_war_college
+			picture = usa_pentagon
 			allowed = {
 				always = no
 			}
@@ -383,7 +383,10 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
 			}
 
 			removal_cost = -1
@@ -399,7 +402,10 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
 			}
 
 			removal_cost = -1
@@ -417,7 +423,10 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
 			}
 
 			removal_cost = -1
@@ -653,9 +662,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
-				production_speed_arms_factory_factor = 0.2
-				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor= -0.5
 			}
 		}
 	
@@ -2436,6 +2443,13 @@ ideas = {
 			}
 			
 			traits = { superior_firepower_expert }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = superior_firepower
+					add = 3
+				}
+			}
 		}
 		
 		george_patton = {
@@ -2452,6 +2466,14 @@ ideas = {
 			}
 			
 			traits = { mobile_warfare_expert }
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = mobile_warfare
+					add = 10
+				}
+			}
 		}
 		
 		dewitt_clinton_ramsey = {
@@ -2484,6 +2506,13 @@ ideas = {
 			}
 			
 			traits = { naval_aviation_pioneer }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = base_strike
+					add = 1
+				}
+			}			
 		}
 		
 		curtis_lemay = {
@@ -2500,6 +2529,13 @@ ideas = {
 			}
 			
 			traits = { victory_through_airpower }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = air_superiority
+					add = 1
+				}
+			}			
 		}
 		
 		harold_mcclelland = {
