@@ -20,7 +20,7 @@ armor_ENG = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank_a
+			has_tech = main_battle_tank
 		}
 	}
 	
@@ -40,7 +40,7 @@ armor_ENG = {
 			has_equipment = { light_tank_equipment < 500 } 
 		}
 	
-		target_width = 30.0
+		target_width = 18.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -114,7 +114,7 @@ armor_ENG = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -206,7 +206,7 @@ armor_ENG = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -296,7 +296,7 @@ armor_ENG = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -399,7 +399,7 @@ infantry_ENG = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 40.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -504,7 +504,7 @@ mountaineers_ENG = {
 			}
 		}
 	
-		target_width = 30.0
+		target_width = 40.0
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -598,7 +598,7 @@ marines_ENG = {
 				factor = 1
 			}
 		}
-		target_width = 30.0
+		target_width = 36.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -788,7 +788,7 @@ garrison_ENG = {
 		reinforce_prio = 0
 		custom_icon = 7
 		
-		target_width = 20.0
+		target_width = 10.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		

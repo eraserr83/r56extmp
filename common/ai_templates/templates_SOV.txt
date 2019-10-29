@@ -22,7 +22,7 @@ armored_SOV = {
 		
 		modifier = {
 			factor = 2
-			has_tech = main_battle_tank_a
+			has_tech = main_battle_tank
 		}
 	}
 	
@@ -40,7 +40,7 @@ armored_SOV = {
 			has_equipment = { light_tank_equipment < 500 } 
 		}
 	
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -114,7 +114,7 @@ armored_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -206,7 +206,7 @@ armored_SOV = {
 				factor = 3
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank_a
+					has_tech = main_battle_tank
 				}
 			}
 		}
@@ -300,12 +300,12 @@ armored_SOV = {
 				factor = 3
 				has_tech = basic_medium_tank
 				NOT = {
-					has_tech = main_battle_tank_a
+					has_tech = main_battle_tank
 				}
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -409,7 +409,7 @@ infantry_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 40.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -514,7 +514,7 @@ mountaineers_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 40.0
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -610,7 +610,7 @@ marines_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 36.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -801,7 +801,7 @@ garrison_SOV = {
 		reinforce_prio = 0
 		custom_icon = 7
 		
-		target_width = 20.0
+		target_width = 10.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -905,7 +905,7 @@ anti_armor_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -996,7 +996,7 @@ anti_armor_SOV = {
 			}
 		}
 	
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -1081,7 +1081,7 @@ anti_armor_SOV = {
 			}
 		}
 		
-		target_width = 30.0
+		target_width = 20.0
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
