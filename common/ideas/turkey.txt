@@ -1,4 +1,4 @@
-ideas = {
+	ideas = {
 
 country = {
 
@@ -88,6 +88,32 @@ country = {
 		}
 	}
 
+	TUR_armed_neutrality_idea = {
+
+		allowed = {
+			original_tag = TUR
+			always = no
+		}
+
+		allowed_civil_war = {
+		}
+
+		removal_cost = -1
+
+		picture = generic_pp_unity_bonus
+		rule = {
+				can_join_factions = no
+			}
+		
+		modifier = {
+			neutrality_drift = 0.1
+			democratic_drift = -0.1
+			democratic_acceptance = -100
+			communism_acceptance = -100
+			fascism_acceptance = -100
+		}
+	}
+	
 	TUR_revanchism_focus = {
 
 		allowed = {

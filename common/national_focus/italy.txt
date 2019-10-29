@@ -3114,6 +3114,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_our_latin_brothers
 			focus = ITA_operazione_trajan
+		}
 		bypass = {
 			any_country = {
 				original_tag = SPR

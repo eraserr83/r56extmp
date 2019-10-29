@@ -678,7 +678,7 @@ focus_tree = {
 				}
 			available = {
 					has_war = yes
-•					surrender_progress < 0.05
+					surrender_progress < 0.05
 				}
 			completion_reward = {
 					add_ideas = GER_total_war_idea
@@ -1495,7 +1495,7 @@ focus_tree = {
 
 	}
 	focus = {
-J		id = GER_case_anton
+		id = GER_case_anton
 		icon = GFX_goal_GER_case_anton
 		cost = 10.00
 		prerequisite = {
@@ -3015,6 +3015,7 @@ J		id = GER_case_anton
 										}
 								}
 						}
+				}
 			completion_reward = {
 					add_opinion_modifier = {
 							target = ITA
