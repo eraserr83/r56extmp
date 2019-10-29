@@ -21,7 +21,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_industrial_effort
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = industry
 						}
@@ -33,7 +33,7 @@ focus_tree = {
 											size > 0
 											include_locked = yes
 										}
-									is_on_continent = europe
+									is_core_of = FRA
 								}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -281,6 +281,7 @@ focus_tree = {
 					factor = 100
 				}
 			completion_reward = {
+					custom_effect_tooltip = new_advisors_tt
 					add_ideas = FRA_support_monarchy_focus
 				}
 
@@ -636,7 +637,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_nuclear_effort
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = nuclear
 						}
@@ -690,7 +691,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -711,7 +712,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -1092,19 +1093,19 @@ focus_tree = {
 								}
 							add_tech_bonus = {
 									name = electronics_bonus
-									bonus = 0.5
+									bonus = 1
 									uses = 1
 									category = electronics
 								}
 							add_tech_bonus = {
 									name = industrial_bonus
-									bonus = 0.5
+									bonus = 1
 									uses = 1
 									category = industry
 								}
 							add_tech_bonus = {
 									name = infantry_weapons_bonus
-									bonus = 0.5
+									bonus = 1
 									uses = 1
 									category = infantry_weapons
 									category = artillery
@@ -1178,10 +1179,10 @@ focus_tree = {
 			completion_reward = {
 					670 = {
 							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
+								type = infrastructure
+								level = 2
+								instant_build = yes
+							}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
@@ -1216,8 +1217,8 @@ focus_tree = {
 						}
 					671 = {
 							add_building_construction = {
-									province = 7432
 									type = naval_base
+									province = 7432
 									level = 4
 									instant_build = yes
 								}
@@ -1229,8 +1230,8 @@ focus_tree = {
 						}
 					286 = {
 							add_building_construction = {
-									province = 4405
 									type = naval_base
+									province = 4405
 									level = 2
 									instant_build = yes
 								}
@@ -1262,18 +1263,21 @@ focus_tree = {
 		x = 4
 		y = 5
 			available = {
-					OR = {
-							FRA = {
-									controls_state = 671
-								}
-							FRI = {
-									controls_state = 671
-								}
-							VIN = {
-									controls_state = 671
-								}
-						}
+				has_tech = excavation2
+				OR = {
+					FRA = {
+						controls_state = 671
+					}
+					FRI = {
+						controls_state = 671
+						is_puppet_of = FRA
+					}
+					VIN = {
+						controls_state = 671
+						is_puppet_of = FRA
+					}
 				}
+			}
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 30
@@ -1297,7 +1301,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vienot_agreement
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_r56_goal_FRA_vienot_accords
 		cost = 10
 		prerequisite = {
 			focus = FRA_colonial_investments
@@ -2306,17 +2310,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					every_state = {
-							limit = {
-									has_state_flag = FRA_military_factories_1MF
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
 				}
 			completion_reward = {
 					news_event = {
@@ -2330,7 +2323,7 @@ focus_tree = {
 											size > 1
 											include_locked = yes
 										}
-									is_on_continent = europe
+									is_core_of = FRA
 								}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -2347,7 +2340,7 @@ focus_tree = {
 											size > 0
 											include_locked = yes
 										}
-									is_on_continent = europe
+									is_core_of = FRA
 								}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
@@ -2385,17 +2378,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					every_state = {
-							limit = {
-									has_state_flag = FRA_military_factories_1MF
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
 				}
 			completion_reward = {
 					news_event = {
@@ -2409,7 +2391,7 @@ focus_tree = {
 											size > 1
 											include_locked = yes
 										}
-									is_on_continent = europe
+									is_core_of = FRA
 								}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -2426,7 +2408,7 @@ focus_tree = {
 											size > 0
 											include_locked = yes
 										}
-									is_on_continent = europe
+									is_core_of = FRA
 								}
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
@@ -2645,7 +2627,7 @@ focus_tree = {
 		x = 16
 		y = 1
 			ai_will_do = {
-					factor = 50
+					factor = 120
 				}
 			completion_reward = {
 					custom_effect_tooltip = new_advisors_tt
@@ -2674,7 +2656,7 @@ focus_tree = {
 		x = 18
 		y = 1
 			ai_will_do = {
-					factor = 50
+					factor = 120
 				}
 			completion_reward = {
 					custom_effect_tooltip = new_advisors_tt
@@ -2694,7 +2676,7 @@ focus_tree = {
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 30
+					factor = 85
 				}
 			completion_reward = {
 					add_war_support = 0.15
@@ -3031,6 +3013,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					custom_effect_tooltip = new_advisors_tt
+					add_political_power = 120
 					news_event = {
 							id = france.102
 							hours = 12
@@ -3583,6 +3566,7 @@ focus_tree = {
 			focus = FRA_support_ppf
 			focus = FRA_state_reorganisation
 		}
+		will_lead_to_war_with = BEL
 		x = 33
 		y = 4
 			available = {
@@ -3661,6 +3645,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_demand_wallonia
 		}
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = HOL
+		will_lead_to_war_with = LUX
 		mutually_exclusive = {
 			focus = FRA_revise_versailles
 		}
@@ -3790,7 +3777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_convince_spain
-		icon = GFX_SPA_alliance
+		icon = GFX_focus_generic_invite_nat_spain
 		cost = 10
 		prerequisite = {
 			focus = FRA_woo_italy
@@ -4007,16 +3994,6 @@ focus_tree = {
 					is_puppet = no
 					is_in_faction = no
 				}
-			bypass = {
-					ROM = {
-							OR = {
-									exists = no
-									is_puppet = yes
-									has_war_with = FRA
-									is_in_faction_with = FRA
-								}
-						}
-				}
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 100
@@ -4029,12 +4006,16 @@ focus_tree = {
 					create_faction = "latin_union"
 					if = {
 							limit = {
-									ROM = {
-											is_puppet = no
-											NOT = {
+									NOT = {
+										ROM = {
+											OR = {
+													exists = no
+													is_puppet = yes
 													has_war_with = FRA
+													is_in_faction_with = FRA
 												}
 										}
+									}
 								}
 							ROM = {
 									country_event = france.124
@@ -4122,6 +4103,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		will_lead_to_war_with = LUX
+		will_lead_to_war_with = BEL
+		will_lead_to_war_with = HOL
 		completion_reward = {
 			add_state_claim = 34
 			add_state_claim = 6
@@ -4160,6 +4144,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		will_lead_to_war_with = ENG
 		completion_reward = {
 			add_named_threat = {
 							threat = 8
@@ -4190,6 +4175,7 @@ focus_tree = {
 			ai_will_do = {
 					factor = 100
 				}
+			will_lead_to_war_with = ITA
 			completion_reward = {
 					add_named_threat = {
 							threat = 5
@@ -4327,7 +4313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_infantry_focus
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_generic_army_modernizations
 		cost = 10
 		prerequisite = {
 			focus = FRA_fortification_focus
@@ -4343,7 +4329,7 @@ focus_tree = {
 					army_experience = 25
 					add_tech_bonus = {
 							name = FRA_infantry_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = infantry_weapons
 						}
@@ -4385,7 +4371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_general_mobilisation_order
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_generic_army_mobilization
 		cost = 10
 		prerequisite = {
 			focus = FRA_fortification_focus
@@ -4429,7 +4415,7 @@ focus_tree = {
 					army_experience = 25
 					add_tech_bonus = {
 							name = FRA_artillery_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = artillery
 						}
@@ -4455,7 +4441,7 @@ focus_tree = {
 					remove_ideas = FRA_victors_of_wwi
 					add_tech_bonus = {
 							name = FRA_army_reform
-							bonus = 0.75
+							bonus = 1
 							uses = 2
 							category = land_doctrine
 						}
@@ -4499,13 +4485,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_army_reform
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = land_doctrine
 						}
 					add_tech_bonus = {
 							name = FRA_legion
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = para_tech
 							category = mountaineers_tech
@@ -4632,12 +4618,12 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_mechanized_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = cat_mechanized_equipment
 						}
 					add_tech_bonus = {
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = cat_light_armor
 							category = cat_medium_armor
@@ -4690,14 +4676,14 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_capital_ship_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = bb_tech
 							category = bc_tech
 						}
 					add_tech_bonus = {
 							name = FRA_naval_doctrine
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = naval_doctrine
 						}
@@ -4723,13 +4709,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_carrier_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = cv_tech
 						}
 					add_tech_bonus = {
 							name = FRA_naval_doctrine
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = naval_doctrine
 						}
@@ -4754,7 +4740,7 @@ focus_tree = {
 					navy_experience = 50
 					add_tech_bonus = {
 							name = FRA_naval_doctrine
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = naval_doctrine
 						}
@@ -4777,13 +4763,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_sea_wolves
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = ss_tech
 						}
 					add_tech_bonus = {
 							name = FRA_naval_bomber_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = naval_bomber
 						}
@@ -4806,7 +4792,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_improved_screen_ships
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = dd_tech
 							category = cl_tech
@@ -4912,13 +4898,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_fighter_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = light_fighter
 						}
 					add_tech_bonus = {
 							name = FRA_bomber_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = tactical_bomber
 						}
@@ -4946,7 +4932,7 @@ focus_tree = {
 					navy_experience = 25
 					add_tech_bonus = {
 							name = radar_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = radar_tech
 						}
@@ -5026,7 +5012,7 @@ focus_tree = {
 			available_if_capitulated = no
 			completion_reward = {
 					add_tech_bonus = {
-							bonus = 0.75
+							bonus = 1
 							uses = 1
 							category = para_tech
 						}
@@ -5133,6 +5119,7 @@ focus_tree = {
 			ai_will_do = {
 					factor = 100
 				}
+			will_lead_to_war_with = SOV
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -5154,6 +5141,7 @@ focus_tree = {
 			ai_will_do = {
 					factor = 100
 				}
+			will_lead_to_war_with = SWI
 			completion_reward = {
 					create_wargoal = {
 							type = annex_everything
@@ -5168,6 +5156,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = FRA_claim_rhinland
+			focus = FRA_union_latins
 		}
 		x = 37
 		y = 6
@@ -5314,6 +5303,7 @@ focus_tree = {
 			bypass = {
 					has_war_with = GER
 				}
+			will_lead_to_war_with = GER
 			ai_will_do = {
 					factor = 50
 				}
@@ -5327,7 +5317,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_humanite_unie
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_r56_goal_generic_red_freedom
 		cost = 10
 		prerequisite = {
 			focus = FRA_collectivisation
@@ -5346,12 +5336,13 @@ focus_tree = {
 					factor = 100
 				}
 			completion_reward = {
-					set_rule = {
-							can_create_factions = yes
-						}
-					create_faction = "humanite_unie"
-					add_stability = 0.1
+				set_rule = {
+					can_create_factions = yes
 				}
+				create_faction = "humanite_unie"
+				add_stability = 0.1
+				unlock_decision_category_tooltip = FRA_4th_international
+			}
 
 	}
 	focus = {
@@ -5377,6 +5368,7 @@ focus_tree = {
 			ai_will_do = {
 					factor = 50
 				}
+			will_lead_to_war_with = GER
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -5408,6 +5400,7 @@ focus_tree = {
 			ai_will_do = {
 					factor = 100
 				}
+			will_lead_to_war_with = ENG
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -5424,9 +5417,9 @@ focus_tree = {
 			focus = FRA_our_natural_borders
 		}
 		prerequisite = {
-			focus = FRA_invite_portugal
+			focus = FRA_destroy_albion
 		}
-		x = 40
+		x = 44
 		y = 6
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -5462,13 +5455,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_army_reform
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = land_doctrine
 						}
 					add_tech_bonus = {
 							name = FRA_army_reform
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = support_tech
 						}
@@ -5491,13 +5484,13 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = FRA_air_doctrine
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = air_doctrine
 						}
 					add_tech_bonus = {
 							name = FRA_cas_focus
-							bonus = 0.5
+							bonus = 1
 							uses = 1
 							category = cas_bomber
 						}
@@ -5521,7 +5514,7 @@ focus_tree = {
 					air_experience = 50
 					add_tech_bonus = {
 							name = FRA_air_doctrine
-							bonus = 0.5
+							bonus = 1
 							uses = 2
 							category = air_doctrine
 						}
@@ -5567,7 +5560,7 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 100
-			}
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -5627,6 +5620,7 @@ focus_tree = {
 				}
 			}
 		}
+		will_lead_to_war_with = GER
 		completion_reward = {
 			add_named_threat = {
 				threat = 7

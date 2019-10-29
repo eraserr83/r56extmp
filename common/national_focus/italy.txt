@@ -35,7 +35,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_the_desillusion_of_fascism
 		}
-		x = 57
+		y = 0
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -55,7 +55,7 @@ focus_tree = {
 		id = ITA_expand_the_iri_role
 		icon = GFX_goal_italy_expand_the_iri_role
 		cost = 10.00
-		x = 26
+		y = 0
 		ai_will_do = {
 			factor = 10
 		}
@@ -104,7 +104,7 @@ focus_tree = {
 		id = ITA_colonial_investments
 		icon = GFX_goal_italy_colonial_investments
 		cost = 5.00
-		x = 18
+		y = 0
 		ai_will_do = {
 			factor = 10
 		}
@@ -133,9 +133,9 @@ focus_tree = {
 		id = ITA_regia_aeronautica_2
 		icon = GFX_goal_italy_fiat_cr_32
 		cost = 5.00
-		x = 9
+		y = 0
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			completion_reward = {
 					air_experience = 30
@@ -152,9 +152,9 @@ focus_tree = {
 		id = ITA_restructure_the_divisions
 		icon = GFX_goal_italy_restructure_the_divisions
 		cost = 6.00
-		x = 42
+		y = 0
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			completion_reward = {
 					army_experience = 25
@@ -169,7 +169,7 @@ focus_tree = {
 		x = 3
 		y = 0
 		ai_will_do = {
-			factor = 10
+			factor = 40
 		}
 
 		completion_reward = {
@@ -191,9 +191,9 @@ focus_tree = {
 			custom_effect_tooltip = available_chief_of_navy
 			show_ideas_tooltip = domenico_cavagnari
 		}
-		x = 2
+		y = 01
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 
 	}
@@ -212,7 +212,7 @@ focus_tree = {
 				category = cl_tech
 			}
 		}
-		x = 1
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -233,7 +233,7 @@ focus_tree = {
 				category = ss_tech
 			}
 		}
-		x = 2
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -252,7 +252,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_naval_guerilla
 		}
-		x = 1
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -272,7 +272,7 @@ focus_tree = {
 			custom_effect_tooltip = available_chief_of_navy
 			show_ideas_tooltip = inigo_campioni
 		}
-		x = 4
+		y = 1
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -303,7 +303,7 @@ focus_tree = {
 				technology = marines_b
 			}
 		}
-		x = 3
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -325,7 +325,7 @@ focus_tree = {
 				category = bb_tech
 			}
 		}
-		x = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -356,7 +356,7 @@ focus_tree = {
 								}
 						}
 		}
-		x = 3
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -377,7 +377,7 @@ focus_tree = {
 				category = cv_tech
 			}
 		}
-		x = 5
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -396,7 +396,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_shift_toward_an_offensive_force
 		}
-		x = 5
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -409,7 +409,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_regia_aeronautica_2
 		}
-		x = 8
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -432,7 +432,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_ba_65
 		}
-		x = 7
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -454,7 +454,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_regia_aeronautica_2
 		}
-		x = 10
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -478,7 +478,7 @@ focus_tree = {
 			focus = ITA_ba_65
 			focus = ITA_sm_79
 		}
-		x = 9
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -501,7 +501,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_g_50
 		}
-		x = 8
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -534,7 +534,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_g_50
 		}
-		x = 10
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_further_pilots_training
 		}
-		x = 9
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -574,7 +574,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_sm_79
 		}
-		x = 11
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -597,9 +597,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_colonial_investments
 		}
-		x = 14
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			available = {
 					has_full_control_of_state = 271
@@ -627,8 +627,9 @@ focus_tree = {
 			focus = ITA_modernize_ethiopian_roads
 		}
 		x = 13
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			available = {
 					has_full_control_of_state = 271
@@ -661,8 +662,9 @@ focus_tree = {
 			focus = ITA_modernize_ethiopian_roads
 		}
 		x = 14
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			available = {
 					has_full_control_of_state = 271
@@ -693,6 +695,7 @@ focus_tree = {
 			focus = ITA_imperial_line
 		}
 		x = 13
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -719,8 +722,9 @@ focus_tree = {
 			focus = ITA_modernize_ethiopian_roads
 		}
 		x = 15
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			available = {
 					has_full_control_of_state = 271
@@ -753,8 +757,9 @@ focus_tree = {
 			focus = ITA_colonial_investments
 		}
 		x = 18
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			available = {
 					custom_trigger_tooltip = {
@@ -801,8 +806,9 @@ focus_tree = {
 			focus = ITA_finish_the_litoranea_libica
 		}
 		x = 17
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 			available = {
 					has_full_control_of_state = 448
@@ -839,8 +845,9 @@ focus_tree = {
 			focus = ITA_tripoli_explosives_factory
 		}
 		x = 16
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 			available = {
 					custom_trigger_tooltip = {
@@ -905,8 +912,9 @@ focus_tree = {
 			focus = ITA_finish_the_litoranea_libica
 		}
 		x = 18
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 			available = {
 					custom_trigger_tooltip = {
@@ -953,7 +961,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_finish_the_litoranea_libica
 		}
-		x = 19
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -998,7 +1006,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_colonial_investments
 		}
-		x = 22
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -1037,7 +1045,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_increase_settlements_in_eritrea
 		}
-		x = 21
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1067,7 +1075,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_eritrean_coast_oil_extraction
 		}
-		x = 20
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1131,7 +1139,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_increase_settlements_in_eritrea
 		}
-		x = 22
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1171,8 +1179,9 @@ focus_tree = {
 			focus = ITA_expand_the_iri_role
 		}
 		x = 25
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 30
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1203,8 +1212,9 @@ focus_tree = {
 			focus = ITA_expand_the_iri_role
 		}
 		x = 27
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1238,8 +1248,9 @@ focus_tree = {
 			focus = ITA_increase_marble_exportations
 		}
 		x = 25
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			completion_reward = {
 					every_state = {
@@ -1268,8 +1279,9 @@ focus_tree = {
 			focus = ITA_bring_industry_to_the_mezzogiorno
 		}
 		x = 24
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1307,8 +1319,9 @@ focus_tree = {
 			focus = ITA_expand_hydroelectricity_production
 		}
 		x = 27
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 15
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1341,8 +1354,9 @@ focus_tree = {
 			focus = ITA_prepare_the_economy_for_war
 		}
 		x = 26
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			completion_reward = {
 					every_state = {
@@ -1377,8 +1391,9 @@ focus_tree = {
 			focus = ITA_bring_industry_to_the_mezzogiorno
 		}
 		x = 25
+		y = 4
 		ai_will_do = {
-			factor = 10
+			factor = 12
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1463,8 +1478,9 @@ focus_tree = {
 						}
 		}
 		x = 27
+		y = 4
 		ai_will_do = {
-			factor = 10
+			factor = 13
 		}
 
 	}
@@ -1476,8 +1492,9 @@ focus_tree = {
 			focus = ITA_prepare_the_economy_for_war
 		}
 		x = 28
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -1512,8 +1529,9 @@ focus_tree = {
 			focus = ITA_restructure_the_divisions
 		}
 		x = 34
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 25
 		}
 			completion_reward = {
 					add_tech_bonus = {
@@ -1536,7 +1554,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_general_equipment_modernization
 		}
-		x = 32
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1552,7 +1570,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_expand_the_elite_forces
 		}
-		x = 31
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1571,7 +1589,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_alpini
 		}
-		x = 30
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1601,7 +1619,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_expand_the_elite_forces
 		}
-		x = 32
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1616,7 +1634,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_expand_the_elite_forces
 		}
-		x = 33
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1636,7 +1654,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_general_equipment_modernization
 		}
-		x = 34
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1656,7 +1674,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_cannone_da_47_32
 		}
-		x = 34
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1680,7 +1698,7 @@ focus_tree = {
 			focus = ITA_the_new_arditi
 			focus = ITA_carro_armato
 		}
-		x = 33
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -1696,7 +1714,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_cannone_da_47_32
 		}
-		x = 35
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1720,7 +1738,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_end_the_army_corruption
 		}
-		x = 39
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -1739,7 +1757,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_the_backbone_of_the_party
 		}
-		x = 38
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1758,7 +1776,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_adapt_great_war_tactics
 		}
-		x = 37
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1777,7 +1795,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_adapt_great_war_tactics
 		}
-		x = 38
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1796,7 +1814,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_the_backbone_of_the_party
 		}
-		x = 45
+		y = 1
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -1824,7 +1842,7 @@ focus_tree = {
 			focus = ITA_follow_pariani_plan
 			focus = ITA_expand_the_comando_supremo
 		}
-		x = 40
+		y = 2
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -1848,7 +1866,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_appoint_messe_2
 		}
-		x = 40
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1864,7 +1882,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_war_of_rapid_decision
 		}
-		x = 40
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1885,7 +1903,7 @@ focus_tree = {
 			focus = ITA_expand_the_comando_supremo
 			focus = ITA_appoint_messe_2
 		}
-		x = 42
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -1905,7 +1923,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_follow_pariani_plan
 		}
-		x = 42
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1921,7 +1939,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_maintain_the_three_branches_independence
 		}
-		x = 42
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -1942,7 +1960,7 @@ focus_tree = {
 			focus = ITA_follow_pariani_plan
 			focus = ITA_appoint_messe_2
 		}
-		x = 44
+		y = 2
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -1966,7 +1984,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_expand_the_comando_supremo
 		}
-		x = 44
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1982,7 +2000,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_war_of_positions
 		}
-		x = 44
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2000,7 +2018,7 @@ focus_tree = {
 			focus = ITA_focus_on_firepower
 			focus = ITA_increase_the_number_of_nco
 		}
-		x = 42
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2020,7 +2038,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_end_the_army_corruption
 		}
-		x = 46
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -2036,7 +2054,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_reshuffle_the_officer_corps
 		}
-		x = 46
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2052,7 +2070,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_reshuffle_the_officer_corps
 		}
-		x = 47
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2073,7 +2091,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_question_the_high_command
 		}
-		x = 47
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2092,7 +2110,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_the_stab_in_the_back
 		}
-		x = 53
+		y = 1
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -2130,6 +2148,11 @@ focus_tree = {
 							has_country_flag = ITA_stresa_front_refused_flag
 						}
 				}
+			select_effect = {
+				ENG = {
+					country_event = { id = r56_italy.12 days = 5 }
+				}
+			}
 			completion_reward = {
 					custom_effect_tooltip = ITA_revive_the_stresa_front_tt
 				}
@@ -2142,7 +2165,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_revive_the_stresa_front
 		}
-		x = 50
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -2158,7 +2181,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_resume_food_importation
 		}
-		x = 49
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2174,7 +2197,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_resume_food_importation
 		}
-		x = 51
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -2201,8 +2224,9 @@ focus_tree = {
 			focus = ITA_revive_the_stresa_front
 		}
 		x = 52
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 40
 		}
 			available = {
 					ALB = {
@@ -2247,8 +2271,9 @@ focus_tree = {
 			focus = ITA_revive_the_stresa_front
 		}
 		x = 54
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 80
 		}
 			bypass = {
 					OR = {
@@ -2299,8 +2324,9 @@ focus_tree = {
 			focus = ITA_joint_austrian_gaurantee
 		}
 		x = 53
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 65
 		}
 			available = {
 					YUG = {
@@ -2375,7 +2401,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_demand_dalmatia
 		}
-		x = 54
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -2407,8 +2433,9 @@ focus_tree = {
 			focus = ITA_revive_the_stresa_front
 		}
 		x = 61
+		y = 1
 		ai_will_do = {
-			factor = 10
+			factor = 85
 		}
 			completion_reward = {
 					add_ideas = vittoria_mutilata
@@ -2424,8 +2451,9 @@ focus_tree = {
 			focus = ITA_revive_the_stresa_front
 		}
 		x = 56
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 			completion_reward = {
 					add_ideas = ITA_nationalize_the_banking_sector
@@ -2434,15 +2462,16 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mobilize_womens
-		icon = GFX_focus_mex_soldaderas
+		icon = GFX_goal_womens_rights2
 		cost = 10.00
 		prerequisite = {
 			focus = ITA_revive_the_stresa_front
 			focus = ITA_the_stab_in_the_back
 		}
 		x = 58
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 55
 		}
 			completion_reward = {
 					add_ideas = ITA_mobilize_womens
@@ -2460,8 +2489,9 @@ focus_tree = {
 			focus = ITA_mobilize_womens
 		}
 		x = 57
+		y = 3
 		ai_will_do = {
-			factor = 10
+			factor = 35
 		}
 			completion_reward = {
 					add_ideas = ITA_expand_ond_membership
@@ -2470,14 +2500,15 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_increase_wheat_production
-		icon = GFX_goal_generic_construction2
+		icon = GFX_goal_generic_wheat
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_the_stab_in_the_back
 		}
 		x = 60
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 75
 		}
 			completion_reward = {
 					add_ideas = ITA_increase_wheat_production
@@ -2492,8 +2523,9 @@ focus_tree = {
 			focus = ITA_the_stab_in_the_back
 		}
 		x = 62
+		y = 2
 		ai_will_do = {
-			factor = 10
+			factor = 75
 		}
 			completion_reward = {
 					add_ideas = ITA_move_toward_autarky
@@ -2524,17 +2556,17 @@ focus_tree = {
 		}
 		x = 61
 		y = 3
-			ai_will_do = {
-					factor = 10
-					modifier = {
-							factor = 0
-							date < 1937.1.1
-						}
-				}
-			completion_reward = {
-					ALB = {
-							country_event = {
-									id = italy.3
+		ai_will_do = {
+			factor = 80
+			modifier = {
+				factor = 0
+				date < 1938.6.6
+			}
+		}
+		completion_reward = {
+			ALB = {
+				country_event = {
+					id = italy.3
 								}
 						}
 				}
@@ -2550,12 +2582,23 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_cooperation_with_germany
 		}
-		x = 59
+		y = 4
 		ai_will_do = {
 			factor = 0
 			modifier = {
 				is_historical_focus_on = no
-				factor = 4
+				factor = 60
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					is_in_faction_with = HUN
+					HUN = {
+						is_faction_leader = yes
+					}
+				}
+				is_faction_leader = yes
 			}
 		}
 			available = {
@@ -2594,8 +2637,9 @@ focus_tree = {
 			focus = ITA_militarize_the_rome_protocols
 		}
 		x = 54
+		y = 5
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 			available = {
 					BUL = {
@@ -2625,7 +2669,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_militarize_the_rome_protocols
 		}
-		x = 56
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -2680,7 +2724,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_tiberio
 		}
-		x = 53
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2706,7 +2750,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_tiberio
 		}
-		x = 55
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2749,7 +2793,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_tiberio
 		}
-		x = 57
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2775,8 +2819,9 @@ focus_tree = {
 			focus = ITA_our_latin_brothers
 		}
 		x = 58
+		y = 5
 		ai_will_do = {
-			factor = 10
+			factor = 4
 		}
 			available = {
 					NOT = {
@@ -2806,8 +2851,9 @@ focus_tree = {
 			focus = ITA_operazione_trajan
 		}
 		x = 60
+		y = 5
 		ai_will_do = {
-			factor = 10
+			factor = 6
 		}
 			available = {
 					ROM = {
@@ -2837,9 +2883,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_militarize_the_rome_protocols
 		}
+		bypass = {
+			is_in_faction_with = GER
+		}
 		x = 63
+		y = 4
 		ai_will_do = {
-			factor = 10
+			factor = 60
 		}
 			available = {
 				is_puppet = no
@@ -2847,6 +2897,7 @@ focus_tree = {
 							has_government = fascism
 							NOT = {
 									has_war_with = ITA
+									has_completed_focus = GER_prepare_italian_invasion
 								}
 							is_faction_leader = yes
 						}
@@ -2870,8 +2921,9 @@ focus_tree = {
 			focus = ITA_cooperation_with_germany
 		}
 		x = 62
+		y = 5
 		ai_will_do = {
-			factor = 10
+			factor = 50
 		}
 			completion_reward = {
 					create_wargoal = {
@@ -2891,7 +2943,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_invade_greece
 		}
-		x = 61
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -2944,7 +2996,7 @@ focus_tree = {
 					add_state_claim = 447
 					add_state_claim = 446
 				}
-		x = 62
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -2958,8 +3010,13 @@ focus_tree = {
 			focus = ITA_invade_greece
 		}
 		x = 63
+		y = 6
 		ai_will_do = {
-			factor = 10
+			factor = 65
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 			completion_reward = {
 					create_wargoal = {
@@ -2986,7 +3043,7 @@ focus_tree = {
 				add_ideas = ITA_giannini_sarnow_protocols_ger
 			}
 		}
-		x = 64
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -3002,7 +3059,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_german_military_assistance
 		}
-		x = 66
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -3022,7 +3079,7 @@ focus_tree = {
 			add_ideas = ITA_scientific_cooperation_with_germany
 			add_research_slot = 1
 		}
-		x = 65
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -3038,7 +3095,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_high_command_loyalty
 		}
-		x = 37
+		y = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -3057,8 +3114,15 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_our_latin_brothers
 			focus = ITA_operazione_trajan
+		bypass = {
+			any_country = {
+				original_tag = SPR
+				has_civil_war = no
+				is_in_faction_with = ITA
+			}
 		}
 		x = 59
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -3120,6 +3184,7 @@ focus_tree = {
 											has_civil_war = no
 											OR = {
 													has_government = fascism
+													has_government = neutrality
 												}
 										}
 								}
@@ -3143,6 +3208,7 @@ focus_tree = {
 			focus = ITA_operazione_plautius
 		}
 		x = 54
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3174,7 +3240,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_our_latin_brothers
 		}
-		x = 60
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3203,7 +3269,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_trajan
 		}
-		x = 58
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3229,7 +3295,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_achaicus
 		}
-		x = 56
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3271,7 +3337,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_operazione_vulso
 		}
-		x = 56
+		y = 8
 		ai_will_do = {
 			factor = 10
 		}
