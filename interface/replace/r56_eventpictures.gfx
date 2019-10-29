@@ -724,6 +724,18 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Cairo_conference.dds"
 	}
 
+###------> PER <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_news_event_reza_shah_army"
+		texturefile = "gfx/event_pictures/news_event_reza_shah_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_anglo_iranian_oil_company"
+		texturefile = "gfx/event_pictures/news_event_anglo_iranian_oil_company.dds"
+	}
+
 ###------> FIN <><> <><> <><> <><> <><>
 
 	spriteType = {
@@ -756,6 +768,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_france_leon_jouhaux"
 		texturefile = "gfx/event_pictures/report_event_france_leon_jouhaux.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_france_franchet_d_esperey_funerals"
+		texturefile = "gfx/event_pictures/report_event_france_franchet_d_esperey_funerals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_france_popular_front"
+		texturefile = "gfx/event_pictures/news_event_france_popular_front.dds"
 	}
 
 ###------> GRE <><> <><> <><> <><> <><>
@@ -1345,6 +1367,12 @@ spriteType = {
 		texturefile = "gfx/event_pictures/report_event_malayan_emergency.dds"
 	}
 
+###------> UKR <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_report_event_ukraine_war_of_independence"
+		texturefile = "gfx/event_pictures/report_event_ukraine_war_of_independence.dds"
+	}
 
 ###------> ITA <><> <><> <><> <><> <><>
 
@@ -1436,6 +1464,35 @@ spriteType = {
 	spriteType = {
 		name = "GFX_report_event_italian_invasion_of_yugoslavia"
 		texturefile = "gfx/event_pictures/report_event_italian_invasion_of_yugoslavia.dds"
+	}
+
+###------> SPR <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_report_event_franco_salazar"
+		texturefile = "gfx/event_pictures/report_event_franco_salazar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_gibraltar"
+		texturefile = "gfx/event_pictures/report_event_gibraltar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_azana_speech"
+		texturefile = "gfx/event_pictures/report_event_azana_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_spanish_parliament"
+		texturefile = "gfx/event_pictures/report_event_spanish_parliament.dds"
+	}
+
+###------> IRE <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_news_event_de_valera_churchill"
+		texturefile = "gfx/event_pictures/news_event_de_valera_churchill.dds"
 	}
 
 }

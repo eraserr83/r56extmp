@@ -94,7 +94,6 @@ spriteTypes = {
 		name = "GFX_excavation_d_medium"
 		texturefile = "gfx/interface/technologies/industry/r56_tech_excavation_04.dds"
 	}
-	
 #-> Rubber plant <><>
 	SpriteType = {
 		name = "GFX_rubber_plant_a_medium"

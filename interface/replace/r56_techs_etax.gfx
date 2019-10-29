@@ -40,11 +40,11 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_etax_business_interests_medium"
-		texturefile = "gfx/interface/technologies/streamlined_line.dds"
+		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
 	}
 	SpriteType = {
 		name = "GFX_etax_cost_plus_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
+		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}
 	SpriteType = {
 		name = "GFX_etax_production_in_depth_medium"
@@ -100,7 +100,7 @@ spriteTypes = {
 #-> The ends <><>
 	SpriteType = {
 		name = "GFX_etax_the_ends_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
+		texturefile = "gfx/interface/technologies/werwolf_guerillas.dds"
 	}
 	SpriteType = {
 		name = "GFX_etax_desperation_medium"

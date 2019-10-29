@@ -1792,12 +1792,12 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
 
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 2150 height = 1250 }
-	
-			}
+#			containerWindowType = {
+#				name = "size_filler"
+#				position = { x=0 y=0 }
+#				size = { width = 1700 height = 1200 }
+#	
+#			}
 
 			iconType = {
 				name ="mtgnavaltechtree_bg"
@@ -2357,7 +2357,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cas"
-				position = { x = 100 y = 210 }
+				position = { x = 83 y = 245 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2371,7 +2371,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_cv_cas"
-				position = { x = 305 y = 210 }
+				position = { x = 300 y = 245 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2386,7 +2386,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "airtech_subtitle_nav"
-				position = { x = 950 y = 210 }
+				position = { x = 950 y = 245 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2736,7 +2736,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "industry_year_right"
-				position = { x=200 y=40
+				position = { x=-100 y=40
 				}
 				size = { width = 80 height = 100% }
 				orientation = upper_right
