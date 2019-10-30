@@ -872,8 +872,8 @@ technologies = {
 	
 	tech_special_forces = {
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.05
-			acclimatization_cold_climate_gain_factor = 0.05
+			acclimatization_hot_climate_gain_factor = 0.25
+			acclimatization_cold_climate_gain_factor = 0.25
 		}
 
 		path = {
@@ -886,7 +886,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1938
 		folder = {
 			name = infantry_folder
@@ -924,7 +924,7 @@ technologies = {
 		}
 
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -955,7 +955,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -988,7 +988,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = infantry_folder
@@ -1025,7 +1025,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = infantry_folder
@@ -1059,7 +1059,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1946
 		folder = {
 			name = infantry_folder
@@ -1093,7 +1093,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1950
 		folder = {
 			name = infantry_folder
@@ -1122,7 +1122,7 @@ technologies = {
 		
 		special_forces_no_supply_grace = 48
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1954
 		folder = {
 			name = infantry_folder
