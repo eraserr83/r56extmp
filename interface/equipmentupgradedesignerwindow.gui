@@ -2702,7 +2702,7 @@ guiTypes = {
 				clicksound = click_default
 			}
 		}
--		containerWindowType = {
+		containerWindowType = {
 			name = "ship_camouflage_ugrade"
 			position = { x = 409 y = 30 }
 			size = { width=100 height=60 }

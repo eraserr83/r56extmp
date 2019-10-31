@@ -1,0 +1,19 @@
+atl_sphere_of_influence_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_picture_chi_political_support
+	
+	allowed = {
+		always = yes
+	}
+	
+	visible = {
+		is_major = yes
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 0
+	}
+}

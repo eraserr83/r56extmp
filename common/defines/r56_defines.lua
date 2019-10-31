@@ -65,6 +65,7 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = { -- Chances
 	0.40, --15% for second trait after that
 	0.05
 }
+NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.0
 
 -- Technology
 NDefines.NTechnology.BASE_TECH_COST = 65

@@ -1,0 +1,67 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+					is_major = no
+					num_of_factories < 10
+				}
+				add_ideas = extra_minor_country_idea
+			}
+			every_country = {
+				limit = { 
+					is_major = no
+					num_of_factories > 9
+				}
+				add_ideas = minor_country_idea
+			}
+			every_country = {
+				limit = { 
+					is_major = yes
+					OR = { 
+						has_idea = minor_country_idea
+						has_idea = extra_minor_country_idea
+					}
+				}
+				remove_ideas = extra_minor_country_idea
+				remove_ideas = minor_country_idea
+			}
+		}
+	}
+	
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = { 
+					is_major = no
+					num_of_factories < 10
+					NOT = { has_idea = extra_minor_country_idea }
+				}
+				remove_ideas = minor_country_idea
+				add_ideas = extra_minor_country_idea
+			}
+			every_country = {
+				limit = { 
+					is_major = no 
+					num_of_factories > 9
+					NOT = { has_idea = minor_country_idea }
+				}
+				remove_ideas = extra_minor_country_idea
+				add_ideas = minor_country_idea
+			}
+			every_country = {
+				limit = { 
+					is_major = yes
+					OR = { 
+						has_idea = minor_country_idea
+						has_idea = extra_minor_country_idea
+					}
+				}
+				remove_ideas = extra_minor_country_idea
+				remove_ideas = minor_country_idea
+			}
+		}
+	}
+	
+}

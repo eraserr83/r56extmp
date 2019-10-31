@@ -1,0 +1,16 @@
+opinion_modifiers = {
+	
+	sphere_of_influence_trade_modifier = {
+		trade = yes
+		value = 50
+	}
+	
+	# Generic
+	Generic_alliance_axis = { value = 30 }
+	
+	Generic_alliance_comintern = { value = 30 }
+	
+	Generic_alliance_alli = { value = 30 }
+	
+	Generic_alliance_alli_trade = { trade = yes value = 30 }
+}

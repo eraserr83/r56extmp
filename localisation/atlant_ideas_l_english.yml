@@ -1,0 +1,11 @@
+﻿l_english:
+
+atl_sphere_of_influence_category:0 "Sphere of influence"
+atl_sphere_of_influence_category_desc:0 "The sphere of influence of our state is determined by regional and small powers with which we have good relations. These countries will slowly move into our ideology and help economically.\nNecessary relationship for the sphere of interest: §Y25§!\nNecessary relationship for the sphere of influence: §Y50§!"
+sphere_of_influence:0 "[From.GetName] - sphere of interest"
+sphere_of_influence_2:0 "[From.GetName] - sphere of influence"
+break_sphere_of_influence:0 "Remove the state [From.GetName] from the sphere of influence"
+
+sphere_of_interest:0 "Sphere of interest"
+sphere_of_influence_modifier:0 "Sphere of influence"
+sphere_of_influence_trade_modifier:0 "Sphere of influence"
