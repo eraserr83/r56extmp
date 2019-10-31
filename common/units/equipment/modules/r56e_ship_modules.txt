@@ -8,7 +8,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 4
 			anti_air_attack = 5
-			build_cost_ic = 300
+			build_cost_ic = 120
 		}
 		build_cost_resources = {
 			steel = 1
@@ -32,7 +32,7 @@ equipment_modules = {
 		add_stats = {
 			
 			hg_attack = 12
-			build_cost_ic = 1200
+			build_cost_ic = 400
 		}
 		
 		add_average_stats = {
@@ -56,7 +56,7 @@ equipment_modules = {
 		add_stats = {
 			
 			hg_attack = 30
-			build_cost_ic = 2000
+			build_cost_ic = 500
 		}
 		
 		add_average_stats = {
@@ -80,7 +80,7 @@ equipment_modules = {
 		add_stats = {
 			
 			hg_attack = 36
-			build_cost_ic = 2000
+			build_cost_ic = 500
 		}
 		
 		add_average_stats = {
@@ -103,7 +103,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 16
-			build_cost_ic = 1350
+			build_cost_ic = 320
 		}
 		multiply_stats = {
 			naval_speed = -0.05
@@ -116,12 +116,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_triple_heavy_battery
-			convert_cost_ic = 1000
+			convert_cost_ic = 200
 		}
 		
 		can_convert_from = {
 			module = ship_triple_heavy_battery_1
-			convert_cost_ic = 700
+			convert_cost_ic = 140
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -134,7 +134,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 36
-			build_cost_ic = 2500
+			build_cost_ic = 625
 		}
 		multiply_stats = {
 			naval_speed = -0.10
@@ -147,12 +147,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_heavy_battery
-			convert_cost_ic = 1500
+			convert_cost_ic = 400
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_heavy_battery_1
-			convert_cost_ic = 1000
+			convert_cost_ic = 500
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -165,7 +165,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 48
-			build_cost_ic = 2750
+			build_cost_ic = 690
 		}
 		multiply_stats = {
 			naval_speed = -0.12
@@ -178,12 +178,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_triple_heavy_battery
-			convert_cost_ic = 1600
+			convert_cost_ic = 400
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_triple_heavy_battery_1
-			convert_cost_ic = 1100
+			convert_cost_ic = 225
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -196,7 +196,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 18
-			build_cost_ic = 1550
+			build_cost_ic = 380
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -209,12 +209,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_triple_heavy_battery
-			convert_cost_ic = 1300
+			convert_cost_ic = 250
 		}
 		
 		can_convert_from = {
 			module = ship_triple_heavy_battery_2
-			convert_cost_ic = 700
+			convert_cost_ic = 178
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -227,7 +227,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 39
-			build_cost_ic = 3000
+			build_cost_ic = 750
 		}
 		multiply_stats = {
 			naval_speed = -0.15
@@ -240,12 +240,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_heavy_battery
-			convert_cost_ic = 1750
+			convert_cost_ic = 500
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_heavy_battery_2
-			convert_cost_ic = 1250
+			convert_cost_ic = 350
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -258,7 +258,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 54
-			build_cost_ic = 3300
+			build_cost_ic = 825
 		}
 		multiply_stats = {
 			naval_speed = -0.18
@@ -271,12 +271,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_triple_heavy_battery
-			convert_cost_ic = 1850
+			convert_cost_ic = 415
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_triple_heavy_battery_2
-			convert_cost_ic = 1350
+			convert_cost_ic = 220
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -291,7 +291,7 @@ equipment_modules = {
 		add_stats = {
 			
 			hg_attack = 20
-			build_cost_ic = 1650
+			build_cost_ic = 410
 			
 		}
 		multiply_stats = {
@@ -306,12 +306,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_triple_heavy_battery
-			convert_cost_ic = 1900
+			convert_cost_ic = 350
 		}
 		
 		can_convert_from = {
 			module = ship_triple_heavy_battery_3
-			convert_cost_ic = 900
+			convert_cost_ic = 180
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -324,7 +324,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 45
-			build_cost_ic = 3500
+			build_cost_ic = 875
 		}
 		multiply_stats = {
 			naval_speed = -0.18
@@ -338,12 +338,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_heavy_battery
-			convert_cost_ic = 2000
+			convert_cost_ic = 644
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_heavy_battery_2
-			convert_cost_ic = 1500
+			convert_cost_ic = 450
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -356,7 +356,7 @@ equipment_modules = {
 		
 		add_stats = {
 			hg_attack = 60
-			build_cost_ic = 3600
+			build_cost_ic = 900
 		}
 		multiply_stats = {
 			naval_speed = -0.20
@@ -370,12 +370,12 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_triple_heavy_battery
-			convert_cost_ic = 2100
+			convert_cost_ic = 550
 		}
 		
 		can_convert_from = {
 			module = ship_fixed_triple_heavy_battery_2
-			convert_cost_ic = 1600
+			convert_cost_ic = 350
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -391,7 +391,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 18.0
-			build_cost_ic = 1500
+			build_cost_ic = 375
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
@@ -406,11 +406,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_light_battery
-			convert_cost_ic = 800
+			convert_cost_ic = 175
 		}
 		can_convert_from = {
 			module_category = ship_fixed_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 150
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -420,7 +420,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 23.0
-			build_cost_ic = 1600
+			build_cost_ic = 400
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
@@ -435,11 +435,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 800
+			convert_cost_ic = 200
 		}
 		can_convert_from = {
 			module = ship_medium_battery_1
-			convert_cost_ic = 400
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = ship_fixed_medium_battery_1
@@ -453,7 +453,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 25.0
-			build_cost_ic = 1650
+			build_cost_ic = 415
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
@@ -468,11 +468,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 1000
+			convert_cost_ic = 207
 		}
 		can_convert_from = {
 			module = ship_medium_battery_3
-			convert_cost_ic = 500
+			convert_cost_ic = 105
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -482,7 +482,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 		add_stats = {
 			hg_attack = 27.0
-			build_cost_ic = 1800
+			build_cost_ic = 450
 			surface_visibility = 3.5
 		}
 		multiply_stats = {
@@ -497,11 +497,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 1200
+			convert_cost_ic = 225
 		}
 		can_convert_from = {
 			module = ship_medium_battery_3
-			convert_cost_ic = 600
+			convert_cost_ic = 115
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -513,7 +513,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 12
-			build_cost_ic = 450
+			build_cost_ic = 150
 		}
 		multiply_stats = {
 			naval_speed = -0.08
@@ -524,7 +524,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 75
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -536,7 +536,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 15
-			build_cost_ic = 550
+			build_cost_ic = 125
 		}
 		multiply_stats = {
 			naval_speed = -0.10
@@ -547,7 +547,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 60
 			convert_cost_resources = {
 				steel = 1
 			}
@@ -566,7 +566,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 18
-			build_cost_ic = 600
+			build_cost_ic = 200
 		}
 		multiply_stats = {
 			naval_speed = -0.12
@@ -577,7 +577,7 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 100
 			convert_cost_resources = {
 				steel = 1
 			}
@@ -596,7 +596,7 @@ equipment_modules = {
 
 		add_stats = {	
 			lg_attack = 18
-			build_cost_ic = 550
+			build_cost_ic = 135
 		}
 		multiply_stats = {
 			naval_speed = -0.15
@@ -607,14 +607,14 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_fixed_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 60
 			convert_cost_resources = {
 				steel = 1
 			}
 		}
 		can_convert_from = {
 			module = ship_light_fixed_medium_battery_3
-			convert_cost_ic = 400
+			convert_cost_ic = 60
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -631,7 +631,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 5.5
 			anti_air_attack = 4.5
-			build_cost_ic = 290
+			build_cost_ic = 80
 		}
 		
 		multiply_stats = {
@@ -644,7 +644,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = ship_secondaries
-			convert_cost_ic = 150
+			convert_cost_ic = 40
 		}
 		critical_parts = { damaged_secondaries }
 	}
@@ -879,7 +879,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_planting = 2
-			build_cost_ic = 120
+			build_cost_ic = 60
 		}
 		multiply_stats = {
 			naval_speed = -0.02			
@@ -896,7 +896,7 @@ equipment_modules = {
 		
 		add_stats = {
 			mines_sweeping = 2
-			build_cost_ic = 60
+			build_cost_ic = 20
 		}
 
 		multiply_stats = {
