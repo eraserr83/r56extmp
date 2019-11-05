@@ -23,7 +23,8 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 1
-		max_organisation = 10	
+		max_organisation = 10
+		maximum_speed = 4
 		default_morale = 0.3
 		manpower = 400
 		training_time = 120
@@ -83,8 +84,8 @@ sub_units = {
 		can_be_parachuted = no
 
 		# Important Ability
-		supply_consumption_factor = -0.35
-		own_equipment_fuel_consumption_mult = 2.0
+		supply_consumption_factor = -0.25
+		fuel_consumption_factor = -0.05
 		
 		essential = {
 			support_equipment
@@ -92,11 +93,11 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 12
-			motorized_equipment = 65
+			support_equipment = 20
+			motorized_equipment = 35
 		}
 
-		own_equipment_fuel_consumption_mult = 1.0 # full fuel
+		own_equipment_fuel_consumption_mult = 0.0 # full fuel
 
 	}
 }

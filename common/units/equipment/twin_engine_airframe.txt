@@ -212,7 +212,7 @@ equipments = {
 			rubber = 1
 		}
         naval_strike_attack = 12
-		naval_strike_targetting = 4
+		naval_strike_targetting = 6
 		is_convertable = yes
 	}
 
@@ -244,7 +244,7 @@ equipments = {
 			rubber = 1
 		}
         naval_strike_attack = 15
-		naval_strike_targetting = 4
+		naval_strike_targetting = 6
 		is_convertable = yes
 	}
 

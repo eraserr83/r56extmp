@@ -118,6 +118,7 @@ equipments = {
 		visual_level = 3
 
 		can_convert_from = {
+			anti_air_equipment_1
 			anti_air_equipment_2
 			anti_air_equipment_3
 		}

@@ -214,7 +214,7 @@ equipments = {
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 15
-		naval_strike_targetting = 8
+		naval_strike_targetting = 10
 
 		build_cost_ic = 26
 		resources = {
@@ -786,7 +786,7 @@ equipments = {
 		air_attack = 10
 		air_defence = 14
 		naval_strike_attack = 20
-		naval_strike_targetting = 10
+		naval_strike_targetting = 12
 
 		build_cost_ic = 28
 		resources = {
