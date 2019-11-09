@@ -1,266 +1,605 @@
 atl_sphere_of_influence_category = {
 
-	sphere_of_influence = {
+	infrastructure = {
 
-		icon = generic_nationalism
-		
+		icon = generic_industry
+
 		available = {
-			is_major = yes
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 25
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_interest
-					}
+			any_owned_state = {
+				NOT = { has_state_flag = soi_infra }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 1
 				}
 			}
 		}
 
 		visible = {
-			is_major = yes
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 25
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_interest
-					}
+			any_owned_state = {
+				NOT = { has_state_flag = soi_infra }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 1
 				}
 			}
 		}
 
-		target_trigger = {
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 25
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_interest
-					}
-				}
-			}
-		}
+		fire_only_once = no
 
-		remove_effect = {
-			FROM = {
-				add_relation_modifier = {
-					target = ROOT
-					modifier = sphere_of_interest
-				}
-			}
-		}
-		
-		cost = 50
-
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	
-	sphere_of_influence_2 = {
-
-		icon = generic_nationalism
-		
-		available = {
-			is_major = yes
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 50
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				has_relation_modifier = {
-					target = ROOT
-					modifier = sphere_of_interest
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-			NOT = {
-				any_other_country = {
-					FROM = {
-						has_relation_modifier = {
-							target = PREV
-							modifier = sphere_of_influence_modifier
-						}
-					}
-				}
-			}
-		}
-	}
-
-	break_sphere_of_influence = {
-
-		icon = generic_independence
-		
-		available = {
-			is_major = yes
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 50
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				has_relation_modifier = {
-					target = ROOT
-					modifier = sphere_of_interest
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-			any_other_country = {
-				FROM = {
-					has_relation_modifier = {
-						target = PREV
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-		}
-
-		visible = {
-			is_major = yes
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 50
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				has_relation_modifier = {
-					target = ROOT
-					modifier = sphere_of_interest
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-			any_other_country = {
-				FROM = {
-					has_relation_modifier = {
-						target = PREV
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				is_major = no
-				is_puppet = no
-				is_subject = no
-				has_opinion = {
-					target = ROOT
-					value > 50
-				}
-				OR = {
-					has_idea = minor_country_idea
-					has_idea = extra_minor_country_idea
-				}
-				has_relation_modifier = {
-					target = ROOT
-					modifier = sphere_of_interest
-				}
-				NOT = {
-					has_relation_modifier = {
-						target = ROOT
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-			any_other_country = {
-				FROM = {
-					has_relation_modifier = {
-						target = PREV
-						modifier = sphere_of_influence_modifier
-					}
-				}
-			}
-		}
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
 
 		complete_effect = {
-			every_country = {
-				limit = {
-					FROM = {
-						has_relation_modifier = {
-							target = PREV
-							modifier = sphere_of_influence_modifier
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 1
 						}
+					NOT = { has_state_flag = soi_infra }
 					}
+					
+				add_building_construction = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
 				}
-				FROM = {
-					remove_relation_modifier = {
-						target = PREV
-						modifier = sphere_of_influence_modifier
+				set_state_flag = soi_infra
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { 
+							state = PREV.PREV
+						}
+						NOT = { has_state_flag = soi_infra }
 					}
+				add_building_construction = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+					}
+					set_state_flag = soi_infra
 				}
 			}
 		}
-		
-		cost = 100
 
 		ai_will_do = {
-			factor = 4
+			base = 0
+			}
 		}
-	}
+
+	industrial_complex = {
+
+		icon = generic_industry
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					}
+			}
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = no
+						free_building_slots = {
+						building = industrial_complex
+						size > 5
+						}
+					NOT = { has_state_flag = soi_civ }
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = soi_civ
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+	
+	arms_factory = {
+
+		icon = generic_industry
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = arms_factory
+					size > 3
+					}
+			}
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = arms_factory
+					size > 3
+					}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = no
+						free_building_slots = {
+						building = arms_factory
+						size > 3
+						}
+					NOT = { has_state_flag = soi_mil }
+					}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = soi_mil
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+	dockyard = {
+
+		icon = generic_industry
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 3
+					}
+			}
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 3
+					}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = yes
+						free_building_slots = {
+						building = dockyard
+						size > 3
+						}
+					NOT = { has_state_flag = soi_dock }
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = soi_dock
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+	experience = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			army_experience = 250
+			navy_experience = 100
+			air_experience = 250
+			}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+		airexperience = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			air_experience = 1500
+			}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+		PP = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			add_political_power = 300
+			}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+		
+	Fuelmax = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			set_fuel_ratio = 1
+			}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+	LandBundle = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 25000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 7000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 5000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 12000
+				producer = GER
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+	AirBundle = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 200
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 200
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment_1
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_fighter_equipment_1
+				amount = 200
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment_1
+				amount = 200
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment_1
+				amount = 50
+				producer = GER
+			}
+			
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+	Technology = {
+
+		icon = generic_industry
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			add_tech_bonus = {
+			bonus = 10
+			ahead_reduction = 10
+			uses = 2
+			category = light_air
+			category = medium_air
+			category = heavy_air
+			category = armor
+			category = cat_light_armor
+			category = cat_medium_armor
+			category = cat_heavy_armor
+			category = artillery
+			category = cat_anti_tank
+			category = naval_air
+			category = infantry_weapons
+			category = motorized_equipment
+			category = cat_mechanized_equipment
+			category = naval_equipment
+			category = rocketry
+			category = nuclear
+			category = industry
+			category = electronics
+			category = land_doctrine
+			category = air_doctrine
+			category = naval_doctrine
+			category = strategic_destruction_tree
+			category = battlefield_support_tree
+			category = operational_integrity_tree
+			category = jet_technology
+			category = trade_interdiction_tree
+			category = convoy_defense_tree
+			category = light_fighter
+			category = cat_heavy_fighter
+			category = tactical_bomber
+			category = cat_strategic_bomber
+			category = naval_bomber
+			category = cas_bomber
+			category = dd_tech
+			category = cl_tech
+			category = ca_tech
+			category = cv_tech
+			category = bc_tech
+			category = bb_tech
+			category = shbb_tech
+			category = ss_tech
+			category = tp_tech
+			category = synth_resources
+			category = fleet_in_being_tree
+			category = encryption_tech
+			category = decryption_tech
+			category = computing_tech
+			category = radar_tech
+			category = infantry_tech
+			category = marine_tech
+			category = construction_tech
+			category = excavation_tech
+			category = submarine_doctrine
+			category = air_equipment
+			category = cat_mobile_warfare
+			category = cat_superior_firepower
+			category = cat_grand_battle_plan
+			category = cat_mass_assault
+			category = cat_base_strike
+			category = cat_trade_interdiction
+			category = cat_fleet_in_being
+			category = cat_strategic_destruction
+			category = cat_battlefield_support
+			category = cat_operational_integrity
+			category = night_vision
+			category = base_strike_main
+			category = mot_rockets
+			category = support_tech
+			category = para_tech
+			category = engineers_tech
+			category = recon_tech
+			category = mountaineers_tech
+			category = military_police_tech
+			category = hospital_tech
+			category = logistics_tech
+			category = signal_company_tech
+			category = maintenance_company_tech
+			category = naval_mines
+			category = concentrated_industry_category
+			category = dispersed_industry_category
+			category = asw_tech
+			category = naval_minesweeping
+			category = naval_minelaying			
+			category = r56_desert_infantry_tech
+			category = r56_jaeger_infantry_tech
+			category = r56_jungle_infantry_tech
+			category = r56_marines_infantry_tech
+			category = r56_mountain_infantry_tech
+			category = r56_paratroops_infantry_tech
+			category = r56_shock_infantry_tech
+			category = maritime
+			category = cvl_tech
+			category = fighter_bomber
+			category = asw_tech
+			category = torpedo_equipment
+			category = armored_cars_tech
+			category = summer_clothing_tech
+			category = winter_clothing_tech
+			category = anti_tank_infantry_weapons
+			category = refining_tech
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
 }

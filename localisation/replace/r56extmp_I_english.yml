@@ -1,7 +1,15 @@
 ﻿l_english:
 
 #Units
-
-
+recon_cav:0 "Mounted Recon Company"
+recon_cav_desc:0 "Recon troops on horseback."
+div_hq:0 "Div. HeadQuarters"
+div_hq_desc:0 "Divisionial Command Unit.\nA division is a large military unit or formation, usually consisting of between 10,000 and 20,000 soldiers. Infantry divisions during the World Wars usually numbered 30,000 or more.\nIn most armies, a division is composed of several regiments or brigades; in turn, several divisions typically make up a corps. In most modern militaries, a division tends to be the smallest combined arms unit capable of independent operations; this is due to its self-sustaining role as a unit with a range of combat troops and suitable combat support forces, which can be arranged into various organic combinations.\nTypes during WWII:\nCavalry-, Armoured- and Infantry-Division."
+recon_mot:0 "Motorized Recon Company"
+recon_mot_desc:0 "These motorized recon troops are collect information about the enemy very quickly."
+recon_ac:0 "Armored Recon Company"
+recon_ac_desc:0 "These units are equiped with armored vehicles to find the enemies weakspots without losses."
+logistics_company_mot:0 "Motorized Logistics Company"
+logistics_company_mot_desc:0 "Handles planning, requesting and distributing resources for faster divisions."
  
 #####---------------------------------------------------------------------> End

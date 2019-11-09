@@ -79,7 +79,7 @@ equipments = {
 		naval_strike_attack = 20
 		naval_strike_targetting = 6
 
-		build_cost_ic = 46
+		build_cost_ic = 34
 
 		is_convertable = yes
 	}
@@ -135,7 +135,7 @@ equipments = {
 		naval_strike_attack = 30
 		naval_strike_targetting = 8
 
-		build_cost_ic = 54
+		build_cost_ic = 40
 		resources = {
 			aluminium = 4
 			rubber = 2

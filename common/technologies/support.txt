@@ -303,6 +303,9 @@ technologies = {
 		enable_subunits = {
 			recon
 		}
+		enable_subunits = {
+			recon_cav
+		}
 		
 		path = {
 			leads_to_tech = tech_recon2
@@ -355,6 +358,9 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_cav = {
+			recon = 2
+		}
 		recon_mot = {
 			recon = 2
 		}
@@ -401,6 +407,9 @@ technologies = {
 	tech_recon3 = {
 
 		recon = {
+			recon = 2
+		}
+		recon_cav = {
 			recon = 2
 		}
 		recon_mot = {
@@ -453,6 +462,9 @@ technologies = {
 	tech_recon4 = {
 
 		recon = {
+			recon = 2
+		}
+		recon_cav = {
 			recon = 2
 		}
 		recon_mot = {
@@ -1646,6 +1658,9 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_cav = {
+			recon = 2
+		}
 		recon_mot = {
 			recon = 2
 		}
@@ -1681,6 +1696,9 @@ technologies = {
 		recon = {
 			recon = 2
 		}
+		recon_cav = {
+			recon = 2
+		}
 		recon_mot = {
 			recon = 2
 		}
@@ -1714,6 +1732,9 @@ technologies = {
 	tech_recon_c = {
 
 		recon = {
+			recon = 2
+		}
+		recon_cav = {
 			recon = 2
 		}
 		recon_mot = {

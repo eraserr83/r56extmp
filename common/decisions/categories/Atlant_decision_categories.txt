@@ -3,15 +3,15 @@ atl_sphere_of_influence_category = {
 
 	picture = GFX_decision_cat_picture_chi_political_support
 	
-	allowed = {
-		always = yes
-	}
-	
+	available = {
+		ROOT = { has_template = "Saar" }
+		}
+
 	visible = {
-		is_major = yes
-	}
+		ROOT = { has_template = "Saar" }
+		}
 	
-	visible_when_empty = yes
+	visible_when_empty = no
 	
 	priority = {
 		base = 0
