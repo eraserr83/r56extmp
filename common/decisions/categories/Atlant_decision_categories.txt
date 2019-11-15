@@ -1,19 +1,119 @@
-atl_sphere_of_influence_category = {
+atl_generic_political_category = {
 	icon = generic_propaganda
-
 	picture = GFX_decision_cat_picture_chi_political_support
-	
-	available = {
-		ROOT = { has_template = "Saar" }
-		}
-
-	visible = {
-		ROOT = { has_template = "Saar" }
-		}
-	
-	visible_when_empty = no
-	
-	priority = {
-		base = 0
-	}
-}
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_buildings_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_experience_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_fuel_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_technology_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_ger_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_ger_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_sov_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_sov_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_usa_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_usa_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_ita_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_ita_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_jap_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_jap_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_equipment_land_eng_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}
+atl_air_equipment_eng_category = {
+	icon = generic_propaganda
+	picture = GFX_decision_cat_picture_chi_political_support
+	available = {ROOT = { has_template = "Saar" }}
+	visible = {	ROOT = { has_template = "Saar" }}
+	visible_when_empty = yes
+	priority = {base = 0}}

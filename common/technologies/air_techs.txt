@@ -660,7 +660,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = cv_CAS1
-			research_cost_coeff = 0.5
+			research_cost_coeff = 2
 		}
 		
 		research_cost = 2
@@ -709,7 +709,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = CAS1
-			research_cost_coeff = 0.5
+			research_cost_coeff = 2
 		}
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1936

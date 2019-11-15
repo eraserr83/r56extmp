@@ -1,27 +1,97 @@
-atl_sphere_of_influence_category = {
+atl_generic_political_category = {
 
-	infrastructure = {
+	political_power_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_political_power = 50}
+		ai_will_do = {base = 0}
+	}
+	political_power_100 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_political_power = 100}
+		ai_will_do = {base = 0}
+	}
+	political_power_150 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_political_power = 150}
+		ai_will_do = {base = 0}
+	}
+	political_power_300 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_political_power = 300}
+		ai_will_do = {base = 0}
+	}
+	stability_10 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_stability = 0.1}
+		ai_will_do = {base = 0}
+	}
+	warsupport_10 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {add_war_support = 0.1}
+		ai_will_do = {base = 0}
+	}
+}
+
+atl_buildings_category = {
+
+	infrastructure_x2 = {
 
 		icon = generic_industry
 
 		available = {
 			any_owned_state = {
-				NOT = { has_state_flag = soi_infra }
+				NOT = { has_state_flag = atl_infra }
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size > 1
+					size > 5
 				}
 			}
 		}
 
 		visible = {
 			any_owned_state = {
-				NOT = { has_state_flag = soi_infra }
+				NOT = { has_state_flag = atl_infra }
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size > 1
+					size > 5
 				}
 			}
 		}
@@ -39,9 +109,9 @@ atl_sphere_of_influence_category = {
 						is_owned_by = ROOT
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size < 5
 						}
-					NOT = { has_state_flag = soi_infra }
+					NOT = { has_state_flag = atl_infra }
 					}
 					
 				add_building_construction = {
@@ -49,7 +119,7 @@ atl_sphere_of_influence_category = {
 					level = 10
 					instant_build = yes
 				}
-				set_state_flag = soi_infra
+				set_state_flag = atl_infra
 			}
 			PREV = {
 				random_owned_state = {
@@ -58,19 +128,19 @@ atl_sphere_of_influence_category = {
 						is_owned_by = ROOT
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 5
 						}
 						NOT = { 
 							state = PREV.PREV
 						}
-						NOT = { has_state_flag = soi_infra }
+						NOT = { has_state_flag = atl_infra }
 					}
 				add_building_construction = {
 					type = infrastructure
 					level = 10
 					instant_build = yes
 					}
-					set_state_flag = soi_infra
+					set_state_flag = atl_infra
 				}
 			}
 		}
@@ -80,7 +150,65 @@ atl_sphere_of_influence_category = {
 			}
 		}
 
-	industrial_complex = {
+	industrial_complex_2x = {
+
+		icon = generic_industry
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					}
+			}
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = no
+						free_building_slots = {
+						building = industrial_complex
+						size > 2
+						}
+					NOT = { has_state_flag = soi_civ }
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = soi_civ
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+
+	industrial_complex_5x = {
 
 		icon = generic_industry
 
@@ -138,7 +266,7 @@ atl_sphere_of_influence_category = {
 			}
 		}
 	
-	arms_factory = {
+	arms_factory_2x = {
 
 		icon = generic_industry
 
@@ -148,7 +276,7 @@ atl_sphere_of_influence_category = {
 						is_coastal = no
 				free_building_slots = {
 					building = arms_factory
-					size > 3
+					size > 2
 					}
 			}
 		}
@@ -159,7 +287,7 @@ atl_sphere_of_influence_category = {
 						is_coastal = no
 				free_building_slots = {
 					building = arms_factory
-					size > 3
+					size > 2
 					}
 			}
 		}
@@ -178,13 +306,71 @@ atl_sphere_of_influence_category = {
 						is_coastal = no
 						free_building_slots = {
 						building = arms_factory
-						size > 3
+						size > 2
 						}
 					NOT = { has_state_flag = soi_mil }
 					}
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = soi_mil
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			}
+		}
+	
+	arms_factory_5x = {
+
+		icon = generic_industry
+
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = arms_factory
+					size > 5
+					}
+			}
+		}
+
+		visible = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = arms_factory
+					size > 5
+					}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = no
+						free_building_slots = {
+						building = arms_factory
+						size > 5
+						}
+					NOT = { has_state_flag = soi_mil }
+					}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = soi_mil
@@ -196,7 +382,7 @@ atl_sphere_of_influence_category = {
 			}
 		}
 
-	dockyard = {
+	dockyard_2x = {
 
 		icon = generic_industry
 
@@ -206,7 +392,7 @@ atl_sphere_of_influence_category = {
 				is_coastal = yes
 				free_building_slots = {
 					building = dockyard
-					size > 3
+					size > 2
 					}
 			}
 		}
@@ -217,7 +403,7 @@ atl_sphere_of_influence_category = {
 				is_coastal = yes
 				free_building_slots = {
 					building = dockyard
-					size > 3
+					size > 2
 					}
 			}
 		}
@@ -236,13 +422,13 @@ atl_sphere_of_influence_category = {
 						is_coastal = yes
 						free_building_slots = {
 						building = dockyard
-						size > 3
+						size > 2
 						}
 					NOT = { has_state_flag = soi_dock }
 					}
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = soi_dock
@@ -254,16 +440,30 @@ atl_sphere_of_influence_category = {
 			}
 		}
 
-	experience = {
+	dockyard_4x = {
 
 		icon = generic_industry
 
 		available = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 4
+					}
+			}
 		}
 
 		visible = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+				free_building_slots = {
+					building = dockyard
+					size > 4
+					}
+			}
 		}
 
 		fire_only_once = no
@@ -273,26 +473,55 @@ atl_sphere_of_influence_category = {
 		days_re_enable = 0
 
 		complete_effect = {
-			army_experience = 250
-			navy_experience = 100
-			air_experience = 250
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = yes
+						free_building_slots = {
+						building = dockyard
+						size > 4
+						}
+					NOT = { has_state_flag = soi_dock }
+					}
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = soi_dock
 			}
+		}
 
 		ai_will_do = {
 			base = 0
 			}
 		}
 
-		airexperience = {
+	synthetic_2x = {
 
 		icon = generic_industry
 
 		available = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = synthetic_refinery
+					size > 2
+					}
+			}
 		}
 
 		visible = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+						is_coastal = no
+				free_building_slots = {
+					building = synthetic_refinery
+					size > 2
+					}
+			}
 		}
 
 		fire_only_once = no
@@ -302,24 +531,53 @@ atl_sphere_of_influence_category = {
 		days_re_enable = 0
 
 		complete_effect = {
-			air_experience = 1500
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						is_coastal = no
+						free_building_slots = {
+						building = synthetic_refinery
+						size > 2
+						}
+					NOT = { has_state_flag = soi_ref }
+					}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = soi_ref
 			}
+		}
 
 		ai_will_do = {
 			base = 0
 			}
 		}
 
-		PP = {
+	rubber_refinery_1x = {
 
 		icon = generic_industry
 
 		available = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = rubber_refinery
+					size < 2
+					}
+			}
 		}
 
 		visible = {
-			always = yes
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = rubber_refinery
+					size > 2
+					}
+			}
 		}
 
 		fire_only_once = no
@@ -329,17 +587,205 @@ atl_sphere_of_influence_category = {
 		days_re_enable = 0
 
 		complete_effect = {
-			add_political_power = 300
+			random_owned_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
+						free_building_slots = {
+						building = rubber_refinery
+						size > 2
+						}
+					NOT = { has_state_flag = soi_rub }
+					}
+				add_building_construction = {
+					type = rubber_refinery
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = soi_rub
 			}
+		}
 
 		ai_will_do = {
 			base = 0
 			}
 		}
-		
+
+}
+
+atl_experience_category = { 
+
+	armyxp_50 = {
+		icon = generic_tank
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {army_experience = 50}
+		ai_will_do = {base = 0}
+	}
+	armyxp_100 = {
+		icon = generic_tank
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {army_experience = 100}
+		ai_will_do = {base = 0}
+	}
+	armyxp_150 = {
+		icon = generic_tank
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {army_experience = 150}
+		ai_will_do = {base = 0}
+	}
+	armyxp_250	= {
+		icon = generic_tank
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {army_experience = 250}
+		ai_will_do = {base = 0}
+	}
+	armyxp_500 = {
+		icon = generic_tank
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {army_experience = 500}
+		ai_will_do = {base = 0}
+	}
+	airxp_150 = {
+		icon = generic_air
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {air_experience = 150}
+		ai_will_do = {base = 0}
+	}
+	airxp_250 = {
+		icon = generic_air
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {air_experience = 250}
+		ai_will_do = {base = 0}
+	}
+	airxp_500 = {
+		icon = generic_air
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {air_experience = 500}
+		ai_will_do = {base = 0}
+	}
+	airxp_750 = {
+		icon = generic_air
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {air_experience = 750}
+		ai_will_do = {base = 0}
+	}
+	airxp_1500 = {
+		icon = generic_air
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {air_experience = 1500}
+		ai_will_do = {base = 0}
+	}
+	navyxp_50 = {
+		icon = generic_naval
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {navy_experience = 50}
+		ai_will_do = {base = 0}
+	}
+	navyxp_100 = {
+		icon = generic_naval
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {navy_experience = 100}
+		ai_will_do = {base = 0}
+	}
+	navyxp_150 = {
+		icon = generic_naval
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {navy_experience = 150}
+		ai_will_do = {base = 0}
+	}
+	navyxp_250 = {
+		icon = generic_naval
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {navy_experience = 250}
+		ai_will_do = {base = 0}
+	}
+	navyxp_500 = {
+		icon = generic_naval
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {navy_experience = 500}
+		ai_will_do = {base = 0}
+	}
+}
+
+atl_fuel_category = {
 	Fuelmax = {
 
-		icon = generic_industry
+		icon = oil
 
 		available = {
 			always = yes
@@ -363,137 +809,1043 @@ atl_sphere_of_influence_category = {
 			base = 0
 			}
 		}
+}
 
-	LandBundle = {
-
+atl_equipment_land_ger_category = {
+	infantry_equipment_1 = {
 		icon = generic_industry
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
+		available = {always = yes}
+		visible = {always = yes}
 		fire_only_once = no
-
 		cost = 0
 		days_remove = 0
 		days_re_enable = 0
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 25000
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 7000
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_1
-				amount = 5000
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 12000
-				producer = GER
-			}
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = GER } }
+		ai_will_do = {base = 0}
 		}
-
-		ai_will_do = {
-			base = 0
-			}
-		}
-	AirBundle = {
-
+	support_equipment_1 = {
 		icon = generic_industry
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
+		available = {always = yes}
+		visible = {always = yes}
 		fire_only_once = no
-
 		cost = 0
 		days_remove = 0
 		days_re_enable = 0
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = fighter_equipment_0
-				amount = 200
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = CAS_equipment_1
-				amount = 200
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = nav_bomber_equipment_1
-				amount = 100
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment_0
-				amount = 100
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = heavy_fighter_equipment_1
-				amount = 200
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = strat_bomber_equipment_1
-				amount = 200
-				producer = GER
-			}
-			add_equipment_to_stockpile = {
-				type = transport_plane_equipment_1
-				amount = 50
-				producer = GER
-			}
-			
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = GER } }
+		ai_will_do = {base = 0}
 		}
-
-		ai_will_do = {
-			base = 0
-			}
-		}
-
-	Technology = {
-
+	artillery_equipment_1 = {
 		icon = generic_industry
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
+		available = {always = yes}
+		visible = {always = yes}
 		fire_only_once = no
-
 		cost = 0
 		days_remove = 0
 		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+}
+atl_air_equipment_ger_category = {
+	fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = GER } }
+		ai_will_do = {base = 0}
+		}
+	}
 
+atl_equipment_land_sov_category = {
+	sov_infantry_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_support_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_artillery_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+}
+
+atl_air_equipment_sov_category = {
+	sov_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	sov_transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = SOV } }
+		ai_will_do = {base = 0}
+		}
+	}
+
+atl_equipment_land_usa_category = {
+	usa_infantry_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_support_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_artillery_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+}
+atl_air_equipment_usa_category = {
+	usa_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	usa_transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = USA } }
+		ai_will_do = {base = 0}
+		}
+	}
+
+atl_equipment_land_ita_category = {
+	ita_infantry_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_support_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_artillery_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+}
+atl_air_equipment_ita_category = {
+	ita_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	ita_transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = ITA } }
+		ai_will_do = {base = 0}
+		}
+	}
+
+atl_equipment_land_jap_category = {
+	jap_infantry_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_support_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_artillery_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+}
+atl_air_equipment_jap_category = {
+	jap_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	jap_transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = JAP } }
+		ai_will_do = {base = 0}
+		}
+	}
+
+atl_equipment_land_eng_category = {
+	eng_infantry_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_support_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_artillery_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_anti_air_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_motorized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_mechanized_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 2500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_light_tank_equipment_2 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_medium_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_heavy_tank_equipment_1 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 500 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+}
+atl_air_equipment_eng_category = {
+	eng_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 400 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_CAS_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 400 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_tac_bomber_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 400 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_heavy_fighter_equipment_400 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = heavy_fighter_equipment_1 amount = 400 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_strat_bomber_equipment_200 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 200 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	eng_transport_plane_equipment_50 = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+		complete_effect = {	add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 50 producer = ENG } }
+		ai_will_do = {base = 0}
+		}
+	}
+
+atl_technology_category = {
+	technology_5x = {
+		icon = generic_industry
+		available = {always = yes}
+		visible = {always = yes}
+		fire_only_once = no
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
 		complete_effect = {
 			add_tech_bonus = {
-			bonus = 10
+			bonus = 20
 			ahead_reduction = 10
-			uses = 2
+			uses = 5
 			category = light_air
 			category = medium_air
 			category = heavy_air
@@ -587,7 +1939,6 @@ atl_sphere_of_influence_category = {
 			category = maritime
 			category = cvl_tech
 			category = fighter_bomber
-			category = asw_tech
 			category = torpedo_equipment
 			category = armored_cars_tech
 			category = summer_clothing_tech
@@ -601,5 +1952,4 @@ atl_sphere_of_influence_category = {
 			base = 0
 			}
 		}
-
-}
+	}

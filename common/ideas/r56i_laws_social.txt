@@ -27,12 +27,6 @@ ideas = {
 		
 		#Hierarchy
 		r56i_laws_social_hierarchy = {
-		
-			available = {
-				NOT = {
-					has_government = communism
-				}
-			}
 
 			cost = 175
 		
@@ -78,12 +72,6 @@ ideas = {
 		
 		#Melting Pot
 		r56i_laws_social_diversity = {
-		
-			available = {
-				NOT = {
-					has_government = fascism
-				}
-			}
 			
 			modifier = {
 				MONTHLY_POPULATION = 1

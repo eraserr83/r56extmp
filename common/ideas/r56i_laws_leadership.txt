@@ -29,7 +29,6 @@ ideas = {
 
 
 			modifier = {
-				fascism_drift = 0.10
 				justify_war_goal_time = -0.20
 				political_power_cost = 0.1
 			}
@@ -52,7 +51,6 @@ ideas = {
 		r56i_laws_leadership_secular = {
 			
 			modifier = {
-				democratic_drift = 0.1
 				research_speed_factor = 0.03
 				political_power_cost = 0.05
 			}
@@ -81,7 +79,6 @@ ideas = {
 			}
 			
 			modifier = {
-				neutrality_drift = 0.10
 				war_support_factor = 0.15
 				political_power_cost = 0.05	
 			}
@@ -97,15 +94,8 @@ ideas = {
 		
 		#Will of the People
 		r56i_laws_leadership_people = {
-
-			available = {
-				NOT = {
-					has_government = fascism
-				}
-			}
 			
 			modifier = {
-				communism_drift = 0.10
 				supply_consumption_factor = -0.10
 				political_power_cost = 0.05
 			}

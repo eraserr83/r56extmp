@@ -25,7 +25,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					64 = {
+					5 = {
 							add_extra_state_shared_building_slots = 1
 						}
 					59 = {
@@ -461,7 +461,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					51 = {
+					65 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -474,7 +474,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					63 = {
+					66 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -487,7 +487,7 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					5 = {
+					58 = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
@@ -977,7 +977,7 @@ focus_tree = {
 					42 = {
 							add_building_construction = {
 									type = infrastructure
-									level = 10
+									level = 3
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -989,7 +989,7 @@ focus_tree = {
 					51 = {
 							add_building_construction = {
 									type = infrastructure
-									level = 10
+									level = 2
 									instant_build = yes
 								}
 							add_building_construction = {
