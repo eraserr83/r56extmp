@@ -677,13 +677,22 @@ focus_tree = {
 					factor = 10
 				}
 			available = {
-					has_war = yes
+					has_war_with = USA
 					surrender_progress < 0.05
 				}
 			completion_reward = {
 					add_ideas = GER_total_war_idea
 					custom_effect_tooltip = available_political_advisor
 					show_ideas_tooltip = speer
+					if = {
+						limit = {
+							OR = {
+								has_idea = war_economy
+								has_idea = partial_economic_mobilisation
+							}
+						}
+						add_ideas = tot_economic_mobilisation
+					}
 				}
 
 	}
@@ -692,10 +701,12 @@ focus_tree = {
 		icon = GFX_goal_operation_sealion
 		cost = 5.00
 		prerequisite = {
-			focus = GER_rhineland
+			focus = GER_air_superiority_english_channel
+			focus = GER_naval_superiority_english_channel
+			focus = GER_u_boat_effort
 		}
 		x = 17
-		y = 1
+		y = 2
 			ai_will_do = {
 					factor = 10
 				}
@@ -747,7 +758,7 @@ focus_tree = {
 			focus = GER_plan_sealion
 		}
 		x = 15
-		y = 2
+		y = 3
 			ai_will_do = {
 					factor = 10
 				}
@@ -767,9 +778,9 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 4.00
 		prerequisite = {
-			focus = GER_landing_craft
+			focus = GER_plan_sealion
 		}
-		x = 15
+		x = 17
 		y = 3
 			ai_will_do = {
 					factor = 10
@@ -781,6 +792,17 @@ focus_tree = {
 							uses = 1
 							category = r56_marines_infantry_tech
 						}
+					create_corps_commander = {
+						name = "Wilhelm Henningsen"
+						picture = "Portrait_Germany_Kurt_Student.dds"
+						traits = { naval_invader trait_reckless}
+						skill = 2
+						id = 8001
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 5
+						logistics_skill = 4
+					}
 				}
 
 	}
@@ -789,10 +811,10 @@ focus_tree = {
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		cost = 10.00
 		prerequisite = {
-			focus = GER_plan_sealion
+			focus = GER_rhineland			
 		}
 		x = 17
-		y = 2
+		y = 1
 			ai_will_do = {
 					factor = 10
 				}
@@ -803,6 +825,72 @@ focus_tree = {
 							uses = 3
 							category = naval_doctrine
 						}
+					if = {
+						limit = {
+							not = { has_dlc = "Man the Guns" }
+						}
+						add_tech_bonus = {
+							name = GER_improve_the_navy
+							bonus = 1.0
+							uses = 1
+							category = cl_tech
+							category = ca_tech
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								not = { has_tech = improved_ship_hull_heavy }
+							}
+							set_technology = {
+								improved_ship_hull_heavy = 1
+							}
+						}
+						create_equipment_variant = {
+							name = "Bismarck Class"
+							type = ship_hull_heavy_3
+							name_group = GER_BB_HISTORICAL
+							parent_version = 0
+							modules={
+								fixed_ship_engine_slot=heavy_ship_engine_3
+								fixed_ship_armor_slot=ship_armor_bb_2
+								fixed_ship_secondaries_slot=ship_secondaries_2
+								mid_3_custom_slot=ship_airplane_launcher_2
+								rear_1_custom_slot=ship_heavy_battery_3
+								fixed_ship_battery_slot=ship_fixed_heavy_battery_3
+								mid_2_custom_slot=ship_secondaries_2
+								mid_1_custom_slot=ship_anti_air_2
+								front_1_custom_slot=ship_anti_air_2
+								fixed_ship_anti_air_slot=ship_anti_air_2
+								fixed_ship_fire_control_system_slot=ship_fire_control_system_3
+							}
+						}
+						custom_effect_tooltip = GER_bismarck_tt
+						hidden_effect = {
+							add_equipment_production = {
+								equipment = {
+									type = ship_hull_heavy_3
+									creator = "GER"
+									version_name = "Bismarck Class"
+								}
+								name = "Bismarck"
+								requested_factories = 1
+								progress = 0.75
+								amount = 1
+							}
+							add_equipment_production = {
+								equipment = {
+									type = ship_hull_heavy_3
+									creator = "GER"
+									version_name = "Bismarck Class"
+								}
+								name = "Tirpitz"
+								requested_factories = 1
+								progress = 0.5
+								amount = 1
+							}
+						}
+					}
 				}
 
 	}
@@ -811,10 +899,10 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10.00
 		prerequisite = {
-			focus = GER_naval_superiority_english_channel
+			focus = GER_rhineland
 		}
-		x = 17
-		y = 3
+		x = 15
+		y = 1
 			ai_will_do = {
 					factor = 10
 				}
@@ -840,7 +928,8 @@ focus_tree = {
 					add_tech_bonus = {
 							name = GER_u_boat_effort
 							bonus = 1.0
-							uses = 1
+							ahead_reduction = 1.0
+							uses = 2
 							category = ss_tech
 						}
 					if = {
@@ -860,10 +949,10 @@ focus_tree = {
 		icon = GFX_goal_multiple_bombers
 		cost = 10.00
 		prerequisite = {
-			focus = GER_plan_sealion
+			focus = GER_rhineland
 		}
 		x = 19
-		y = 2
+		y = 1
 			ai_will_do = {
 					factor = 10
 				}
@@ -884,7 +973,7 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		cost = 4.00
 		prerequisite = {
-			focus = GER_air_superiority_english_channel
+			focus = GER_plan_sealion
 		}
 		x = 19
 		y = 3
@@ -906,10 +995,10 @@ focus_tree = {
 		icon = GFX_focus_AST_never_gallipoli
 		cost = 10.00
 		prerequisite = {
-			focus = GER_u_boat_effort
+			focus = GER_train_marines
 		}
 		prerequisite = {
-			focus = GER_train_marines
+			focus = GER_landing_craft
 		}
 		prerequisite = {
 			focus = GER_train_paratroopers

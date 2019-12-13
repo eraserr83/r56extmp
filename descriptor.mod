@@ -1,8 +1,7 @@
-name="R56 Extended Multiplayer"
-archive="r56extmp.zip"
+name="R56 Extended Multiplayer [LOCAL BETA]"
 tags={
 	"Balance"
 }
 picture="r56extmp3.png"
-remote_file_id="1698520180"
-supported_version="1.7.1"
+supported_version="1.8.*"
+path="D:/Felhasznalok/Pordy/Dokumentumok/Paradox Interactive/Hearts of Iron IV/mod/r56extmp_beta"

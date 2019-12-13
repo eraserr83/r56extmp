@@ -39,5 +39,6 @@ In order to take a number that has low chances to be used let's start future gen
 
 ## ITA
 6007: Italo Balbo
-
+## GER
+7001: Wilhelm Henningsen
 

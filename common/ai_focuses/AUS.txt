@@ -7,7 +7,7 @@ ai_historical_focus_list_AUS = {
 		AUS_subsidize_steyr_werke_arms
 		AUS_extend_the_grossglockner_highway
 		AUS_open_the_mittersill_mine
-		AUS_construct_the_tullnerfeld_airbase
+		AUS_expand_erzberg_mine
 		AUS_rearm_the_bundesheer
 	}
 }

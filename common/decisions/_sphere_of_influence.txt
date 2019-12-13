@@ -80,7 +80,7 @@ atl_buildings_category = {
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size > 5
+					size < 5
 				}
 			}
 		}
@@ -91,7 +91,7 @@ atl_buildings_category = {
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size > 5
+					size < 5
 				}
 			}
 		}
@@ -128,7 +128,7 @@ atl_buildings_category = {
 						is_owned_by = ROOT
 						free_building_slots = {
 							building = infrastructure
-							size > 5
+							size < 5
 						}
 						NOT = { 
 							state = PREV.PREV

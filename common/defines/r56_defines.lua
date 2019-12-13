@@ -32,7 +32,7 @@ NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.15
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 48
 NDefines.NMilitary.RECON_SKILL_IMPACT = 8
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 4 -- Base cost to unlock a regiment slot,
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1 -- Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4 -- Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
@@ -42,7 +42,6 @@ NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 5					-- Cost in XP to upgrade a p
 NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 1
 NDefines.NMilitary.NAVAL_EQUIPMENT_BASE_COST = 5
 NDefines.NMilitary.NAVAL_EQUIPMENT_RAMP_COST = 1
-NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0025
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.5
 
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5			-- Max width of regiments in division designer.
@@ -71,7 +70,6 @@ NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.0
 
 -- Technology
 NDefines.NTechnology.BASE_TECH_COST = 65
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4 -- Base year ahead penalty
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0
 
 -- Air Combat
